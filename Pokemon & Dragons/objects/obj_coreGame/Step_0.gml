@@ -9,6 +9,6 @@ switch (room)
 		}
 		break;
 	case(rm_titleMenu):
-		show_debug_message("Call");
+		// Type here
 		break;
 }
