@@ -1,14 +1,14 @@
 /// @description Runs the core states
 
-switch (global.currentGameState)
+switch (room)
 {
-	case(gameState.studioVideoState):
+	case(rm_introVideo):
 		if (video_get_status() == video_status_closed)
 		{
-			global.currentGameState = gameState.menuState;
+			room_goto(rm_titleMenu);
 		}
 		break;
-	case(gameState.menuState):
+	case(rm_titleMenu):
 		show_debug_message("Call");
 		break;
 }

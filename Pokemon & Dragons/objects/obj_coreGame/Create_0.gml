@@ -2,7 +2,7 @@
 
 #region Enumeration Declaration
 
-enum gameState
+enum gameState // Scrap for now
 {
 	studioVideoState = 0,
 	menuState = 1,
@@ -17,15 +17,29 @@ enum gameState
 
 #region Core Varibles
 
-global.currentGameState = gameState.studioVideoState;
+// Type here
+
+#endregion
+
+#region Save Loading
+
+#endregion
+
+#region Display Variables
+
+// Change this to a hybrid system that uses DPI in future
+global.videoResolutionHeight = 720;
+global.videoResolutionWidth = 1280; // Change to "NOT_SET" once Save system is up
+surface_resize(application_surface, global.videoResolutionWidth, global.videoResolutionHeight);
+window_set_size(global.videoResolutionWidth, global.videoResolutionHeight); // Put into seperate script element in next version
 
 #endregion
 
 #region Video Opening
 
-if (global.currentGameState == gameState.studioVideoState)
+if (room == rm_introVideo)
 {
-	video = video_open("vid_studioIntro.mp4");
+	video_open("vid_studioIntro.mp4");
 	video_enable_loop(false);
 	// When Sound System is set up - video_set_volume(global.soundVolume);
 }
