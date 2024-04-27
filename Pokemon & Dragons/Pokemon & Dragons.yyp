@@ -6,6 +6,7 @@
     {"id":{"name":"obj_coreGame","path":"objects/obj_coreGame/obj_coreGame.yy",},"order":0,},
     {"id":{"name":"rm_titleMenu","path":"rooms/rm_titleMenu/rm_titleMenu.yy",},"order":1,},
     {"id":{"name":"obj_saveSystem","path":"objects/obj_saveSystem/obj_saveSystem.yy",},"order":3,},
+    {"id":{"name":"fnt_kyoMadoka","path":"fonts/fnt_kyoMadoka/fnt_kyoMadoka.yy",},"order":0,},
     {"id":{"name":"spr_gameLogo","path":"sprites/spr_gameLogo/spr_gameLogo.yy",},"order":0,},
     {"id":{"name":"obj_coreUI","path":"objects/obj_coreUI/obj_coreUI.yy",},"order":2,},
     {"id":{"name":"obj_coreSound","path":"objects/obj_coreSound/obj_coreSound.yy",},"order":4,},
@@ -64,6 +65,7 @@
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"vid_studioIntro.mp4","CopyToMask":-1,"filePath":"datafiles",},
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"._vid_studioIntro.mp4","CopyToMask":-1,"filePath":"datafiles",},
+    {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"vid_introStudios.mov","CopyToMask":-1,"filePath":"datafiles",},
   ],
   "MetaData": {
     "IDEVersion": "2022.0.1.31",

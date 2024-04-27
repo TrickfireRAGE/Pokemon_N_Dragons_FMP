@@ -13,7 +13,7 @@ window_set_size(global.videoResolutionWidth, global.videoResolutionHeight); // P
 
 if (room == rm_introVideo)
 {
-	video_open("vid_studioIntro.mp4");
+	video_open("vid_introStudios.mov");
 	video_enable_loop(false);
 	// When Sound System is set up - video_set_volume(global.soundVolume);
 }
