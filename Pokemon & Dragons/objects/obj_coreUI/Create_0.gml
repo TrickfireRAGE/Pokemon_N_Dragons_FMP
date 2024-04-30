@@ -14,7 +14,7 @@ if (room == rm_introVideo)
 {
 	video_open("vid_introStudios.mov");
 	video_enable_loop(false);
-	// When Sound System is set up - video_set_volume(global.soundVolume);
+	video_set_volume(global.soundVolume);
 }
 
 #endregion
@@ -42,7 +42,8 @@ enum enumSettingsChoice
 	fullScreen = 1,
 	sound = 2,
 	controls = 3,
-	returnMainMenu = 4
+	credits = 4,
+	returnMainMenu = 5
 }
 
 enum enumResolutionChoice

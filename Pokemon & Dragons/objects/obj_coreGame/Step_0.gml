@@ -1,5 +1,15 @@
 /// @description Runs the core states
 
+var _gamePadConfirm = gamepad_button_check_pressed(global.controllerNumber, gp_face1); // A
+var _gamePadBack = gamepad_button_check_pressed(global.controllerNumber, gp_face2); // B
+
+var _gamePadStart = gamepad_button_check_pressed(global.controllerNumber, gp_start); // Start
+var _gamePadUp = gamepad_button_check_pressed(global.controllerNumber, gp_padu); // Up
+var _gamePadDown = gamepad_button_check_pressed(global.controllerNumber, gp_padd); // Down
+var _gamePadLeft = gamepad_button_check_pressed(global.controllerNumber, gp_padl); // Left
+var _gamePadRight = gamepad_button_check_pressed(global.controllerNumber, gp_padr); // Right
+
+
 switch (room)
 {
 	case(rm_introVideo):
@@ -20,15 +30,16 @@ switch (room)
 				}
 				else
 				{
-					if (gamepad_button_check_pressed(global.controllerNumber, gp_start))
+					if (_gamePadStart)
 					{
+						audio_play_sound(snd_selectionPaper, 0, false);
 						global.menuState = enumTitleScreenState.mainMenu;
 					}	
 				}
 				break;
 			case(enumTitleScreenState.mainMenu):
 				var _choiceChange = 1;
-				if (gamepad_button_check_pressed(global.controllerNumber, gp_padd))
+				if (_gamePadDown)
 				{
 					global.titleScreenOptions += _choiceChange;
 					if (global.titleScreenOptions > enumMainMenuChoice.exitSave)
@@ -36,7 +47,7 @@ switch (room)
 						global.titleScreenOptions = enumMainMenuChoice.newGame;
 					}
 				}
-				else if (gamepad_button_check_pressed(global.controllerNumber, gp_padu))
+				else if (_gamePadUp)
 				{
 					global.titleScreenOptions -= _choiceChange;
 					if (global.titleScreenOptions < enumMainMenuChoice.newGame)
@@ -44,8 +55,9 @@ switch (room)
 						global.titleScreenOptions = enumMainMenuChoice.exitSave;
 					}
 				}
-				if (gamepad_button_check_pressed(global.controllerNumber, gp_face1))
+				if (_gamePadConfirm)
 				{
+					audio_play_sound(snd_selectionPaper, 0, false);
 					switch (global.titleScreenOptions)
 					{
 						case(enumMainMenuChoice.newGame):
@@ -66,13 +78,19 @@ switch (room)
 							break;
 					}
 				}
+				if (_gamePadBack)
+				{
+					audio_play_sound(snd_selectionPaper, 0, false);
+					global.titleScreenOptions = enumMainMenuChoice.newGame;
+					global.menuState = enumTitleScreenState.pressStart;
+				}
 				break;
 			case(enumTitleScreenState.newGame):
 				// type here
 				break;
 			case(enumTitleScreenState.settingsMenu):
 				var _choiceChange = 1;
-				if (gamepad_button_check_pressed(global.controllerNumber, gp_padd))
+				if (_gamePadDown)
 				{
 					switch(global.settingsMenuState)
 					{
@@ -98,14 +116,14 @@ switch (room)
 							}
 							break;
 						case(enumSettingsScreenState.sound):
-							// type here
+							// Nothing Needed at the Moment
 							break;
 						case(enumSettingsScreenState.controls):
-							// type here
+							// Nothing Needed at the Moment
 							break;
 					}
 				}
-				else if (gamepad_button_check_pressed(global.controllerNumber, gp_padu))
+				else if (_gamePadUp)
 				{
 					switch(global.settingsMenuState)
 					{
@@ -131,15 +149,16 @@ switch (room)
 							}
 							break;
 						case(enumSettingsScreenState.sound):
-							// type here
+							// Nothing Needed here at the moment
 							break;
 						case(enumSettingsScreenState.controls):
-							// type here
+							// Nothing needed here at the moment
 							break;
 					}
 				}
-				if (gamepad_button_check_pressed(global.controllerNumber, gp_face1))
+				if (_gamePadConfirm)
 				{
+					audio_play_sound(snd_selectionPaper, 0, false);
 					switch (global.settingsMenuState)
 					{
 						case(enumSettingsScreenState.settingsBase):
@@ -156,6 +175,9 @@ switch (room)
 									break;
 								case(enumSettingsChoice.controls):
 									global.settingsMenuState = enumSettingsScreenState.controls;
+									break;
+								case(enumSettingsChoice.credits):
+									global.settingsMenuState = enumSettingsScreenState.credits;
 									break;
 								case(enumSettingsChoice.returnMainMenu):
 									global.settingsScreenOptions = enumSettingsChoice.resolution;
@@ -225,11 +247,54 @@ switch (room)
 							}
 							break;
 						case(enumSettingsScreenState.sound):
-							//type here
+							global.settingsScreenOptions = enumSettingsChoice.sound;
+							global.settingsMenuState = enumSettingsScreenState.settingsBase;
 							break;
 						case(enumSettingsScreenState.controls):
-							// type here
+							global.settingsScreenOptions = enumSettingsChoice.controls;
+							global.settingsMenuState = enumSettingsScreenState.settingsBase;
 							break;
+					}
+				}
+				if (_gamePadBack)
+				{
+					audio_play_sound(snd_selectionPaper, 0, false);
+					if (global.settingsMenuState == enumSettingsScreenState.settingsBase)
+					{
+						global.menuState = enumTitleScreenState.mainMenu;
+					}
+					else if (global.settingsMenuState != enumSettingsScreenState.settingsBase)
+					{
+						global.settingsMenuState = enumSettingsScreenState.settingsBase;
+					}
+				}
+				if (_gamePadLeft)
+				{
+					if (global.settingsMenuState == enumSettingsScreenState.sound)
+					{
+						global.soundVolume -= 0.01;
+						if (global.soundVolume < 0)
+						{
+							global.soundVolume = 0;
+						}
+						ini_open("coreSaveFile.ini");
+						ini_write_real("settings", "sound", global.soundVolume);
+						ini_close();
+					}
+				}
+				if (_gamePadRight)
+				{
+					if (global.settingsMenuState == enumSettingsScreenState.sound)
+					{
+						global.soundVolume += 0.01;
+						if (global.soundVolume > 1)
+						{
+							global.soundVolume = 1;
+						}
+						audio_master_gain(global.soundVolume);
+						ini_open("coreSaveFile.ini");
+						ini_write_real("settings", "sound", global.soundVolume);
+						ini_close();
 					}
 				}
 				break;

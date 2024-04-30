@@ -17,7 +17,8 @@ enum enumSettingsScreenState // States within Settings
 	resolution = 1,
 	fullScreen = 2,
 	sound = 3,
-	controls = 4
+	controls = 4,
+	credits = 5
 }
 
 // Put other Enumerations here
@@ -34,6 +35,7 @@ for (var i = 0; i < gamepad_get_device_count(); i++) // Got from FioreFire
 	}
 }
 
+
 #endregion
 
 #region Title Screen Logic
@@ -48,12 +50,6 @@ global.settingsScreenOptions = 0; // ^
 
 global.menuState = "NOT_SET"; // Handles the State for Menus
 global.settingsMenuState = "NOT_SET"; // Handles the State for Settings Menu
-
-#endregion
-
-#region Save Loading
-
-// Type here
 
 #endregion
 
