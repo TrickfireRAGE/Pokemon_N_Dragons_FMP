@@ -28,10 +28,10 @@
   "creationCodeFile": "",
   "inheritCode": false,
   "instanceCreationOrder": [
+    {"name":"inst_5D4C0A85","path":"rooms/rm_introVideo/rm_introVideo.yy",},
     {"name":"inst_6C2339EA","path":"rooms/rm_introVideo/rm_introVideo.yy",},
     {"name":"inst_5B474D6B","path":"rooms/rm_introVideo/rm_introVideo.yy",},
     {"name":"inst_740AFCF6","path":"rooms/rm_introVideo/rm_introVideo.yy",},
-    {"name":"inst_5D4C0A85","path":"rooms/rm_introVideo/rm_introVideo.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

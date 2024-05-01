@@ -41,7 +41,7 @@ switch (room)
 		var _versionNumberY = global.gameResolutionHeight / 1.05;
 		var _versionNumberX = global.gameResolutionWidth / 1.4;
 		var _versionScale = (_menuTextScale / 2);
-		var _versionNumberString = "Pre-Alpha - V0.0.0.5";
+		var _versionNumberString = "Pre-Alpha - V0.0.0.6";
 		
 		funct_textUI(_versionNumberX, _versionNumberY,
 			_versionNumberString, _versionScale,
@@ -202,8 +202,8 @@ switch (room)
 							}
 						}
 						funct_textUI(_menuX, _menuY[6],
-						_returnString, _menuTextScale,
-						_textColour, _textAlpha);
+							_returnString, _menuTextScale,
+							_textColour, _textAlpha);
 						
 						funct_selectionUI(_selectionX, _menuY,
 							global.settingsScreenOptions, _selectionSprite,
@@ -269,14 +269,38 @@ switch (room)
 						// Type Controls Visuals / Temporary Visual here
 						break;
 					case(enumSettingsScreenState.credits):
-						var _xTemp = global.gameResolutionWidth / 2;
-						var _yTemp = global.gameResolutionHeight / 2;
+						if (global.creditsCheck == false)
+						{
+							global.creditsCheck = true;
+							if ((scrollHeight == "NOT_SET") or (scrollHeight != global.gameResolutionHeight))
+							{
+								scrollHeight = global.gameResolutionHeight + (global.gameResolutionHeight / 4);
+							}
+						}
+						var _creditsTextScale = _menuTextScale / 2;
+						var _creditsDistance = (30 * _menuTextScale);
+						var _logoScale = _gameLogoScale / 1.5;
+						scrollWidth = (global.gameResolutionWidth / 2);
 						draw_set_halign(fa_center);
-						funct_textUI(_xTemp, _yTemp,
-							"Not Implemented in This Version", _menuTextScale,
-							_textColour, _textAlpha);
+						for (var i = 0; i <= creditsArraySize; i++;)
+						{
+							if (i == 0)
+							{
+								draw_sprite_ext(spr_gameLogo, 0,
+									scrollWidth, scrollHeight,
+									_logoScale, _logoScale,
+									0, c_white,
+									1)
+							}
+							else
+							{
+								funct_textUI(scrollWidth, (scrollHeight + (_creditsDistance * i)),
+									creditsText[i], _creditsTextScale,
+									_textColour, _textAlpha);
+							}
+						}
+						scrollHeight -= (0.32 * _menuTextScale);
 						draw_set_halign(fa_left);
-						// Type full credits later
 						break;
 				}
 		}

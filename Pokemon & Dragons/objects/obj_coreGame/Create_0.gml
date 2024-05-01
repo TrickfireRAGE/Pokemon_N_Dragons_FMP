@@ -35,6 +35,8 @@ for (var i = 0; i < gamepad_get_device_count(); i++) // Got from FioreFire
 	}
 }
 
+leftHold = 0;
+
 
 #endregion
 
@@ -52,4 +54,5 @@ global.menuState = "NOT_SET"; // Handles the State for Menus
 global.settingsMenuState = "NOT_SET"; // Handles the State for Settings Menu
 
 #endregion
+
 
