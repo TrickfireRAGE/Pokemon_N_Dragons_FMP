@@ -3,6 +3,7 @@
 switch (room)
 {
 	case(rm_titleMenu):
+		#region Title Screen UI Variables
 		// Title Logo
 		var _gameLogoX = global.gameResolutionWidth / 1.3; // Local Variable for Game Logo X
 		var _gameLogoY = global.gameResolutionHeight / 2.5; // Local Variable for Game Logo Y
@@ -16,6 +17,9 @@ switch (room)
 		var _textColour = c_white;
 		var _selectedColour = c_green;
 		var _textAlpha = 1;
+		var _notAvailableAlpha = 0.8;
+		var _notAvailableColour = c_grey;
+		var _quoteScaling = (global.gameResolutionWidth / 1920) * 1.3;
 		draw_set_valign(fa_middle);
 		draw_set_font(fnt_kyoMadoka); // Sets the Font for the Game
 		
@@ -29,6 +33,7 @@ switch (room)
 		_menuY[4] = global.gameResolutionHeight / 1.65;
 		_menuY[5] = global.gameResolutionHeight / 1.4;
 		_menuY[6] = global.gameResolutionHeight / 1.2;
+		var _menuYQuote = global.gameResolutionHeight / 1.1;
 		
 		// UI Selection Variables
 		var _selectionX = global.gameResolutionWidth / 35;
@@ -41,17 +46,17 @@ switch (room)
 		var _versionNumberY = global.gameResolutionHeight / 1.05;
 		var _versionNumberX = global.gameResolutionWidth / 1.4;
 		var _versionScale = (_menuTextScale / 2);
-		var _versionNumberString = "Pre-Alpha - V0.0.0.6";
+		var _versionNumberString = "Pre-Alpha - V0.0.0.7";
 		
 		funct_textUI(_versionNumberX, _versionNumberY,
 			_versionNumberString, _versionScale,
 			_textColour, titleScreenAlphaLogo);
-		
-		// UI Code
-		
+			
+		#endregion
 		switch(global.menuState)
 		{
 			case(enumTitleScreenState.pressStart):
+				#region Start Screen UI
 				if (titleScreenAlphaLogo <= 1)
 				{
 					draw_sprite_ext(spr_gameLogo, 0,
@@ -84,9 +89,10 @@ switch (room)
 							_textColour, titleScreenAlphaText);
 					}
 				}
+				#endregion
 				break;
-				
 			case(enumTitleScreenState.mainMenu):
+				#region Main Menu UI
 				// Array String
 				var _mainMenuArrayLength = 3;
 				var _titleScreenString = [];
@@ -122,11 +128,61 @@ switch (room)
 						_gameLogoScale, _selectionAlpha,
 						_selectionColour);
 				}
+				#endregion
 				break;
+			case(enumTitleScreenState.newGame):
+				#region New Game UI
+				// Array String
+				var _newGameArrayLength = 3;
+				var _newGameStringChoices = [];
+				_newGameStringChoices[0] = "Story";
+				_newGameStringChoices[1] = "Level 1 Battle";
+				_newGameStringChoices[2] = "Endgame Battle";
+				_newGameStringChoices[3] = "Return to Main Menu";
+				var _newGameQuotes = [];
+				_newGameQuotes[0] = "Embark on an Adventure with your Pokemon Friends!";
+				_newGameQuotes[1] = "Battle your Rival using the Starter Pokemon!";
+				_newGameQuotes[2] = "Feel a glimpse of the future with this battle!";
+				_newGameQuotes[3] = "Go back to the Main Menu.";
+				// UI Code
+				for (var i = 0; i <= _newGameArrayLength; i++;)
+				{
+					if (i == 0)
+					{
+						funct_textUI(_menuX, _menuY[i],
+							_newGameStringChoices[i], _menuTextScale,
+							_notAvailableColour, _notAvailableAlpha);
+					}
+					else
+					{
+						funct_textUI(_menuX, _menuY[i],
+							_newGameStringChoices[i], _menuTextScale,
+							_textColour, _textAlpha);
+					}
+				}
+				for (var i = 0; i <= _newGameArrayLength; i++)
+				{
+					if (i == global.newGameOptions)
+					{
+						funct_textUI(_menuX, _menuYQuote,
+							_newGameQuotes[i], _quoteScaling,
+							_textColour, _textAlpha);
+					}
+				}	
+				funct_selectionUI(_selectionX, _menuY,
+					global.newGameOptions, _selectionSprite,
+					_selectionSubImage, _newGameArrayLength,
+					_gameLogoScale, _selectionAlpha,
+					_selectionColour);
+				
+				
+				#endregion
 			case(enumTitleScreenState.settingsMenu):
+				#region Settings Menu UI
 				switch (global.settingsMenuState)
 				{
 					case(enumSettingsScreenState.settingsBase):
+						#region Main Settings UI
 						// Text Array
 						var _settingsArrayLength = 5;
 						var _settingsString = [];
@@ -148,14 +204,12 @@ switch (room)
 							_selectionSubImage, _settingsArrayLength,
 							_gameLogoScale, _selectionAlpha,
 							_selectionColour);
-						
+						#endregion
 						break;
 					case(enumSettingsScreenState.resolution):
+						#region Resolution Settings UI
 						// Text Variables
 						var _displayResolution = display_get_height();
-						var _textAlpha = 1;
-						var _notAvailableAlpha = 0.8;
-						var _notAvailableColour = c_grey;
 						var _returnString = "Return To Settings";
 						var _resolutionArrayLength = 5;
 						var _resolutionSelectionLength = 6;
@@ -210,9 +264,10 @@ switch (room)
 							_selectionSubImage, _resolutionSelectionLength,
 							_gameLogoScale, _selectionAlpha,
 							_selectionColour);
-						
+						#endregion
 						break;
 					case(enumSettingsScreenState.fullScreen):
+						#region FullScreen Settings UI
 						// Local Variables
 						var _fullScreenArrayLength = 2;
 						var _fullScreenString = [];
@@ -248,17 +303,19 @@ switch (room)
 							_selectionSubImage, _fullScreenArrayLength,
 							_gameLogoScale, _selectionAlpha,
 							_selectionColour);
+						#endregion
 						break;
-						
 					case(enumSettingsScreenState.sound):
+						#region Sound Settings UI
 						var _xSound = (global.gameResolutionWidth / 2);
 						var _ySound = (global.gameResolutionHeight / 2);
 						funct_soundBarUI(global.soundVolume, _xSound,
 							_ySound, _menuTextScale,
 							_textColour);
+						#endregion
 						break;
-						
 					case(enumSettingsScreenState.controls):
+						#region Controls Settings UI
 						var _xTemp = global.gameResolutionWidth / 2;
 						var _yTemp = global.gameResolutionHeight / 2;
 						draw_set_halign(fa_center);
@@ -267,8 +324,10 @@ switch (room)
 							_textColour, _textAlpha);
 						draw_set_halign(fa_left);
 						// Type Controls Visuals / Temporary Visual here
+						#endregion
 						break;
 					case(enumSettingsScreenState.credits):
+						#region Credits Settings UI
 						if (global.creditsCheck == false)
 						{
 							global.creditsCheck = true;
@@ -301,8 +360,11 @@ switch (room)
 						}
 						scrollHeight -= (0.32 * _menuTextScale);
 						draw_set_halign(fa_left);
+						#endregion
 						break;
 				}
+				#endregion
+				break;
 		}
 		// put other stuff here
 		break;

@@ -35,12 +35,12 @@ switch (room)
 				{
 					if (global.gamePadStart)
 					{
-						audio_play_sound(snd_selectionPaper, 0, false); // Temporaily here due to Bug
-						global.menuState = enumTitleScreenState.mainMenu;
+						alarm_set(0, 1); // Uses Alarm to delay the code by 1 frame to allow sound effect to work.
 					}	
 				}
 				break;
 			case(enumTitleScreenState.mainMenu):
+				#region Main Menu Logic
 				var _choiceChange = 1;
 				if (global.gamePadDown)
 				{
@@ -64,11 +64,11 @@ switch (room)
 					{
 						case(enumMainMenuChoice.newGame):
 							global.titleScreenOptions = enumMainMenuChoice.newGame;
-							global.menuState = enumTitleScreenState.newGame;
+							alarm_set(enumCoreGameAlarms.stateSwitch, 1);
 							break;
 						case(enumMainMenuChoice.continueSave):
 							global.titleScreenOptions = enumMainMenuChoice.newGame;
-							global.menuState = enumTitleScreenState.outOfMenu;
+							// Put Alarm here after save system is implemented
 							break;
 						case(enumMainMenuChoice.settings):
 							global.titleScreenOptions = enumMainMenuChoice.newGame;
@@ -85,11 +85,58 @@ switch (room)
 					global.titleScreenOptions = enumMainMenuChoice.newGame;
 					global.menuState = enumTitleScreenState.pressStart;
 				}
+				#endregion
 				break;
 			case(enumTitleScreenState.newGame):
-				// type here
+				#region New Game Logic
+				var _choiceChange = 1;
+				if (global.gamePadDown)
+				{
+					global.newGameOptions += _choiceChange;
+					if (global.newGameOptions > enumNewGameChoice.returnToMainMenu)
+					{
+						global.newGameOptions = enumNewGameChoice.story;
+					}
+				}
+				else if (global.gamePadUp)
+				{
+					global.newGameOptions -= _choiceChange;
+					if (global.newGameOptions < enumNewGameChoice.story)
+					{
+						global.newGameOptions = enumNewGameChoice.returnToMainMenu;
+					}
+				}
+				if (global.gamePadConfirm)
+				{
+					switch (global.newGameOptions)
+					{
+						case(enumNewGameChoice.story):
+							// Nothing due to Prototype
+							break;
+						case(enumNewGameChoice.level1):
+							global.menuState = enumTitleScreenState.outOfMenu;
+							global.gameState = enumGameState.level1Battle;
+							room = rm_battleRoom;
+							break;
+						case(enumNewGameChoice.endGame):
+							global.menuState = enumTitleScreenState.outOfMenu;
+							global.gameState = enumGameState.endGameBattle;
+							room = rm_battleRoom;
+							break;
+						case(enumNewGameChoice.returnToMainMenu):
+							global.menuState = enumTitleScreenState.mainMenu;
+							break;
+					}
+				}
+				if (global.gamePadBack)
+				{
+					global.titleScreenOptions = enumMainMenuChoice.newGame;
+					global.menuState = enumTitleScreenState.mainMenu;
+				}
+				#endregion
 				break;
 			case(enumTitleScreenState.settingsMenu):
+				#region Settings Logic
 				var _choiceChange = 1;
 				if (global.gamePadDown)
 				{
@@ -302,6 +349,7 @@ switch (room)
 						ini_close();
 					}
 				}
+				#endregion
 				break;
 		}
 		break;
