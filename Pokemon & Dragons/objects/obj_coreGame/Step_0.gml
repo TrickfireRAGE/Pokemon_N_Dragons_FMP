@@ -16,16 +16,19 @@ global.gamePadRight = gamepad_button_check_pressed(global.controllerNumber, gp_p
 switch (room)
 {
 	case(rm_introVideo):
+		#region Studio Intro Transfer
 		if (video_get_status() == video_status_closed)
 		{
 			room_goto(rm_titleMenu);
 			global.menuState = enumTitleScreenState.pressStart;
 		}
+		#endregion
 		break;
 	case(rm_titleMenu):	
 		switch (global.menuState)
 		{
 			case(enumTitleScreenState.pressStart):
+				#region Start Menu
 				var _titleScreen = (speed * 2); // 2 Second Timer
 				if (timerTitleScreenCheck != _titleScreen)
 				{
@@ -38,6 +41,7 @@ switch (room)
 						alarm_set(0, 1); // Uses Alarm to delay the code by 1 frame to allow sound effect to work.
 					}	
 				}
+				#endregion
 				break;
 			case(enumTitleScreenState.mainMenu):
 				#region Main Menu Logic
@@ -67,11 +71,10 @@ switch (room)
 							alarm_set(enumCoreGameAlarms.stateSwitch, 1);
 							break;
 						case(enumMainMenuChoice.continueSave):
-							global.titleScreenOptions = enumMainMenuChoice.newGame;
+							// global.titleScreenOptions = enumMainMenuChoice.newGame;
 							// Put Alarm here after save system is implemented
 							break;
 						case(enumMainMenuChoice.settings):
-							global.titleScreenOptions = enumMainMenuChoice.newGame;
 							global.settingsMenuState = enumSettingsScreenState.settingsBase;
 							global.menuState = enumTitleScreenState.settingsMenu;
 							break;
@@ -352,6 +355,9 @@ switch (room)
 				#endregion
 				break;
 		}
+		break;
+	case(rm_battleRoom):
+		// type logic here
 		break;
 }
 

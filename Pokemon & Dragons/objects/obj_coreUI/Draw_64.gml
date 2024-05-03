@@ -46,7 +46,7 @@ switch (room)
 		var _versionNumberY = global.gameResolutionHeight / 1.05;
 		var _versionNumberX = global.gameResolutionWidth / 1.4;
 		var _versionScale = (_menuTextScale / 2);
-		var _versionNumberString = "Pre-Alpha - V0.0.0.7";
+		var _versionNumberString = "Pre-Alpha - V0.0.0.8";
 		
 		funct_textUI(_versionNumberX, _versionNumberY,
 			_versionNumberString, _versionScale,
@@ -118,9 +118,18 @@ switch (room)
 				{
 					for (var i = 0; i <= _mainMenuArrayLength; i++;)
 					{
-						funct_textUI(_menuX, _menuY[i],
-							_titleScreenString[i], _menuTextScale,
-							_textColour, _textAlpha);
+						if (i == 1)
+						{
+							funct_textUI(_menuX, _menuY[i],
+								_titleScreenString[i], _menuTextScale,
+								_notAvailableColour, _notAvailableAlpha);
+						}
+						else
+						{
+							funct_textUI(_menuX, _menuY[i],
+								_titleScreenString[i], _menuTextScale,
+								_textColour, _textAlpha);
+						}
 					}
 					funct_selectionUI(_selectionX, _menuY,
 						global.titleScreenOptions, _selectionSprite,
@@ -177,6 +186,7 @@ switch (room)
 				
 				
 				#endregion
+				break;
 			case(enumTitleScreenState.settingsMenu):
 				#region Settings Menu UI
 				switch (global.settingsMenuState)

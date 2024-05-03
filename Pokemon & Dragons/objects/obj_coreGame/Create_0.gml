@@ -108,6 +108,12 @@ global.newGameOptions = 0; // ^
 
 #endregion
 
+#region Battle Logic
+global.playerPokemonID = "NOT_SET";
+global.opponentPokemonID = "NOT_SET";
+
+#endregion
+
 #region Game States
 
 global.menuState = "NOT_SET"; // Handles the State for Menus
@@ -116,4 +122,8 @@ global.gameState = "NOT_SET"; // Handles States for Gameplay
 
 #endregion
 
+#region Types
 
+typesArray = [];
+
+#endregion
