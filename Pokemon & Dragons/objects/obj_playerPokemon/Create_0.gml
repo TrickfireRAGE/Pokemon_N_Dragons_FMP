@@ -1,4 +1,6 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description
 
+event_inherited(); // From obj_pokemonParent
+
+image_index = enumPokemonPosition.back;
 

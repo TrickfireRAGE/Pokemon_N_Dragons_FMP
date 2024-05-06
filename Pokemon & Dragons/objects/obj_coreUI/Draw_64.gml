@@ -46,7 +46,7 @@ switch (room)
 		var _versionNumberY = global.gameResolutionHeight / 1.05;
 		var _versionNumberX = global.gameResolutionWidth / 1.4;
 		var _versionScale = (_menuTextScale / 2);
-		var _versionNumberString = "Pre-Alpha - V0.0.0.8";
+		var _versionNumberString = "Pre-Alpha - V0.0.0.9";
 		
 		funct_textUI(_versionNumberX, _versionNumberY,
 			_versionNumberString, _versionScale,
@@ -142,49 +142,83 @@ switch (room)
 			case(enumTitleScreenState.newGame):
 				#region New Game UI
 				// Array String
-				var _newGameArrayLength = 3;
-				var _newGameStringChoices = [];
-				_newGameStringChoices[0] = "Story";
-				_newGameStringChoices[1] = "Level 1 Battle";
-				_newGameStringChoices[2] = "Endgame Battle";
-				_newGameStringChoices[3] = "Return to Main Menu";
-				var _newGameQuotes = [];
-				_newGameQuotes[0] = "Embark on an Adventure with your Pokemon Friends!";
-				_newGameQuotes[1] = "Battle your Rival using the Starter Pokemon!";
-				_newGameQuotes[2] = "Feel a glimpse of the future with this battle!";
-				_newGameQuotes[3] = "Go back to the Main Menu.";
-				// UI Code
-				for (var i = 0; i <= _newGameArrayLength; i++;)
+				switch (global.newGameMenuState)
 				{
-					if (i == 0)
-					{
-						funct_textUI(_menuX, _menuY[i],
-							_newGameStringChoices[i], _menuTextScale,
-							_notAvailableColour, _notAvailableAlpha);
-					}
-					else
-					{
-						funct_textUI(_menuX, _menuY[i],
-							_newGameStringChoices[i], _menuTextScale,
+					case(enumNewGameState.newGame):
+						#region New Game Main UI
+						var _newGameArrayLength = 3;
+						var _newGameStringChoices = [];
+						_newGameStringChoices[0] = "Story";
+						_newGameStringChoices[1] = "Level 1 Battle";
+						_newGameStringChoices[2] = "Endgame Battle";
+						_newGameStringChoices[3] = "Return to Main Menu";
+						var _newGameQuotes = [];
+						_newGameQuotes[0] = "Embark on an Adventure with your Pokemon Friends!";
+						_newGameQuotes[1] = "Battle your Rival using the Starter Pokemon!";
+						_newGameQuotes[2] = "Feel a glimpse of the future with this battle!";
+						_newGameQuotes[3] = "Go back to the Main Menu.";
+						// UI Code
+						for (var i = 0; i <= _newGameArrayLength; i++;)
+						{
+							if (i == 0)
+							{
+								funct_textUI(_menuX, _menuY[i],
+									_newGameStringChoices[i], _menuTextScale,
+									_notAvailableColour, _notAvailableAlpha);
+							}
+							else
+							{
+								funct_textUI(_menuX, _menuY[i],
+									_newGameStringChoices[i], _menuTextScale,
+									_textColour, _textAlpha);
+							}
+						}
+						for (var i = 0; i <= _newGameArrayLength; i++)
+						{
+							if (i == global.newGameOptions)
+							{
+								funct_textUI(_menuX, _menuYQuote,
+									_newGameQuotes[i], _quoteScaling,
+									_textColour, _textAlpha);
+							}
+						}	
+						funct_selectionUI(_selectionX, _menuY,
+							global.newGameOptions, _selectionSprite,
+							_selectionSubImage, _newGameArrayLength,
+							_gameLogoScale, _selectionAlpha,
+							_selectionColour);
+						#endregion
+						break;
+					case(enumNewGameState.level1Choice):
+						#region Level 1 Choice UI
+						var _xPokemonPika = global.gameResolutionWidth / 5.5;
+						var _xPokemonRiolu = global.gameResolutionWidth / 1.5;
+						var _yPokemon = global.gameResolutionHeight / 1.4;
+						
+						funct_textUI(_xPokemonPika, _yPokemon,
+							"Pikachu", _menuTextScale,
 							_textColour, _textAlpha);
-					}
+						funct_textUI(_xPokemonRiolu, _yPokemon,
+							"Riolu", _menuTextScale,
+							_textColour, _textAlpha);
+						#endregion
+						break;
+					case(enumNewGameState.endGameChoice):
+						#region End Game Choice UI
+						var _xPokemonPika = global.gameResolutionWidth / 5.5;
+						var _xPokemonLucario = global.gameResolutionWidth / 1.6;
+						var _yPokemon = global.gameResolutionHeight / 1.4;
+						
+						funct_textUI(_xPokemonPika, _yPokemon,
+							"Pikachu", _menuTextScale,
+							_textColour, _textAlpha);
+						funct_textUI(_xPokemonLucario, _yPokemon,
+							"Lucario", _menuTextScale,
+							_textColour, _textAlpha);
+						#endregion
+						break;
+				
 				}
-				for (var i = 0; i <= _newGameArrayLength; i++)
-				{
-					if (i == global.newGameOptions)
-					{
-						funct_textUI(_menuX, _menuYQuote,
-							_newGameQuotes[i], _quoteScaling,
-							_textColour, _textAlpha);
-					}
-				}	
-				funct_selectionUI(_selectionX, _menuY,
-					global.newGameOptions, _selectionSprite,
-					_selectionSubImage, _newGameArrayLength,
-					_gameLogoScale, _selectionAlpha,
-					_selectionColour);
-				
-				
 				#endregion
 				break;
 			case(enumTitleScreenState.settingsMenu):

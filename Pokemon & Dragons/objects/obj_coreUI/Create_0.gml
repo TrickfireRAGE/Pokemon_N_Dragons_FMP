@@ -26,6 +26,16 @@ titleScreenAlphaText = 0;
 
 #endregion
 
+#region Visual Pokemon Variables and Enumerations
+
+enum enumPokemonPosition // Expand or scrap if going animated or increasing different views
+{
+	front = 0,
+	back = 1
+}
+
+#endregion
+
 #region Credits System
 
 scrollHeight = "NOT_SET";

@@ -8,6 +8,7 @@ switch (global.menuState)
 	case(enumTitleScreenState.mainMenu):
 		if (global.titleScreenOptions == enumMainMenuChoice.newGame)
 		{
+			global.newGameMenuState = enumNewGameState.newGame;
 			global.menuState = enumTitleScreenState.newGame;
 		}
 		else if (global.titleScreenOptions == enumMainMenuChoice.continueSave)

@@ -23,6 +23,13 @@ enum enumTitleScreenState // States within Title Screens
 	outOfMenu = 4
 }
 
+enum enumNewGameState
+{
+	newGame = 0,
+	level1Choice = 1, 
+	endGameChoice = 2
+}
+
 enum enumSettingsScreenState // States within Settings
 {
 	settingsBase = 0,
@@ -84,6 +91,26 @@ enum enumNewGameChoice
 	returnToMainMenu = 3
 }
 
+enum enumPokemonChoiceLevel1 // This can be expanded if going past 2 starters
+{
+	pikachu = 0,
+	riolu = 1
+}
+
+enum enumPokemonChoiceEndGame // Same as Previous
+{
+	pikachu = 0,
+	lucario = 1
+}
+
+enum enumBattleStats
+{
+	str = 0,
+	dex = 1, 
+	con = 2,
+	int = 3, 
+	wis = 4
+}
 
 
 #endregion
@@ -105,12 +132,14 @@ timerTitleScreenCheck = 0;
 global.titleScreenOptions = 0; // Global due to coreUI accessing it.
 global.settingsScreenOptions = 0; // ^
 global.newGameOptions = 0; // ^
+global.newGamePokemonChoice = 0;
 
 #endregion
 
 #region Battle Logic
 global.playerPokemonID = "NOT_SET";
 global.opponentPokemonID = "NOT_SET";
+global.pokemonLevelSet = "NOT_SET";
 
 #endregion
 
@@ -119,11 +148,12 @@ global.opponentPokemonID = "NOT_SET";
 global.menuState = "NOT_SET"; // Handles the State for Menus
 global.settingsMenuState = "NOT_SET"; // Handles the State for Settings Menu
 global.gameState = "NOT_SET"; // Handles States for Gameplay
+global.newGameMenuState = "NOT_SET"; // Handles the Pokemon Choices
 
 #endregion
 
 #region Types
 
-typesArray = [];
+typesArray = []; // Finish this soon!
 
 #endregion

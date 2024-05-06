@@ -92,49 +92,134 @@ switch (room)
 				break;
 			case(enumTitleScreenState.newGame):
 				#region New Game Logic
-				var _choiceChange = 1;
-				if (global.gamePadDown)
+				switch (global.newGameMenuState)
 				{
-					global.newGameOptions += _choiceChange;
-					if (global.newGameOptions > enumNewGameChoice.returnToMainMenu)
-					{
-						global.newGameOptions = enumNewGameChoice.story;
-					}
-				}
-				else if (global.gamePadUp)
-				{
-					global.newGameOptions -= _choiceChange;
-					if (global.newGameOptions < enumNewGameChoice.story)
-					{
-						global.newGameOptions = enumNewGameChoice.returnToMainMenu;
-					}
-				}
-				if (global.gamePadConfirm)
-				{
-					switch (global.newGameOptions)
-					{
-						case(enumNewGameChoice.story):
-							// Nothing due to Prototype
-							break;
-						case(enumNewGameChoice.level1):
-							global.menuState = enumTitleScreenState.outOfMenu;
-							global.gameState = enumGameState.level1Battle;
-							room = rm_battleRoom;
-							break;
-						case(enumNewGameChoice.endGame):
-							global.menuState = enumTitleScreenState.outOfMenu;
-							global.gameState = enumGameState.endGameBattle;
-							room = rm_battleRoom;
-							break;
-						case(enumNewGameChoice.returnToMainMenu):
+					case(enumNewGameState.newGame):
+						var _choiceChange = 1;
+						if (global.gamePadDown)
+						{
+							global.newGameOptions += _choiceChange;
+							if (global.newGameOptions > enumNewGameChoice.returnToMainMenu)
+							{
+								global.newGameOptions = enumNewGameChoice.story;
+							}
+						}
+						else if (global.gamePadUp)
+						{
+							global.newGameOptions -= _choiceChange;
+							if (global.newGameOptions < enumNewGameChoice.story)
+							{
+								global.newGameOptions = enumNewGameChoice.returnToMainMenu;
+							}
+						}
+						if (global.gamePadConfirm)
+						{
+							switch (global.newGameOptions)
+							{
+								case(enumNewGameChoice.story):
+									// Nothing due to Prototype
+									break;
+								case(enumNewGameChoice.level1):
+									global.newGameMenuState = enumNewGameState.level1Choice;
+									break;
+								case(enumNewGameChoice.endGame):
+									global.newGameMenuState = enumNewGameState.endGameChoice;
+									break;
+								case(enumNewGameChoice.returnToMainMenu):
+									global.menuState = enumTitleScreenState.mainMenu;
+									break;
+							}
+						}
+						if (global.gamePadBack)
+						{
+							global.titleScreenOptions = enumMainMenuChoice.newGame;
 							global.menuState = enumTitleScreenState.mainMenu;
+						}
+						break;
+						case(enumNewGameState.level1Choice):
+							if (global.gamePadConfirm)
+							{
+								switch (global.newGamePokemonChoice)
+								{
+									case(enumPokemonChoiceLevel1.pikachu):
+										global.playerPokemonID = 25;
+										global.opponentPokemonID = 447;
+										global.menuState = enumTitleScreenState.outOfMenu;
+										global.gameState = enumGameState.level1Battle;
+										room = rm_battleRoom;
+										break;
+									case(enumPokemonChoiceLevel1.riolu):
+										global.playerPokemonID = 447;
+										global.opponentPokemonID = 25;
+										global.menuState = enumTitleScreenState.outOfMenu;
+										global.gameState = enumGameState.level1Battle;
+										room = rm_battleRoom;
+										break;
+								}
+							}
+							if (global.gamePadBack)
+							{
+								global.newGameMenuState = enumNewGameState.newGame;
+							}
+							if (global.gamePadLeft)
+							{
+								global.newGamePokemonChoice -= 1;
+								if (global.newGamePokemonChoice < enumPokemonChoiceLevel1.pikachu)
+								{
+									global.newGamePokemonChoice = enumPokemonChoiceLevel1.pikachu;
+								}
+							}
+							if (global.gamePadRight)
+							{
+								global.newGamePokemonChoice += 1;
+								if (global.newGamePokemonChoice > enumPokemonChoiceLevel1.riolu)
+								{
+									global.newGamePokemonChoice = enumPokemonChoiceLevel1.riolu;
+								}
+							}
 							break;
-					}
-				}
-				if (global.gamePadBack)
-				{
-					global.titleScreenOptions = enumMainMenuChoice.newGame;
-					global.menuState = enumTitleScreenState.mainMenu;
+						case(enumNewGameState.endGameChoice):
+							if (global.gamePadConfirm)
+							{
+								switch (global.newGamePokemonChoice)
+								{
+									case(enumPokemonChoiceEndGame.pikachu):
+										global.playerPokemonID = 25;
+										global.opponentPokemonID = 448;
+										global.menuState = enumTitleScreenState.outOfMenu;
+										global.gameState = enumGameState.endGameBattle;
+										room = rm_battleRoom;
+										break;
+									case(enumPokemonChoiceLevel1.riolu):
+										global.playerPokemonID = 448;
+										global.opponentPokemonID = 25;
+										global.menuState = enumTitleScreenState.outOfMenu;
+										global.gameState = enumGameState.endGameBattle;
+										room = rm_battleRoom;
+										break;
+								}
+							}
+							if (global.gamePadBack)
+							{
+								global.newGameMenuState = enumNewGameState.newGame;
+							}
+							if (global.gamePadLeft)
+							{
+								global.newGamePokemonChoice -= 1;
+								if (global.newGamePokemonChoice < enumPokemonChoiceEndGame.pikachu)
+								{
+									global.newGamePokemonChoice = enumPokemonChoiceEndGame.pikachu;
+								}
+							}
+							if (global.gamePadRight)
+							{
+								global.newGamePokemonChoice += 1;
+								if (global.newGamePokemonChoice > enumPokemonChoiceEndGame.lucario)
+								{
+									global.newGamePokemonChoice = enumPokemonChoiceEndGame.lucario;
+								}
+							}
+							break;
 				}
 				#endregion
 				break;
