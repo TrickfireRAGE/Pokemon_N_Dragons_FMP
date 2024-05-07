@@ -137,9 +137,13 @@ global.newGamePokemonChoice = 0;
 #endregion
 
 #region Battle Logic
-global.playerPokemonID = "NOT_SET";
+global.playerPokemonID = [];
+global.playerPokemonID[0] = "NOT_SET";
+global.playerPokemonID[1] = "NOT_SET";
+global.playerPokemonID[2] = "NOT_SET";
 global.opponentPokemonID = "NOT_SET";
 global.pokemonLevelSet = "NOT_SET";
+randomise(); // Needed to randomise the seed
 
 #endregion
 

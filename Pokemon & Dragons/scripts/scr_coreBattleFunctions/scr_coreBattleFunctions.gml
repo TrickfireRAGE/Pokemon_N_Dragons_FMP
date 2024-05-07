@@ -5,13 +5,13 @@ function funct_initiativeRoll(_dexterityModifier, _additionalModifier)
 	var _roll = funct_diceRoll(20)
 	if (_additionalModifier != undefined)
 	{
-		_roll += (_dexterityModifier + _additionalModifier);
-		return _roll
+		var _rolled = _roll + _dexterityModifier + _additionalModifier;
+		return _rolled
 	}
 	else
 	{
-		_roll += _dexterityModifier;
-		return _roll
+		var _rolled = _roll + _dexterityModifier;
+		return _rolled
 	}
 }
 

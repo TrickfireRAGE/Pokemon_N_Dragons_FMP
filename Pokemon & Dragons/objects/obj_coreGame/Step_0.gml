@@ -142,14 +142,14 @@ switch (room)
 								switch (global.newGamePokemonChoice)
 								{
 									case(enumPokemonChoiceLevel1.pikachu):
-										global.playerPokemonID = 25;
+										global.playerPokemonID[0] = 25; // Update both to be arrays in future versions
 										global.opponentPokemonID = 447;
 										global.menuState = enumTitleScreenState.outOfMenu;
 										global.gameState = enumGameState.level1Battle;
 										room = rm_battleRoom;
 										break;
 									case(enumPokemonChoiceLevel1.riolu):
-										global.playerPokemonID = 447;
+										global.playerPokemonID[0] = 447; // Update both to be arrays in future versions
 										global.opponentPokemonID = 25;
 										global.menuState = enumTitleScreenState.outOfMenu;
 										global.gameState = enumGameState.level1Battle;
@@ -184,14 +184,14 @@ switch (room)
 								switch (global.newGamePokemonChoice)
 								{
 									case(enumPokemonChoiceEndGame.pikachu):
-										global.playerPokemonID = 25;
+										global.playerPokemonID[0] = 25; // Update both to be arrays in future versions
 										global.opponentPokemonID = 448;
 										global.menuState = enumTitleScreenState.outOfMenu;
 										global.gameState = enumGameState.endGameBattle;
 										room = rm_battleRoom;
 										break;
 									case(enumPokemonChoiceLevel1.riolu):
-										global.playerPokemonID = 448;
+										global.playerPokemonID[0] = 448; // Update both to be arrays in future versions
 										global.opponentPokemonID = 25;
 										global.menuState = enumTitleScreenState.outOfMenu;
 										global.gameState = enumGameState.endGameBattle;
@@ -396,6 +396,11 @@ switch (room)
 					if (global.settingsMenuState == enumSettingsScreenState.settingsBase)
 					{
 						global.menuState = enumTitleScreenState.mainMenu;
+					}
+					else if (global.settingsMenuState == enumSettingsScreenState.resolution)
+					{
+						global.settingsScreenOptions = enumSettingsChoice.resolution;
+						global.settingsMenuState = enumSettingsScreenState.settingsBase;
 					}
 					else if (global.settingsMenuState == enumSettingsScreenState.credits)
 					{

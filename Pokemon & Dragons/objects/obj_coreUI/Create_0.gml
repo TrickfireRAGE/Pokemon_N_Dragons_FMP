@@ -26,6 +26,16 @@ titleScreenAlphaText = 0;
 
 #endregion
 
+#region Alarm Enumeration
+
+enum enumCoreUIAlarms
+{
+	sequences = 0 // put more here when added
+}
+
+
+#endregion
+
 #region Visual Pokemon Variables and Enumerations
 
 enum enumPokemonPosition // Expand or scrap if going animated or increasing different views
@@ -33,6 +43,16 @@ enum enumPokemonPosition // Expand or scrap if going animated or increasing diff
 	front = 0,
 	back = 1
 }
+
+enum enumBattleVisualState
+{
+	introSequence = 0,
+	menu = 1,
+	move = 2,
+	opponent = 3
+}
+
+battleVisualState = "NOT_SET";
 
 #endregion
 

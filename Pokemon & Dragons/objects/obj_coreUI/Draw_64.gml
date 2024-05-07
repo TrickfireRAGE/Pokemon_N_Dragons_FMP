@@ -46,7 +46,7 @@ switch (room)
 		var _versionNumberY = global.gameResolutionHeight / 1.05;
 		var _versionNumberX = global.gameResolutionWidth / 1.4;
 		var _versionScale = (_menuTextScale / 2);
-		var _versionNumberString = "Pre-Alpha - V0.0.0.9";
+		var _versionNumberString = "Pre-Alpha - V0.0.0.10";
 		
 		funct_textUI(_versionNumberX, _versionNumberY,
 			_versionNumberString, _versionScale,

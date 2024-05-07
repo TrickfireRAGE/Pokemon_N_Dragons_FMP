@@ -2,7 +2,7 @@
 
 if (object_index == obj_playerPokemon)
 {
-	firstPokemonID = global.playerPokemonID;
+	firstPokemonID = global.playerPokemonID[0];
 }
 else
 {
