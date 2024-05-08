@@ -5,26 +5,26 @@ switch (room)
 	case(rm_titleMenu):
 		#region Title Screen UI Variables
 		// Title Logo
-		var _gameLogoX = global.gameResolutionWidth / 1.3; // Local Variable for Game Logo X
-		var _gameLogoY = global.gameResolutionHeight / 2.5; // Local Variable for Game Logo Y
-		var _gameLogoScale = global.gameResolutionWidth / 1920; // Scales the image depending on what resolution the game is running at.
+		var _gameLogoX = global.gameResolutionWidth / 1.35; // Local Variable for Game Logo X
+		var _gameLogoY = global.gameResolutionHeight / 2.7; // Local Variable for Game Logo Y
+		var _gameLogoScale = (global.gameResolutionWidth / 1920) * 0.8; // Scales the image depending on what resolution the game is running at.
 		// Title Press Start Text
-		var _startTextX = global.gameResolutionWidth / 1.6;
+		var _startTextX = global.gameResolutionWidth / 1.65;
 		var _startTextY = global.gameResolutionHeight / 1.5;
 		var _startTextString = "Press Start";
 		// Core Local Text Variables
 		var _menuTextScale = (global.gameResolutionWidth / 1920) * 3;
-		var _textColour = c_white;
+		var _textColour = c_black;
 		var _selectedColour = c_green;
 		var _textAlpha = 1;
 		var _notAvailableAlpha = 0.8;
 		var _notAvailableColour = c_grey;
-		var _quoteScaling = (global.gameResolutionWidth / 1920) * 1.3;
+		var _quoteScaling = (global.gameResolutionWidth / 1920) * 1.1;
 		draw_set_valign(fa_middle);
 		draw_set_font(fnt_kyoMadoka); // Sets the Font for the Game
 		
 		// UI Layout Array
-		var _menuX = global.gameResolutionWidth / 20; // X Position for Base UI
+		var _menuX = global.gameResolutionWidth / 12; // X Position for Base UI
 		var _menuY = [];
 		_menuY[0] = global.gameResolutionHeight / 5;
 		_menuY[1] = global.gameResolutionHeight / 3.3;
@@ -36,18 +36,17 @@ switch (room)
 		var _menuYQuote = global.gameResolutionHeight / 1.1;
 		
 		// UI Selection Variables
-		var _selectionX = global.gameResolutionWidth / 35;
+		var _selectionX = global.gameResolutionWidth / 15;
 		var _selectionSprite = spr_choiceArrow;
 		var _selectionSubImage = 0;
 		var _selectionAlpha = 1;
-		var _selectionColour = c_white;
+		var _selectionColour = c_black;
 		
 		// Version Number Variables
-		var _versionNumberY = global.gameResolutionHeight / 1.05;
-		var _versionNumberX = global.gameResolutionWidth / 1.4;
+		var _versionNumberY = global.gameResolutionHeight / 1.06;
+		var _versionNumberX = global.gameResolutionWidth / 1.5;
 		var _versionScale = (_menuTextScale / 2);
-		var _versionNumberString = "Pre-Alpha - V0.0.0.10";
-		
+		var _versionNumberString = versionNumber;
 		funct_textUI(_versionNumberX, _versionNumberY,
 			_versionNumberString, _versionScale,
 			_textColour, titleScreenAlphaLogo);
@@ -151,7 +150,7 @@ switch (room)
 						_newGameStringChoices[0] = "Story";
 						_newGameStringChoices[1] = "Level 1 Battle";
 						_newGameStringChoices[2] = "Endgame Battle";
-						_newGameStringChoices[3] = "Return to Main Menu";
+						_newGameStringChoices[3] = "Return";
 						var _newGameQuotes = [];
 						_newGameQuotes[0] = "Embark on an Adventure with your Pokemon Friends!";
 						_newGameQuotes[1] = "Battle your Rival using the Starter Pokemon!";
@@ -235,7 +234,7 @@ switch (room)
 						_settingsString[2] = "Sound";
 						_settingsString[3] = "Controls";
 						_settingsString[4] = "Credits";
-						_settingsString[5] = "Return to Main Menu";
+						_settingsString[5] = "Return";
 						// UI
 						for(var i = 0; i <= _settingsArrayLength; i++;)
 						{
@@ -254,7 +253,7 @@ switch (room)
 						#region Resolution Settings UI
 						// Text Variables
 						var _displayResolution = display_get_height();
-						var _returnString = "Return To Settings";
+						var _returnString = "Return";
 						var _resolutionArrayLength = 5;
 						var _resolutionSelectionLength = 6;
 						// Strings for Resolution
@@ -317,7 +316,7 @@ switch (room)
 						var _fullScreenString = [];
 						_fullScreenString[0] = "Windowed";
 						_fullScreenString[1] = "FullScreen";
-						_fullScreenString[2] = "Return to Settings";						
+						_fullScreenString[2] = "Return";						
 						
 						switch (window_get_fullscreen())
 						{
@@ -362,10 +361,10 @@ switch (room)
 						#region Controls Settings UI
 						var _xTemp = global.gameResolutionWidth / 2;
 						var _yTemp = global.gameResolutionHeight / 2;
-						draw_set_halign(fa_center);
-						funct_textUI(_xTemp, _yTemp,
-							"Unavailable in Preview", _menuTextScale,
-							_textColour, _textAlpha);
+						draw_set_halign(fa_center); // PUT CONTROLLER TEXT HERE
+						// funct_textUI(_xTemp, _yTemp,
+							// "Unavailable in Preview", _menuTextScale, 
+							// _textColour, _textAlpha);
 						draw_set_halign(fa_left);
 						// Type Controls Visuals / Temporary Visual here
 						#endregion
@@ -380,10 +379,11 @@ switch (room)
 								scrollHeight = global.gameResolutionHeight + (global.gameResolutionHeight / 4);
 							}
 						}
-						var _creditsTextScale = _menuTextScale / 2;
-						var _creditsDistance = (30 * _menuTextScale);
+						
+						var _creditsTextScale = _menuTextScale / 3.5;
+						var _creditsDistance = (20 * _menuTextScale);
 						var _logoScale = _gameLogoScale / 1.5;
-						scrollWidth = (global.gameResolutionWidth / 2);
+						scrollWidth = (global.gameResolutionWidth / 4);
 						draw_set_halign(fa_center);
 						for (var i = 0; i <= creditsArraySize; i++;)
 						{
@@ -402,7 +402,7 @@ switch (room)
 									_textColour, _textAlpha);
 							}
 						}
-						scrollHeight -= (0.32 * _menuTextScale);
+						scrollHeight -= (0.20 * _menuTextScale);
 						draw_set_halign(fa_left);
 						#endregion
 						break;
@@ -410,7 +410,14 @@ switch (room)
 				#endregion
 				break;
 		}
-		// put other stuff here
+		break;
+	case(rm_battleRoom):
+		switch (global.battleState)
+		{
+			case(enumBattleState.introSequence):
+				//type here
+				break;
+		}
 		break;
 }
 

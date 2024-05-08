@@ -8,7 +8,7 @@ switch (room)
 			case(enumGameState.level1Battle):
 				var _xPosition = 128;
 				var _yPosition = 72;
-				battleVisualState = enumBattleVisualState.introSequence;
+				global.battleState = enumBattleState.introSequence;
 				sequenceID = layer_sequence_create("sequenceLayer", _xPosition, _yPosition, seq_level1Battle);
 				break;
 		}

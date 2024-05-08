@@ -1,5 +1,11 @@
 /// @description 
 
+#region VERSION NUMBER
+
+versionNumber = "Pre-Alpha - V0.0.0.11";
+
+#endregion
+
 #region Display Variable Declaration
 
 // Change this to a hybrid system that uses DPI in future
@@ -44,15 +50,6 @@ enum enumPokemonPosition // Expand or scrap if going animated or increasing diff
 	back = 1
 }
 
-enum enumBattleVisualState
-{
-	introSequence = 0,
-	menu = 1,
-	move = 2,
-	opponent = 3
-}
-
-battleVisualState = "NOT_SET";
 
 #endregion
 

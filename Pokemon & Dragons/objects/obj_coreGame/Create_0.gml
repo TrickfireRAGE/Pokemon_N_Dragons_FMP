@@ -47,6 +47,14 @@ enum enumGameState // States for Gameplay
 	endGameBattle = 2
 }
 
+enum enumBattleState
+{
+	introSequence = 0,
+	menu = 1,
+	move = 2,
+	opponent = 3
+}
+
 enum enumMainMenuChoice 
 {
 	newGame = 0,
@@ -137,11 +145,18 @@ global.newGamePokemonChoice = 0;
 #endregion
 
 #region Battle Logic
+global.maxPokemon = 3;
+
 global.playerPokemonID = [];
 global.playerPokemonID[0] = "NOT_SET";
 global.playerPokemonID[1] = "NOT_SET";
 global.playerPokemonID[2] = "NOT_SET";
-global.opponentPokemonID = "NOT_SET";
+
+global.opponentPokemonID = [];
+global.opponentPokemonID[0] = "NOT_SET";
+global.opponentPokemonID[1] = "NOT_SET";
+global.opponentPokemonID[2] = "NOT_SET";
+
 global.pokemonLevelSet = "NOT_SET";
 randomise(); // Needed to randomise the seed
 
@@ -153,6 +168,8 @@ global.menuState = "NOT_SET"; // Handles the State for Menus
 global.settingsMenuState = "NOT_SET"; // Handles the State for Settings Menu
 global.gameState = "NOT_SET"; // Handles States for Gameplay
 global.newGameMenuState = "NOT_SET"; // Handles the Pokemon Choices
+
+global.battleState = "NOT_SET"; // Used for the stages
 
 #endregion
 

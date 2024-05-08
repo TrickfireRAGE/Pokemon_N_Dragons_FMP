@@ -143,14 +143,14 @@ switch (room)
 								{
 									case(enumPokemonChoiceLevel1.pikachu):
 										global.playerPokemonID[0] = 25; // Update both to be arrays in future versions
-										global.opponentPokemonID = 447;
+										global.opponentPokemonID[0] = 447;
 										global.menuState = enumTitleScreenState.outOfMenu;
 										global.gameState = enumGameState.level1Battle;
 										room = rm_battleRoom;
 										break;
 									case(enumPokemonChoiceLevel1.riolu):
 										global.playerPokemonID[0] = 447; // Update both to be arrays in future versions
-										global.opponentPokemonID = 25;
+										global.opponentPokemonID[0] = 25;
 										global.menuState = enumTitleScreenState.outOfMenu;
 										global.gameState = enumGameState.level1Battle;
 										room = rm_battleRoom;
@@ -185,14 +185,14 @@ switch (room)
 								{
 									case(enumPokemonChoiceEndGame.pikachu):
 										global.playerPokemonID[0] = 25; // Update both to be arrays in future versions
-										global.opponentPokemonID = 448;
+										global.opponentPokemonID[0] = 448;
 										global.menuState = enumTitleScreenState.outOfMenu;
 										global.gameState = enumGameState.endGameBattle;
 										room = rm_battleRoom;
 										break;
 									case(enumPokemonChoiceLevel1.riolu):
 										global.playerPokemonID[0] = 448; // Update both to be arrays in future versions
-										global.opponentPokemonID = 25;
+										global.opponentPokemonID[0] = 25;
 										global.menuState = enumTitleScreenState.outOfMenu;
 										global.gameState = enumGameState.endGameBattle;
 										room = rm_battleRoom;

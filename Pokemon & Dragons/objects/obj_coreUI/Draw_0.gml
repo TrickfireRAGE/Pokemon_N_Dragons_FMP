@@ -52,9 +52,21 @@ switch (room)
 						#endregion
 						break;
 				}
+				break;
+			case(enumTitleScreenState.settingsMenu):
+				switch(global.settingsMenuState)
+				{
+					case(enumSettingsScreenState.controls):
+						var _xControls = 0;
+						var _yControls = 0;
+						draw_sprite(spr_controlSettings, 0, _xControls, _yControls);
+						break;
+				}
+				break;
+			}
 			break;
-		case(rm_battleRoom):
-			/*switch (global.gameState)
+	case(rm_battleRoom):
+		/*switch (global.gameState)
 			{
 				case(enumGameState.level1Battle):
 					if (layer_sequence_pause(graphic_3FFB685F) == true)
@@ -64,9 +76,7 @@ switch (room)
 					}
 					break;
 			}*/
-			break;
-		}
-		break;
+	break;
 }
 
 

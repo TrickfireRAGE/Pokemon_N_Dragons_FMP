@@ -9,7 +9,7 @@
   "playbackSpeedType": 0,
   "autoRecord": true,
   "volume": 1.0,
-  "length": 300.0,
+  "length": 220.0,
   "events": {
     "Keyframes": [],
     "resourceVersion": "1.0",
@@ -134,7 +134,7 @@
       ],"events":[],"isCreationTrack":false,"modifiers":[],},
     {"resourceType":"GMInstanceTrack","resourceVersion":"1.0","name":"obj_opponentPokemon","keyframes":{"Keyframes":[
           {"id":"d62fdd61-5e4f-481c-8f13-edd415f5d20b","Key":143.0,"Length":7.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"obj_opponentPokemon","path":"objects/obj_opponentPokemon/obj_opponentPokemon.yy",},"resourceVersion":"1.0","resourceType":"AssetInstanceKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<AssetInstanceKeyframe>",},
-          {"id":"1862c9fe-119f-443b-bcc4-d67f74b6382b","Key":150.0,"Length":150.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"obj_opponentPokemon","path":"objects/obj_opponentPokemon/obj_opponentPokemon.yy",},"resourceVersion":"1.0","resourceType":"AssetInstanceKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<AssetInstanceKeyframe>",},
+          {"id":"1862c9fe-119f-443b-bcc4-d67f74b6382b","Key":150.0,"Length":70.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"obj_opponentPokemon","path":"objects/obj_opponentPokemon/obj_opponentPokemon.yy",},"resourceVersion":"1.0","resourceType":"AssetInstanceKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<AssetInstanceKeyframe>",},
         ],"resourceVersion":"1.0","resourceType":"KeyframeStore<AssetInstanceKeyframe>",},"trackColour":4294107208,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[
         {"resourceType":"GMColourTrack","resourceVersion":"1.0","name":"blend_multiply","keyframes":{"Keyframes":[
               {"id":"4a5b0037-32ec-4eb4-9e13-b5104e2442be","Key":143.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"EmbeddedAnimCurve":null,"Colour":4293256677,"AnimCurveId":null,"resourceVersion":"1.0","resourceType":"ColourKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<ColourKeyframe>",},
@@ -158,7 +158,7 @@
       ],"events":[],"isCreationTrack":false,"modifiers":[],},
     {"resourceType":"GMInstanceTrack","resourceVersion":"1.0","name":"obj_playerPokemon","keyframes":{"Keyframes":[
           {"id":"3488e59a-48c6-49b6-8fd7-2ad2ef72b4ce","Key":203.0,"Length":6.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"obj_playerPokemon","path":"objects/obj_playerPokemon/obj_playerPokemon.yy",},"resourceVersion":"1.0","resourceType":"AssetInstanceKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<AssetInstanceKeyframe>",},
-          {"id":"4e136735-53f5-4f96-af82-870bafe8eaca","Key":209.0,"Length":91.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"obj_playerPokemon","path":"objects/obj_playerPokemon/obj_playerPokemon.yy",},"resourceVersion":"1.0","resourceType":"AssetInstanceKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<AssetInstanceKeyframe>",},
+          {"id":"4e136735-53f5-4f96-af82-870bafe8eaca","Key":209.0,"Length":11.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"obj_playerPokemon","path":"objects/obj_playerPokemon/obj_playerPokemon.yy",},"resourceVersion":"1.0","resourceType":"AssetInstanceKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<AssetInstanceKeyframe>",},
         ],"resourceVersion":"1.0","resourceType":"KeyframeStore<AssetInstanceKeyframe>",},"trackColour":4289612018,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[
         {"resourceType":"GMColourTrack","resourceVersion":"1.0","name":"blend_multiply","keyframes":{"Keyframes":[
               {"id":"e4ef3f93-d8e9-4ff3-9728-f013646b4c32","Key":203.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"EmbeddedAnimCurve":null,"Colour":4293256677,"AnimCurveId":null,"resourceVersion":"1.0","resourceType":"ColourKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<ColourKeyframe>",},
@@ -183,7 +183,7 @@
             ],"resourceVersion":"1.0","resourceType":"KeyframeStore<RealKeyframe>",},"trackColour":4289612018,"inheritsTrackColour":true,"builtinName":15,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
       ],"events":[],"isCreationTrack":false,"modifiers":[],},
     {"resourceType":"GMGraphicTrack","resourceVersion":"1.0","name":"spr_battleBackgrounds","keyframes":{"Keyframes":[
-          {"id":"58eeefe6-3075-4718-a0ab-ace3474739f5","Key":-1.0,"Length":301.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"spr_battleBackgrounds","path":"sprites/spr_battleBackgrounds/spr_battleBackgrounds.yy",},"resourceVersion":"1.0","resourceType":"AssetSpriteKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<AssetSpriteKeyframe>",},
+          {"id":"58eeefe6-3075-4718-a0ab-ace3474739f5","Key":-1.0,"Length":221.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"spr_battleBackgrounds","path":"sprites/spr_battleBackgrounds/spr_battleBackgrounds.yy",},"resourceVersion":"1.0","resourceType":"AssetSpriteKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<AssetSpriteKeyframe>",},
         ],"resourceVersion":"1.0","resourceType":"KeyframeStore<AssetSpriteKeyframe>",},"trackColour":4285592136,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[
         {"resourceType":"GMRealTrack","resourceVersion":"1.0","name":"origin","keyframes":{"Keyframes":[
               {"id":"6488df2d-bd83-41c6-919d-aaa8b7085881","Key":-1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":true,"Channels":{"0":{"EmbeddedAnimCurve":null,"RealValue":0.0,"AnimCurveId":null,"resourceVersion":"1.0","resourceType":"RealKeyframe",},"1":{"EmbeddedAnimCurve":null,"RealValue":0.0,"AnimCurveId":null,"resourceVersion":"1.0","resourceType":"RealKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<RealKeyframe>",},

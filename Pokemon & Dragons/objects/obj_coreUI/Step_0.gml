@@ -6,9 +6,9 @@ switch (room)
 		switch (global.gameState)
 		{
 			case(enumGameState.level1Battle):
-				switch (battleVisualState)
+				switch (global.battleState)
 				{
-					case(enumBattleVisualState.introSequence):
+					case(enumBattleState.introSequence):
 						if (alarm_get(enumCoreUIAlarms.sequences) > 0)
 						{
 							//Code here
@@ -18,13 +18,13 @@ switch (room)
 							alarm_set(enumCoreUIAlarms.sequences, 1);
 						}
 						break;
-					case(enumBattleVisualState.menu):
+					case(enumBattleState.menu):
 						//type here
 						break;
-					case(enumBattleVisualState.move):
+					case(enumBattleState.move):
 						//type here
 						break;
-					case(enumBattleVisualState.opponent):
+					case(enumBattleState.opponent):
 						// type here
 						break;
 				}

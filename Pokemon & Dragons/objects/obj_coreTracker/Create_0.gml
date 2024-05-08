@@ -1,108 +1,154 @@
 /// @description Battle Tracker Creation
 
-// 
+// fully clean up and fix
+
+enum enumTrackerArray
+{
+	ID = 0,
+	name = 1,
+	dexStat = 2,
+	dexModifier = 3,
+	initiative = 4
+}
+
 currentTurn = 0;
 
-var _battleLevel = global.pokemonLevelSet;
 
-var _pokemonPlayer = global.playerPokemonID[0];
-var _pokemonPlayerName = global.pokeDex[_pokemonPlayer][$ "Pokemon Name"];
+pokemonPlayer = [];
+for (var i = 0; i < global.maxPokemon; i++;) 
+{
+	pokemonPlayer[i][enumTrackerArray.ID] = global.playerPokemonID[i];
+	if (pokemonPlayer[i][enumTrackerArray.ID] != "NOT_SET")
+	{
+		pokemonPlayer[i][enumTrackerArray.name] = obj_playerPokemon.pokemonParty[i][enumPokemonArray.name];
+		pokemonPlayer[i][enumTrackerArray.dexStat] = obj_playerPokemon.pokemonParty[i][enumPokemonArray.dex];
+	}
+	else
+	{
+		pokemonPlayer[i][enumTrackerArray.name] = "NOT_SET";
+		pokemonPlayer[i][enumTrackerArray.dexStat] = "NOT_SET";
+	}
+}
 
-var _pokemonOpponent = global.opponentPokemonID;
-var _pokemonOpponentName = global.pokeDex[_pokemonOpponent][$ "Pokemon Name"];
-
-playerPokemonDex = obj_playerPokemon.firstPokemonStats[enumBattleStats.dex];
-opponentPokemonDex = obj_opponentPokemon.firstPokemonStats[enumBattleStats.dex];
-
-playerModifierDex = "NOT_SET";
-opponentModifierDex = "NOT_SET";
+pokemonOpponent = [];
+for (var i = 0; i < global.maxPokemon; i++;)
+{
+	pokemonOpponent[i][enumTrackerArray.ID] = global.opponentPokemonID[i];
+	if (pokemonOpponent[i][enumTrackerArray.ID] != "NOT_SET")
+	{
+		pokemonOpponent[i][enumTrackerArray.name] = obj_opponentPokemon.pokemonParty[i][enumPokemonArray.name];
+		pokemonOpponent[i][enumTrackerArray.dexStat] = obj_opponentPokemon.pokemonParty[i][enumPokemonArray.dex];
+	}
+	else
+	{
+		pokemonOpponent[i][enumTrackerArray.name] = "NOT_SET";
+		pokemonOpponent[i][enumTrackerArray.dexStat] = "NOT_SET";
+	}
+}
 
 pokemonInitiativeData = ds_list_create();
 
-if (playerPokemonDex == 10 or 11) // BROKEN
+for (var i = 0; i < global.maxPokemon; i++;) // Player Pokemon Party Initiative
 {
-	playerModifierDex = 0;
-}
-else if (playerPokemonDex == 12 or 13)
-{
-	playerModifierDex = 1;
-}
-else if (playerPokemonDex == 14 or 15)
-{
-	playerModifierDex = 2;
-}
-else if (playerPokemonDex == 16 or 17)
-{
-	playerModifierDex = 3;
-}
-else if (playerPokemonDex == 18 or 19)
-{
-	playerModifierDex = 4;
-}
-else if (playerPokemonDex == 20 or 21)
-{
-	playerModifierDex = 5;
-}
-else if (playerPokemonDex == 22 or 23)
-{
-	playerModifierDex = 6;
-}
-else if (playerPokemonDex == 24 or 25)
-{
-	playerModifierDex = 7;
-}
-
-playerPokemonInitiative = funct_initiativeRoll(playerModifierDex);
-ds_list_add(pokemonInitiativeData, _pokemonPlayerName);
-ds_list_add(pokemonInitiativeData, playerPokemonInitiative);
-
-if (opponentPokemonDex == 10 or 11) // BROKEN FIX ON DAY 18
-{
-	opponentModifierDex = 0;
-}
-else if (opponentPokemonDex == 12 or 13)
-{
-	opponentModifierDex = 1;
-}
-else if (opponentPokemonDex == 14 or 15)
-{
-	opponentModifierDex = 2;
-}
-else if (opponentPokemonDex == 16 or 17)
-{
-	opponentModifierDex = 3;
-}
-else if (opponentPokemonDex == 18 or 19)
-{
-	opponentModifierDex = 4;
-}
-else if (opponentPokemonDex == 20 or 21)
-{
-	opponentModifierDex = 5;
-}
-else if (opponentPokemonDex == 22 or 23)
-{
-	opponentModifierDex = 6;
-}
-else if (opponentPokemonDex == 24 or 25)
-{
-	opponentModifierDex = 7;
+	if (pokemonPlayer[i][enumTrackerArray.dexStat] != "NOT_SET")
+	{
+		
+		switch(pokemonPlayer[i][enumTrackerArray.dexStat])
+		{
+			case(10):
+			case(11):
+				pokemonPlayer[i][enumTrackerArray.dexModifier] = 0;
+				break;
+			case(12):
+			case(13):
+				pokemonPlayer[i][enumTrackerArray.dexModifier] = 1;
+				break
+			case(14):
+			case(15):
+				pokemonPlayer[i][enumTrackerArray.dexModifier] = 2;
+				break;
+			case(16):
+			case(17):
+				pokemonPlayer[i][enumTrackerArray.dexModifier] = 3;
+				break;
+			case(18):
+			case(19):
+				pokemonPlayer[i][enumTrackerArray.dexModifier] = 4;
+				break;
+			case(20):
+			case(21):
+				pokemonPlayer[i][enumTrackerArray.dexModifier] = 5;
+				break;
+			case(22):
+			case(23):
+				pokemonPlayer[i][enumTrackerArray.dexModifier] = 6;
+				break;
+			case(24):
+			case(25):
+				pokemonPlayer[i][enumTrackerArray.dexModifier] = 7;
+				break;
+		}
+		pokemonPlayer[i][enumTrackerArray.initiative] = funct_initiativeRoll(pokemonPlayer[i][enumTrackerArray.dexModifier]);
+		//ds_list_add(pokemonInitiativeData, pokemonPlayer[i][enumTrackerArray.name]);
+		ds_list_add(pokemonInitiativeData, pokemonPlayer[i][enumTrackerArray.initiative]);
+	}
+	else
+	{
+		pokemonPlayer[i][enumTrackerArray.dexModifier] = "NOT_SET";
+	}
 }
 
-opponentPokemonInitiative = funct_initiativeRoll(opponentModifierDex);
-ds_list_add(pokemonInitiativeData, _pokemonOpponentName);
-ds_list_add(pokemonInitiativeData, opponentPokemonInitiative);
+for (var i = 0; i < global.maxPokemon; i++;) // Opponent Pokemon Party Initiative
+{
+	if (pokemonOpponent[i][enumTrackerArray.dexStat] != "NOT_SET")
+	{
+		
+		switch(pokemonOpponent[i][enumTrackerArray.dexStat])
+		{
+			case(10):
+			case(11):
+				pokemonOpponent[i][enumTrackerArray.dexModifier] = 0;
+				break;
+			case(12):
+			case(13):
+				pokemonOpponent[i][enumTrackerArray.dexModifier] = 1;
+				break
+			case(14):
+			case(15):
+				pokemonOpponent[i][enumTrackerArray.dexModifier] = 2;
+				break;
+			case(16):
+			case(17):
+				pokemonOpponent[i][enumTrackerArray.dexModifier] = 3;
+				break;
+			case(18):
+			case(19):
+				pokemonOpponent[i][enumTrackerArray.dexModifier] = 4;
+				break;
+			case(20):
+			case(21):
+				pokemonOpponent[i][enumTrackerArray.dexModifier] = 5;
+				break;
+			case(22):
+			case(23):
+				pokemonOpponent[i][enumTrackerArray.dexModifier] = 6;
+				break;
+			case(24):
+			case(25):
+				pokemonOpponent[i][enumTrackerArray.dexModifier] = 7;
+				break;
+		}
+		pokemonOpponent[i][enumTrackerArray.initiative] = funct_initiativeRoll(pokemonOpponent[i][enumTrackerArray.dexModifier]);
+		//ds_list_add(pokemonInitiativeData, pokemonOpponent[i][enumTrackerArray.name]);
+		ds_list_add(pokemonInitiativeData, pokemonOpponent[i][enumTrackerArray.initiative]);
+	}
+	else
+	{
+		pokemonOpponent[i][enumTrackerArray.dexModifier] = "NOT_SET";
+	}
+}
 
 ds_list_sort(pokemonInitiativeData, false);
 
-show_message(playerPokemonInitiative);
-show_message(opponentPokemonInitiative);
-
-if (playerPokemonInitiative >= opponentPokemonInitiative)
-{
-	// type here
-}
-else if (playerPokemonInitiative < opponentPokemonInitiative)
-{
-	// type here
-}
+show_message(pokemonPlayer[0][enumTrackerArray.initiative]);
+show_message(pokemonOpponent[0][enumTrackerArray.initiative]);

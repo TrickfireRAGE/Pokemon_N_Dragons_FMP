@@ -1,8 +1,7 @@
 /// @description 
 
-#region Sound Effects
 
-#region Main Menu
+#region Main Menu Sound Effects
 switch (global.menuState)
 {
 	case(enumTitleScreenState.pressStart):
@@ -52,13 +51,36 @@ switch (global.menuState)
 }
 #endregion
 
-#region Battle
+#region Battle Sound Effects
 
-// Put Battle Effects here
+if (room == rm_battleRoom)
+{
+	switch (global.battleState)
+	{
+		case(enumBattleState.introSequence):
+			var _opponentPokemonCryTimer = 300;
+			var _playerPokemonCryTimer = 418;
+			if (soundCountBattle == 2)
+			{
+				opponentPokemonCrySound = obj_opponentPokemon.pokemonParty[0][enumPokemonArray.sound];
+				playerPokemonCrySound = obj_playerPokemon.pokemonParty[0][enumPokemonArray.sound];
+			}
+			else if (soundCountBattle == _opponentPokemonCryTimer)
+			{
+				audio_play_sound(asset_get_index(opponentPokemonCrySound), 0, 0);
+			}
+			else if (soundCountBattle == _playerPokemonCryTimer)
+			{
+				audio_play_sound(asset_get_index(playerPokemonCrySound), 0, 0);
+			}
+			soundCountBattle++;
+			break;
+	}
+}
 
 #endregion
 
-#endregion
+
 
 #region Music
 
