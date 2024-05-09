@@ -25,6 +25,7 @@ switch (room)
 		#endregion
 		break;
 	case(rm_titleMenu):	
+		#region Title Screen
 		switch (global.menuState)
 		{
 			case(enumTitleScreenState.pressStart):
@@ -445,9 +446,135 @@ switch (room)
 				#endregion
 				break;
 		}
+		#endregion
 		break;
 	case(rm_battleRoom):
-		// type logic here
+		#region Battle Section
+		var _choiceChange = 1;
+		switch (global.gameState)
+		{
+			case(enumGameState.level1Battle):
+				switch (global.battleState) // Consider putting this into a basic battle system where it doesn't need to be typed out multiple times.
+				{
+					case(enumBattleState.introSequence):
+						if (alarm_get(enumCoreGameAlarms.stateSwitch) > 0)
+						{
+							//Code here
+						}
+						else
+						{
+							alarm_set(enumCoreGameAlarms.stateSwitch, 1);
+						}
+						break;
+					case(enumBattleState.player):
+						if (global.gamePadConfirm)
+						{
+							switch (global.playerBattleState)
+							{
+								case(enumPlayerTurnState.baseMenu):
+									switch (global.playerChoiceBattle)
+									{
+										case(enumBattleChoices.attack):
+											global.playerBattleState = enumPlayerTurnState.attackMenu;
+											global.playerChoiceAttack = enumPlayerAttack.attack1;
+											break;
+										case(enumBattleChoices.bag):
+											//type here
+											break;
+										case(enumBattleChoices.pokemon):
+											//type here
+											break;
+										case(enumBattleChoices.endTurn):
+											global.playerBattleState = enumPlayerTurnState.endTurnSelection;
+											break;
+									}
+									break;
+								case(enumPlayerTurnState.attackMenu):
+									// Put the Attacks section here
+									break;
+								case(enumPlayerTurnState.bagMenu):
+									// Put Bag stuff here
+									break;
+								case(enumPlayerTurnState.pokemonMenu):
+									// Put pokemon Selection here
+									break;
+								case(enumPlayerTurnState.endTurnSelection):
+									// Put end turn code here.
+									break;
+							}
+						}
+						else if (global.gamePadBack)
+						{
+							// Put code here
+						}
+						else if (global.gamePadUp)
+						{
+							switch (global.playerBattleState)
+							{
+								case(enumPlayerTurnState.baseMenu):
+									global.playerChoiceBattle -= _choiceChange;
+									if (global.playerChoiceBattle < enumBattleChoices.attack)
+									{
+										global.playerChoiceBattle = enumBattleChoices.attack;
+									}
+									break;
+								case(enumPlayerTurnState.attackMenu):
+									// Put the Attacks section here
+									break;
+								case(enumPlayerTurnState.bagMenu):
+									// Put Bag stuff here
+									break;
+								case(enumPlayerTurnState.pokemonMenu):
+									// Put pokemon Selection here
+									break;
+								case(enumPlayerTurnState.endTurnSelection):
+									// Put end turn code here.
+									break;
+							}
+						}
+						else if (global.gamePadDown)
+						{
+							switch (global.playerBattleState)
+							{
+								case(enumPlayerTurnState.baseMenu):
+									global.playerChoiceBattle += _choiceChange;
+									if (global.playerChoiceBattle > enumBattleChoices.endTurn)
+									{
+										global.playerChoiceBattle = enumBattleChoices.endTurn;
+									}
+									break;
+								case(enumPlayerTurnState.attackMenu):
+									// Put the Attacks section here
+									break;
+								case(enumPlayerTurnState.bagMenu):
+									// Put Bag stuff here
+									break;
+								case(enumPlayerTurnState.pokemonMenu):
+									// Put pokemon Selection here
+									break;
+								case(enumPlayerTurnState.endTurnSelection):
+									// Put end turn code here.
+									break;
+							}
+						}
+						else if (global.gamePadLeft)
+						{
+							// Put Code here
+						}
+						else if (global.gamePadRight)
+						{
+							// Put Code here
+						}
+						break;
+					case(enumBattleState.intermission):
+						//type here
+						break;
+					case(enumBattleState.opponent):
+						// type here
+						break;
+				}
+				break;
+		}
+		#endregion
 		break;
 }
-

@@ -13,6 +13,8 @@ enum enumTrackerArray
 
 currentTurn = 0;
 
+firstTurn = "NOT_SET";
+
 
 pokemonPlayer = [];
 for (var i = 0; i < global.maxPokemon; i++;) 
@@ -47,49 +49,35 @@ for (var i = 0; i < global.maxPokemon; i++;)
 }
 
 pokemonInitiativeData = ds_list_create();
+// Opponent Pokemon Party Initiative (Goes first to give the player advantage) 
+// Consider having initiative rolls just for first 2 Pokemon on field and when switching, a new roll is done.
+for (var i = 0; i < global.maxPokemon; i++;) 
+{
+	if (pokemonOpponent[i][enumTrackerArray.dexStat] != "NOT_SET")
+	{
+		pokemonOpponent[i][enumTrackerArray.dexModifier] = funct_modifierCheck(pokemonOpponent[i][enumTrackerArray.dexStat]); // Using new Function
+		pokemonOpponent[i][enumTrackerArray.initiative] = funct_initiativeRoll(pokemonOpponent[i][enumTrackerArray.dexModifier]);
+		ds_list_add(pokemonInitiativeData, pokemonOpponent[i][enumTrackerArray.initiative]);
+	}
+	else
+	{
+		pokemonOpponent[i][enumTrackerArray.dexModifier] = "NOT_SET";
+	}
+}
 
 for (var i = 0; i < global.maxPokemon; i++;) // Player Pokemon Party Initiative
 {
 	if (pokemonPlayer[i][enumTrackerArray.dexStat] != "NOT_SET")
 	{
-		
-		switch(pokemonPlayer[i][enumTrackerArray.dexStat])
-		{
-			case(10):
-			case(11):
-				pokemonPlayer[i][enumTrackerArray.dexModifier] = 0;
-				break;
-			case(12):
-			case(13):
-				pokemonPlayer[i][enumTrackerArray.dexModifier] = 1;
-				break
-			case(14):
-			case(15):
-				pokemonPlayer[i][enumTrackerArray.dexModifier] = 2;
-				break;
-			case(16):
-			case(17):
-				pokemonPlayer[i][enumTrackerArray.dexModifier] = 3;
-				break;
-			case(18):
-			case(19):
-				pokemonPlayer[i][enumTrackerArray.dexModifier] = 4;
-				break;
-			case(20):
-			case(21):
-				pokemonPlayer[i][enumTrackerArray.dexModifier] = 5;
-				break;
-			case(22):
-			case(23):
-				pokemonPlayer[i][enumTrackerArray.dexModifier] = 6;
-				break;
-			case(24):
-			case(25):
-				pokemonPlayer[i][enumTrackerArray.dexModifier] = 7;
-				break;
-		}
+		pokemonPlayer[i][enumTrackerArray.dexModifier] = funct_modifierCheck(pokemonPlayer[i][enumTrackerArray.dexStat]); // Using new Function
 		pokemonPlayer[i][enumTrackerArray.initiative] = funct_initiativeRoll(pokemonPlayer[i][enumTrackerArray.dexModifier]);
-		//ds_list_add(pokemonInitiativeData, pokemonPlayer[i][enumTrackerArray.name]);
+		for (var f = 0; f < ds_list_size(pokemonInitiativeData); f++)
+		{
+			if (ds_list_find_value(pokemonInitiativeData, f) == pokemonPlayer[i][enumTrackerArray.initiative])
+			{
+				pokemonPlayer[i][enumTrackerArray.initiative] += 1;
+			}
+		}
 		ds_list_add(pokemonInitiativeData, pokemonPlayer[i][enumTrackerArray.initiative]);
 	}
 	else
@@ -98,55 +86,6 @@ for (var i = 0; i < global.maxPokemon; i++;) // Player Pokemon Party Initiative
 	}
 }
 
-for (var i = 0; i < global.maxPokemon; i++;) // Opponent Pokemon Party Initiative
-{
-	if (pokemonOpponent[i][enumTrackerArray.dexStat] != "NOT_SET")
-	{
-		
-		switch(pokemonOpponent[i][enumTrackerArray.dexStat])
-		{
-			case(10):
-			case(11):
-				pokemonOpponent[i][enumTrackerArray.dexModifier] = 0;
-				break;
-			case(12):
-			case(13):
-				pokemonOpponent[i][enumTrackerArray.dexModifier] = 1;
-				break
-			case(14):
-			case(15):
-				pokemonOpponent[i][enumTrackerArray.dexModifier] = 2;
-				break;
-			case(16):
-			case(17):
-				pokemonOpponent[i][enumTrackerArray.dexModifier] = 3;
-				break;
-			case(18):
-			case(19):
-				pokemonOpponent[i][enumTrackerArray.dexModifier] = 4;
-				break;
-			case(20):
-			case(21):
-				pokemonOpponent[i][enumTrackerArray.dexModifier] = 5;
-				break;
-			case(22):
-			case(23):
-				pokemonOpponent[i][enumTrackerArray.dexModifier] = 6;
-				break;
-			case(24):
-			case(25):
-				pokemonOpponent[i][enumTrackerArray.dexModifier] = 7;
-				break;
-		}
-		pokemonOpponent[i][enumTrackerArray.initiative] = funct_initiativeRoll(pokemonOpponent[i][enumTrackerArray.dexModifier]);
-		//ds_list_add(pokemonInitiativeData, pokemonOpponent[i][enumTrackerArray.name]);
-		ds_list_add(pokemonInitiativeData, pokemonOpponent[i][enumTrackerArray.initiative]);
-	}
-	else
-	{
-		pokemonOpponent[i][enumTrackerArray.dexModifier] = "NOT_SET";
-	}
-}
 
 ds_list_sort(pokemonInitiativeData, false);
 

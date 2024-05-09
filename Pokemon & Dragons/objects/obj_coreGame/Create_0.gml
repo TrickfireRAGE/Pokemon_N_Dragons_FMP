@@ -47,14 +47,6 @@ enum enumGameState // States for Gameplay
 	endGameBattle = 2
 }
 
-enum enumBattleState
-{
-	introSequence = 0,
-	menu = 1,
-	move = 2,
-	opponent = 3
-}
-
 enum enumMainMenuChoice 
 {
 	newGame = 0,
@@ -120,6 +112,46 @@ enum enumBattleStats
 	wis = 4
 }
 
+enum enumBattleState
+{
+	introSequence = 0,
+	player = 1,
+	intermission = 2,
+	opponent = 3
+}
+
+enum enumBattleChoices
+{
+	attack = 0,
+	bag = 1,
+	pokemon = 2, 
+	endTurn = 3
+}
+
+enum enumPlayerTurnState
+{
+	attackMenu = 0,
+	bagMenu = 1,
+	pokemonMenu = 2,
+	endTurnSelection = 3,
+	baseMenu = 4
+}
+
+enum enumPlayerAttack
+{
+	attack1 = 0,
+	attack2 = 1, 
+	attack3 = 2, 
+	attack4 = 3
+}
+
+enum enumOpponentStages // Expand this on future builds
+{
+	action = 0,
+	bonus = 1, 
+	endTurn = 2
+}
+	
 
 #endregion
 
@@ -152,12 +184,23 @@ global.playerPokemonID[0] = "NOT_SET";
 global.playerPokemonID[1] = "NOT_SET";
 global.playerPokemonID[2] = "NOT_SET";
 
+global.playerChoiceBattle = "NOT_SET";
+global.playerChoiceAttack = "NOT_SET";
+global.playerChoicePokemon = "NOT_SET"; // Not Used in Prototype
+global.playerChoiceBag = "NOT_SET"; // Might not be used in Prototype
+
 global.opponentPokemonID = [];
 global.opponentPokemonID[0] = "NOT_SET";
 global.opponentPokemonID[1] = "NOT_SET";
 global.opponentPokemonID[2] = "NOT_SET";
 
+global.opponentStageBattle = "NOT_SET";
+// Put more here
+
 global.pokemonLevelSet = "NOT_SET";
+
+global.sequenceID = "NOT_SET";
+
 randomise(); // Needed to randomise the seed
 
 #endregion
@@ -170,6 +213,7 @@ global.gameState = "NOT_SET"; // Handles States for Gameplay
 global.newGameMenuState = "NOT_SET"; // Handles the Pokemon Choices
 
 global.battleState = "NOT_SET"; // Used for the stages
+global.playerBattleState = "NOT_SET"; // Used for the players turn
 
 #endregion
 

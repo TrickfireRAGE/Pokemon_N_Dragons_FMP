@@ -1,21 +1,38 @@
-/// @description Used for Sound Effect State Transitions
-
-switch (global.menuState)
+/// @description Used for State Switches
+switch (room)
 {
-	case(enumTitleScreenState.pressStart):
-		global.menuState = enumTitleScreenState.mainMenu;
-		break;
-	case(enumTitleScreenState.mainMenu):
-		if (global.titleScreenOptions == enumMainMenuChoice.newGame)
+	case(rm_titleMenu):
+		switch (global.menuState)
 		{
-			global.newGameMenuState = enumNewGameState.newGame;
-			global.menuState = enumTitleScreenState.newGame;
+			case(enumTitleScreenState.pressStart):
+				global.menuState = enumTitleScreenState.mainMenu;
+				break;
+			case(enumTitleScreenState.mainMenu):
+				if (global.titleScreenOptions == enumMainMenuChoice.newGame)
+				{
+					global.newGameMenuState = enumNewGameState.newGame;
+					global.menuState = enumTitleScreenState.newGame;
+				}
+				else if (global.titleScreenOptions == enumMainMenuChoice.continueSave)
+				{
+					// Put code here when save system is implemented
+				}
+				break;
 		}
-		else if (global.titleScreenOptions == enumMainMenuChoice.continueSave)
+	case(rm_battleRoom):
+		switch (global.gameState)
 		{
-			// Put code here when save system is implemented
+			case(enumGameState.level1Battle):
+				if (layer_sequence_is_finished(global.sequenceID) == true)
+				{
+					layer_sequence_destroy(global.sequenceID);
+					global.battleState = enumBattleState.intermission;
+				}
+				break;
 		}
 		break;
 }
+
+
 
 

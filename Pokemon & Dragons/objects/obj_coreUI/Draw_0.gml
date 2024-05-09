@@ -66,17 +66,8 @@ switch (room)
 			}
 			break;
 	case(rm_battleRoom):
-		/*switch (global.gameState)
-			{
-				case(enumGameState.level1Battle):
-					if (layer_sequence_pause(graphic_3FFB685F) == true)
-					{
-						object_set_visible(graphic_3FFB685F, false);
-						sequence
-					}
-					break;
-			}*/
-	break;
+		
+		break;
 }
 
 

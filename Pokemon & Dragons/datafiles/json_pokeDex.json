@@ -40,7 +40,13 @@
    "LV19 Dex": null,
    "LV19 Con": null,
    "LV19 Int": null,
-   "LV19 Wis": null
+   "LV19 Wis": null,
+   "Base Moves": "Edit in Visual Studio",
+   "LV2 Moves": "^",
+   "LV6 Moves": "^",
+   "LV10 Moves": "^",
+   "LV18 Moves": "^",
+   "TM Moves": "^"
  },
  {
    "Pokemon Name": "",
@@ -83,7 +89,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -126,7 +138,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -169,7 +187,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -212,7 +236,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -255,7 +285,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -298,7 +334,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -341,7 +383,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -384,7 +432,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -427,7 +481,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -470,7 +530,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -513,7 +579,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -556,7 +628,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -599,7 +677,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -642,7 +726,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -685,7 +775,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -728,7 +824,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -771,7 +873,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -814,7 +922,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -857,7 +971,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -900,7 +1020,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -943,7 +1069,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -986,7 +1118,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -1029,7 +1167,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -1072,7 +1216,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "Pikachu",
@@ -1115,7 +1265,13 @@
    "LV19 Dex": "20",
    "LV19 Con": "13",
    "LV19 Int": "12",
-   "LV19 Wis": "20"
+   "LV19 Wis": "20",
+   "Base Moves": [100001, 100002, 100003],
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -1158,7 +1314,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -1201,7 +1363,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -1244,7 +1412,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -1287,7 +1461,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -1330,7 +1510,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -1373,7 +1559,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -1416,7 +1608,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -1459,7 +1657,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -1502,7 +1706,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -1545,7 +1755,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -1588,7 +1804,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -1631,7 +1853,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -1674,7 +1902,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -1717,7 +1951,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -1760,7 +2000,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -1803,7 +2049,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -1846,7 +2098,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -1889,7 +2147,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -1932,7 +2196,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -1975,7 +2245,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -2018,7 +2294,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -2061,7 +2343,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -2104,7 +2392,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -2147,7 +2441,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -2190,7 +2490,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -2233,7 +2539,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -2276,7 +2588,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -2319,7 +2637,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -2362,7 +2686,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -2405,7 +2735,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -2448,7 +2784,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -2491,7 +2833,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -2534,7 +2882,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -2577,7 +2931,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -2620,7 +2980,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -2663,7 +3029,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -2706,7 +3078,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -2749,7 +3127,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -2792,7 +3176,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -2835,7 +3225,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -2878,7 +3274,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -2921,7 +3323,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -2964,7 +3372,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -3007,7 +3421,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -3050,7 +3470,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -3093,7 +3519,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -3136,7 +3568,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -3179,7 +3617,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -3222,7 +3666,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -3265,7 +3715,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -3308,7 +3764,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -3351,7 +3813,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -3394,7 +3862,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -3437,7 +3911,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -3480,7 +3960,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -3523,7 +4009,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -3566,7 +4058,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -3609,7 +4107,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -3652,7 +4156,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -3695,7 +4205,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -3738,7 +4254,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -3781,7 +4303,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -3824,7 +4352,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -3867,7 +4401,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -3910,7 +4450,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -3953,7 +4499,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -3996,7 +4548,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -4039,7 +4597,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -4082,7 +4646,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -4125,7 +4695,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -4168,7 +4744,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -4211,7 +4793,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -4254,7 +4842,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -4297,7 +4891,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -4340,7 +4940,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -4383,7 +4989,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -4426,7 +5038,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -4469,7 +5087,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -4512,7 +5136,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -4555,7 +5185,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -4598,7 +5234,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -4641,7 +5283,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -4684,7 +5332,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -4727,7 +5381,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -4770,7 +5430,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -4813,7 +5479,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -4856,7 +5528,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -4899,7 +5577,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -4942,7 +5626,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -4985,7 +5675,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -5028,7 +5724,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -5071,7 +5773,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -5114,7 +5822,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -5157,7 +5871,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -5200,7 +5920,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -5243,7 +5969,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -5286,7 +6018,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -5329,7 +6067,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -5372,7 +6116,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -5415,7 +6165,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -5458,7 +6214,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -5501,7 +6263,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -5544,7 +6312,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -5587,7 +6361,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -5630,7 +6410,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -5673,7 +6459,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -5716,7 +6508,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -5759,7 +6557,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -5802,7 +6606,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -5845,7 +6655,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -5888,7 +6704,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -5931,7 +6753,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -5974,7 +6802,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -6017,7 +6851,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -6060,7 +6900,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -6103,7 +6949,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -6146,7 +6998,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -6189,7 +7047,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -6232,7 +7096,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -6275,7 +7145,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -6318,7 +7194,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -6361,7 +7243,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -6404,7 +7292,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -6447,7 +7341,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -6490,7 +7390,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -6533,7 +7439,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -6576,7 +7488,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -6619,7 +7537,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -6662,7 +7586,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -6705,7 +7635,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -6748,7 +7684,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -6791,7 +7733,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -6834,7 +7782,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -6877,7 +7831,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -6920,7 +7880,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -6963,7 +7929,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -7006,7 +7978,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -7049,7 +8027,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -7092,7 +8076,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -7135,7 +8125,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -7178,7 +8174,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -7221,7 +8223,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -7264,7 +8272,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -7307,7 +8321,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -7350,7 +8370,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -7393,7 +8419,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -7436,7 +8468,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -7479,7 +8517,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -7522,7 +8566,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -7565,7 +8615,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -7608,7 +8664,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -7651,7 +8713,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -7694,7 +8762,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -7737,7 +8811,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -7780,7 +8860,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -7823,7 +8909,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -7866,7 +8958,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -7909,7 +9007,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -7952,7 +9056,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -7995,7 +9105,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -8038,7 +9154,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -8081,7 +9203,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -8124,7 +9252,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -8167,7 +9301,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -8210,7 +9350,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -8253,7 +9399,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -8296,7 +9448,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -8339,7 +9497,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -8382,7 +9546,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -8425,7 +9595,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -8468,7 +9644,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -8511,7 +9693,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -8554,7 +9742,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -8597,7 +9791,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -8640,7 +9840,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -8683,7 +9889,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -8726,7 +9938,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -8769,7 +9987,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -8812,7 +10036,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -8855,7 +10085,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -8898,7 +10134,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -8941,7 +10183,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -8984,7 +10232,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -9027,7 +10281,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -9070,7 +10330,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -9113,7 +10379,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -9156,7 +10428,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -9199,7 +10477,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -9242,7 +10526,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -9285,7 +10575,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -9328,7 +10624,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -9371,7 +10673,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -9414,7 +10722,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -9457,7 +10771,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -9500,7 +10820,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -9543,7 +10869,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -9586,7 +10918,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -9629,7 +10967,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -9672,7 +11016,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -9715,7 +11065,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -9758,7 +11114,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -9801,7 +11163,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -9844,7 +11212,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -9887,7 +11261,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -9930,7 +11310,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -9973,7 +11359,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -10016,7 +11408,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -10059,7 +11457,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -10102,7 +11506,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -10145,7 +11555,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -10188,7 +11604,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -10231,7 +11653,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -10274,7 +11702,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -10317,7 +11751,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -10360,7 +11800,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -10403,7 +11849,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -10446,7 +11898,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -10489,7 +11947,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -10532,7 +11996,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -10575,7 +12045,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -10618,7 +12094,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -10661,7 +12143,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -10704,7 +12192,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -10747,7 +12241,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -10790,7 +12290,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -10833,7 +12339,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -10876,7 +12388,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -10919,7 +12437,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -10962,7 +12486,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -11005,7 +12535,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -11048,7 +12584,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -11091,7 +12633,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -11134,7 +12682,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -11177,7 +12731,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -11220,7 +12780,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -11263,7 +12829,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -11306,7 +12878,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -11349,7 +12927,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -11392,7 +12976,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -11435,7 +13025,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -11478,7 +13074,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -11521,7 +13123,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -11564,7 +13172,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -11607,7 +13221,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -11650,7 +13270,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -11693,7 +13319,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -11736,7 +13368,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -11779,7 +13417,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -11822,7 +13466,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -11865,7 +13515,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -11908,7 +13564,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -11951,7 +13613,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -11994,7 +13662,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -12037,7 +13711,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -12080,7 +13760,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -12123,7 +13809,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -12166,7 +13858,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -12209,7 +13907,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -12252,7 +13956,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -12295,7 +14005,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -12338,7 +14054,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -12381,7 +14103,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -12424,7 +14152,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -12467,7 +14201,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -12510,7 +14250,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -12553,7 +14299,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -12596,7 +14348,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -12639,7 +14397,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -12682,7 +14446,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -12725,7 +14495,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -12768,7 +14544,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -12811,7 +14593,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -12854,7 +14642,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -12897,7 +14691,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -12940,7 +14740,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -12983,7 +14789,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -13026,7 +14838,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -13069,7 +14887,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -13112,7 +14936,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -13155,7 +14985,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -13198,7 +15034,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -13241,7 +15083,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -13284,7 +15132,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -13327,7 +15181,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -13370,7 +15230,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -13413,7 +15279,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -13456,7 +15328,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -13499,7 +15377,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -13542,7 +15426,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -13585,7 +15475,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -13628,7 +15524,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -13671,7 +15573,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -13714,7 +15622,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -13757,7 +15671,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -13800,7 +15720,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -13843,7 +15769,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -13886,7 +15818,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -13929,7 +15867,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -13972,7 +15916,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -14015,7 +15965,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -14058,7 +16014,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -14101,7 +16063,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -14144,7 +16112,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -14187,7 +16161,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -14230,7 +16210,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -14273,7 +16259,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -14316,7 +16308,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -14359,7 +16357,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -14402,7 +16406,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -14445,7 +16455,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -14488,7 +16504,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -14531,7 +16553,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -14574,7 +16602,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -14617,7 +16651,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -14660,7 +16700,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -14703,7 +16749,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -14746,7 +16798,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -14789,7 +16847,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -14832,7 +16896,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -14875,7 +16945,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -14918,7 +16994,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -14961,7 +17043,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -15004,7 +17092,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -15047,7 +17141,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -15090,7 +17190,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -15133,7 +17239,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -15176,7 +17288,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -15219,7 +17337,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -15262,7 +17386,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -15305,7 +17435,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -15348,7 +17484,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -15391,7 +17533,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -15434,7 +17582,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -15477,7 +17631,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -15520,7 +17680,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -15563,7 +17729,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -15606,7 +17778,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -15649,7 +17827,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -15692,7 +17876,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -15735,7 +17925,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -15778,7 +17974,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -15821,7 +18023,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -15864,7 +18072,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -15907,7 +18121,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -15950,7 +18170,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -15993,7 +18219,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -16036,7 +18268,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -16079,7 +18317,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -16122,7 +18366,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -16165,7 +18415,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -16208,7 +18464,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -16251,7 +18513,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -16294,7 +18562,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -16337,7 +18611,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -16380,7 +18660,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -16423,7 +18709,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -16466,7 +18758,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -16509,7 +18807,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -16552,7 +18856,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -16595,7 +18905,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -16638,7 +18954,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -16681,7 +19003,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -16724,7 +19052,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -16767,7 +19101,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -16810,7 +19150,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -16853,7 +19199,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -16896,7 +19248,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -16939,7 +19297,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -16982,7 +19346,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -17025,7 +19395,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -17068,7 +19444,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -17111,7 +19493,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -17154,7 +19542,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -17197,7 +19591,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -17240,7 +19640,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -17283,7 +19689,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -17326,7 +19738,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -17369,7 +19787,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -17412,7 +19836,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -17455,7 +19885,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -17498,7 +19934,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -17541,7 +19983,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -17584,7 +20032,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -17627,7 +20081,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -17670,7 +20130,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -17713,7 +20179,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -17756,7 +20228,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -17799,7 +20277,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -17842,7 +20326,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -17885,7 +20375,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -17928,7 +20424,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -17971,7 +20473,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -18014,7 +20522,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -18057,7 +20571,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -18100,7 +20620,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -18143,7 +20669,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -18186,7 +20718,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -18229,7 +20767,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -18272,7 +20816,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -18315,7 +20865,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -18358,7 +20914,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -18401,7 +20963,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -18444,7 +21012,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -18487,7 +21061,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -18530,7 +21110,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -18573,7 +21159,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -18616,7 +21208,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -18659,7 +21257,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -18702,7 +21306,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -18745,7 +21355,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -18788,7 +21404,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -18831,7 +21453,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -18874,7 +21502,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -18917,7 +21551,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -18960,7 +21600,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -19003,7 +21649,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -19046,7 +21698,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -19089,7 +21747,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -19132,7 +21796,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -19175,7 +21845,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -19218,7 +21894,13 @@
    "LV19 Dex": "",
    "LV19 Con": "",
    "LV19 Int": "",
-   "LV19 Wis": ""
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "Riolu",
@@ -19261,7 +21943,13 @@
    "LV19 Dex": "20",
    "LV19 Con": "16",
    "LV19 Int": "10",
-   "LV19 Wis": "16"
+   "LV19 Wis": "16",
+   "Base Moves": [100003, 100004, 100005],
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  },
  {
    "Pokemon Name": "Lucario",
@@ -19304,6 +21992,2119 @@
    "LV19 Dex": "20",
    "LV19 Con": "18",
    "LV19 Int": "10",
-   "LV19 Wis": "18"
+   "LV19 Wis": "18",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
+ },
+ {
+   "Pokemon Name": "",
+   "ID": 449,
+   "Sprite Name": "",
+   "Sound Cry": "",
+   "Type": "",
+   "Type 2": "",
+   "Evolution LV": "",
+   "Evolution ID": "",
+   "Mega Comp": "",
+   "Saving Throw 1": "",
+   "Saving Throw 2": "",
+   "Base Str": "",
+   "Base Dex": "",
+   "Base Con": "",
+   "Base Int": "",
+   "Base Wis": "",
+   "LV4 Str": "",
+   "LV4 Dex": "",
+   "LV4 Con": "",
+   "LV4 Int": "",
+   "LV4 Wis": "",
+   "LV8 Str": "",
+   "LV8 Dex": "",
+   "LV8 Con": "",
+   "LV8 Int": "",
+   "LV8 Wis": "",
+   "LV12 Str": "",
+   "LV12 Dex": "",
+   "LV12 Con": "",
+   "LV12 Int": "",
+   "LV12 Wis": "",
+   "LV16 Str": "",
+   "LV16 Dex": "",
+   "LV16 Con": "",
+   "LV16 Int": "",
+   "LV16 Wis": "",
+   "LV19 Str": "",
+   "LV19 Dex": "",
+   "LV19 Con": "",
+   "LV19 Int": "",
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
+ },
+ {
+   "Pokemon Name": "",
+   "ID": 450,
+   "Sprite Name": "",
+   "Sound Cry": "",
+   "Type": "",
+   "Type 2": "",
+   "Evolution LV": "",
+   "Evolution ID": "",
+   "Mega Comp": "",
+   "Saving Throw 1": "",
+   "Saving Throw 2": "",
+   "Base Str": "",
+   "Base Dex": "",
+   "Base Con": "",
+   "Base Int": "",
+   "Base Wis": "",
+   "LV4 Str": "",
+   "LV4 Dex": "",
+   "LV4 Con": "",
+   "LV4 Int": "",
+   "LV4 Wis": "",
+   "LV8 Str": "",
+   "LV8 Dex": "",
+   "LV8 Con": "",
+   "LV8 Int": "",
+   "LV8 Wis": "",
+   "LV12 Str": "",
+   "LV12 Dex": "",
+   "LV12 Con": "",
+   "LV12 Int": "",
+   "LV12 Wis": "",
+   "LV16 Str": "",
+   "LV16 Dex": "",
+   "LV16 Con": "",
+   "LV16 Int": "",
+   "LV16 Wis": "",
+   "LV19 Str": "",
+   "LV19 Dex": "",
+   "LV19 Con": "",
+   "LV19 Int": "",
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
+ },
+ {
+   "Pokemon Name": "",
+   "ID": 451,
+   "Sprite Name": "",
+   "Sound Cry": "",
+   "Type": "",
+   "Type 2": "",
+   "Evolution LV": "",
+   "Evolution ID": "",
+   "Mega Comp": "",
+   "Saving Throw 1": "",
+   "Saving Throw 2": "",
+   "Base Str": "",
+   "Base Dex": "",
+   "Base Con": "",
+   "Base Int": "",
+   "Base Wis": "",
+   "LV4 Str": "",
+   "LV4 Dex": "",
+   "LV4 Con": "",
+   "LV4 Int": "",
+   "LV4 Wis": "",
+   "LV8 Str": "",
+   "LV8 Dex": "",
+   "LV8 Con": "",
+   "LV8 Int": "",
+   "LV8 Wis": "",
+   "LV12 Str": "",
+   "LV12 Dex": "",
+   "LV12 Con": "",
+   "LV12 Int": "",
+   "LV12 Wis": "",
+   "LV16 Str": "",
+   "LV16 Dex": "",
+   "LV16 Con": "",
+   "LV16 Int": "",
+   "LV16 Wis": "",
+   "LV19 Str": "",
+   "LV19 Dex": "",
+   "LV19 Con": "",
+   "LV19 Int": "",
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
+ },
+ {
+   "Pokemon Name": "",
+   "ID": 452,
+   "Sprite Name": "",
+   "Sound Cry": "",
+   "Type": "",
+   "Type 2": "",
+   "Evolution LV": "",
+   "Evolution ID": "",
+   "Mega Comp": "",
+   "Saving Throw 1": "",
+   "Saving Throw 2": "",
+   "Base Str": "",
+   "Base Dex": "",
+   "Base Con": "",
+   "Base Int": "",
+   "Base Wis": "",
+   "LV4 Str": "",
+   "LV4 Dex": "",
+   "LV4 Con": "",
+   "LV4 Int": "",
+   "LV4 Wis": "",
+   "LV8 Str": "",
+   "LV8 Dex": "",
+   "LV8 Con": "",
+   "LV8 Int": "",
+   "LV8 Wis": "",
+   "LV12 Str": "",
+   "LV12 Dex": "",
+   "LV12 Con": "",
+   "LV12 Int": "",
+   "LV12 Wis": "",
+   "LV16 Str": "",
+   "LV16 Dex": "",
+   "LV16 Con": "",
+   "LV16 Int": "",
+   "LV16 Wis": "",
+   "LV19 Str": "",
+   "LV19 Dex": "",
+   "LV19 Con": "",
+   "LV19 Int": "",
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
+ },
+ {
+   "Pokemon Name": "",
+   "ID": 453,
+   "Sprite Name": "",
+   "Sound Cry": "",
+   "Type": "",
+   "Type 2": "",
+   "Evolution LV": "",
+   "Evolution ID": "",
+   "Mega Comp": "",
+   "Saving Throw 1": "",
+   "Saving Throw 2": "",
+   "Base Str": "",
+   "Base Dex": "",
+   "Base Con": "",
+   "Base Int": "",
+   "Base Wis": "",
+   "LV4 Str": "",
+   "LV4 Dex": "",
+   "LV4 Con": "",
+   "LV4 Int": "",
+   "LV4 Wis": "",
+   "LV8 Str": "",
+   "LV8 Dex": "",
+   "LV8 Con": "",
+   "LV8 Int": "",
+   "LV8 Wis": "",
+   "LV12 Str": "",
+   "LV12 Dex": "",
+   "LV12 Con": "",
+   "LV12 Int": "",
+   "LV12 Wis": "",
+   "LV16 Str": "",
+   "LV16 Dex": "",
+   "LV16 Con": "",
+   "LV16 Int": "",
+   "LV16 Wis": "",
+   "LV19 Str": "",
+   "LV19 Dex": "",
+   "LV19 Con": "",
+   "LV19 Int": "",
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
+ },
+ {
+   "Pokemon Name": "",
+   "ID": 454,
+   "Sprite Name": "",
+   "Sound Cry": "",
+   "Type": "",
+   "Type 2": "",
+   "Evolution LV": "",
+   "Evolution ID": "",
+   "Mega Comp": "",
+   "Saving Throw 1": "",
+   "Saving Throw 2": "",
+   "Base Str": "",
+   "Base Dex": "",
+   "Base Con": "",
+   "Base Int": "",
+   "Base Wis": "",
+   "LV4 Str": "",
+   "LV4 Dex": "",
+   "LV4 Con": "",
+   "LV4 Int": "",
+   "LV4 Wis": "",
+   "LV8 Str": "",
+   "LV8 Dex": "",
+   "LV8 Con": "",
+   "LV8 Int": "",
+   "LV8 Wis": "",
+   "LV12 Str": "",
+   "LV12 Dex": "",
+   "LV12 Con": "",
+   "LV12 Int": "",
+   "LV12 Wis": "",
+   "LV16 Str": "",
+   "LV16 Dex": "",
+   "LV16 Con": "",
+   "LV16 Int": "",
+   "LV16 Wis": "",
+   "LV19 Str": "",
+   "LV19 Dex": "",
+   "LV19 Con": "",
+   "LV19 Int": "",
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
+ },
+ {
+   "Pokemon Name": "",
+   "ID": 455,
+   "Sprite Name": "",
+   "Sound Cry": "",
+   "Type": "",
+   "Type 2": "",
+   "Evolution LV": "",
+   "Evolution ID": "",
+   "Mega Comp": "",
+   "Saving Throw 1": "",
+   "Saving Throw 2": "",
+   "Base Str": "",
+   "Base Dex": "",
+   "Base Con": "",
+   "Base Int": "",
+   "Base Wis": "",
+   "LV4 Str": "",
+   "LV4 Dex": "",
+   "LV4 Con": "",
+   "LV4 Int": "",
+   "LV4 Wis": "",
+   "LV8 Str": "",
+   "LV8 Dex": "",
+   "LV8 Con": "",
+   "LV8 Int": "",
+   "LV8 Wis": "",
+   "LV12 Str": "",
+   "LV12 Dex": "",
+   "LV12 Con": "",
+   "LV12 Int": "",
+   "LV12 Wis": "",
+   "LV16 Str": "",
+   "LV16 Dex": "",
+   "LV16 Con": "",
+   "LV16 Int": "",
+   "LV16 Wis": "",
+   "LV19 Str": "",
+   "LV19 Dex": "",
+   "LV19 Con": "",
+   "LV19 Int": "",
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
+ },
+ {
+   "Pokemon Name": "",
+   "ID": 456,
+   "Sprite Name": "",
+   "Sound Cry": "",
+   "Type": "",
+   "Type 2": "",
+   "Evolution LV": "",
+   "Evolution ID": "",
+   "Mega Comp": "",
+   "Saving Throw 1": "",
+   "Saving Throw 2": "",
+   "Base Str": "",
+   "Base Dex": "",
+   "Base Con": "",
+   "Base Int": "",
+   "Base Wis": "",
+   "LV4 Str": "",
+   "LV4 Dex": "",
+   "LV4 Con": "",
+   "LV4 Int": "",
+   "LV4 Wis": "",
+   "LV8 Str": "",
+   "LV8 Dex": "",
+   "LV8 Con": "",
+   "LV8 Int": "",
+   "LV8 Wis": "",
+   "LV12 Str": "",
+   "LV12 Dex": "",
+   "LV12 Con": "",
+   "LV12 Int": "",
+   "LV12 Wis": "",
+   "LV16 Str": "",
+   "LV16 Dex": "",
+   "LV16 Con": "",
+   "LV16 Int": "",
+   "LV16 Wis": "",
+   "LV19 Str": "",
+   "LV19 Dex": "",
+   "LV19 Con": "",
+   "LV19 Int": "",
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
+ },
+ {
+   "Pokemon Name": "",
+   "ID": 457,
+   "Sprite Name": "",
+   "Sound Cry": "",
+   "Type": "",
+   "Type 2": "",
+   "Evolution LV": "",
+   "Evolution ID": "",
+   "Mega Comp": "",
+   "Saving Throw 1": "",
+   "Saving Throw 2": "",
+   "Base Str": "",
+   "Base Dex": "",
+   "Base Con": "",
+   "Base Int": "",
+   "Base Wis": "",
+   "LV4 Str": "",
+   "LV4 Dex": "",
+   "LV4 Con": "",
+   "LV4 Int": "",
+   "LV4 Wis": "",
+   "LV8 Str": "",
+   "LV8 Dex": "",
+   "LV8 Con": "",
+   "LV8 Int": "",
+   "LV8 Wis": "",
+   "LV12 Str": "",
+   "LV12 Dex": "",
+   "LV12 Con": "",
+   "LV12 Int": "",
+   "LV12 Wis": "",
+   "LV16 Str": "",
+   "LV16 Dex": "",
+   "LV16 Con": "",
+   "LV16 Int": "",
+   "LV16 Wis": "",
+   "LV19 Str": "",
+   "LV19 Dex": "",
+   "LV19 Con": "",
+   "LV19 Int": "",
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
+ },
+ {
+   "Pokemon Name": "",
+   "ID": 458,
+   "Sprite Name": "",
+   "Sound Cry": "",
+   "Type": "",
+   "Type 2": "",
+   "Evolution LV": "",
+   "Evolution ID": "",
+   "Mega Comp": "",
+   "Saving Throw 1": "",
+   "Saving Throw 2": "",
+   "Base Str": "",
+   "Base Dex": "",
+   "Base Con": "",
+   "Base Int": "",
+   "Base Wis": "",
+   "LV4 Str": "",
+   "LV4 Dex": "",
+   "LV4 Con": "",
+   "LV4 Int": "",
+   "LV4 Wis": "",
+   "LV8 Str": "",
+   "LV8 Dex": "",
+   "LV8 Con": "",
+   "LV8 Int": "",
+   "LV8 Wis": "",
+   "LV12 Str": "",
+   "LV12 Dex": "",
+   "LV12 Con": "",
+   "LV12 Int": "",
+   "LV12 Wis": "",
+   "LV16 Str": "",
+   "LV16 Dex": "",
+   "LV16 Con": "",
+   "LV16 Int": "",
+   "LV16 Wis": "",
+   "LV19 Str": "",
+   "LV19 Dex": "",
+   "LV19 Con": "",
+   "LV19 Int": "",
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
+ },
+ {
+   "Pokemon Name": "",
+   "ID": 459,
+   "Sprite Name": "",
+   "Sound Cry": "",
+   "Type": "",
+   "Type 2": "",
+   "Evolution LV": "",
+   "Evolution ID": "",
+   "Mega Comp": "",
+   "Saving Throw 1": "",
+   "Saving Throw 2": "",
+   "Base Str": "",
+   "Base Dex": "",
+   "Base Con": "",
+   "Base Int": "",
+   "Base Wis": "",
+   "LV4 Str": "",
+   "LV4 Dex": "",
+   "LV4 Con": "",
+   "LV4 Int": "",
+   "LV4 Wis": "",
+   "LV8 Str": "",
+   "LV8 Dex": "",
+   "LV8 Con": "",
+   "LV8 Int": "",
+   "LV8 Wis": "",
+   "LV12 Str": "",
+   "LV12 Dex": "",
+   "LV12 Con": "",
+   "LV12 Int": "",
+   "LV12 Wis": "",
+   "LV16 Str": "",
+   "LV16 Dex": "",
+   "LV16 Con": "",
+   "LV16 Int": "",
+   "LV16 Wis": "",
+   "LV19 Str": "",
+   "LV19 Dex": "",
+   "LV19 Con": "",
+   "LV19 Int": "",
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
+ },
+ {
+   "Pokemon Name": "",
+   "ID": 460,
+   "Sprite Name": "",
+   "Sound Cry": "",
+   "Type": "",
+   "Type 2": "",
+   "Evolution LV": "",
+   "Evolution ID": "",
+   "Mega Comp": "",
+   "Saving Throw 1": "",
+   "Saving Throw 2": "",
+   "Base Str": "",
+   "Base Dex": "",
+   "Base Con": "",
+   "Base Int": "",
+   "Base Wis": "",
+   "LV4 Str": "",
+   "LV4 Dex": "",
+   "LV4 Con": "",
+   "LV4 Int": "",
+   "LV4 Wis": "",
+   "LV8 Str": "",
+   "LV8 Dex": "",
+   "LV8 Con": "",
+   "LV8 Int": "",
+   "LV8 Wis": "",
+   "LV12 Str": "",
+   "LV12 Dex": "",
+   "LV12 Con": "",
+   "LV12 Int": "",
+   "LV12 Wis": "",
+   "LV16 Str": "",
+   "LV16 Dex": "",
+   "LV16 Con": "",
+   "LV16 Int": "",
+   "LV16 Wis": "",
+   "LV19 Str": "",
+   "LV19 Dex": "",
+   "LV19 Con": "",
+   "LV19 Int": "",
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
+ },
+ {
+   "Pokemon Name": "",
+   "ID": 461,
+   "Sprite Name": "",
+   "Sound Cry": "",
+   "Type": "",
+   "Type 2": "",
+   "Evolution LV": "",
+   "Evolution ID": "",
+   "Mega Comp": "",
+   "Saving Throw 1": "",
+   "Saving Throw 2": "",
+   "Base Str": "",
+   "Base Dex": "",
+   "Base Con": "",
+   "Base Int": "",
+   "Base Wis": "",
+   "LV4 Str": "",
+   "LV4 Dex": "",
+   "LV4 Con": "",
+   "LV4 Int": "",
+   "LV4 Wis": "",
+   "LV8 Str": "",
+   "LV8 Dex": "",
+   "LV8 Con": "",
+   "LV8 Int": "",
+   "LV8 Wis": "",
+   "LV12 Str": "",
+   "LV12 Dex": "",
+   "LV12 Con": "",
+   "LV12 Int": "",
+   "LV12 Wis": "",
+   "LV16 Str": "",
+   "LV16 Dex": "",
+   "LV16 Con": "",
+   "LV16 Int": "",
+   "LV16 Wis": "",
+   "LV19 Str": "",
+   "LV19 Dex": "",
+   "LV19 Con": "",
+   "LV19 Int": "",
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
+ },
+ {
+   "Pokemon Name": "",
+   "ID": 462,
+   "Sprite Name": "",
+   "Sound Cry": "",
+   "Type": "",
+   "Type 2": "",
+   "Evolution LV": "",
+   "Evolution ID": "",
+   "Mega Comp": "",
+   "Saving Throw 1": "",
+   "Saving Throw 2": "",
+   "Base Str": "",
+   "Base Dex": "",
+   "Base Con": "",
+   "Base Int": "",
+   "Base Wis": "",
+   "LV4 Str": "",
+   "LV4 Dex": "",
+   "LV4 Con": "",
+   "LV4 Int": "",
+   "LV4 Wis": "",
+   "LV8 Str": "",
+   "LV8 Dex": "",
+   "LV8 Con": "",
+   "LV8 Int": "",
+   "LV8 Wis": "",
+   "LV12 Str": "",
+   "LV12 Dex": "",
+   "LV12 Con": "",
+   "LV12 Int": "",
+   "LV12 Wis": "",
+   "LV16 Str": "",
+   "LV16 Dex": "",
+   "LV16 Con": "",
+   "LV16 Int": "",
+   "LV16 Wis": "",
+   "LV19 Str": "",
+   "LV19 Dex": "",
+   "LV19 Con": "",
+   "LV19 Int": "",
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
+ },
+ {
+   "Pokemon Name": "",
+   "ID": 463,
+   "Sprite Name": "",
+   "Sound Cry": "",
+   "Type": "",
+   "Type 2": "",
+   "Evolution LV": "",
+   "Evolution ID": "",
+   "Mega Comp": "",
+   "Saving Throw 1": "",
+   "Saving Throw 2": "",
+   "Base Str": "",
+   "Base Dex": "",
+   "Base Con": "",
+   "Base Int": "",
+   "Base Wis": "",
+   "LV4 Str": "",
+   "LV4 Dex": "",
+   "LV4 Con": "",
+   "LV4 Int": "",
+   "LV4 Wis": "",
+   "LV8 Str": "",
+   "LV8 Dex": "",
+   "LV8 Con": "",
+   "LV8 Int": "",
+   "LV8 Wis": "",
+   "LV12 Str": "",
+   "LV12 Dex": "",
+   "LV12 Con": "",
+   "LV12 Int": "",
+   "LV12 Wis": "",
+   "LV16 Str": "",
+   "LV16 Dex": "",
+   "LV16 Con": "",
+   "LV16 Int": "",
+   "LV16 Wis": "",
+   "LV19 Str": "",
+   "LV19 Dex": "",
+   "LV19 Con": "",
+   "LV19 Int": "",
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
+ },
+ {
+   "Pokemon Name": "",
+   "ID": 464,
+   "Sprite Name": "",
+   "Sound Cry": "",
+   "Type": "",
+   "Type 2": "",
+   "Evolution LV": "",
+   "Evolution ID": "",
+   "Mega Comp": "",
+   "Saving Throw 1": "",
+   "Saving Throw 2": "",
+   "Base Str": "",
+   "Base Dex": "",
+   "Base Con": "",
+   "Base Int": "",
+   "Base Wis": "",
+   "LV4 Str": "",
+   "LV4 Dex": "",
+   "LV4 Con": "",
+   "LV4 Int": "",
+   "LV4 Wis": "",
+   "LV8 Str": "",
+   "LV8 Dex": "",
+   "LV8 Con": "",
+   "LV8 Int": "",
+   "LV8 Wis": "",
+   "LV12 Str": "",
+   "LV12 Dex": "",
+   "LV12 Con": "",
+   "LV12 Int": "",
+   "LV12 Wis": "",
+   "LV16 Str": "",
+   "LV16 Dex": "",
+   "LV16 Con": "",
+   "LV16 Int": "",
+   "LV16 Wis": "",
+   "LV19 Str": "",
+   "LV19 Dex": "",
+   "LV19 Con": "",
+   "LV19 Int": "",
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
+ },
+ {
+   "Pokemon Name": "",
+   "ID": 465,
+   "Sprite Name": "",
+   "Sound Cry": "",
+   "Type": "",
+   "Type 2": "",
+   "Evolution LV": "",
+   "Evolution ID": "",
+   "Mega Comp": "",
+   "Saving Throw 1": "",
+   "Saving Throw 2": "",
+   "Base Str": "",
+   "Base Dex": "",
+   "Base Con": "",
+   "Base Int": "",
+   "Base Wis": "",
+   "LV4 Str": "",
+   "LV4 Dex": "",
+   "LV4 Con": "",
+   "LV4 Int": "",
+   "LV4 Wis": "",
+   "LV8 Str": "",
+   "LV8 Dex": "",
+   "LV8 Con": "",
+   "LV8 Int": "",
+   "LV8 Wis": "",
+   "LV12 Str": "",
+   "LV12 Dex": "",
+   "LV12 Con": "",
+   "LV12 Int": "",
+   "LV12 Wis": "",
+   "LV16 Str": "",
+   "LV16 Dex": "",
+   "LV16 Con": "",
+   "LV16 Int": "",
+   "LV16 Wis": "",
+   "LV19 Str": "",
+   "LV19 Dex": "",
+   "LV19 Con": "",
+   "LV19 Int": "",
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
+ },
+ {
+   "Pokemon Name": "",
+   "ID": 466,
+   "Sprite Name": "",
+   "Sound Cry": "",
+   "Type": "",
+   "Type 2": "",
+   "Evolution LV": "",
+   "Evolution ID": "",
+   "Mega Comp": "",
+   "Saving Throw 1": "",
+   "Saving Throw 2": "",
+   "Base Str": "",
+   "Base Dex": "",
+   "Base Con": "",
+   "Base Int": "",
+   "Base Wis": "",
+   "LV4 Str": "",
+   "LV4 Dex": "",
+   "LV4 Con": "",
+   "LV4 Int": "",
+   "LV4 Wis": "",
+   "LV8 Str": "",
+   "LV8 Dex": "",
+   "LV8 Con": "",
+   "LV8 Int": "",
+   "LV8 Wis": "",
+   "LV12 Str": "",
+   "LV12 Dex": "",
+   "LV12 Con": "",
+   "LV12 Int": "",
+   "LV12 Wis": "",
+   "LV16 Str": "",
+   "LV16 Dex": "",
+   "LV16 Con": "",
+   "LV16 Int": "",
+   "LV16 Wis": "",
+   "LV19 Str": "",
+   "LV19 Dex": "",
+   "LV19 Con": "",
+   "LV19 Int": "",
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
+ },
+ {
+   "Pokemon Name": "",
+   "ID": 467,
+   "Sprite Name": "",
+   "Sound Cry": "",
+   "Type": "",
+   "Type 2": "",
+   "Evolution LV": "",
+   "Evolution ID": "",
+   "Mega Comp": "",
+   "Saving Throw 1": "",
+   "Saving Throw 2": "",
+   "Base Str": "",
+   "Base Dex": "",
+   "Base Con": "",
+   "Base Int": "",
+   "Base Wis": "",
+   "LV4 Str": "",
+   "LV4 Dex": "",
+   "LV4 Con": "",
+   "LV4 Int": "",
+   "LV4 Wis": "",
+   "LV8 Str": "",
+   "LV8 Dex": "",
+   "LV8 Con": "",
+   "LV8 Int": "",
+   "LV8 Wis": "",
+   "LV12 Str": "",
+   "LV12 Dex": "",
+   "LV12 Con": "",
+   "LV12 Int": "",
+   "LV12 Wis": "",
+   "LV16 Str": "",
+   "LV16 Dex": "",
+   "LV16 Con": "",
+   "LV16 Int": "",
+   "LV16 Wis": "",
+   "LV19 Str": "",
+   "LV19 Dex": "",
+   "LV19 Con": "",
+   "LV19 Int": "",
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
+ },
+ {
+   "Pokemon Name": "",
+   "ID": 468,
+   "Sprite Name": "",
+   "Sound Cry": "",
+   "Type": "",
+   "Type 2": "",
+   "Evolution LV": "",
+   "Evolution ID": "",
+   "Mega Comp": "",
+   "Saving Throw 1": "",
+   "Saving Throw 2": "",
+   "Base Str": "",
+   "Base Dex": "",
+   "Base Con": "",
+   "Base Int": "",
+   "Base Wis": "",
+   "LV4 Str": "",
+   "LV4 Dex": "",
+   "LV4 Con": "",
+   "LV4 Int": "",
+   "LV4 Wis": "",
+   "LV8 Str": "",
+   "LV8 Dex": "",
+   "LV8 Con": "",
+   "LV8 Int": "",
+   "LV8 Wis": "",
+   "LV12 Str": "",
+   "LV12 Dex": "",
+   "LV12 Con": "",
+   "LV12 Int": "",
+   "LV12 Wis": "",
+   "LV16 Str": "",
+   "LV16 Dex": "",
+   "LV16 Con": "",
+   "LV16 Int": "",
+   "LV16 Wis": "",
+   "LV19 Str": "",
+   "LV19 Dex": "",
+   "LV19 Con": "",
+   "LV19 Int": "",
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
+ },
+ {
+   "Pokemon Name": "",
+   "ID": 469,
+   "Sprite Name": "",
+   "Sound Cry": "",
+   "Type": "",
+   "Type 2": "",
+   "Evolution LV": "",
+   "Evolution ID": "",
+   "Mega Comp": "",
+   "Saving Throw 1": "",
+   "Saving Throw 2": "",
+   "Base Str": "",
+   "Base Dex": "",
+   "Base Con": "",
+   "Base Int": "",
+   "Base Wis": "",
+   "LV4 Str": "",
+   "LV4 Dex": "",
+   "LV4 Con": "",
+   "LV4 Int": "",
+   "LV4 Wis": "",
+   "LV8 Str": "",
+   "LV8 Dex": "",
+   "LV8 Con": "",
+   "LV8 Int": "",
+   "LV8 Wis": "",
+   "LV12 Str": "",
+   "LV12 Dex": "",
+   "LV12 Con": "",
+   "LV12 Int": "",
+   "LV12 Wis": "",
+   "LV16 Str": "",
+   "LV16 Dex": "",
+   "LV16 Con": "",
+   "LV16 Int": "",
+   "LV16 Wis": "",
+   "LV19 Str": "",
+   "LV19 Dex": "",
+   "LV19 Con": "",
+   "LV19 Int": "",
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
+ },
+ {
+   "Pokemon Name": "",
+   "ID": 470,
+   "Sprite Name": "",
+   "Sound Cry": "",
+   "Type": "",
+   "Type 2": "",
+   "Evolution LV": "",
+   "Evolution ID": "",
+   "Mega Comp": "",
+   "Saving Throw 1": "",
+   "Saving Throw 2": "",
+   "Base Str": "",
+   "Base Dex": "",
+   "Base Con": "",
+   "Base Int": "",
+   "Base Wis": "",
+   "LV4 Str": "",
+   "LV4 Dex": "",
+   "LV4 Con": "",
+   "LV4 Int": "",
+   "LV4 Wis": "",
+   "LV8 Str": "",
+   "LV8 Dex": "",
+   "LV8 Con": "",
+   "LV8 Int": "",
+   "LV8 Wis": "",
+   "LV12 Str": "",
+   "LV12 Dex": "",
+   "LV12 Con": "",
+   "LV12 Int": "",
+   "LV12 Wis": "",
+   "LV16 Str": "",
+   "LV16 Dex": "",
+   "LV16 Con": "",
+   "LV16 Int": "",
+   "LV16 Wis": "",
+   "LV19 Str": "",
+   "LV19 Dex": "",
+   "LV19 Con": "",
+   "LV19 Int": "",
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
+ },
+ {
+   "Pokemon Name": "",
+   "ID": 471,
+   "Sprite Name": "",
+   "Sound Cry": "",
+   "Type": "",
+   "Type 2": "",
+   "Evolution LV": "",
+   "Evolution ID": "",
+   "Mega Comp": "",
+   "Saving Throw 1": "",
+   "Saving Throw 2": "",
+   "Base Str": "",
+   "Base Dex": "",
+   "Base Con": "",
+   "Base Int": "",
+   "Base Wis": "",
+   "LV4 Str": "",
+   "LV4 Dex": "",
+   "LV4 Con": "",
+   "LV4 Int": "",
+   "LV4 Wis": "",
+   "LV8 Str": "",
+   "LV8 Dex": "",
+   "LV8 Con": "",
+   "LV8 Int": "",
+   "LV8 Wis": "",
+   "LV12 Str": "",
+   "LV12 Dex": "",
+   "LV12 Con": "",
+   "LV12 Int": "",
+   "LV12 Wis": "",
+   "LV16 Str": "",
+   "LV16 Dex": "",
+   "LV16 Con": "",
+   "LV16 Int": "",
+   "LV16 Wis": "",
+   "LV19 Str": "",
+   "LV19 Dex": "",
+   "LV19 Con": "",
+   "LV19 Int": "",
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
+ },
+ {
+   "Pokemon Name": "",
+   "ID": 472,
+   "Sprite Name": "",
+   "Sound Cry": "",
+   "Type": "",
+   "Type 2": "",
+   "Evolution LV": "",
+   "Evolution ID": "",
+   "Mega Comp": "",
+   "Saving Throw 1": "",
+   "Saving Throw 2": "",
+   "Base Str": "",
+   "Base Dex": "",
+   "Base Con": "",
+   "Base Int": "",
+   "Base Wis": "",
+   "LV4 Str": "",
+   "LV4 Dex": "",
+   "LV4 Con": "",
+   "LV4 Int": "",
+   "LV4 Wis": "",
+   "LV8 Str": "",
+   "LV8 Dex": "",
+   "LV8 Con": "",
+   "LV8 Int": "",
+   "LV8 Wis": "",
+   "LV12 Str": "",
+   "LV12 Dex": "",
+   "LV12 Con": "",
+   "LV12 Int": "",
+   "LV12 Wis": "",
+   "LV16 Str": "",
+   "LV16 Dex": "",
+   "LV16 Con": "",
+   "LV16 Int": "",
+   "LV16 Wis": "",
+   "LV19 Str": "",
+   "LV19 Dex": "",
+   "LV19 Con": "",
+   "LV19 Int": "",
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
+ },
+ {
+   "Pokemon Name": "",
+   "ID": 473,
+   "Sprite Name": "",
+   "Sound Cry": "",
+   "Type": "",
+   "Type 2": "",
+   "Evolution LV": "",
+   "Evolution ID": "",
+   "Mega Comp": "",
+   "Saving Throw 1": "",
+   "Saving Throw 2": "",
+   "Base Str": "",
+   "Base Dex": "",
+   "Base Con": "",
+   "Base Int": "",
+   "Base Wis": "",
+   "LV4 Str": "",
+   "LV4 Dex": "",
+   "LV4 Con": "",
+   "LV4 Int": "",
+   "LV4 Wis": "",
+   "LV8 Str": "",
+   "LV8 Dex": "",
+   "LV8 Con": "",
+   "LV8 Int": "",
+   "LV8 Wis": "",
+   "LV12 Str": "",
+   "LV12 Dex": "",
+   "LV12 Con": "",
+   "LV12 Int": "",
+   "LV12 Wis": "",
+   "LV16 Str": "",
+   "LV16 Dex": "",
+   "LV16 Con": "",
+   "LV16 Int": "",
+   "LV16 Wis": "",
+   "LV19 Str": "",
+   "LV19 Dex": "",
+   "LV19 Con": "",
+   "LV19 Int": "",
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
+ },
+ {
+   "Pokemon Name": "",
+   "ID": 474,
+   "Sprite Name": "",
+   "Sound Cry": "",
+   "Type": "",
+   "Type 2": "",
+   "Evolution LV": "",
+   "Evolution ID": "",
+   "Mega Comp": "",
+   "Saving Throw 1": "",
+   "Saving Throw 2": "",
+   "Base Str": "",
+   "Base Dex": "",
+   "Base Con": "",
+   "Base Int": "",
+   "Base Wis": "",
+   "LV4 Str": "",
+   "LV4 Dex": "",
+   "LV4 Con": "",
+   "LV4 Int": "",
+   "LV4 Wis": "",
+   "LV8 Str": "",
+   "LV8 Dex": "",
+   "LV8 Con": "",
+   "LV8 Int": "",
+   "LV8 Wis": "",
+   "LV12 Str": "",
+   "LV12 Dex": "",
+   "LV12 Con": "",
+   "LV12 Int": "",
+   "LV12 Wis": "",
+   "LV16 Str": "",
+   "LV16 Dex": "",
+   "LV16 Con": "",
+   "LV16 Int": "",
+   "LV16 Wis": "",
+   "LV19 Str": "",
+   "LV19 Dex": "",
+   "LV19 Con": "",
+   "LV19 Int": "",
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
+ },
+ {
+   "Pokemon Name": "",
+   "ID": 475,
+   "Sprite Name": "",
+   "Sound Cry": "",
+   "Type": "",
+   "Type 2": "",
+   "Evolution LV": "",
+   "Evolution ID": "",
+   "Mega Comp": "",
+   "Saving Throw 1": "",
+   "Saving Throw 2": "",
+   "Base Str": "",
+   "Base Dex": "",
+   "Base Con": "",
+   "Base Int": "",
+   "Base Wis": "",
+   "LV4 Str": "",
+   "LV4 Dex": "",
+   "LV4 Con": "",
+   "LV4 Int": "",
+   "LV4 Wis": "",
+   "LV8 Str": "",
+   "LV8 Dex": "",
+   "LV8 Con": "",
+   "LV8 Int": "",
+   "LV8 Wis": "",
+   "LV12 Str": "",
+   "LV12 Dex": "",
+   "LV12 Con": "",
+   "LV12 Int": "",
+   "LV12 Wis": "",
+   "LV16 Str": "",
+   "LV16 Dex": "",
+   "LV16 Con": "",
+   "LV16 Int": "",
+   "LV16 Wis": "",
+   "LV19 Str": "",
+   "LV19 Dex": "",
+   "LV19 Con": "",
+   "LV19 Int": "",
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
+ },
+ {
+   "Pokemon Name": "",
+   "ID": 476,
+   "Sprite Name": "",
+   "Sound Cry": "",
+   "Type": "",
+   "Type 2": "",
+   "Evolution LV": "",
+   "Evolution ID": "",
+   "Mega Comp": "",
+   "Saving Throw 1": "",
+   "Saving Throw 2": "",
+   "Base Str": "",
+   "Base Dex": "",
+   "Base Con": "",
+   "Base Int": "",
+   "Base Wis": "",
+   "LV4 Str": "",
+   "LV4 Dex": "",
+   "LV4 Con": "",
+   "LV4 Int": "",
+   "LV4 Wis": "",
+   "LV8 Str": "",
+   "LV8 Dex": "",
+   "LV8 Con": "",
+   "LV8 Int": "",
+   "LV8 Wis": "",
+   "LV12 Str": "",
+   "LV12 Dex": "",
+   "LV12 Con": "",
+   "LV12 Int": "",
+   "LV12 Wis": "",
+   "LV16 Str": "",
+   "LV16 Dex": "",
+   "LV16 Con": "",
+   "LV16 Int": "",
+   "LV16 Wis": "",
+   "LV19 Str": "",
+   "LV19 Dex": "",
+   "LV19 Con": "",
+   "LV19 Int": "",
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
+ },
+ {
+   "Pokemon Name": "",
+   "ID": 477,
+   "Sprite Name": "",
+   "Sound Cry": "",
+   "Type": "",
+   "Type 2": "",
+   "Evolution LV": "",
+   "Evolution ID": "",
+   "Mega Comp": "",
+   "Saving Throw 1": "",
+   "Saving Throw 2": "",
+   "Base Str": "",
+   "Base Dex": "",
+   "Base Con": "",
+   "Base Int": "",
+   "Base Wis": "",
+   "LV4 Str": "",
+   "LV4 Dex": "",
+   "LV4 Con": "",
+   "LV4 Int": "",
+   "LV4 Wis": "",
+   "LV8 Str": "",
+   "LV8 Dex": "",
+   "LV8 Con": "",
+   "LV8 Int": "",
+   "LV8 Wis": "",
+   "LV12 Str": "",
+   "LV12 Dex": "",
+   "LV12 Con": "",
+   "LV12 Int": "",
+   "LV12 Wis": "",
+   "LV16 Str": "",
+   "LV16 Dex": "",
+   "LV16 Con": "",
+   "LV16 Int": "",
+   "LV16 Wis": "",
+   "LV19 Str": "",
+   "LV19 Dex": "",
+   "LV19 Con": "",
+   "LV19 Int": "",
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
+ },
+ {
+   "Pokemon Name": "",
+   "ID": 478,
+   "Sprite Name": "",
+   "Sound Cry": "",
+   "Type": "",
+   "Type 2": "",
+   "Evolution LV": "",
+   "Evolution ID": "",
+   "Mega Comp": "",
+   "Saving Throw 1": "",
+   "Saving Throw 2": "",
+   "Base Str": "",
+   "Base Dex": "",
+   "Base Con": "",
+   "Base Int": "",
+   "Base Wis": "",
+   "LV4 Str": "",
+   "LV4 Dex": "",
+   "LV4 Con": "",
+   "LV4 Int": "",
+   "LV4 Wis": "",
+   "LV8 Str": "",
+   "LV8 Dex": "",
+   "LV8 Con": "",
+   "LV8 Int": "",
+   "LV8 Wis": "",
+   "LV12 Str": "",
+   "LV12 Dex": "",
+   "LV12 Con": "",
+   "LV12 Int": "",
+   "LV12 Wis": "",
+   "LV16 Str": "",
+   "LV16 Dex": "",
+   "LV16 Con": "",
+   "LV16 Int": "",
+   "LV16 Wis": "",
+   "LV19 Str": "",
+   "LV19 Dex": "",
+   "LV19 Con": "",
+   "LV19 Int": "",
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
+ },
+ {
+   "Pokemon Name": "",
+   "ID": 479,
+   "Sprite Name": "",
+   "Sound Cry": "",
+   "Type": "",
+   "Type 2": "",
+   "Evolution LV": "",
+   "Evolution ID": "",
+   "Mega Comp": "",
+   "Saving Throw 1": "",
+   "Saving Throw 2": "",
+   "Base Str": "",
+   "Base Dex": "",
+   "Base Con": "",
+   "Base Int": "",
+   "Base Wis": "",
+   "LV4 Str": "",
+   "LV4 Dex": "",
+   "LV4 Con": "",
+   "LV4 Int": "",
+   "LV4 Wis": "",
+   "LV8 Str": "",
+   "LV8 Dex": "",
+   "LV8 Con": "",
+   "LV8 Int": "",
+   "LV8 Wis": "",
+   "LV12 Str": "",
+   "LV12 Dex": "",
+   "LV12 Con": "",
+   "LV12 Int": "",
+   "LV12 Wis": "",
+   "LV16 Str": "",
+   "LV16 Dex": "",
+   "LV16 Con": "",
+   "LV16 Int": "",
+   "LV16 Wis": "",
+   "LV19 Str": "",
+   "LV19 Dex": "",
+   "LV19 Con": "",
+   "LV19 Int": "",
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
+ },
+ {
+   "Pokemon Name": "",
+   "ID": 480,
+   "Sprite Name": "",
+   "Sound Cry": "",
+   "Type": "",
+   "Type 2": "",
+   "Evolution LV": "",
+   "Evolution ID": "",
+   "Mega Comp": "",
+   "Saving Throw 1": "",
+   "Saving Throw 2": "",
+   "Base Str": "",
+   "Base Dex": "",
+   "Base Con": "",
+   "Base Int": "",
+   "Base Wis": "",
+   "LV4 Str": "",
+   "LV4 Dex": "",
+   "LV4 Con": "",
+   "LV4 Int": "",
+   "LV4 Wis": "",
+   "LV8 Str": "",
+   "LV8 Dex": "",
+   "LV8 Con": "",
+   "LV8 Int": "",
+   "LV8 Wis": "",
+   "LV12 Str": "",
+   "LV12 Dex": "",
+   "LV12 Con": "",
+   "LV12 Int": "",
+   "LV12 Wis": "",
+   "LV16 Str": "",
+   "LV16 Dex": "",
+   "LV16 Con": "",
+   "LV16 Int": "",
+   "LV16 Wis": "",
+   "LV19 Str": "",
+   "LV19 Dex": "",
+   "LV19 Con": "",
+   "LV19 Int": "",
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
+ },
+ {
+   "Pokemon Name": "",
+   "ID": 481,
+   "Sprite Name": "",
+   "Sound Cry": "",
+   "Type": "",
+   "Type 2": "",
+   "Evolution LV": "",
+   "Evolution ID": "",
+   "Mega Comp": "",
+   "Saving Throw 1": "",
+   "Saving Throw 2": "",
+   "Base Str": "",
+   "Base Dex": "",
+   "Base Con": "",
+   "Base Int": "",
+   "Base Wis": "",
+   "LV4 Str": "",
+   "LV4 Dex": "",
+   "LV4 Con": "",
+   "LV4 Int": "",
+   "LV4 Wis": "",
+   "LV8 Str": "",
+   "LV8 Dex": "",
+   "LV8 Con": "",
+   "LV8 Int": "",
+   "LV8 Wis": "",
+   "LV12 Str": "",
+   "LV12 Dex": "",
+   "LV12 Con": "",
+   "LV12 Int": "",
+   "LV12 Wis": "",
+   "LV16 Str": "",
+   "LV16 Dex": "",
+   "LV16 Con": "",
+   "LV16 Int": "",
+   "LV16 Wis": "",
+   "LV19 Str": "",
+   "LV19 Dex": "",
+   "LV19 Con": "",
+   "LV19 Int": "",
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
+ },
+ {
+   "Pokemon Name": "",
+   "ID": 482,
+   "Sprite Name": "",
+   "Sound Cry": "",
+   "Type": "",
+   "Type 2": "",
+   "Evolution LV": "",
+   "Evolution ID": "",
+   "Mega Comp": "",
+   "Saving Throw 1": "",
+   "Saving Throw 2": "",
+   "Base Str": "",
+   "Base Dex": "",
+   "Base Con": "",
+   "Base Int": "",
+   "Base Wis": "",
+   "LV4 Str": "",
+   "LV4 Dex": "",
+   "LV4 Con": "",
+   "LV4 Int": "",
+   "LV4 Wis": "",
+   "LV8 Str": "",
+   "LV8 Dex": "",
+   "LV8 Con": "",
+   "LV8 Int": "",
+   "LV8 Wis": "",
+   "LV12 Str": "",
+   "LV12 Dex": "",
+   "LV12 Con": "",
+   "LV12 Int": "",
+   "LV12 Wis": "",
+   "LV16 Str": "",
+   "LV16 Dex": "",
+   "LV16 Con": "",
+   "LV16 Int": "",
+   "LV16 Wis": "",
+   "LV19 Str": "",
+   "LV19 Dex": "",
+   "LV19 Con": "",
+   "LV19 Int": "",
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
+ },
+ {
+   "Pokemon Name": "",
+   "ID": 483,
+   "Sprite Name": "",
+   "Sound Cry": "",
+   "Type": "",
+   "Type 2": "",
+   "Evolution LV": "",
+   "Evolution ID": "",
+   "Mega Comp": "",
+   "Saving Throw 1": "",
+   "Saving Throw 2": "",
+   "Base Str": "",
+   "Base Dex": "",
+   "Base Con": "",
+   "Base Int": "",
+   "Base Wis": "",
+   "LV4 Str": "",
+   "LV4 Dex": "",
+   "LV4 Con": "",
+   "LV4 Int": "",
+   "LV4 Wis": "",
+   "LV8 Str": "",
+   "LV8 Dex": "",
+   "LV8 Con": "",
+   "LV8 Int": "",
+   "LV8 Wis": "",
+   "LV12 Str": "",
+   "LV12 Dex": "",
+   "LV12 Con": "",
+   "LV12 Int": "",
+   "LV12 Wis": "",
+   "LV16 Str": "",
+   "LV16 Dex": "",
+   "LV16 Con": "",
+   "LV16 Int": "",
+   "LV16 Wis": "",
+   "LV19 Str": "",
+   "LV19 Dex": "",
+   "LV19 Con": "",
+   "LV19 Int": "",
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
+ },
+ {
+   "Pokemon Name": "",
+   "ID": 484,
+   "Sprite Name": "",
+   "Sound Cry": "",
+   "Type": "",
+   "Type 2": "",
+   "Evolution LV": "",
+   "Evolution ID": "",
+   "Mega Comp": "",
+   "Saving Throw 1": "",
+   "Saving Throw 2": "",
+   "Base Str": "",
+   "Base Dex": "",
+   "Base Con": "",
+   "Base Int": "",
+   "Base Wis": "",
+   "LV4 Str": "",
+   "LV4 Dex": "",
+   "LV4 Con": "",
+   "LV4 Int": "",
+   "LV4 Wis": "",
+   "LV8 Str": "",
+   "LV8 Dex": "",
+   "LV8 Con": "",
+   "LV8 Int": "",
+   "LV8 Wis": "",
+   "LV12 Str": "",
+   "LV12 Dex": "",
+   "LV12 Con": "",
+   "LV12 Int": "",
+   "LV12 Wis": "",
+   "LV16 Str": "",
+   "LV16 Dex": "",
+   "LV16 Con": "",
+   "LV16 Int": "",
+   "LV16 Wis": "",
+   "LV19 Str": "",
+   "LV19 Dex": "",
+   "LV19 Con": "",
+   "LV19 Int": "",
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
+ },
+ {
+   "Pokemon Name": "",
+   "ID": 485,
+   "Sprite Name": "",
+   "Sound Cry": "",
+   "Type": "",
+   "Type 2": "",
+   "Evolution LV": "",
+   "Evolution ID": "",
+   "Mega Comp": "",
+   "Saving Throw 1": "",
+   "Saving Throw 2": "",
+   "Base Str": "",
+   "Base Dex": "",
+   "Base Con": "",
+   "Base Int": "",
+   "Base Wis": "",
+   "LV4 Str": "",
+   "LV4 Dex": "",
+   "LV4 Con": "",
+   "LV4 Int": "",
+   "LV4 Wis": "",
+   "LV8 Str": "",
+   "LV8 Dex": "",
+   "LV8 Con": "",
+   "LV8 Int": "",
+   "LV8 Wis": "",
+   "LV12 Str": "",
+   "LV12 Dex": "",
+   "LV12 Con": "",
+   "LV12 Int": "",
+   "LV12 Wis": "",
+   "LV16 Str": "",
+   "LV16 Dex": "",
+   "LV16 Con": "",
+   "LV16 Int": "",
+   "LV16 Wis": "",
+   "LV19 Str": "",
+   "LV19 Dex": "",
+   "LV19 Con": "",
+   "LV19 Int": "",
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
+ },
+ {
+   "Pokemon Name": "",
+   "ID": 486,
+   "Sprite Name": "",
+   "Sound Cry": "",
+   "Type": "",
+   "Type 2": "",
+   "Evolution LV": "",
+   "Evolution ID": "",
+   "Mega Comp": "",
+   "Saving Throw 1": "",
+   "Saving Throw 2": "",
+   "Base Str": "",
+   "Base Dex": "",
+   "Base Con": "",
+   "Base Int": "",
+   "Base Wis": "",
+   "LV4 Str": "",
+   "LV4 Dex": "",
+   "LV4 Con": "",
+   "LV4 Int": "",
+   "LV4 Wis": "",
+   "LV8 Str": "",
+   "LV8 Dex": "",
+   "LV8 Con": "",
+   "LV8 Int": "",
+   "LV8 Wis": "",
+   "LV12 Str": "",
+   "LV12 Dex": "",
+   "LV12 Con": "",
+   "LV12 Int": "",
+   "LV12 Wis": "",
+   "LV16 Str": "",
+   "LV16 Dex": "",
+   "LV16 Con": "",
+   "LV16 Int": "",
+   "LV16 Wis": "",
+   "LV19 Str": "",
+   "LV19 Dex": "",
+   "LV19 Con": "",
+   "LV19 Int": "",
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
+ },
+ {
+   "Pokemon Name": "",
+   "ID": 487,
+   "Sprite Name": "",
+   "Sound Cry": "",
+   "Type": "",
+   "Type 2": "",
+   "Evolution LV": "",
+   "Evolution ID": "",
+   "Mega Comp": "",
+   "Saving Throw 1": "",
+   "Saving Throw 2": "",
+   "Base Str": "",
+   "Base Dex": "",
+   "Base Con": "",
+   "Base Int": "",
+   "Base Wis": "",
+   "LV4 Str": "",
+   "LV4 Dex": "",
+   "LV4 Con": "",
+   "LV4 Int": "",
+   "LV4 Wis": "",
+   "LV8 Str": "",
+   "LV8 Dex": "",
+   "LV8 Con": "",
+   "LV8 Int": "",
+   "LV8 Wis": "",
+   "LV12 Str": "",
+   "LV12 Dex": "",
+   "LV12 Con": "",
+   "LV12 Int": "",
+   "LV12 Wis": "",
+   "LV16 Str": "",
+   "LV16 Dex": "",
+   "LV16 Con": "",
+   "LV16 Int": "",
+   "LV16 Wis": "",
+   "LV19 Str": "",
+   "LV19 Dex": "",
+   "LV19 Con": "",
+   "LV19 Int": "",
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
+ },
+ {
+   "Pokemon Name": "",
+   "ID": 488,
+   "Sprite Name": "",
+   "Sound Cry": "",
+   "Type": "",
+   "Type 2": "",
+   "Evolution LV": "",
+   "Evolution ID": "",
+   "Mega Comp": "",
+   "Saving Throw 1": "",
+   "Saving Throw 2": "",
+   "Base Str": "",
+   "Base Dex": "",
+   "Base Con": "",
+   "Base Int": "",
+   "Base Wis": "",
+   "LV4 Str": "",
+   "LV4 Dex": "",
+   "LV4 Con": "",
+   "LV4 Int": "",
+   "LV4 Wis": "",
+   "LV8 Str": "",
+   "LV8 Dex": "",
+   "LV8 Con": "",
+   "LV8 Int": "",
+   "LV8 Wis": "",
+   "LV12 Str": "",
+   "LV12 Dex": "",
+   "LV12 Con": "",
+   "LV12 Int": "",
+   "LV12 Wis": "",
+   "LV16 Str": "",
+   "LV16 Dex": "",
+   "LV16 Con": "",
+   "LV16 Int": "",
+   "LV16 Wis": "",
+   "LV19 Str": "",
+   "LV19 Dex": "",
+   "LV19 Con": "",
+   "LV19 Int": "",
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
+ },
+ {
+   "Pokemon Name": "",
+   "ID": 489,
+   "Sprite Name": "",
+   "Sound Cry": "",
+   "Type": "",
+   "Type 2": "",
+   "Evolution LV": "",
+   "Evolution ID": "",
+   "Mega Comp": "",
+   "Saving Throw 1": "",
+   "Saving Throw 2": "",
+   "Base Str": "",
+   "Base Dex": "",
+   "Base Con": "",
+   "Base Int": "",
+   "Base Wis": "",
+   "LV4 Str": "",
+   "LV4 Dex": "",
+   "LV4 Con": "",
+   "LV4 Int": "",
+   "LV4 Wis": "",
+   "LV8 Str": "",
+   "LV8 Dex": "",
+   "LV8 Con": "",
+   "LV8 Int": "",
+   "LV8 Wis": "",
+   "LV12 Str": "",
+   "LV12 Dex": "",
+   "LV12 Con": "",
+   "LV12 Int": "",
+   "LV12 Wis": "",
+   "LV16 Str": "",
+   "LV16 Dex": "",
+   "LV16 Con": "",
+   "LV16 Int": "",
+   "LV16 Wis": "",
+   "LV19 Str": "",
+   "LV19 Dex": "",
+   "LV19 Con": "",
+   "LV19 Int": "",
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
+ },
+ {
+   "Pokemon Name": "",
+   "ID": 490,
+   "Sprite Name": "",
+   "Sound Cry": "",
+   "Type": "",
+   "Type 2": "",
+   "Evolution LV": "",
+   "Evolution ID": "",
+   "Mega Comp": "",
+   "Saving Throw 1": "",
+   "Saving Throw 2": "",
+   "Base Str": "",
+   "Base Dex": "",
+   "Base Con": "",
+   "Base Int": "",
+   "Base Wis": "",
+   "LV4 Str": "",
+   "LV4 Dex": "",
+   "LV4 Con": "",
+   "LV4 Int": "",
+   "LV4 Wis": "",
+   "LV8 Str": "",
+   "LV8 Dex": "",
+   "LV8 Con": "",
+   "LV8 Int": "",
+   "LV8 Wis": "",
+   "LV12 Str": "",
+   "LV12 Dex": "",
+   "LV12 Con": "",
+   "LV12 Int": "",
+   "LV12 Wis": "",
+   "LV16 Str": "",
+   "LV16 Dex": "",
+   "LV16 Con": "",
+   "LV16 Int": "",
+   "LV16 Wis": "",
+   "LV19 Str": "",
+   "LV19 Dex": "",
+   "LV19 Con": "",
+   "LV19 Int": "",
+   "LV19 Wis": "",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
+ },
+ {
+   "Pokemon Name": "Darkrai",
+   "ID": 491,
+   "Sprite Name": "spr_darkrai",
+   "Sound Cry": "snd_darkrai",
+   "Type": "Dark",
+   "Type 2": null,
+   "Evolution LV": null,
+   "Evolution ID": null,
+   "Mega Comp": null,
+   "Saving Throw 1": "Int",
+   "Saving Throw 2": "Wis",
+   "Base Str": "17",
+   "Base Dex": "20",
+   "Base Con": "16",
+   "Base Int": "18",
+   "Base Wis": "18",
+   "LV4 Str": "17",
+   "LV4 Dex": "20",
+   "LV4 Con": "16",
+   "LV4 Int": "18",
+   "LV4 Wis": "18",
+   "LV8 Str": "17",
+   "LV8 Dex": "20",
+   "LV8 Con": "16",
+   "LV8 Int": "18",
+   "LV8 Wis": "18",
+   "LV12 Str": "17",
+   "LV12 Dex": "20",
+   "LV12 Con": "16",
+   "LV12 Int": "18",
+   "LV12 Wis": "18",
+   "LV16 Str": "17",
+   "LV16 Dex": "20",
+   "LV16 Con": "16",
+   "LV16 Int": "18",
+   "LV16 Wis": "18",
+   "LV19 Str": "17",
+   "LV19 Dex": "20",
+   "LV19 Con": "16",
+   "LV19 Int": "18",
+   "LV19 Wis": "18",
+   "Base Moves": "",
+   "LV2 Moves": "",
+   "LV6 Moves": "",
+   "LV10 Moves": "",
+   "LV18 Moves": "",
+   "TM Moves": ""
  }
 ]

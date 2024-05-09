@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "spr_battleBackgrounds",
+  "name": "spr_battleBackgroundLevel1",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -28,12 +28,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"2a4092a8-18f4-4463-ae57-26e50028ceba",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"a20b23d2-0720-4f60-a307-bdb0812da052",},
   ],
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "spr_battleBackgrounds",
+    "name": "spr_battleBackgroundLevel1",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 0.0,
@@ -45,7 +45,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"f8d35704-c21e-4862-800f-e4fdec2fc673","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"2a4092a8-18f4-4463-ae57-26e50028ceba","path":"sprites/spr_battleBackgrounds/spr_battleBackgrounds.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"d5e3f7ab-4291-4c56-bc67-dbcda9b2d16e","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a20b23d2-0720-4f60-a307-bdb0812da052","path":"sprites/spr_battleBackgroundLevel1/spr_battleBackgroundLevel1.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
@@ -64,12 +64,11 @@
     "eventStubScript": null,
   },
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"43eb9d66-20fd-40ec-ba6b-c31c1eceefbd","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"f9bc4d7c-a92e-4ff7-a7f9-6e1569c8556f","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Layer 1",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"143195a5-771f-47e9-95b9-00c517734eea","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
-    "name": "2 - Sprites",
-    "path": "folders/2 - Sprites.yy",
+    "name": "Battle Backgrounds",
+    "path": "folders/2 - Sprites/Battle Backgrounds.yy",
   },
 }

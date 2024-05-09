@@ -8,7 +8,8 @@
     {"id":{"name":"rm_titleMenu","path":"rooms/rm_titleMenu/rm_titleMenu.yy",},"order":1,},
     {"id":{"name":"snd_penScribble","path":"sounds/snd_penScribble/snd_penScribble.yy",},"order":1,},
     {"id":{"name":"obj_coreSound","path":"objects/obj_coreSound/obj_coreSound.yy",},"order":4,},
-    {"id":{"name":"spr_battleBackgrounds","path":"sprites/spr_battleBackgrounds/spr_battleBackgrounds.yy",},"order":6,},
+    {"id":{"name":"spr_battleBackgroundEndGame","path":"sprites/spr_battleBackgroundEndGame/spr_battleBackgroundEndGame.yy",},"order":1,},
+    {"id":{"name":"spr_battleBackgroundLevel1","path":"sprites/spr_battleBackgroundLevel1/spr_battleBackgroundLevel1.yy",},"order":0,},
     {"id":{"name":"scr_coreBattleFunctions","path":"scripts/scr_coreBattleFunctions/scr_coreBattleFunctions.yy",},"order":3,},
     {"id":{"name":"bgm_rivalBattle1Loop","path":"sounds/bgm_rivalBattle1Loop/bgm_rivalBattle1Loop.yy",},"order":1,},
     {"id":{"name":"spr_pikachu","path":"sprites/spr_pikachu/spr_pikachu.yy",},"order":4,},
@@ -94,6 +95,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Notes","folderPath":"folders/Notes.yy","order":13,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Paths","folderPath":"folders/Paths.yy","order":4,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Shaders","folderPath":"folders/Shaders.yy","order":6,},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Battle Backgrounds","folderPath":"folders/2 - Sprites/Battle Backgrounds.yy","order":12,},
   ],
   "AudioGroups": [
     {"resourceType":"GMAudioGroup","resourceVersion":"1.3","name":"audiogroup_default","targets":-1,},

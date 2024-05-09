@@ -417,6 +417,16 @@ switch (room)
 			case(enumBattleState.introSequence):
 				//type here
 				break;
+			case(enumBattleState.player):
+				draw_text(room_width / 2, room_height / 2, "PLAYER");
+				draw_text(room_width, room_height, global.playerChoiceBattle);
+				break;
+			case(enumBattleState.intermission):
+				//type here
+				break;
+			case(enumBattleState.opponent):
+				draw_text(room_width / 2, room_height / 2, "OPPONENT");
+				break;
 		}
 		break;
 }

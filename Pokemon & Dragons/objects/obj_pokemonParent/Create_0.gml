@@ -9,7 +9,9 @@ enum enumPokemonArray
 	dex = 4,
 	con = 5,
 	int = 6,
-	wis = 7
+	wis = 7,
+	maxHP = 8,
+	currentHP = 9
 }
 
 pokemonParty = []; // Used to store all the stats of the Pokemon's Party
@@ -126,7 +128,26 @@ for (var i = 0; i < global.maxPokemon; i++;)
 	}
 }
 
-
-snd_opponentPokemon = asset_get_index(pokemonParty[0][enumPokemonArray.sound]);
+for (var i = 0; i < global.maxPokemon; i++;)
+{
+	if (pokemonParty[i][enumPokemonArray.ID] != "NOT_SET")
+	{
+		var _hitDice = 8;
+		var _conModifier = funct_modifierCheck(pokemonParty[i][enumPokemonArray.con]);
+		var _baseHP = _conModifier + _hitDice;
+		var _hitDiceAddition = 0;
+		for (var i = global.pokemonLevelSet - 1; i > 0; i--)
+		{
+			_hitDiceAddition += (funct_diceRoll(_hitDice) + _conModifier);
+		}
+		pokemonParty[i][enumPokemonArray.maxHP] = _baseHP + _hitDiceAddition;
+		pokemonParty[i][enumPokemonArray.currentHP] = pokemonParty[i][enumPokemonArray.maxHP]; // Only necessary for the Prototype
+	}
+	else
+	{
+		pokemonParty[i][enumPokemonArray.maxHP] = "NOT_SET";
+		pokemonParty[i][enumPokemonArray.currentHP] = "NOT_SET";
+	}
+}
 
 sprite_index = asset_get_index(global.pokeDex[pokemonParty[0][enumPokemonArray.ID]][$ "Sprite Name"]);

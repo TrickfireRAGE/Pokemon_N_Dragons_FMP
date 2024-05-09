@@ -80,6 +80,9 @@ for (var i = enumBattleStats.str; i <= enumBattleStats.wis; i++;)
 	show_message(battleStats[i]);
 }
 
+// Brings Moves in, has to be done manually in Visual Studio and not in excel
+show_message(string(global.pokeDex[25][$ "Base Moves"][0], global.pokeDex[25][$ "Base Moves"][1], global.pokeDex[25][$ "Base Moves"][2]));
+show_message(string(global.pokeDex[447][$ "Base Moves"][0], global.pokeDex[447][$ "Base Moves"][1], global.pokeDex[447][$ "Base Moves"][2]));
 
 #endregion
 
