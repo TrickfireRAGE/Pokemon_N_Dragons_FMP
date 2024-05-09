@@ -18,6 +18,7 @@
     {"id":{"name":"spr_pokeball","path":"sprites/spr_pokeball/spr_pokeball.yy",},"order":10,},
     {"id":{"name":"spr_opponentBattle","path":"sprites/spr_opponentBattle/spr_opponentBattle.yy",},"order":9,},
     {"id":{"name":"rm_battleRoom","path":"rooms/rm_battleRoom/rm_battleRoom.yy",},"order":2,},
+    {"id":{"name":"spr_choiceCircleSmall","path":"sprites/spr_choiceCircleSmall/spr_choiceCircleSmall.yy",},"order":6,},
     {"id":{"name":"snd_riolu","path":"sounds/snd_riolu/snd_riolu.yy",},"order":4,},
     {"id":{"name":"obj_opponentPokemon","path":"objects/obj_opponentPokemon/obj_opponentPokemon.yy",},"order":0,},
     {"id":{"name":"spr_choiceArrow","path":"sprites/spr_choiceArrow/spr_choiceArrow.yy",},"order":1,},
@@ -43,6 +44,7 @@
     {"id":{"name":"obj_coreTracker","path":"objects/obj_coreTracker/obj_coreTracker.yy",},"order":1,},
     {"id":{"name":"bgm_unwaveringEmotions","path":"sounds/bgm_unwaveringEmotions/bgm_unwaveringEmotions.yy",},"order":1,},
     {"id":{"name":"bgm_titleScreen","path":"sounds/bgm_titleScreen/bgm_titleScreen.yy",},"order":0,},
+    {"id":{"name":"spr_darkrai","path":"sprites/spr_darkrai/spr_darkrai.yy",},"order":13,},
     {"id":{"name":"rm_introVideo","path":"rooms/rm_introVideo/rm_introVideo.yy",},"order":0,},
   ],
   "Options": [

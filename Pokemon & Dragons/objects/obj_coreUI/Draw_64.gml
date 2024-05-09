@@ -36,11 +36,12 @@ switch (room)
 		var _menuYQuote = global.gameResolutionHeight / 1.1;
 		
 		// UI Selection Variables
-		var _selectionX = global.gameResolutionWidth / 15;
-		var _selectionSprite = spr_choiceArrow;
+		var _selectionX = global.gameResolutionWidth / 5;
+		var _selectionSprite = spr_choiceCircleSmall;
 		var _selectionSubImage = 0;
-		var _selectionAlpha = 1;
-		var _selectionColour = c_black;
+		var _selectionAlpha = 0.7;
+		var _selectionScale = (global.gameResolutionWidth / 1920) * 8;
+		var _selectionColour = c_white;
 		
 		// Version Number Variables
 		var _versionNumberY = global.gameResolutionHeight / 1.06;
@@ -133,7 +134,7 @@ switch (room)
 					funct_selectionUI(_selectionX, _menuY,
 						global.titleScreenOptions, _selectionSprite,
 						_selectionSubImage, _mainMenuArrayLength,
-						_gameLogoScale, _selectionAlpha,
+						_selectionScale, _selectionAlpha,
 						_selectionColour);
 				}
 				#endregion
@@ -184,7 +185,7 @@ switch (room)
 						funct_selectionUI(_selectionX, _menuY,
 							global.newGameOptions, _selectionSprite,
 							_selectionSubImage, _newGameArrayLength,
-							_gameLogoScale, _selectionAlpha,
+							_selectionScale, _selectionAlpha,
 							_selectionColour);
 						#endregion
 						break;
@@ -245,7 +246,7 @@ switch (room)
 						funct_selectionUI(_selectionX, _menuY,
 							global.settingsScreenOptions, _selectionSprite,
 							_selectionSubImage, _settingsArrayLength,
-							_gameLogoScale, _selectionAlpha,
+							_selectionScale, _selectionAlpha,
 							_selectionColour);
 						#endregion
 						break;
@@ -305,7 +306,7 @@ switch (room)
 						funct_selectionUI(_selectionX, _menuY,
 							global.settingsScreenOptions, _selectionSprite,
 							_selectionSubImage, _resolutionSelectionLength,
-							_gameLogoScale, _selectionAlpha,
+							_selectionUI, _selectionAlpha,
 							_selectionColour);
 						#endregion
 						break;
@@ -344,7 +345,7 @@ switch (room)
 						funct_selectionUI(_selectionX, _menuY,
 							global.settingsScreenOptions, _selectionSprite,
 							_selectionSubImage, _fullScreenArrayLength,
-							_gameLogoScale, _selectionAlpha,
+							_selectionScale, _selectionAlpha,
 							_selectionColour);
 						#endregion
 						break;
