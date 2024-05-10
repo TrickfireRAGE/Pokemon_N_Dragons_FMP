@@ -2,7 +2,7 @@
 
 #region VERSION NUMBER
 
-versionNumber = "Pre-Alpha - V0.0.0.12";
+versionNumber = "Pre-Alpha - V0.0.0.13";
 
 #endregion
 
@@ -36,7 +36,7 @@ titleScreenAlphaText = 0;
 
 enum enumCoreUIAlarms
 {
-	sequences = 0 // put more here when added
+	backgroundEffect = 0 // put more here when added
 }
 
 

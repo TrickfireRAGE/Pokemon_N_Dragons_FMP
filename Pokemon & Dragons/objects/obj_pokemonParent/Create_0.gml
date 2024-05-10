@@ -1,4 +1,4 @@
-/// @description 
+/// @description THIS NEEDS TO BE CLEANED UP!
 
 enum enumPokemonArray
 {
@@ -11,10 +11,27 @@ enum enumPokemonArray
 	int = 6,
 	wis = 7,
 	maxHP = 8,
-	currentHP = 9
+	currentHP = 9,
+	moveAvailabilityLV = 10, // REMOVE POST PROTOTYPE
+	moveAvailabliityTM = 11, // REMOVE POST PROTOTYPE
+	moveSelection = 12 // WILL NEED FULL EXPANSION
+}
+
+enum enumPokemonPartyMoves
+{
+	pokemonID = 0,
+	move1ID = 1,
+	move1PP = 2,
+	move2ID = 3,
+	move2PP = 4,
+	move3ID = 5,
+	move3PP = 6,
+	move4ID = 7,
+	move4PP = 8
 }
 
 pokemonParty = []; // Used to store all the stats of the Pokemon's Party
+pokemonPartyMoves = []; // Used to store all battle moves for the game + PP (NEED TO IMPLEMENT THIS CORRECTLY)
 
 if (object_index == obj_playerPokemon)
 {
@@ -150,4 +167,120 @@ for (var i = 0; i < global.maxPokemon; i++;)
 	}
 }
 
+for (var i = 0; i < global.maxPokemon; i++;)
+{
+	if (pokemonParty[i][enumPokemonArray.ID] != "NOT_SET")
+	{
+		var _counter = 0;
+		pokemonPartyMoves[i][enumPokemonPartyMoves.pokemonID] = pokemonParty[i][enumPokemonArray.ID];
+		for (var f = enumPokemonPartyMoves.move1ID; f <= enumPokemonPartyMoves.move4ID; f += 2;)
+		{
+			var _struct = global.pokeDex[pokemonPartyMoves[i][enumPokemonPartyMoves.pokemonID]][$ "LV1 Battle Moves"];
+			show_message(_struct[_counter]);
+			pokemonPartyMoves[i][f] = _struct[_counter]; //
+			var _arraySize = array_length(global.pokeMoves);
+			for (var v = 0; v <= _arraySize; v++)
+			{
+				if (global.pokeMoves[v][$ "Move ID"] == pokemonPartyMoves[i][f])
+				{
+					pokemonPartyMoves[i][f + 1] = global.pokeMoves[v][$ "PP"];
+					v = _arraySize + 1;
+				}
+			}
+			_counter++;
+		}
+	}
+	else
+	{
+		for (var f = enumPokemonPartyMoves.move1ID; f <= enumPokemonPartyMoves.move4ID; f += 2;)
+		{
+			pokemonPartyMoves[i][f] = "NOT_SET";
+			pokemonPartyMoves[i][f + 1] = "NOT_SET";
+		}
+	}
+}
+// Commented out for Prototype purposes as this version doesn't work as intended
+/*for (var i = 0; i < global.maxPokemon; i++;)
+{
+	if (pokemonParty[i][enumPokemonArray.ID] != "NOT_SET")
+	{
+		var _moveIDArrayLV = [];
+		var _moveIDArrayTM = [];
+		switch(global.pokemonLevelSet)
+		{
+			case(20):
+			case(19):
+			case(18):
+				for (var f = 0; f < array_length(global.pokeDex[pokemonParty[i][enumPokemonArray.ID]][$ "LV18 Moves"]); f++;)
+				{
+					_moveIDArrayLV[array_length(_moveIDArrayLV)] = global.pokeDex[pokemonParty[i][enumPokemonArray.ID]][$ "LV18 Moves"][f];
+				}
+			case(17):
+			case(16):
+			case(15):
+			case(14):
+			case(13):
+			case(12):
+			case(11):
+			case(10):
+				for (var f = 0; f < array_length(global.pokeDex[pokemonParty[i][enumPokemonArray.ID]][$ "LV10 Moves"]); f++;)
+				{
+					_moveIDArrayLV[array_length(_moveIDArrayLV)] = global.pokeDex[pokemonParty[i][enumPokemonArray.ID]][$ "LV10 Moves"][f];
+				}
+			case(9):
+			case(8):
+			case(7):
+			case(6):
+				for (var f = 0; f < array_length(global.pokeDex[pokemonParty[i][enumPokemonArray.ID]][$ "LV6 Moves"]); f++;)
+				{
+					_moveIDArrayLV[array_length(_moveIDArrayLV)] = global.pokeDex[pokemonParty[i][enumPokemonArray.ID]][$ "LV6 Moves"][f];
+				}
+			case(5):
+			case(4):
+			case(3):
+			case(2):
+				for (var f = 0; f < array_length(global.pokeDex[pokemonParty[i][enumPokemonArray.ID]][$ "LV2 Moves"]); f++;)
+				{
+					_moveIDArrayLV[array_length(_moveIDArrayLV)] = global.pokeDex[pokemonParty[i][enumPokemonArray.ID]][$ "LV2 Moves"][f];
+				}
+			case(1):
+				for (var f = 0; f < array_length(global.pokeDex[pokemonParty[i][enumPokemonArray.ID]][$ "Base Moves"]); f++;)
+				{
+					_moveIDArrayLV[array_length(_moveIDArrayLV)] = global.pokeDex[pokemonParty[i][enumPokemonArray.ID]][$ "Base Moves"][f];
+				}
+				for (var f = 0; f < array_length(global.pokeDex[pokemonParty[i][enumPokemonArray.ID]][$ "TM Moves"]); f++;)
+				{
+					_moveIDArrayTM[array_length(_moveIDArrayTM)] = global.pokeDex[pokemonParty[i][enumPokemonArray.ID]][$ "Base Moves"][f];
+				}
+				break;
+		}
+		// Only for Prototype as this will need to run off Save File in future (MAKE PRIORITY AFTER BATTLE SYSTEM WORKS)
+		pokemonParty[i][enumPokemonArray.moveAvailabilityLV] = _moveIDArrayLV;
+		pokemonParty[i][enumPokemonArray.moveAvailabliityTM] = _moveIDArrayTM;
+		var _moveSelection = []; // RECODE ALL THIS TO USE pokemonPartyMoves for the Prototype and to be easily used for the future with saves.
+		if (global.gameState == enumGameState.level1Battle)
+		{
+			for (var f = 0; f < array_length(global.pokeDex[pokemonParty[i][enumPokemonArray.ID]][$ "LV1 Battle Moves"]); f++;)
+			{
+				_moveSelection += global.pokeDex[pokemonParty[i][enumPokemonArray.ID]][$ "LV1 Battle Moves"][f];
+			}
+		}
+		else if (global.gameState == enumGameState.endGameBattle)
+		{
+			for (var f = 0; f < array_length(global.pokeDex[pokemonParty[i][enumPokemonArray.ID]][$ "LV20 Battle Moves"]); f++;)
+			{
+				_moveSelection += global.pokeDex[pokemonParty[i][enumPokemonArray.ID]][$ "LV20 Battle Moves"][f];
+			}
+		}
+		pokemonParty[i][enumPokemonArray.moveSelection] = _moveSelection;
+	}
+	else
+	{
+		pokemonParty[i][enumPokemonArray.moveAvailabilityLV] = "NOT_SET";
+		pokemonParty[i][enumPokemonArray.moveAvailabliityTM] = "NOT_SET";
+		pokemonParty[i][enumPokemonArray.moveSelection] = "NOT_SET";
+	}
+} */
+
 sprite_index = asset_get_index(global.pokeDex[pokemonParty[0][enumPokemonArray.ID]][$ "Sprite Name"]);
+image_alpha = 0; // Put at zero due to the sequence

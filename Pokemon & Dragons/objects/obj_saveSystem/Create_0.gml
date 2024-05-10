@@ -3,7 +3,7 @@
 #region Initial Save File Read
 
 ini_open("coreSaveFile.ini");
-if (ini_read_real("settings", "resolutionWidth", 0) == 0)
+if (ini_read_real("settings", "resolutionWidth", false) == false)
 {
 	var _displayHeight = (display_get_height() / 2);
 	var _displayWidth = ((_displayHeight / 9) * 16);

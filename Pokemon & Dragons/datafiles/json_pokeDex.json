@@ -1266,12 +1266,14 @@
    "LV19 Con": "13",
    "LV19 Int": "12",
    "LV19 Wis": "20",
-   "Base Moves": [100001, 100002, 100003],
+   "Base Moves": [ 100001, 100002, 100003 ],
    "LV2 Moves": "",
    "LV6 Moves": "",
    "LV10 Moves": "",
    "LV18 Moves": "",
-   "TM Moves": ""
+   "TM Moves": "",
+   "LV1 Battle Moves": [100001, 100002, 100003, 100004],
+   "LV20 Battle Moves": ""
  },
  {
    "Pokemon Name": "",
@@ -21949,7 +21951,9 @@
    "LV6 Moves": "",
    "LV10 Moves": "",
    "LV18 Moves": "",
-   "TM Moves": ""
+   "TM Moves": "",
+   "LV1 Battle Moves": [100003, 100004, 100005, 100001],
+   "LV20 Battle Moves": ""
  },
  {
    "Pokemon Name": "Lucario",
@@ -21998,7 +22002,9 @@
    "LV6 Moves": "",
    "LV10 Moves": "",
    "LV18 Moves": "",
-   "TM Moves": ""
+   "TM Moves": "",
+   "LV1 Battle Moves": "",
+   "LV20 Battle Moves": ""
  },
  {
    "Pokemon Name": "",

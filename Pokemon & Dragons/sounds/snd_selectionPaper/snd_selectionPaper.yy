@@ -11,8 +11,8 @@
   "type": 0,
   "bitDepth": 1,
   "audioGroupId": {
-    "name": "audiogroup_default",
-    "path": "audiogroups/audiogroup_default",
+    "name": "sg_soundEffectsGroup",
+    "path": "audiogroups/sg_soundEffectsGroup",
   },
   "soundFile": "snd_selectionPaper.wav",
   "duration": 0.515729,

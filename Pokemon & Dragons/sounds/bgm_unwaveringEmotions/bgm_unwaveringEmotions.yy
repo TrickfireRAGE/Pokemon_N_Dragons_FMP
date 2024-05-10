@@ -11,8 +11,8 @@
   "type": 0,
   "bitDepth": 1,
   "audioGroupId": {
-    "name": "audiogroup_default",
-    "path": "audiogroups/audiogroup_default",
+    "name": "sg_menuMusicGroup",
+    "path": "audiogroups/sg_menuMusicGroup",
   },
   "soundFile": "bgm_unwaveringEmotions.mp3",
   "duration": 106.9088,

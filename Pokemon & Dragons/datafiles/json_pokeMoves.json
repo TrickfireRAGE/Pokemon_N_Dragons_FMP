@@ -1,6 +1,7 @@
 [
  {
    "Move Name": "Thunder Shock",
+   "Move ID": 100001,
    "Type": "Electric",
    "Time": "Action",
    "PP": 15,
@@ -25,6 +26,7 @@
  },
  {
    "Move Name": "Growl",
+   "Move ID": 100002,
    "Type": "Normal",
    "Time": "Action",
    "PP": 20,
@@ -49,6 +51,7 @@
  },
  {
    "Move Name": "Quick Attack",
+   "Move ID": 100003,
    "Type": "Normal",
    "Time": "Bonus",
    "PP": 15,
@@ -73,6 +76,7 @@
  },
  {
    "Move Name": "Rock Smash",
+   "Move ID": 100004,
    "Type": "Fighting",
    "Time": "Action",
    "PP": 10,
@@ -97,6 +101,7 @@
  },
  {
    "Move Name": "Work Up",
+   "Move ID": 100005,
    "Type": "Normal",
    "Time": "Bonus",
    "PP": 3,

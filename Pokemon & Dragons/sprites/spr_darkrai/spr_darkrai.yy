@@ -68,7 +68,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "2 - Sprites",
-    "path": "folders/2 - Sprites.yy",
+    "name": "Pokemon Sprites",
+    "path": "folders/2 - Sprites/Pokemon Sprites.yy",
   },
 }

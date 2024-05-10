@@ -12,7 +12,7 @@ function funct_textUI(_xPosition, _yPosition, _string, _scale, _colour, _alpha)
 	_alpha);
 }
 
-function funct_selectionUI(_xPosition, _yPositionArray, _optionVariable, _sprite, _spriteSubImage, _lengthArray, _scale, _alpha, _colour)
+function funct_selectionUI(_xPosition, _yPositionArray, _optionVariable, _sprite, _spriteSubImage, _lengthArray, _scaleX, _scaleY, _alpha, _colour)
 {
 	for (var i = 0; i <= _lengthArray; i++;)
 	{
@@ -20,7 +20,7 @@ function funct_selectionUI(_xPosition, _yPositionArray, _optionVariable, _sprite
 		{
 			draw_sprite_ext(_sprite, _spriteSubImage,
 			_xPosition, _yPositionArray[i],
-			_scale, _scale,
+			_scaleX, _scaleY,
 			0, _colour,
 			_alpha);
 		}

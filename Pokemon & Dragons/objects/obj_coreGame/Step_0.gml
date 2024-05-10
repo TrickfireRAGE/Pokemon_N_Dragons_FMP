@@ -186,14 +186,14 @@ switch (room)
 								{
 									case(enumPokemonChoiceEndGame.pikachu):
 										global.playerPokemonID[0] = 25; // Update both to be arrays in future versions
-										global.opponentPokemonID[0] = 448;
+										global.opponentPokemonID[0] = 491;
 										global.menuState = enumTitleScreenState.outOfMenu;
 										global.gameState = enumGameState.endGameBattle;
 										room = rm_battleRoom;
 										break;
-									case(enumPokemonChoiceLevel1.riolu):
+									case(enumPokemonChoiceEndGame.lucario):
 										global.playerPokemonID[0] = 448; // Update both to be arrays in future versions
-										global.opponentPokemonID[0] = 25;
+										global.opponentPokemonID[0] = 491;
 										global.menuState = enumTitleScreenState.outOfMenu;
 										global.gameState = enumGameState.endGameBattle;
 										room = rm_battleRoom;
@@ -422,7 +422,7 @@ switch (room)
 						{
 							global.soundVolume = 0;
 						}
-						audio_master_gain(global.soundVolume);
+						funct_soundChanges(global.soundVolume);
 						ini_open("coreSaveFile.ini");
 						ini_write_real("settings", "sound", global.soundVolume);
 						ini_close();
@@ -437,7 +437,7 @@ switch (room)
 						{
 							global.soundVolume = 1;
 						}
-						audio_master_gain(global.soundVolume);
+						funct_soundChanges(global.soundVolume);
 						ini_open("coreSaveFile.ini");
 						ini_write_real("settings", "sound", global.soundVolume);
 						ini_close();

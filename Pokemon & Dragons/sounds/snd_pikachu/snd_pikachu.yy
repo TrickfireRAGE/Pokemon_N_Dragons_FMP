@@ -11,13 +11,13 @@
   "type": 0,
   "bitDepth": 1,
   "audioGroupId": {
-    "name": "audiogroup_default",
-    "path": "audiogroups/audiogroup_default",
+    "name": "sg_pokemonCriesGroup",
+    "path": "audiogroups/sg_pokemonCriesGroup",
   },
   "soundFile": "snd_pikachu.ogg",
   "duration": 1.095087,
   "parent": {
-    "name": "4 - Sounds",
-    "path": "folders/4 - Sounds.yy",
+    "name": "Pokemon Cries",
+    "path": "folders/4 - Sounds/Pokemon Cries.yy",
   },
 }

@@ -11,8 +11,8 @@
   "type": 0,
   "bitDepth": 1,
   "audioGroupId": {
-    "name": "audiogroup_default",
-    "path": "audiogroups/audiogroup_default",
+    "name": "sg_soundEffectsGroup",
+    "path": "audiogroups/sg_soundEffectsGroup",
   },
   "soundFile": "snd_penScribble.wav",
   "duration": 0.352583,

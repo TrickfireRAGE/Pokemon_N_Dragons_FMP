@@ -19,7 +19,7 @@ switch (room)
 		var _textAlpha = 1;
 		var _notAvailableAlpha = 0.8;
 		var _notAvailableColour = c_grey;
-		var _quoteScaling = (global.gameResolutionWidth / 1920) * 1.1;
+		var _quoteScaling = (global.gameResolutionWidth / 1920) * 1.3;
 		draw_set_valign(fa_middle);
 		draw_set_font(fnt_kyoMadoka); // Sets the Font for the Game
 		
@@ -33,14 +33,18 @@ switch (room)
 		_menuY[4] = global.gameResolutionHeight / 1.65;
 		_menuY[5] = global.gameResolutionHeight / 1.4;
 		_menuY[6] = global.gameResolutionHeight / 1.2;
-		var _menuYQuote = global.gameResolutionHeight / 1.1;
+		var _menuXQuote = global.gameResolutionWidth / 9;
+		var _menuYQuote = global.gameResolutionHeight / 1.2;
 		
 		// UI Selection Variables
-		var _selectionX = global.gameResolutionWidth / 5;
+		var _selectionXMenu = global.gameResolutionWidth / 5.2;
+		var _selectionXSettings = global.gameResolutionWidth / 4.5;
 		var _selectionSprite = spr_choiceCircleSmall;
 		var _selectionSubImage = 0;
 		var _selectionAlpha = 0.7;
-		var _selectionScale = (global.gameResolutionWidth / 1920) * 8;
+		var _selectionScaleXMenu = (global.gameResolutionWidth / 1920) * 7;
+		var _selectionScaleXSettings = (global.gameResolutionWidth / 1920) * 10;
+		var _selectionScaleY = (global.gameResolutionWidth / 1920) * 8;
 		var _selectionColour = c_white;
 		
 		// Version Number Variables
@@ -131,11 +135,11 @@ switch (room)
 								_textColour, _textAlpha);
 						}
 					}
-					funct_selectionUI(_selectionX, _menuY,
+					funct_selectionUI(_selectionXMenu, _menuY,
 						global.titleScreenOptions, _selectionSprite,
 						_selectionSubImage, _mainMenuArrayLength,
-						_selectionScale, _selectionAlpha,
-						_selectionColour);
+						_selectionScaleXMenu, _selectionScaleY,
+						_selectionAlpha, _selectionColour);
 				}
 				#endregion
 				break;
@@ -149,13 +153,13 @@ switch (room)
 						var _newGameArrayLength = 3;
 						var _newGameStringChoices = [];
 						_newGameStringChoices[0] = "Story";
-						_newGameStringChoices[1] = "Level 1 Battle";
-						_newGameStringChoices[2] = "Endgame Battle";
+						_newGameStringChoices[1] = "LV1 Battle";
+						_newGameStringChoices[2] = "LV20 Battle";
 						_newGameStringChoices[3] = "Return";
 						var _newGameQuotes = [];
-						_newGameQuotes[0] = "Embark on an Adventure with your Pokemon Friends!";
-						_newGameQuotes[1] = "Battle your Rival using the Starter Pokemon!";
-						_newGameQuotes[2] = "Feel a glimpse of the future with this battle!";
+						_newGameQuotes[0] = "Embark on an Adventure \n with your Pokemon Friends!";
+						_newGameQuotes[1] = "Battle your Rival \n using the Starter Pokemon!";
+						_newGameQuotes[2] = "Feel a glimpse of the future \n with this battle!";
 						_newGameQuotes[3] = "Go back to the Main Menu.";
 						// UI Code
 						for (var i = 0; i <= _newGameArrayLength; i++;)
@@ -177,16 +181,16 @@ switch (room)
 						{
 							if (i == global.newGameOptions)
 							{
-								funct_textUI(_menuX, _menuYQuote,
+								funct_textUI(_menuXQuote, _menuYQuote,
 									_newGameQuotes[i], _quoteScaling,
 									_textColour, _textAlpha);
 							}
 						}	
-						funct_selectionUI(_selectionX, _menuY,
+						funct_selectionUI(_selectionXMenu, _menuY,
 							global.newGameOptions, _selectionSprite,
 							_selectionSubImage, _newGameArrayLength,
-							_selectionScale, _selectionAlpha,
-							_selectionColour);
+							_selectionScaleXMenu, _selectionScaleY,
+							_selectionAlpha, _selectionColour);
 						#endregion
 						break;
 					case(enumNewGameState.level1Choice):
@@ -243,11 +247,11 @@ switch (room)
 								_settingsString[i], _menuTextScale,
 								_textColour, _textAlpha);
 						}
-						funct_selectionUI(_selectionX, _menuY,
+						funct_selectionUI(_selectionXSettings, _menuY,
 							global.settingsScreenOptions, _selectionSprite,
 							_selectionSubImage, _settingsArrayLength,
-							_selectionScale, _selectionAlpha,
-							_selectionColour);
+							_selectionScaleXSettings, _selectionScaleY,
+							_selectionAlpha, _selectionColour);
 						#endregion
 						break;
 					case(enumSettingsScreenState.resolution):
@@ -303,11 +307,11 @@ switch (room)
 							_returnString, _menuTextScale,
 							_textColour, _textAlpha);
 						
-						funct_selectionUI(_selectionX, _menuY,
+						funct_selectionUI(_selectionXSettings, _menuY,
 							global.settingsScreenOptions, _selectionSprite,
 							_selectionSubImage, _resolutionSelectionLength,
-							_selectionUI, _selectionAlpha,
-							_selectionColour);
+							_selectionScaleXSettings, _selectionScaleY,
+							_selectionAlpha, _selectionColour);
 						#endregion
 						break;
 					case(enumSettingsScreenState.fullScreen):
@@ -342,11 +346,11 @@ switch (room)
 							_fullScreenString[2], _menuTextScale,
 							_textColour, _textAlpha);
 							
-						funct_selectionUI(_selectionX, _menuY,
+						funct_selectionUI(_selectionXSettings, _menuY,
 							global.settingsScreenOptions, _selectionSprite,
 							_selectionSubImage, _fullScreenArrayLength,
-							_selectionScale, _selectionAlpha,
-							_selectionColour);
+							_selectionScaleXSettings, _selectionScaleY,
+							_selectionAlpha, _selectionColour);
 						#endregion
 						break;
 					case(enumSettingsScreenState.sound):
@@ -419,8 +423,33 @@ switch (room)
 				//type here
 				break;
 			case(enumBattleState.player):
-				draw_text(room_width / 2, room_height / 2, "PLAYER");
-				draw_text(room_width, room_height, global.playerChoiceBattle);
+				var _xPosition = global.gameResolutionWidth / 1.5;
+				var _yPosition = global.gameResolutionHeight / 1.5;
+				var _xScale = (global.gameResolutionWidth / 1920) * 6;
+				var _yScale = (global.gameResolutionHeight / 1080) * 7;
+				switch (global.playerBattleState)
+				{
+					case(enumPlayerTurnState.baseMenu):
+						draw_sprite_ext(spr_battleUIV3, 0, _xPosition, _yPosition, _xScale, _yScale, 0, c_white, 1); // Clean this up!
+						funct_textUI(_xPosition, _yPosition, "FIGHT", 1, c_white, 1); // ^
+						
+						draw_text(room_width / 2, room_height / 2, "PLAYER");
+						draw_text(room_width, room_height, global.playerChoiceBattle);
+						for (var i = enumPokemonPartyMoves.move1ID; i <= array_length(obj_playerPokemon.pokemonPartyMoves); i += 2;)
+						{
+							draw_text(room_width * 2, room_height * (2 + i), obj_playerPokemon.pokemonPartyMoves[0][i]);
+						}
+						break;
+					case(enumPlayerTurnState.attackMenu):
+						// put Move code here
+						break;
+					case(enumPlayerTurnState.bagMenu):
+						// put bag code here
+						break;
+					case(enumPlayerTurnState.pokemonMenu):
+						// Not available in the Prototype
+						break;
+				}
 				break;
 			case(enumBattleState.intermission):
 				//type here

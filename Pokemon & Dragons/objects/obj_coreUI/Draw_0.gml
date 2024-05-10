@@ -66,7 +66,20 @@ switch (room)
 			}
 			break;
 	case(rm_battleRoom):
-		
+		switch (global.gameState)
+		{
+			case(enumGameState.level1Battle):
+				// Type here
+				break;
+			case(enumGameState.endGameBattle):
+				var _randomEffect = "NOT_SET";
+				_randomEffect = irandom_range(0, 999);
+				if (_randomEffect == 999)
+				{
+					alarm_set(enumCoreUIAlarms.backgroundEffect, 1);
+				}
+				break;
+		}
 		break;
 }
 
