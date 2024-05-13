@@ -423,25 +423,111 @@ switch (room)
 				//type here
 				break;
 			case(enumBattleState.player):
-				var _xPosition = global.gameResolutionWidth / 1.5;
-				var _yPosition = global.gameResolutionHeight / 1.5;
+				var _xPosition = [];
+				var _distanceX = 80 * (global.gameResolutionWidth / 1920);
+				_xPosition[0] = global.gameResolutionWidth / 1.2;
+				_xPosition[1] = _xPosition[0] - _distanceX;
+				_xPosition[2] = _xPosition[1] - _distanceX;
+				_xPosition[3] = _xPosition[2] - _distanceX;
+				
+				var _yPosition = [];
+				var _distanceY = 100 * (global.gameResolutionWidth / 1920);
+				_yPosition[0] = global.gameResolutionHeight / 1.6;
+				_yPosition[1] = _yPosition[0] + _distanceY;
+				_yPosition[2] = _yPosition[1] + _distanceY;
+				_yPosition[3] = _yPosition[2] + _distanceY;
+				
 				var _xScale = (global.gameResolutionWidth / 1920) * 6;
 				var _yScale = (global.gameResolutionHeight / 1080) * 7;
+				
+				var _textScale = (global.gameResolutionWidth / 1920) * 2;
+				var _textColour = c_black;
+				var _textString = [];
+				_textString[0] = "FIGHT";
+				_textString[1] = "POKEMON";
+				_textString[2] = "BAG";
+				_textString[3] = "END TURN";
+				
 				switch (global.playerBattleState)
 				{
 					case(enumPlayerTurnState.baseMenu):
-						draw_sprite_ext(spr_battleUIV3, 0, _xPosition, _yPosition, _xScale, _yScale, 0, c_white, 1); // Clean this up!
-						funct_textUI(_xPosition, _yPosition, "FIGHT", 1, c_white, 1); // ^
-						
-						draw_text(room_width / 2, room_height / 2, "PLAYER");
-						draw_text(room_width, room_height, global.playerChoiceBattle);
-						for (var i = enumPokemonPartyMoves.move1ID; i <= array_length(obj_playerPokemon.pokemonPartyMoves); i += 2;)
+						for (var i = 0; i <= 3; i++;)
 						{
-							draw_text(room_width * 2, room_height * (2 + i), obj_playerPokemon.pokemonPartyMoves[0][i]);
+							if (global.playerChoiceBattle == i)
+							{
+								draw_sprite_ext(spr_battleUISelection, 0,
+									_xPosition[i], _yPosition[i],
+									_xScale, _yScale,
+									0, c_white,
+									1);
+							}
+							else
+							{
+								draw_sprite_ext(spr_battleUI, 0,
+									_xPosition[i], _yPosition[i],
+									_xScale, _yScale,
+									0, c_white,
+									1);
+							}
 						}
+						for (var i = 0; i <= 3; i++;)
+						{
+							funct_textUI(_xPosition[i], _yPosition[i],
+								_textString[i], _textScale,
+								_textColour, 1,
+								fa_middle);
+						}
+						
+						// PUT PLAYER HEALTH HERE
+						
 						break;
 					case(enumPlayerTurnState.attackMenu):
-						// put Move code here
+						var _textStringAttack = [];
+						var _textMoveType = [];
+						var _textMoveTime = [];
+						var _maxPP = [];
+						var _pokeMovesLength = array_length(global.pokeMoves);
+						for (var f = enumPokemonPartyMoves.move1ID; f <= enumPokemonPartyMoves.move4ID; f += 2;)
+						{
+							for (var i = 0; i <= _pokeMovesLength; i++;)
+							{
+								if (global.pokeMoves[i][$ "Move ID"] == obj_playerPokemon.pokemonPartyMoves[0][f]) // REMOVE MAGIC NUMBER "0" TO HAVE SYSTEM THAT CHECKS WHICH POKEMON IT IS
+								{
+									_textStringAttack[i] = global.pokeMoves[i][$ "Move Name"];
+									_textMoveType[i] = global.pokeMoves[i][$ "Type"];
+									_textMoveTime[i] = global.pokeMoves[i][$ "Time"];
+									_maxPP[i] = global.pokeMoves[i][$ "PP"];
+									i = _pokeMovesLength + 1;
+								}
+							}
+						}
+						for (var i = 0; i <= 3; i++;)
+						{
+							var _moveColour = funct_colourTypeUI(_textMoveType[i], typeColoursArray);
+							if (global.playerChoiceAttack == i)
+							{
+								draw_sprite_ext(spr_battleUISelection, 0,
+									_xPosition[i], _yPosition[i],
+									_xScale, _yScale,
+									0, _moveColour,
+									1);
+							}
+							else
+							{
+								draw_sprite_ext(spr_battleUI, 0,
+									_xPosition[i], _yPosition[i],
+									_xScale, _yScale,
+									0, _moveColour,
+									1);
+							}
+						}
+						for (var i = 0; i <= 3; i++;)
+						{
+							funct_textUI(_xPosition[i], _yPosition[i],
+								_textStringAttack[i], _textScale,
+								_textColour, 1,
+								fa_middle);
+						}
 						break;
 					case(enumPlayerTurnState.bagMenu):
 						// put bag code here

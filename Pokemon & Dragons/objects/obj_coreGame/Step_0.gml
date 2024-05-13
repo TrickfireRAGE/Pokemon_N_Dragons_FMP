@@ -1,15 +1,37 @@
 /// @description Runs the core states
 
-#region Controller Variables
+#region Control Variables
 
-global.gamePadConfirm = gamepad_button_check_pressed(global.controllerNumber, gp_face1); // A
-global.gamePadBack = gamepad_button_check_pressed(global.controllerNumber, gp_face2); // B
+// Keyboard Variables
 
-global.gamePadStart = gamepad_button_check_pressed(global.controllerNumber, gp_start); // Start
-global.gamePadUp = gamepad_button_check_pressed(global.controllerNumber, gp_padu); // Up
-global.gamePadDown = gamepad_button_check_pressed(global.controllerNumber, gp_padd); // Down
-global.gamePadLeft = gamepad_button_check_pressed(global.controllerNumber, gp_padl); // Left
-global.gamePadRight = gamepad_button_check_pressed(global.controllerNumber, gp_padr); // Right
+global.gamePadConfirm = keyboard_check_pressed(ord("Z")); // A / Cross
+global.gamePadBack = keyboard_check_pressed(ord("X")); // B / Circle
+global.gamePadX = keyboard_check_pressed(ord("A")); // X / Square
+global.gamePadY = keyboard_check_pressed(ord("S")); // Y / Triangle
+
+global.gamePadSelect = keyboard_check_pressed(vk_space); // Select / TouchPad (PS4/5)
+global.gamePadStart = keyboard_check_pressed(vk_enter); // Start / Options
+global.gamePadUp = keyboard_check_pressed(vk_up); // Up
+global.gamePadDown = keyboard_check_pressed(vk_down); // Down
+global.gamePadLeft = keyboard_check_pressed(vk_left); // Left
+global.gamePadRight = keyboard_check_pressed(vk_right); // Right
+
+// Controller Variables
+
+if (global.controllerNumber != "NOT_SET")
+{
+	global.gamePadConfirm += gamepad_button_check_pressed(global.controllerNumber, gp_face1); // A / Cross
+	global.gamePadBack += gamepad_button_check_pressed(global.controllerNumber, gp_face2); // B / Circle
+	global.gamePadX += gamepad_button_check_pressed(global.controllerNumber, gp_face3); // X / Square
+	global.gamePadY += gamepad_button_check_pressed(global.controllerNumber, gp_face4); // Y / Triangle
+
+	global.gamePadSelect += gamepad_button_check_pressed(global.controllerNumber, gp_select); // Select / TouchPad (PS4/5)
+	global.gamePadStart += gamepad_button_check_pressed(global.controllerNumber, gp_start); // Start / Options
+	global.gamePadUp += gamepad_button_check_pressed(global.controllerNumber, gp_padu); // Up
+	global.gamePadDown += gamepad_button_check_pressed(global.controllerNumber, gp_padd); // Down
+	global.gamePadLeft += gamepad_button_check_pressed(global.controllerNumber, gp_padl); // Left
+	global.gamePadRight += gamepad_button_check_pressed(global.controllerNumber, gp_padr); // Right
+}
 
 #endregion
 
@@ -505,7 +527,53 @@ switch (room)
 						}
 						else if (global.gamePadBack)
 						{
-							// Put code here
+							switch (global.playerBattleState)
+							{
+								case(enumPlayerTurnState.baseMenu):
+									switch (global.playerChoiceBattle)
+									{
+										case(enumBattleChoices.attack):
+											global.playerBattleState = enumPlayerTurnState.attackMenu;
+											global.playerChoiceBattle = enumPlayerAttack.attack1;
+											break;
+										case(enumBattleChoices.bag):
+											//type here
+											break;
+										case(enumBattleChoices.pokemon):
+											//type here
+											break;
+										case(enumBattleChoices.endTurn):
+											global.playerBattleState = enumPlayerTurnState.endTurnSelection;
+											break;
+									}
+									break;
+								case(enumPlayerTurnState.attackMenu):
+									/*switch (global.playerChoiceAttack)
+									{
+										case():
+											// type here
+											break;
+										case():
+											//type here
+											break;
+										case():
+											//type here
+											break;
+										case():
+											//type here
+											break;
+									}*/
+									break;
+								case(enumPlayerTurnState.bagMenu):
+									// Put Bag stuff here
+									break;
+								case(enumPlayerTurnState.pokemonMenu):
+									// Put pokemon Selection here
+									break;
+								case(enumPlayerTurnState.endTurnSelection):
+									// Put end turn code here.
+									break;
+							}
 						}
 						else if (global.gamePadUp)
 						{
@@ -519,7 +587,11 @@ switch (room)
 									}
 									break;
 								case(enumPlayerTurnState.attackMenu):
-									// Put the Attacks section here
+									global.playerChoiceAttack -= _choiceChange;
+									if (global.playerChoiceAttack < enumPlayerAttack.attack1)
+									{
+										global.playerChoiceAttack = enumPlayerAttack.attack1;
+									}
 									break;
 								case(enumPlayerTurnState.bagMenu):
 									// Put Bag stuff here
@@ -544,7 +616,11 @@ switch (room)
 									}
 									break;
 								case(enumPlayerTurnState.attackMenu):
-									// Put the Attacks section here
+									global.playerChoiceAttack += _choiceChange;
+									if (global.playerChoiceAttack > enumPlayerAttack.attack4)
+									{
+										global.playerChoiceAttack = enumPlayerAttack.attack4;
+									}
 									break;
 								case(enumPlayerTurnState.bagMenu):
 									// Put Bag stuff here

@@ -2,7 +2,7 @@
 
 #region VERSION NUMBER
 
-versionNumber = "Pre-Alpha - V0.0.0.13";
+versionNumber = "Pre-Alpha - V0.0.0.14";
 
 #endregion
 
@@ -50,6 +50,74 @@ enum enumPokemonPosition // Expand or scrap if going animated or increasing diff
 	back = 1
 }
 
+enum enumTypeColRows
+{
+	stringType = 0,
+	colour = 1
+}
+
+enum enumTypeColour // No Fairy Types in This version
+{
+	normal = 0,
+	fighting = 1,
+	flying = 2,
+	poison = 3,
+	ground = 4, 
+	rock = 5,
+	bug = 6, 
+	ghost = 7,
+	steel = 8, 
+	fire = 9, 
+	water = 10, 
+	grass = 11, 
+	electric = 12,
+	psychic = 13,
+	ice = 14, 
+	dragon = 15, 
+	dark = 16
+}
+	
+
+#endregion
+
+#region Type Colours
+
+typeColoursArray = [];
+// String
+typeColoursArray[enumTypeColRows.stringType][enumTypeColour.normal] = "Normal";
+typeColoursArray[enumTypeColRows.stringType][enumTypeColour.fighting] = "Fighting";
+typeColoursArray[enumTypeColRows.stringType][enumTypeColour.flying] = "Flying";
+typeColoursArray[enumTypeColRows.stringType][enumTypeColour.poison] = "Poison";
+typeColoursArray[enumTypeColRows.stringType][enumTypeColour.ground] = "Ground";
+typeColoursArray[enumTypeColRows.stringType][enumTypeColour.rock] = "Rock";
+typeColoursArray[enumTypeColRows.stringType][enumTypeColour.bug] = "Bug";
+typeColoursArray[enumTypeColRows.stringType][enumTypeColour.ghost] = "Ghost";
+typeColoursArray[enumTypeColRows.stringType][enumTypeColour.steel] = "Steel";
+typeColoursArray[enumTypeColRows.stringType][enumTypeColour.fire] = "Fire";
+typeColoursArray[enumTypeColRows.stringType][enumTypeColour.water] = "Water";
+typeColoursArray[enumTypeColRows.stringType][enumTypeColour.grass] = "Grass";
+typeColoursArray[enumTypeColRows.stringType][enumTypeColour.electric] = "Electric";
+typeColoursArray[enumTypeColRows.stringType][enumTypeColour.psychic] = "Psychic";
+typeColoursArray[enumTypeColRows.stringType][enumTypeColour.ice] = "Ice";
+typeColoursArray[enumTypeColRows.stringType][enumTypeColour.dragon] = "Dragon";
+typeColoursArray[enumTypeColRows.stringType][enumTypeColour.dark] = "Dark";
+// Colours (Make proper colours later!)
+typeColoursArray[enumTypeColRows.colour][enumTypeColour.normal] = c_ltgrey;
+typeColoursArray[enumTypeColRows.colour][enumTypeColour.fighting] = c_white + c_orange;
+typeColoursArray[enumTypeColRows.colour][enumTypeColour.flying] = c_white + c_blue;
+typeColoursArray[enumTypeColRows.colour][enumTypeColour.poison] = c_purple;
+typeColoursArray[enumTypeColRows.colour][enumTypeColour.ground] = c_white + c_maroon;
+typeColoursArray[enumTypeColRows.colour][enumTypeColour.rock] = c_maroon;
+typeColoursArray[enumTypeColRows.colour][enumTypeColour.bug] = c_green;
+typeColoursArray[enumTypeColRows.colour][enumTypeColour.ghost] = c_purple;
+typeColoursArray[enumTypeColRows.colour][enumTypeColour.steel] = c_grey;
+typeColoursArray[enumTypeColRows.colour][enumTypeColour.fire] = c_orange;
+typeColoursArray[enumTypeColRows.colour][enumTypeColour.water] = c_blue;
+typeColoursArray[enumTypeColRows.colour][enumTypeColour.grass] = c_lime;
+typeColoursArray[enumTypeColRows.colour][enumTypeColour.electric] = c_yellow;
+typeColoursArray[enumTypeColRows.colour][enumTypeColour.psychic] = c_red + c_white;
+typeColoursArray[enumTypeColRows.colour][enumTypeColour.ice] = c_navy;
+typeColoursArray[enumTypeColRows.colour][enumTypeColour.dark] = c_maroon + c_grey;
 
 #endregion
 

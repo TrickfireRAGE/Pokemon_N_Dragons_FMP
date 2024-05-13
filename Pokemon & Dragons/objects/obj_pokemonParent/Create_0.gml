@@ -11,10 +11,7 @@ enum enumPokemonArray
 	int = 6,
 	wis = 7,
 	maxHP = 8,
-	currentHP = 9,
-	moveAvailabilityLV = 10, // REMOVE POST PROTOTYPE
-	moveAvailabliityTM = 11, // REMOVE POST PROTOTYPE
-	moveSelection = 12 // WILL NEED FULL EXPANSION
+	currentHP = 9
 }
 
 enum enumPokemonPartyMoves
@@ -167,7 +164,7 @@ for (var i = 0; i < global.maxPokemon; i++;)
 	}
 }
 
-for (var i = 0; i < global.maxPokemon; i++;)
+for (var i = 0; i < global.maxPokemon; i++;) // Works somewhat, adapt once save file is in + update this to work with End Game
 {
 	if (pokemonParty[i][enumPokemonArray.ID] != "NOT_SET")
 	{
@@ -199,88 +196,6 @@ for (var i = 0; i < global.maxPokemon; i++;)
 		}
 	}
 }
-// Commented out for Prototype purposes as this version doesn't work as intended
-/*for (var i = 0; i < global.maxPokemon; i++;)
-{
-	if (pokemonParty[i][enumPokemonArray.ID] != "NOT_SET")
-	{
-		var _moveIDArrayLV = [];
-		var _moveIDArrayTM = [];
-		switch(global.pokemonLevelSet)
-		{
-			case(20):
-			case(19):
-			case(18):
-				for (var f = 0; f < array_length(global.pokeDex[pokemonParty[i][enumPokemonArray.ID]][$ "LV18 Moves"]); f++;)
-				{
-					_moveIDArrayLV[array_length(_moveIDArrayLV)] = global.pokeDex[pokemonParty[i][enumPokemonArray.ID]][$ "LV18 Moves"][f];
-				}
-			case(17):
-			case(16):
-			case(15):
-			case(14):
-			case(13):
-			case(12):
-			case(11):
-			case(10):
-				for (var f = 0; f < array_length(global.pokeDex[pokemonParty[i][enumPokemonArray.ID]][$ "LV10 Moves"]); f++;)
-				{
-					_moveIDArrayLV[array_length(_moveIDArrayLV)] = global.pokeDex[pokemonParty[i][enumPokemonArray.ID]][$ "LV10 Moves"][f];
-				}
-			case(9):
-			case(8):
-			case(7):
-			case(6):
-				for (var f = 0; f < array_length(global.pokeDex[pokemonParty[i][enumPokemonArray.ID]][$ "LV6 Moves"]); f++;)
-				{
-					_moveIDArrayLV[array_length(_moveIDArrayLV)] = global.pokeDex[pokemonParty[i][enumPokemonArray.ID]][$ "LV6 Moves"][f];
-				}
-			case(5):
-			case(4):
-			case(3):
-			case(2):
-				for (var f = 0; f < array_length(global.pokeDex[pokemonParty[i][enumPokemonArray.ID]][$ "LV2 Moves"]); f++;)
-				{
-					_moveIDArrayLV[array_length(_moveIDArrayLV)] = global.pokeDex[pokemonParty[i][enumPokemonArray.ID]][$ "LV2 Moves"][f];
-				}
-			case(1):
-				for (var f = 0; f < array_length(global.pokeDex[pokemonParty[i][enumPokemonArray.ID]][$ "Base Moves"]); f++;)
-				{
-					_moveIDArrayLV[array_length(_moveIDArrayLV)] = global.pokeDex[pokemonParty[i][enumPokemonArray.ID]][$ "Base Moves"][f];
-				}
-				for (var f = 0; f < array_length(global.pokeDex[pokemonParty[i][enumPokemonArray.ID]][$ "TM Moves"]); f++;)
-				{
-					_moveIDArrayTM[array_length(_moveIDArrayTM)] = global.pokeDex[pokemonParty[i][enumPokemonArray.ID]][$ "Base Moves"][f];
-				}
-				break;
-		}
-		// Only for Prototype as this will need to run off Save File in future (MAKE PRIORITY AFTER BATTLE SYSTEM WORKS)
-		pokemonParty[i][enumPokemonArray.moveAvailabilityLV] = _moveIDArrayLV;
-		pokemonParty[i][enumPokemonArray.moveAvailabliityTM] = _moveIDArrayTM;
-		var _moveSelection = []; // RECODE ALL THIS TO USE pokemonPartyMoves for the Prototype and to be easily used for the future with saves.
-		if (global.gameState == enumGameState.level1Battle)
-		{
-			for (var f = 0; f < array_length(global.pokeDex[pokemonParty[i][enumPokemonArray.ID]][$ "LV1 Battle Moves"]); f++;)
-			{
-				_moveSelection += global.pokeDex[pokemonParty[i][enumPokemonArray.ID]][$ "LV1 Battle Moves"][f];
-			}
-		}
-		else if (global.gameState == enumGameState.endGameBattle)
-		{
-			for (var f = 0; f < array_length(global.pokeDex[pokemonParty[i][enumPokemonArray.ID]][$ "LV20 Battle Moves"]); f++;)
-			{
-				_moveSelection += global.pokeDex[pokemonParty[i][enumPokemonArray.ID]][$ "LV20 Battle Moves"][f];
-			}
-		}
-		pokemonParty[i][enumPokemonArray.moveSelection] = _moveSelection;
-	}
-	else
-	{
-		pokemonParty[i][enumPokemonArray.moveAvailabilityLV] = "NOT_SET";
-		pokemonParty[i][enumPokemonArray.moveAvailabliityTM] = "NOT_SET";
-		pokemonParty[i][enumPokemonArray.moveSelection] = "NOT_SET";
-	}
-} */
 
 sprite_index = asset_get_index(global.pokeDex[pokemonParty[0][enumPokemonArray.ID]][$ "Sprite Name"]);
 image_alpha = 0; // Put at zero due to the sequence

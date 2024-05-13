@@ -1,8 +1,13 @@
 // This Script is for all the functions used for the UI for easier coding
 
 
-function funct_textUI(_xPosition, _yPosition, _string, _scale, _colour, _alpha)
+function funct_textUI(_xPosition, _yPosition, _string, _scale, _colour, _alpha, _alignment)
 {
+	if (_alignment != undefined)
+	{
+		draw_set_halign(_alignment);
+	}
+	
 	draw_text_transformed_colour(_xPosition, _yPosition,
 	_string,
 	_scale, _scale,
@@ -61,4 +66,16 @@ function funct_soundBarUI(_sound, _xPosition, _yPosition, _scale, _colour)
 			1);
 	
 	draw_set_halign(fa_left);
+}
+
+function funct_colourTypeUI (_moveType, _colourArray)
+{
+	for (var i = 0; i <= enumTypeColour.dark; i++;)
+	{
+		if (_colourArray[enumTypeColRows.stringType][i] == _moveType)
+		{
+			var _colour = _colourArray[enumTypeColRows.colour][i];
+			return _colour;
+		}
+	}
 }

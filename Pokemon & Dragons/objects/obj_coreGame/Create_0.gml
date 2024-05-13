@@ -156,6 +156,7 @@ enum enumOpponentStages // Expand this on future builds
 #endregion
 
 #region Gamepad Initalisation
+global.controllerNumber = "NOT_SET";
 
 for (var i = 0; i < gamepad_get_device_count(); i++) // Got from FioreFire
 {
@@ -164,6 +165,7 @@ for (var i = 0; i < gamepad_get_device_count(); i++) // Got from FioreFire
 		global.controllerNumber = i;
 	}
 }
+
 #endregion
 
 #region Title Screen Logic

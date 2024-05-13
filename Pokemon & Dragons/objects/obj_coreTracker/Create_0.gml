@@ -15,8 +15,8 @@ currentTurn = 0;
 
 firstTurn = "NOT_SET";
 
-
 pokemonPlayer = [];
+
 for (var i = 0; i < global.maxPokemon; i++;) 
 {
 	pokemonPlayer[i][enumTrackerArray.ID] = global.playerPokemonID[i];
@@ -70,7 +70,7 @@ for (var i = 0; i < global.maxPokemon; i++;) // Player Pokemon Party Initiative
 	if (pokemonPlayer[i][enumTrackerArray.dexStat] != "NOT_SET")
 	{
 		pokemonPlayer[i][enumTrackerArray.dexModifier] = funct_modifierCheck(pokemonPlayer[i][enumTrackerArray.dexStat]); // Using new Function
-		pokemonPlayer[i][enumTrackerArray.initiative] = funct_initiativeRoll(pokemonPlayer[i][enumTrackerArray.dexModifier]);
+		pokemonPlayer[i][enumTrackerArray.initiative] = 30;  // funct_initiativeRoll(pokemonPlayer[i][enumTrackerArray.dexModifier]); UN COMMENT AND REMOVE OTHER CODE FOR MAIN BUILD
 		for (var f = 0; f < ds_list_size(pokemonInitiativeData); f++)
 		{
 			if (ds_list_find_value(pokemonInitiativeData, f) == pokemonPlayer[i][enumTrackerArray.initiative])
