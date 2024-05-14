@@ -425,8 +425,9 @@ switch (room)
 				var _xPositionOpponent = _xPositionPlayer * 3;
 				var _xPositionModifier = global.gameResolutionWidth / 2;
 				var _yPosition = global.gameResolutionHeight / 10;
-				var _scale = (global.gameResolutionWidth / 1920) * 3;
+				var _scale = (global.gameResolutionWidth / 1920) * 3
 				var _colour = c_black;
+				
 				if (global.initiativeID == "NOT_SET")
 				{
 					exit;
@@ -495,9 +496,9 @@ switch (room)
 							break;
 					}
 					initiativeAlpha -= 0.01;
-				}			
-				break;
+				}	
 				#endregion
+				break;
 			case(enumBattleState.introSequence):
 				//type here
 				break;
@@ -535,6 +536,7 @@ switch (room)
 				switch (global.playerBattleState)
 				{
 					case(enumPlayerTurnState.baseMenu):
+						#region Base Menu
 						for (var i = 0; i <= 3; i++;)
 						{
 							if (global.playerChoiceBattle == i)
@@ -570,10 +572,10 @@ switch (room)
 								obj_opponentPokemon.pokemonParty[0][enumPokemonArray.maxHP],
 								_xHealthUIOpponent, _yHealthUIOpponent, global.pokemonLevelSet,
 								obj_opponentPokemon.pokemonParty[0][enumPokemonArray.name]);
-						// PUT PLAYER HEALTH HERE
-						
+						#endregion
 						break;
 					case(enumPlayerTurnState.attackMenu):
+						#region Attack Menu
 						var _textStringAttack = [];
 						var _textMoveType = [];
 						var _textMoveTime = [];
@@ -620,12 +622,21 @@ switch (room)
 								_textColour, 1,
 								fa_middle);
 						}
+						funct_battleHealthUI(spr_healthPlayerUI, obj_playerPokemon.pokemonParty[0][enumPokemonArray.currentHP],
+								obj_playerPokemon.pokemonParty[0][enumPokemonArray.maxHP],
+								_xHealthUIPlayer, _yHealthUIPlayer, global.pokemonLevelSet,
+								obj_playerPokemon.pokemonParty[0][enumPokemonArray.name]);
+						funct_battleHealthUI(spr_healthOpponentUI, obj_opponentPokemon.pokemonParty[0][enumPokemonArray.currentHP],
+								obj_opponentPokemon.pokemonParty[0][enumPokemonArray.maxHP],
+								_xHealthUIOpponent, _yHealthUIOpponent, global.pokemonLevelSet,
+								obj_opponentPokemon.pokemonParty[0][enumPokemonArray.name]);
+						#endregion
 						break;
 					case(enumPlayerTurnState.bagMenu):
 						// put bag code here
 						break;
 					case(enumPlayerTurnState.pokemonMenu):
-						// Not available in the Prototype
+						// Not available in the Prototype (Or if time permits, have a basic one just showing Pikachu/Riolu/Lucario)
 						break;
 				}
 				break;

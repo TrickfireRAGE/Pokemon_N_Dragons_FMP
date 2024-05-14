@@ -43,8 +43,8 @@ function funct_soundBarUI(_sound, _xPosition, _yPosition, _scale, _colour) // Re
 	var _yPositionA = _yPosition / 3;
 
 	funct_textUI(_xPosition, _yPositionA,
-	"Volume", _scaleTextTitle,
-	_colour, 1);
+		"Volume", _scaleTextTitle,
+		_colour, 1);
 
 	funct_textUI(_xPosition, _yPosition,
 		_soundText, _scaleTextNumber,
@@ -74,6 +74,7 @@ function funct_battleHealthUI(_sprite, _currentHealth, _maxHP, _xPosition, _yPos
 	var _hpPercentage = _currentHealth / _maxHP;
 	var _hpPercentageImage = (_hpPercentage * 100) - 1;
 	
+	var _textColour = c_black;
 	var _xPositionText = _xPosition + ((global.gameResolutionWidth / 1920) * 30);
 	var _xPositionLevel = _xPosition + (114 * _scale); // Using Magic number for ease of working (Update in future)
 	var _yPositionText = _yPosition + ((global.gameResolutionWidth / 1920) * 50);
@@ -90,12 +91,21 @@ function funct_battleHealthUI(_sprite, _currentHealth, _maxHP, _xPosition, _yPos
 		0, c_white, 1);
 	funct_textUI(_xPositionText, _yPositionText,
 		_name, _textScale,
-		c_black, 1, fa_left);
+		_textColour, 1, fa_left);
 	funct_textUI(_xPositionLevel, _yPositionText,
-		_lv, _textScale, c_black,
+		_lv, _textScale, _textColour,
 		1, fa_center);
-	
-	
+	if (_sprite == spr_healthPlayerUI)
+	{
+		var _scaleHP = (global.gameResolutionWidth / 1920);
+		var _yPositionHP = _yPositionText + ((global.gameResolutionWidth / 1920) * 40);
+		var _stringHP = string(_currentHealth) + "/" + string(_maxHP);
+		
+		funct_textUI(_xPositionLevel, _yPositionHP,
+			_stringHP, _scaleHP,
+			_textColour, 1,
+			fa_center);
+	}
 }
 
 function funct_colourTypeUI(_moveType, _colourArray)

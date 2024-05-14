@@ -28,6 +28,10 @@ enum enumPokemonPartyMoves
 }
 
 pokemonParty = []; // Used to store all the stats of the Pokemon's Party
+pokemonPartyMoves1 = []; // Alternative system in mind to replace partymoves to get as much info in without constantly checking JSON file.
+pokemonPartyMoves2 = [];
+pokemonPartyMoves3 = [];
+pokemonPartyMoves4 = [];
 pokemonPartyMoves = []; // Used to store all battle moves for the game + PP (NEED TO IMPLEMENT THIS CORRECTLY)
 
 if (object_index == obj_playerPokemon)
@@ -164,7 +168,7 @@ for (var i = 0; i < global.maxPokemon; i++;)
 	}
 }
 
-for (var i = 0; i < global.maxPokemon; i++;) // Works somewhat, adapt once save file is in + update this to work with End Game
+for (var i = 0; i < global.maxPokemon; i++;) // Works somewhat, adapt once save file is in + update this to work with End Game, have all info imported if possible
 {
 	if (pokemonParty[i][enumPokemonArray.ID] != "NOT_SET")
 	{

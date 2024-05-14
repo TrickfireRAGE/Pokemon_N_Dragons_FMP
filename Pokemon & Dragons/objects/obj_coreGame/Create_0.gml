@@ -11,7 +11,10 @@ enum enumMusicState // For Music in Battles
 {
 	startOfBattle = 0,
 	aboutToLoop = 1,
-	looping = 2
+	looping = 2,
+	lowHealthStart = 3,
+	lowAbout = 4, 
+	lowLooping = 5
 }
 
 enum enumTitleScreenState // States within Title Screens
@@ -118,7 +121,8 @@ enum enumBattleState
 	player = 1,
 	intermission = 2,
 	opponent = 3,
-	initiative = 4
+	initiative = 4,
+	playerAttack = 5
 }
 
 enum enumBattleChoices

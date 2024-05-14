@@ -146,6 +146,21 @@ switch (room)
 		break;
 	case(rm_battleRoom):
 		#region Battle Room
+		if (battleMusicState == enumMusicState.lowHealthStart) // Not completed but framework is here for when HP is uterlized (Consider putting it in seperate section to avoid doing this multiple times)
+		{
+			if (!audio_is_playing(bgm_lowHealthBattleStart))
+			{
+				audio_stop_all();
+				audio_play_sound(bgm_lowHealthBattleStart);
+				battleMusicState = enumMusicState.lowAbout;
+			}
+		}
+		else if (battleMusicState == enumMusicState.lowAbout and !audio_is_playing(bgm_lowHealthBattleStart))
+		{
+			audio_play_sound(bgm_rivalBattle1Loop, 0, true);
+			battleMusicState = enumMusicState.lowLooping;
+		}
+		
 		switch (global.gameState)
 		{
 			case(enumGameState.story):

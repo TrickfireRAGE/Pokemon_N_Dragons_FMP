@@ -16,6 +16,7 @@ switch (room)
 		switch (global.menuState)
 		{
 			case(enumTitleScreenState.newGame):
+				#region New Game Menu Draw Stuff
 				// Pokemon Drawing Variables
 				var _xPosition1 = 72;
 				var _xPosition2 = room_width - _xPosition1;
@@ -52,8 +53,10 @@ switch (room)
 						#endregion
 						break;
 				}
+				#endregion
 				break;
 			case(enumTitleScreenState.settingsMenu):
+				#region Settings Meny Draw Stuff
 				switch(global.settingsMenuState)
 				{
 					case(enumSettingsScreenState.controls):
@@ -62,6 +65,7 @@ switch (room)
 						draw_sprite(spr_controlSettings, 0, _xControls, _yControls);
 						break;
 				}
+				#endregion
 				break;
 			}
 			break;
@@ -81,6 +85,31 @@ switch (room)
 				}
 				break;
 			#endregion
+		}
+		switch (global.battleState)
+		{
+			case(enumBattleState.initiative): // For the text boxes under text and Rolls
+				var _xPosition = room_width / 2;
+				var _yPosition = room_height / 2;
+				var _xScale = 3;
+				var _yScale = 3.7;
+				if (!(global.initiativeID.loopCounter == global.initiativeID._timeLength + 4))
+				{
+					draw_sprite_ext(spr_textBox, 0, 
+						_xPosition, _yPosition,
+						_xScale, _yScale, 
+						0, c_white, 
+						1); // Put into variables after testing
+				}
+				else
+				{
+					draw_sprite_ext(spr_textBox, 0, 
+						_xPosition, _yPosition, 
+						_xScale, _yScale, 
+						0, c_white, 
+						initiativeAlpha); // Put into variables after testing
+				}
+				break;
 		}
 		break;
 }
