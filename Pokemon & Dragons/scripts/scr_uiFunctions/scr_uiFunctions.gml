@@ -32,7 +32,7 @@ function funct_selectionUI(_xPosition, _yPositionArray, _optionVariable, _sprite
 	}
 }
 
-function funct_soundBarUI(_sound, _xPosition, _yPosition, _scale, _colour)
+function funct_soundBarUI(_sound, _xPosition, _yPosition, _scale, _colour) // Redo this
 {
 	_sound *= 100;
 	var _soundText = string_format(_sound, 3, 0);
@@ -68,7 +68,37 @@ function funct_soundBarUI(_sound, _xPosition, _yPosition, _scale, _colour)
 	draw_set_halign(fa_left);
 }
 
-function funct_colourTypeUI (_moveType, _colourArray)
+function funct_battleHealthUI(_sprite, _currentHealth, _maxHP, _xPosition, _yPosition, _lv, _name)
+{
+	var _scale = (global.gameResolutionWidth / 1920) * 4;
+	var _hpPercentage = _currentHealth / _maxHP;
+	var _hpPercentageImage = (_hpPercentage * 100) - 1;
+	
+	var _xPositionText = _xPosition + ((global.gameResolutionWidth / 1920) * 30);
+	var _xPositionLevel = _xPosition + (114 * _scale); // Using Magic number for ease of working (Update in future)
+	var _yPositionText = _yPosition + ((global.gameResolutionWidth / 1920) * 50);
+	var _textScale = (global.gameResolutionWidth / 1920) * 2;
+	
+	if (_hpPercentageImage < 0)
+	{
+		_hpPercentageImage = 101;
+	}
+	
+	draw_sprite_ext(_sprite, _hpPercentageImage, 
+		_xPosition, _yPosition, 
+		_scale, _scale, 
+		0, c_white, 1);
+	funct_textUI(_xPositionText, _yPositionText,
+		_name, _textScale,
+		c_black, 1, fa_left);
+	funct_textUI(_xPositionLevel, _yPositionText,
+		_lv, _textScale, c_black,
+		1, fa_center);
+	
+	
+}
+
+function funct_colourTypeUI(_moveType, _colourArray)
 {
 	for (var i = 0; i <= enumTypeColour.dark; i++;)
 	{

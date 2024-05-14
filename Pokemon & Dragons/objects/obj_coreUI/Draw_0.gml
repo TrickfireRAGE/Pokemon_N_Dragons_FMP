@@ -68,6 +68,7 @@ switch (room)
 	case(rm_battleRoom):
 		switch (global.gameState)
 		{
+			#region Custom Background Effects Code
 			case(enumGameState.level1Battle):
 				// Type here
 				break;
@@ -79,6 +80,7 @@ switch (room)
 					alarm_set(enumCoreUIAlarms.backgroundEffect, 1);
 				}
 				break;
+			#endregion
 		}
 		break;
 }

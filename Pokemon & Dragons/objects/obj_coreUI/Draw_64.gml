@@ -419,6 +419,85 @@ switch (room)
 	case(rm_battleRoom):
 		switch (global.battleState)
 		{
+			case(enumBattleState.initiative):
+				#region Initiative Visual Code
+				var _xPositionPlayer = global.gameResolutionWidth / 4;
+				var _xPositionOpponent = _xPositionPlayer * 3;
+				var _xPositionModifier = global.gameResolutionWidth / 2;
+				var _yPosition = global.gameResolutionHeight / 10;
+				var _scale = (global.gameResolutionWidth / 1920) * 3;
+				var _colour = c_black;
+				if (global.initiativeID == "NOT_SET")
+				{
+					exit;
+				}
+				else if (global.initiativeID.loopCounter <= global.initiativeID._timeLength)
+				{
+					funct_textUI(_xPositionPlayer, _yPosition,
+						"Player Initiative", _scale,
+						_colour, 1, fa_middle);
+					funct_textUI(_xPositionOpponent, _yPosition,
+						"Opponent Initiative", _scale,
+						_colour, 1, fa_middle);
+				}
+				else if (global.initiativeID.loopCounter == global.initiativeID._timeLength + 1)
+				{
+					funct_textUI(_xPositionModifier, _yPosition,
+						"Additional Modifier", _scale,
+						_colour, 1, fa_middle);
+				}
+				else if (global.initiativeID.loopCounter == global.initiativeID._timeLength + 2)
+				{
+					initiativeAlpha = 1;
+					switch (obj_coreTracker.firstTurn)
+					{
+						case (global.playerPokemonID[0]):
+							funct_textUI(_xPositionModifier, _yPosition,
+								"Player Goes First!", _scale,
+								_colour, initiativeAlpha, fa_middle);
+							break;
+						case (global.opponentPokemonID[0]):
+							funct_textUI(_xPositionModifier, _yPosition,
+								"Opponent Goes First!", _scale,
+								_colour, initiativeAlpha, fa_middle);
+							break;
+					}
+				}
+				else if (global.initiativeID.loopCounter == global.initiativeID._timeLength + 3)
+				{
+					switch (obj_coreTracker.firstTurn)
+					{
+						case (global.playerPokemonID[0]):
+							funct_textUI(_xPositionModifier, _yPosition,
+								"Player Goes First!", _scale,
+								_colour, initiativeAlpha, fa_middle);
+							break;
+						case (global.opponentPokemonID[0]):
+							funct_textUI(_xPositionModifier, _yPosition,
+								"Opponent Goes First!", _scale,
+								_colour, initiativeAlpha, fa_middle);
+							break;
+					}
+				}
+				else if (global.initiativeID.loopCounter == global.initiativeID._timeLength + 4)
+				{
+					switch (obj_coreTracker.firstTurn)
+					{
+						case (global.playerPokemonID[0]):
+							funct_textUI(_xPositionModifier, _yPosition,
+								"Player Goes First!", _scale,
+								_colour, initiativeAlpha, fa_middle);
+							break;
+						case (global.opponentPokemonID[0]):
+							funct_textUI(_xPositionModifier, _yPosition,
+								"Opponent Goes First!", _scale,
+								_colour, initiativeAlpha, fa_middle);
+							break;
+					}
+					initiativeAlpha -= 0.01;
+				}			
+				break;
+				#endregion
 			case(enumBattleState.introSequence):
 				//type here
 				break;
@@ -447,6 +526,11 @@ switch (room)
 				_textString[1] = "POKEMON";
 				_textString[2] = "BAG";
 				_textString[3] = "END TURN";
+				
+				var _xHealthUIPlayer = global.gameResolutionWidth / 9;
+				var _xHealthUIOpponent = global.gameResolutionWidth / 3;
+				var _yHealthUIPlayer = global.gameResolutionHeight / 1.25;
+				var _yHealthUIOpponent = global.gameResolutionHeight / 22;
 				
 				switch (global.playerBattleState)
 				{
@@ -477,7 +561,15 @@ switch (room)
 								_textColour, 1,
 								fa_middle);
 						}
-						
+						// Update to allow for dynamic changing of stats depending on which pokemon is in play
+						funct_battleHealthUI(spr_healthPlayerUI, obj_playerPokemon.pokemonParty[0][enumPokemonArray.currentHP],
+								obj_playerPokemon.pokemonParty[0][enumPokemonArray.maxHP],
+								_xHealthUIPlayer, _yHealthUIPlayer, global.pokemonLevelSet,
+								obj_playerPokemon.pokemonParty[0][enumPokemonArray.name]);
+						funct_battleHealthUI(spr_healthOpponentUI, obj_opponentPokemon.pokemonParty[0][enumPokemonArray.currentHP],
+								obj_opponentPokemon.pokemonParty[0][enumPokemonArray.maxHP],
+								_xHealthUIOpponent, _yHealthUIOpponent, global.pokemonLevelSet,
+								obj_opponentPokemon.pokemonParty[0][enumPokemonArray.name]);
 						// PUT PLAYER HEALTH HERE
 						
 						break;

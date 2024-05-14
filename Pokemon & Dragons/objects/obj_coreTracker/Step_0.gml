@@ -1,7 +1,7 @@
 /// @description 
 switch (global.battleState)
 {
-	case(enumBattleState.introSequence):
+	case(enumBattleState.initiative):
 		#region Sequence
 		if (firstTurn == "NOT_SET")
 		{

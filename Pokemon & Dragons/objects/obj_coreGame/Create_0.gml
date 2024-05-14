@@ -117,7 +117,8 @@ enum enumBattleState
 	introSequence = 0,
 	player = 1,
 	intermission = 2,
-	opponent = 3
+	opponent = 3,
+	initiative = 4
 }
 
 enum enumBattleChoices
@@ -202,6 +203,7 @@ global.opponentStageBattle = "NOT_SET";
 global.pokemonLevelSet = "NOT_SET";
 
 global.sequenceID = "NOT_SET";
+global.initiativeID = "NOT_SET";
 
 randomise(); // Needed to randomise the seed
 

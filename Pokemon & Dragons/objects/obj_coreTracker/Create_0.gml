@@ -8,7 +8,8 @@ enum enumTrackerArray
 	name = 1,
 	dexStat = 2,
 	dexModifier = 3,
-	initiative = 4
+	initiative = 4,
+	initiativeDice = 5
 }
 
 currentTurn = 0;
@@ -57,6 +58,7 @@ for (var i = 0; i < global.maxPokemon; i++;)
 	{
 		pokemonOpponent[i][enumTrackerArray.dexModifier] = funct_modifierCheck(pokemonOpponent[i][enumTrackerArray.dexStat]); // Using new Function
 		pokemonOpponent[i][enumTrackerArray.initiative] = funct_initiativeRoll(pokemonOpponent[i][enumTrackerArray.dexModifier]);
+		pokemonOpponent[i][enumTrackerArray.initiativeDice] = pokemonOpponent[i][enumTrackerArray.initiative] - pokemonOpponent[i][enumTrackerArray.dexModifier]; // NEEDED FOR DICE ROLL
 		ds_list_add(pokemonInitiativeData, pokemonOpponent[i][enumTrackerArray.initiative]);
 	}
 	else
@@ -70,7 +72,8 @@ for (var i = 0; i < global.maxPokemon; i++;) // Player Pokemon Party Initiative
 	if (pokemonPlayer[i][enumTrackerArray.dexStat] != "NOT_SET")
 	{
 		pokemonPlayer[i][enumTrackerArray.dexModifier] = funct_modifierCheck(pokemonPlayer[i][enumTrackerArray.dexStat]); // Using new Function
-		pokemonPlayer[i][enumTrackerArray.initiative] = 30;  // funct_initiativeRoll(pokemonPlayer[i][enumTrackerArray.dexModifier]); UN COMMENT AND REMOVE OTHER CODE FOR MAIN BUILD
+		pokemonPlayer[i][enumTrackerArray.initiative] = 20;  // funct_initiativeRoll(pokemonPlayer[i][enumTrackerArray.dexModifier]); UN COMMENT AND REMOVE OTHER CODE FOR MAIN BUILD
+		pokemonPlayer[i][enumTrackerArray.initiativeDice] = pokemonPlayer[i][enumTrackerArray.initiative] - pokemonPlayer[i][enumTrackerArray.dexModifier]
 		for (var f = 0; f < ds_list_size(pokemonInitiativeData); f++)
 		{
 			if (ds_list_find_value(pokemonInitiativeData, f) == pokemonPlayer[i][enumTrackerArray.initiative])

@@ -488,6 +488,16 @@ switch (room)
 							alarm_set(enumCoreGameAlarms.stateSwitch, 1);
 						}
 						break;
+					case(enumBattleState.initiative):
+						if (!instance_exists(global.initiativeID))
+						{
+							var _xPositionSequence = 128; // For Sequence
+							var _yPositionSequence = 72; // For Seqeunce
+		
+							global.sequenceID = layer_sequence_create("sequenceLayer", _xPositionSequence, _yPositionSequence, seq_startBattleSequence);
+							global.battleState = enumBattleState.introSequence;
+						}
+						break;
 					case(enumBattleState.player):
 						if (global.gamePadConfirm)
 						{

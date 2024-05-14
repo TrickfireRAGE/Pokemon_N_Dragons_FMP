@@ -1,6 +1,11 @@
 /// @description 
 
-if (layer_sequence_is_finished(global.sequenceID) == true)
+switch (global.battleState)
 {
-	image_alpha = 1;
+	case(enumBattleState.introSequence):
+		if (layer_sequence_is_finished(global.sequenceID) == true)
+		{
+			image_alpha = 1;
+		}
+		break;
 }

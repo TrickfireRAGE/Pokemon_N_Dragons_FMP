@@ -11,8 +11,8 @@
   "type": 0,
   "bitDepth": 1,
   "audioGroupId": {
-    "name": "pokemonCriesGroup",
-    "path": "audiogroups/pokemonCriesGroup",
+    "name": "sg_pokemonCriesGroup",
+    "path": "audiogroups/sg_pokemonCriesGroup",
   },
   "soundFile": "snd_darkrai.ogg",
   "duration": 1.595698,
