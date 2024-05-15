@@ -177,7 +177,6 @@ for (var i = 0; i < global.maxPokemon; i++;) // Works somewhat, adapt once save 
 		for (var f = enumPokemonPartyMoves.move1ID; f <= enumPokemonPartyMoves.move4ID; f += 2;)
 		{
 			var _struct = global.pokeDex[pokemonPartyMoves[i][enumPokemonPartyMoves.pokemonID]][$ "LV1 Battle Moves"];
-			show_message(_struct[_counter]);
 			pokemonPartyMoves[i][f] = _struct[_counter]; //
 			var _arraySize = array_length(global.pokeMoves) - 1;
 			for (var v = 0; v <= _arraySize; v++)

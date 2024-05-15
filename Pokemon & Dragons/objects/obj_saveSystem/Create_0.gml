@@ -66,23 +66,5 @@ if (file_exists(working_directory + "json_pokeMoves.json"))
 	global.pokeMoves = json_parse(json); // Parses the data to make it useable for the game
 }
 
-
-show_message(global.pokeDex[25][$ "Pokemon Name"]); // This is how to access the data inside the Json with Struts.
-battleStats = []; 
-battleStats[enumBattleStats.str] = global.pokeDex[25][$ "Base Str"];
-battleStats[enumBattleStats.dex] = global.pokeDex[25][$ "Base Dex"];
-battleStats[enumBattleStats.con] = global.pokeDex[25][$ "Base Con"];
-battleStats[enumBattleStats.int] = global.pokeDex[25][$ "Base Int"];
-battleStats[enumBattleStats.wis] = global.pokeDex[25][$ "Base Wis"];
-
-for (var i = enumBattleStats.str; i <= enumBattleStats.wis; i++;)
-{
-	show_message(battleStats[i]);
-}
-
-// Brings Moves in, has to be done manually in Visual Studio and not in excel
-show_message(string(global.pokeDex[25][$ "Base Moves"][0], global.pokeDex[25][$ "Base Moves"][1], global.pokeDex[25][$ "Base Moves"][2]));
-show_message(string(global.pokeDex[447][$ "Base Moves"][0], global.pokeDex[447][$ "Base Moves"][1], global.pokeDex[447][$ "Base Moves"][2]));
-
 #endregion
 

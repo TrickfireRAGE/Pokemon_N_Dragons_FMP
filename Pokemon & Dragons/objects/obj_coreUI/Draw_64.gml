@@ -510,6 +510,18 @@ switch (room)
 				_xPosition[2] = _xPosition[1] - _distanceX;
 				_xPosition[3] = _xPosition[2] - _distanceX;
 				
+				var _xPositionPP = [];
+				_xPositionPP[0] = global.gameResolutionWidth / 1.5;
+				_xPositionPP[1] = _xPositionPP[0] - _distanceX;
+				_xPositionPP[2] = _xPositionPP[1] - _distanceX;
+				_xPositionPP[3] = _xPositionPP[2] - _distanceX;
+				
+				var _xPositionAction = [];
+				_xPositionAction[0] = global.gameResolutionWidth / 1.035;
+				_xPositionAction[1] = _xPositionAction[0] - _distanceX;
+				_xPositionAction[2] = _xPositionAction[1] - _distanceX;
+				_xPositionAction[3] = _xPositionAction[2] - _distanceX;
+				
 				var _yPosition = [];
 				var _distanceY = 100 * (global.gameResolutionWidth / 1920);
 				_yPosition[0] = global.gameResolutionHeight / 1.6;
@@ -576,6 +588,13 @@ switch (room)
 						break;
 					case(enumPlayerTurnState.attackMenu):
 						#region Attack Menu
+						var _currentPPString = []; // Temp Solution
+						_currentPPString[0] = string(obj_playerPokemon.pokemonPartyMoves[0][enumPokemonPartyMoves.move1PP]);
+						_currentPPString[1] = string(obj_playerPokemon.pokemonPartyMoves[0][enumPokemonPartyMoves.move2PP]);
+						_currentPPString[2] = string(obj_playerPokemon.pokemonPartyMoves[0][enumPokemonPartyMoves.move3PP]);
+						_currentPPString[3] = string(obj_playerPokemon.pokemonPartyMoves[0][enumPokemonPartyMoves.move4PP]);
+						var _textPPScale = (global.gameResolutionWidth / 1920) * 1.5;
+						var _scaleActionBonus = (global.gameResolutionHeight / 1080) * 1.5;
 						var _textStringAttack = [];
 						var _textMoveType = [];
 						var _textMoveTime = [];
@@ -625,14 +644,43 @@ switch (room)
 									0, _moveColour,
 									1);
 							}
+							draw_sprite_ext(spr_battleUIPP, 0, // PP Code (Temp)
+								_xPositionPP[i], _yPosition[i],
+								_xScale, _yScale,
+								0, c_white,
+								1);
 						}
-						for (var i = 0; i <= 3; i++;)
+						for (var i = 0; i <= 3; i++;) // CHANGE ALL FOR MAGIC NUMBERS (3's) TO A VARIABLE INCASE MOVES GET INCREASED
 						{
-							funct_textUI(_xPosition[i], _yPosition[i],
+							funct_textUI(_xPosition[i], _yPosition[i], // Move UI Text
 								_textStringAttack[i], _textScale,
 								_textColour, 1,
 								fa_middle);
+							funct_textUI(_xPositionPP[i], _yPosition[i], // Temp PP Code
+								_currentPPString[i] + "/" + _maxPP[i],
+								_textPPScale, _textColour, 
+								1, fa_middle);
 						}
+						for (var i = 0; i <= 3; i++;)
+						{
+							if (_textMoveTime[i] == "Action")
+							{
+								draw_sprite_ext(spr_actionSymbol, 0, // Action/Bonus UI Code (Temp)
+								_xPositionAction[i], _yPosition[i],
+								_scaleActionBonus, _scaleActionBonus,
+								0, c_white,
+								1);
+							}
+							else if (_textMoveTime[i] == "Bonus")
+							{
+								draw_sprite_ext(spr_bonusSymbol, 0, // Action/Bonus UI Code (Temp)
+								_xPositionAction[i], _yPosition[i],
+								_scaleActionBonus, _scaleActionBonus,
+								0, c_white,
+								1);
+							}
+						}
+						
 						funct_battleHealthUI(spr_healthPlayerUI, obj_playerPokemon.pokemonParty[0][enumPokemonArray.currentHP],
 								obj_playerPokemon.pokemonParty[0][enumPokemonArray.maxHP],
 								_xHealthUIPlayer, _yHealthUIPlayer, global.pokemonLevelSet,

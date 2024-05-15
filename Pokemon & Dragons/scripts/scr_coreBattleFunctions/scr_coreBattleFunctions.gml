@@ -260,7 +260,7 @@ function funct_typeEffectiveness(_attacker, _defender)
 	var _defenderType = "NOT_SET";
 	
 	#region Type Connection
-	switch (_attacker)
+	switch (_attacker) //Make this into a seperate function to reduce code.
 	{
 		case("Normal"):
 			_attackerType = enumType.normal;
@@ -314,7 +314,7 @@ function funct_typeEffectiveness(_attacker, _defender)
 			_attackerType = enumType.dark;
 			break;
 	}
-	switch (_defenderType)
+	switch (_defender)
 	{
 		case("Normal"):
 			_defenderType = enumType.normal;

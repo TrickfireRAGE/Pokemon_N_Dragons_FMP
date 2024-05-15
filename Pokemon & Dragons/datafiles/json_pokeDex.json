@@ -1272,8 +1272,8 @@
    "LV10 Moves": "",
    "LV18 Moves": "",
    "TM Moves": "",
-   "LV1 Battle Moves": [100001, 100002, 100003, 100004],
-   "LV20 Battle Moves": ""
+   "LV1 Battle Moves": [100001, 100002, 100003, 100005],
+   "LV20 Battle Moves": [100006, 100007, 100008, 100011]
  },
  {
    "Pokemon Name": "",
@@ -21952,7 +21952,7 @@
    "LV10 Moves": "",
    "LV18 Moves": "",
    "TM Moves": "",
-   "LV1 Battle Moves": [ 100001, 100002, 100003, 100005 ],
+   "LV1 Battle Moves": [ 100002, 100003, 100004, 100005 ],
    "LV20 Battle Moves": ""
  },
  {
@@ -22004,7 +22004,7 @@
    "LV18 Moves": "",
    "TM Moves": "",
    "LV1 Battle Moves": "",
-   "LV20 Battle Moves": ""
+   "LV20 Battle Moves": [100009, 100010, 100011, 100012]
  },
  {
    "Pokemon Name": "",
@@ -24111,6 +24111,9 @@
    "LV6 Moves": "",
    "LV10 Moves": "",
    "LV18 Moves": "",
-   "TM Moves": ""
+   "TM Moves": "",
+   "LV1 Battle Moves": "",
+   "LV20 Battle Moves": [100014, 100015, 100016, 100017]
+
  }
 ]

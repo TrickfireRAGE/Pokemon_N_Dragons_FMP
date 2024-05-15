@@ -110,7 +110,7 @@ function funct_battleHealthUI(_sprite, _currentHealth, _maxHP, _xPosition, _yPos
 
 function funct_colourTypeUI(_moveType, _colourArray)
 {
-	for (var i = 0; i <= enumTypeColour.dark; i++;)
+	for (var i = 0; i <= enumType.dark; i++;)
 	{
 		if (_colourArray[enumTypeColRows.stringType][i] == _moveType)
 		{
