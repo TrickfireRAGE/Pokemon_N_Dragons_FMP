@@ -156,7 +156,70 @@ enum enumOpponentStages // Expand this on future builds
 	bonus = 1, 
 	endTurn = 2
 }
-	
+
+enum enumType // No Fairy Types in This version
+{
+	normal = 0,
+	fighting = 1,
+	flying = 2,
+	poison = 3,
+	ground = 4, 
+	rock = 5,
+	bug = 6, 
+	ghost = 7,
+	steel = 8, 
+	fire = 9, 
+	water = 10, 
+	grass = 11, 
+	electric = 12,
+	psychic = 13,
+	ice = 14, 
+	dragon = 15, 
+	dark = 16
+}
+
+enum enumEffectiveness
+{
+	noEffect = 0,
+	notVeryEffective = 0.5,
+	normalEffective = 1,
+	superEffective = 2
+}
+
+enum enumMoveLoader // For the Move functions
+{
+	moveID = 0,
+	moveName = 1,
+	moveDes = 2, 
+	moveType = 3, 
+	moveTime = 4, 
+	movePP = 5,
+	moveDS = 6, 
+	moveAttackType = 7,
+	moveAttackMod = 8, 
+	moveLV1Dice = 9,
+	moveLV1Amount = 10,
+	moveLV5Dice = 11,
+	moveLV5Amount = 12,
+	moveLV10Dice = 13, 
+	moveLV10Amount = 14, 
+	moveLV17Dice = 15,
+	moveLV17Amount = 16, 
+	moveSideEffect = 17,
+	moveSideType = 18,
+	moveSideSoO = 19,
+	moveSideAffected = 20,
+	moveSideModifier = 21, 
+	moveSideDuration = 22
+}
+
+enum enumAttackFunction // For the Attack Function
+{
+	baseDice = 0,
+	diceModifier = 1, 
+	effectiveness = 2,
+	result = 3
+}
 
 #endregion
 
@@ -225,8 +288,4 @@ global.playerBattleState = "NOT_SET"; // Used for the players turn
 
 #endregion
 
-#region Types
 
-typesArray = []; // Finish this soon!
-
-#endregion

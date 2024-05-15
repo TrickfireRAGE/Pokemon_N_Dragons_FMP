@@ -21952,7 +21952,7 @@
    "LV10 Moves": "",
    "LV18 Moves": "",
    "TM Moves": "",
-   "LV1 Battle Moves": [100003, 100004, 100005, 100001],
+   "LV1 Battle Moves": [ 100001, 100002, 100003, 100005 ],
    "LV20 Battle Moves": ""
  },
  {

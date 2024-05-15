@@ -179,7 +179,7 @@ for (var i = 0; i < global.maxPokemon; i++;) // Works somewhat, adapt once save 
 			var _struct = global.pokeDex[pokemonPartyMoves[i][enumPokemonPartyMoves.pokemonID]][$ "LV1 Battle Moves"];
 			show_message(_struct[_counter]);
 			pokemonPartyMoves[i][f] = _struct[_counter]; //
-			var _arraySize = array_length(global.pokeMoves);
+			var _arraySize = array_length(global.pokeMoves) - 1;
 			for (var v = 0; v <= _arraySize; v++)
 			{
 				if (global.pokeMoves[v][$ "Move ID"] == pokemonPartyMoves[i][f])

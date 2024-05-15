@@ -390,7 +390,7 @@ switch (room)
 						var _logoScale = _gameLogoScale / 1.5;
 						scrollWidth = (global.gameResolutionWidth / 4);
 						draw_set_halign(fa_center);
-						for (var i = 0; i <= creditsArraySize; i++;)
+						for (var i = 0; i < creditsArraySize; i++;)
 						{
 							if (i == 0)
 							{
@@ -580,12 +580,13 @@ switch (room)
 						var _textMoveType = [];
 						var _textMoveTime = [];
 						var _maxPP = [];
-						var _pokeMovesLength = array_length(global.pokeMoves);
-						for (var f = enumPokemonPartyMoves.move1ID; f <= enumPokemonPartyMoves.move4ID; f += 2;)
+						var _pokemonMoves = obj_playerPokemon.pokemonPartyMoves;
+						var _pokeMovesLength = array_length(global.pokeMoves) - 1;
+						for (var f = enumPokemonPartyMoves.move1ID; f <= enumPokemonPartyMoves.move4ID; f += 2;) // Potentally scrap this and use a move loader to remove the need for this.
 						{
 							for (var i = 0; i <= _pokeMovesLength; i++;)
 							{
-								if (global.pokeMoves[i][$ "Move ID"] == obj_playerPokemon.pokemonPartyMoves[0][f]) // REMOVE MAGIC NUMBER "0" TO HAVE SYSTEM THAT CHECKS WHICH POKEMON IT IS
+								if (global.pokeMoves[i][$ "Move ID"] == _pokemonMoves[0][f]) // REMOVE MAGIC NUMBER "0" TO HAVE SYSTEM THAT CHECKS WHICH POKEMON IT IS
 								{
 									_textStringAttack[i] = global.pokeMoves[i][$ "Move Name"];
 									_textMoveType[i] = global.pokeMoves[i][$ "Type"];
@@ -593,6 +594,16 @@ switch (room)
 									_maxPP[i] = global.pokeMoves[i][$ "PP"];
 									i = _pokeMovesLength + 1;
 								}
+							}
+						}
+						for (var i = 0; i < array_length(_maxPP); i++;) // Fixed zero number appearing by deleting it within the array with this check.
+						{ // This is a temp solution, when implementing move attacks, consider replacing all of this with functions.
+							if (_maxPP[i] == 0)
+							{
+								array_delete(_textStringAttack, i, 1);
+								array_delete(_textMoveType, i, 1);
+								array_delete(_textMoveTime, i, 1);
+								array_delete(_maxPP, i, 1);
 							}
 						}
 						for (var i = 0; i <= 3; i++;)

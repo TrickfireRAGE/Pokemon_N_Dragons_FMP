@@ -152,6 +152,7 @@
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"VSWorkspaceState.json","CopyToMask":-1,"filePath":"datafiles/.vs",},
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"json_pokeMovesOld.json","CopyToMask":-1,"filePath":"datafiles",},
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"json_pokeDex.json","CopyToMask":-1,"filePath":"datafiles",},
+    {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"json_pokeMovesNew.json","CopyToMask":-1,"filePath":"datafiles",},
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"json_pokeMoves.json","CopyToMask":-1,"filePath":"datafiles",},
   ],
   "MetaData": {

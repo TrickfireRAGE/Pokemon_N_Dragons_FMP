@@ -22,8 +22,8 @@ function funct_fullScreenChanges(_fullScreen)
 
 function funct_soundChanges(_volume)
 {
-	var _volumeBattleMusic = _volume * 0.5;
-	var _volumeMenuMusic = _volume * 0.6;
+	var _volumeBattleMusic = _volume * 0.4;
+	var _volumeMenuMusic = _volume * 0.3;
 	var _volumePokemonCries = _volume * 0.7;
 	var _volumeSoundEffects = _volume * 0.8;
 	var _time = 0;

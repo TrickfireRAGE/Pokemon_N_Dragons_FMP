@@ -56,68 +56,46 @@ enum enumTypeColRows
 	colour = 1
 }
 
-enum enumTypeColour // No Fairy Types in This version
-{
-	normal = 0,
-	fighting = 1,
-	flying = 2,
-	poison = 3,
-	ground = 4, 
-	rock = 5,
-	bug = 6, 
-	ghost = 7,
-	steel = 8, 
-	fire = 9, 
-	water = 10, 
-	grass = 11, 
-	electric = 12,
-	psychic = 13,
-	ice = 14, 
-	dragon = 15, 
-	dark = 16
-}
-	
-
 #endregion
 
 #region Type Colours
 
 typeColoursArray = [];
 // String
-typeColoursArray[enumTypeColRows.stringType][enumTypeColour.normal] = "Normal";
-typeColoursArray[enumTypeColRows.stringType][enumTypeColour.fighting] = "Fighting";
-typeColoursArray[enumTypeColRows.stringType][enumTypeColour.flying] = "Flying";
-typeColoursArray[enumTypeColRows.stringType][enumTypeColour.poison] = "Poison";
-typeColoursArray[enumTypeColRows.stringType][enumTypeColour.ground] = "Ground";
-typeColoursArray[enumTypeColRows.stringType][enumTypeColour.rock] = "Rock";
-typeColoursArray[enumTypeColRows.stringType][enumTypeColour.bug] = "Bug";
-typeColoursArray[enumTypeColRows.stringType][enumTypeColour.ghost] = "Ghost";
-typeColoursArray[enumTypeColRows.stringType][enumTypeColour.steel] = "Steel";
-typeColoursArray[enumTypeColRows.stringType][enumTypeColour.fire] = "Fire";
-typeColoursArray[enumTypeColRows.stringType][enumTypeColour.water] = "Water";
-typeColoursArray[enumTypeColRows.stringType][enumTypeColour.grass] = "Grass";
-typeColoursArray[enumTypeColRows.stringType][enumTypeColour.electric] = "Electric";
-typeColoursArray[enumTypeColRows.stringType][enumTypeColour.psychic] = "Psychic";
-typeColoursArray[enumTypeColRows.stringType][enumTypeColour.ice] = "Ice";
-typeColoursArray[enumTypeColRows.stringType][enumTypeColour.dragon] = "Dragon";
-typeColoursArray[enumTypeColRows.stringType][enumTypeColour.dark] = "Dark";
+typeColoursArray[enumTypeColRows.stringType][enumType.normal] = "Normal";
+typeColoursArray[enumTypeColRows.stringType][enumType.fighting] = "Fighting";
+typeColoursArray[enumTypeColRows.stringType][enumType.flying] = "Flying";
+typeColoursArray[enumTypeColRows.stringType][enumType.poison] = "Poison";
+typeColoursArray[enumTypeColRows.stringType][enumType.ground] = "Ground";
+typeColoursArray[enumTypeColRows.stringType][enumType.rock] = "Rock";
+typeColoursArray[enumTypeColRows.stringType][enumType.bug] = "Bug";
+typeColoursArray[enumTypeColRows.stringType][enumType.ghost] = "Ghost";
+typeColoursArray[enumTypeColRows.stringType][enumType.steel] = "Steel";
+typeColoursArray[enumTypeColRows.stringType][enumType.fire] = "Fire";
+typeColoursArray[enumTypeColRows.stringType][enumType.water] = "Water";
+typeColoursArray[enumTypeColRows.stringType][enumType.grass] = "Grass";
+typeColoursArray[enumTypeColRows.stringType][enumType.electric] = "Electric";
+typeColoursArray[enumTypeColRows.stringType][enumType.psychic] = "Psychic";
+typeColoursArray[enumTypeColRows.stringType][enumType.ice] = "Ice";
+typeColoursArray[enumTypeColRows.stringType][enumType.dragon] = "Dragon";
+typeColoursArray[enumTypeColRows.stringType][enumType.dark] = "Dark";
 // Colours (Make proper colours later!)
-typeColoursArray[enumTypeColRows.colour][enumTypeColour.normal] = c_ltgrey;
-typeColoursArray[enumTypeColRows.colour][enumTypeColour.fighting] = c_white + c_orange;
-typeColoursArray[enumTypeColRows.colour][enumTypeColour.flying] = c_white + c_blue;
-typeColoursArray[enumTypeColRows.colour][enumTypeColour.poison] = c_purple;
-typeColoursArray[enumTypeColRows.colour][enumTypeColour.ground] = c_white + c_maroon;
-typeColoursArray[enumTypeColRows.colour][enumTypeColour.rock] = c_maroon;
-typeColoursArray[enumTypeColRows.colour][enumTypeColour.bug] = c_green;
-typeColoursArray[enumTypeColRows.colour][enumTypeColour.ghost] = c_purple;
-typeColoursArray[enumTypeColRows.colour][enumTypeColour.steel] = c_grey;
-typeColoursArray[enumTypeColRows.colour][enumTypeColour.fire] = c_orange;
-typeColoursArray[enumTypeColRows.colour][enumTypeColour.water] = c_blue;
-typeColoursArray[enumTypeColRows.colour][enumTypeColour.grass] = c_lime;
-typeColoursArray[enumTypeColRows.colour][enumTypeColour.electric] = c_yellow;
-typeColoursArray[enumTypeColRows.colour][enumTypeColour.psychic] = c_red + c_white;
-typeColoursArray[enumTypeColRows.colour][enumTypeColour.ice] = c_navy;
-typeColoursArray[enumTypeColRows.colour][enumTypeColour.dark] = c_maroon + c_grey;
+typeColoursArray[enumTypeColRows.colour][enumType.normal] = c_ltgrey;
+typeColoursArray[enumTypeColRows.colour][enumType.fighting] = c_white + c_orange;
+typeColoursArray[enumTypeColRows.colour][enumType.flying] = c_white + c_blue;
+typeColoursArray[enumTypeColRows.colour][enumType.poison] = c_purple;
+typeColoursArray[enumTypeColRows.colour][enumType.ground] = c_white + c_maroon;
+typeColoursArray[enumTypeColRows.colour][enumType.rock] = c_maroon;
+typeColoursArray[enumTypeColRows.colour][enumType.bug] = c_green;
+typeColoursArray[enumTypeColRows.colour][enumType.ghost] = c_purple;
+typeColoursArray[enumTypeColRows.colour][enumType.steel] = c_grey;
+typeColoursArray[enumTypeColRows.colour][enumType.fire] = c_orange;
+typeColoursArray[enumTypeColRows.colour][enumType.water] = c_blue;
+typeColoursArray[enumTypeColRows.colour][enumType.grass] = c_lime;
+typeColoursArray[enumTypeColRows.colour][enumType.electric] = c_yellow;
+typeColoursArray[enumTypeColRows.colour][enumType.psychic] = c_red + c_white;
+typeColoursArray[enumTypeColRows.colour][enumType.ice] = c_navy;
+typeColoursArray[enumTypeColRows.colour][enumType.dark] = c_maroon + c_grey;
 
 #endregion
 
@@ -125,7 +103,6 @@ typeColoursArray[enumTypeColRows.colour][enumTypeColour.dark] = c_maroon + c_gre
 
 scrollHeight = "NOT_SET";
 global.creditsCheck = false;
-creditsArraySize = 45; // Think of a better way to implement this system
 creditsText = []
 creditsText[0] = " ";
 creditsText[1] = " ";
@@ -136,57 +113,60 @@ creditsText[5] = "==Lead Designer/Art Creation==";
 creditsText[6] = "Ethan Bond (Bond Studios)";
 creditsText[7] = " ";
 creditsText[8] = "***Asset Creation***";
-// creditsText[] = "Background Level 1 - Ethan Bond";
-// creditsText[] = "Background End Game - Ethan Bond";
-// creditsText[] = "Background TitleScreen - Ethan Bond";
-// creditsText[] = "Controls Settings - Ethan Bond";
-// creditsText[] = "UI Circle Small - Ethan Bond";
-// creditsText[] = "Riolu Sprites - Ethan Bond";
-// creditsText[] = "Lucario Sprites - Ethan Bond";
-// creditsText[] = "Mega Lucario Sprites - Ethan Bond";
-// creditsText[] = "Pikachu Sprites - Ethan Bond";
-// creditsText[] = "Darkrai Sprite - Ethan Bond";
-creditsText[9] = "Game Logo - Jonathon Lloyd-Jones";
-creditsText[10] = "Intro Video - Jonathon Lloyd-Jones";
-creditsText[11] = "UI Circle Big - Jonathon Lloyd-Jones";
-creditsText[12] = " ";
-creditsText[13] = "***Voice Acting Performances***";
-creditsText[14] = "==Main Cast==";
-creditsText[15] = "None in Preview";
-creditsText[16] = " ";
-creditsText[17] = "***External Assets***";
-creditsText[18] = "==Pokemon Legends Arceus Soundtrack==";
-creditsText[19] = "Junichi Masuda";
-creditsText[20] = "Go Ichinose";
-creditsText[21] = "Hitomi Sato";
-creditsText[22] = "Hiromitsu Maeba";
-creditsText[23] = "Morikazu Aoki";
-creditsText[24] = "==Pokemon Black/White Soundtrack==";
-creditsText[25] = "Junichi Masuda";
-creditsText[26] = "Hitomi Sato";
-creditsText[27] = "Shota Kageyama";
-creditsText[28] = "Morikazu Aoki";
-creditsText[29] = "Minako Adachi";
-creditsText[30] = "Go Ichinose";
-creditsText[31] = "==Pokemon Sound Effects==";
-creditsText[32] = "GameFreak";
-creditsText[33] = "==Extra Sound Effects==";
-creditsText[34] = "ZapSplat.com";
-// creditsText[] = "==KyoMadoka Font==";
-// creditsText[] = "PUT USER HERE";
-creditsText[35] = " ";
-creditsText[36] = "***Trademarks***"
-creditsText[37] = "==Trickfire Studios==";
-creditsText[38] = "Jonathon Lloyd-Jones";
-creditsText[39] = "==Bond Studios==";
-creditsText[40] = "Ethan Bond";
-creditsText[41] = "==Pokemon==";
-creditsText[42] = "Nintendo";
-creditsText[43] = "GameFreak";
-creditsText[44] = "Creatures";
-creditsText[45] = "==Dungeons & Dragons==";
-creditsText[46] = "Wizards of the Coast";
-creditsText[47] = "==GameMaker Studio LTS 2022=="
-creditsText[48] = "YoYo Games"
+creditsText[9] = "Background Level 1 - Ethan Bond";
+creditsText[10] = "Background End Game - Ethan Bond";
+creditsText[11] = "Background TitleScreen - Ethan Bond";
+creditsText[12] = "Controls Settings - Ethan Bond";
+creditsText[13] = "UI Circle Small - Ethan Bond";
+creditsText[14] = "Riolu Sprites - Ethan Bond";
+creditsText[15] = "Lucario Sprites - Ethan Bond";
+creditsText[16] = "Mega Lucario Sprites - Ethan Bond";
+creditsText[17] = "Pikachu Sprites - Ethan Bond";
+creditsText[18] = "Darkrai Sprite - Ethan Bond";
+creditsText[19] = "Battle UI - Ethan Bond";
+creditsText[20] = "Attack Moves - Ethan Bond";
+creditsText[21] = "Game Logo - Jonathon Lloyd-Jones";
+creditsText[22] = "Intro Video - Jonathon Lloyd-Jones";
+creditsText[23] = "UI Circle Big - Jonathon Lloyd-Jones";
+creditsText[24] = " ";
+creditsText[25] = "***Voice Acting Performances***";
+creditsText[26] = "==Main Cast==";
+creditsText[27] = "None in Preview";
+creditsText[28] = " ";
+creditsText[29] = "***External Assets***";
+creditsText[30] = "==Pokemon Legends Arceus Soundtrack==";
+creditsText[31] = "Junichi Masuda";
+creditsText[32] = "Go Ichinose";
+creditsText[33] = "Hitomi Sato";
+creditsText[34] = "Hiromitsu Maeba";
+creditsText[35] = "Morikazu Aoki";
+creditsText[36] = "==Pokemon Black/White Soundtrack==";
+creditsText[37] = "Junichi Masuda";
+creditsText[38] = "Hitomi Sato";
+creditsText[39] = "Shota Kageyama";
+creditsText[40] = "Morikazu Aoki";
+creditsText[41] = "Minako Adachi";
+creditsText[42] = "Go Ichinose";
+creditsText[43] = "==Pokemon Sound Effects==";
+creditsText[44] = "GameFreak";
+creditsText[45] = "==Extra Sound Effects==";
+creditsText[46] = "ZapSplat.com";
+creditsText[47] = "==KyoMadoka Font==";
+creditsText[48] = "PUT USER HERE";
+creditsText[49] = " ";
+creditsText[50] = "***Trademarks***"
+creditsText[51] = "==Trickfire Studios==";
+creditsText[52] = "Jonathon Lloyd-Jones";
+creditsText[53] = "==Bond Studios==";
+creditsText[54] = "Ethan Bond";
+creditsText[55] = "==Pokemon==";
+creditsText[56] = "Nintendo";
+creditsText[57] = "GameFreak";
+creditsText[58] = "Creatures";
+creditsText[59] = "==Dungeons & Dragons==";
+creditsText[60] = "Wizards of the Coast";
+creditsText[61] = "==GameMaker Studio LTS 2022=="
+creditsText[62] = "YoYo Games"
+creditsArraySize = array_length(creditsText); // Think of a better way to implement this system
 
 #endregion
