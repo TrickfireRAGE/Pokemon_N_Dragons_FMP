@@ -2,7 +2,7 @@
 
 #region VERSION NUMBER
 
-versionNumber = "Pre-Alpha - V0.0.0.19";
+versionNumber = "Pre-Alpha - V0.0.0.20 (Night)";
 
 #endregion
 

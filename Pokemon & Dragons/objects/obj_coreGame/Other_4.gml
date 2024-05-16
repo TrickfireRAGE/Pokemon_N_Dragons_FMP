@@ -14,8 +14,8 @@ switch (room)
 		var _opponentModifier = obj_coreTracker.pokemonOpponent[0][enumTrackerArray.dexModifier];
 					
 		global.initiativeID = funct_diceVisual(_playerDice, _xPositionPlayer,
-			_yPosition, _playerModifier);
+			_yPosition, _playerModifier, enumDiceSize.d20);
 		funct_diceVisual(_opponentDice, _xPositionOpponent,
-			_yPosition, _opponentModifier);
+			_yPosition, _opponentModifier, enumDiceSize.d20);
 		break;
 }

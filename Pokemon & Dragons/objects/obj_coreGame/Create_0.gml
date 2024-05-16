@@ -219,7 +219,18 @@ enum enumAttackFunction // For the Attack Function
 	baseDice = 0,
 	diceModifier = 1, 
 	effectiveness = 2,
-	result = 3
+	result = 3,
+	diceOrSave = 4
+}
+
+enum enumDiceSize
+{
+	d4 = 4,
+	d6 = 6,
+	d8 = 8,
+	d10 = 10, 
+	d12 = 12, 
+	d20 = 20
 }
 
 #endregion

@@ -1,7 +1,7 @@
 // Put Functions Below
 function funct_diceVisual(_result, _xPosition, _yPosition, _modifier, _diceSize)
 {
-	var _diceObject = obj_diceRoll20;
+	var _diceObject = "NOT_SET";
 	switch (_diceSize)
 	{
 		case(4):

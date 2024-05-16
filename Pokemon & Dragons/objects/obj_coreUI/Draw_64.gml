@@ -52,7 +52,7 @@ switch (room)
 		
 		// Version Number Variables
 		var _versionNumberY = global.gameResolutionHeight / 1.06;
-		var _versionNumberX = global.gameResolutionWidth / 1.5;
+		var _versionNumberX = global.gameResolutionWidth / 1.7;
 		var _versionScale = (_menuTextScale / 2);
 		var _versionNumberString = versionNumber;
 		funct_textUI(_versionNumberX, _versionNumberY,

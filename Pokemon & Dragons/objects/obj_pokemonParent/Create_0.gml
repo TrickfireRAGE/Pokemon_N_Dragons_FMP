@@ -11,7 +11,9 @@ enum enumPokemonArray
 	int = 6,
 	wis = 7,
 	maxHP = 8,
-	currentHP = 9
+	currentHP = 9,
+	AC = 10,
+	type = 11 // Expand to 2 in future builds
 }
 
 enum enumPokemonPartyMoves
@@ -51,10 +53,11 @@ else
 
 for (var i = 0; i < global.maxPokemon; i++)
 {
-	if (pokemonParty[i][enumPokemonArray.ID] != "NOT_SET")
+	if (pokemonParty[i][enumPokemonArray.ID] != "NOT_SET") // Sets all the base stuff
 	{
 		pokemonParty[i][enumPokemonArray.name] = global.pokeDex[pokemonParty[i][enumPokemonArray.ID]][$ "Pokemon Name"];
 		pokemonParty[i][enumPokemonArray.sound] = global.pokeDex[pokemonParty[i][enumPokemonArray.ID]][$ "Sound Cry"];
+		pokemonParty[i][enumPokemonArray.type] = global.pokeDex[pokemonParty[i][enumPokemonArray.ID]][$ "Type"]; // Expand to 2 in future builds.
 	}
 }
 
@@ -73,7 +76,7 @@ switch (global.gameState)
 }
 
 var _arrayStringStats = [];
-_arrayStringStats[enumPokemonArray.str] = "Str";
+_arrayStringStats[enumPokemonArray.str] = "Str"; // Sets string so it doesn't need to be repeated in stat loader below.
 _arrayStringStats[enumPokemonArray.dex] = "Dex";
 _arrayStringStats[enumPokemonArray.con] = "Con";
 _arrayStringStats[enumPokemonArray.int] = "Int";
@@ -146,10 +149,11 @@ for (var i = 0; i < global.maxPokemon; i++;)
 	}
 }
 
-for (var i = 0; i < global.maxPokemon; i++;)
+for (var i = 0; i < global.maxPokemon; i++;) // HP Code (Prototype design) + AC
 {
 	if (pokemonParty[i][enumPokemonArray.ID] != "NOT_SET")
 	{
+		// HP
 		var _hitDice = 8;
 		var _conModifier = funct_modifierCheck(pokemonParty[i][enumPokemonArray.con]);
 		var _baseHP = _conModifier + _hitDice;
@@ -160,16 +164,29 @@ for (var i = 0; i < global.maxPokemon; i++;)
 		}
 		pokemonParty[i][enumPokemonArray.maxHP] = _baseHP + _hitDiceAddition;
 		pokemonParty[i][enumPokemonArray.currentHP] = pokemonParty[i][enumPokemonArray.maxHP]; // Only necessary for the Prototype
+		// Prototype only code! (Remove in future when a better implementation is done.
+		if (pokemonParty[i][enumPokemonArray.ID] == 491) // Darkrai Health Increase, done as a temp measure to make him stronger.
+		{
+			pokemonParty[i][enumPokemonArray.maxHP] = 500;
+			pokemonParty[i][enumPokemonArray.currentHP] = 500;
+		}
+		
+		// AC
+		var _acBase = 10;
+		var _acModifier = funct_modifierCheck(pokemonParty[i][enumPokemonArray.dex]);
+		var _acFull = _acBase + _acModifier;
+		pokemonParty[i][enumPokemonArray.AC] = _acFull;
 	}
 	else
 	{
 		pokemonParty[i][enumPokemonArray.maxHP] = "NOT_SET";
 		pokemonParty[i][enumPokemonArray.currentHP] = "NOT_SET";
+		pokemonParty[i][enumPokemonArray.AC] = "NOT_SET";
 	}
 }
 
-for (var i = 0; i < global.maxPokemon; i++;) // Works somewhat, adapt once save file is in + update this to work with End Game, have all info imported if possible 
-{
+for (var i = 0; i < global.maxPokemon; i++;) // Half broken move loader (Due to the Zero issue that arises when trying to access data later on.) (NEEDS CLEAN UP!!!!!!!)
+{		// Works somewhat, adapt once save file is in + update this to work with End Game, have all info imported if possible 
 	if (pokemonParty[i][enumPokemonArray.ID] != "NOT_SET")
 	{
 		var _counter = 0;

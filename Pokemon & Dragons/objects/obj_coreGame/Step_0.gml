@@ -525,7 +525,38 @@ switch (room)
 							switch (global.playerChoiceAttack)
 							{
 								case(enumPlayerAttack.attack1):
-									var _moveArray = funct_attack(); // Implement this here once the update to the parent pokemon is done.
+									var _moveArray = [];
+									_moveArray = funct_attack(global.pokeMoves, // Seems to work on a basic level for now. (Doesn't change HP for opponent)
+										obj_playerPokemon.pokemonPartyMoves[0][enumPokemonPartyMoves.move1ID], 
+										global.pokemonLevelSet, 
+										obj_opponentPokemon.pokemonParty[0][enumPokemonArray.AC],
+										obj_opponentPokemon.pokemonParty[0][enumPokemonArray.type],
+										obj_playerPokemon.pokemonParty[0][enumPokemonArray.type],
+										obj_playerPokemon.pokemonParty); // Implement this here once the update to the parent pokemon is done.
+									if (_moveArray[enumAttackFunction.result] == "FAIL")			// Using Magic Number to ensure working due to only one pokemon.
+									{
+										funct_diceVisual(_moveArray[enumAttackFunction.baseDice], 
+											room_width / 2, room_height / 2,
+											_moveArray[enumAttackFunction.diceModifier], 
+											_moveArray[enumAttackFunction.diceOrSave]);
+									}
+									else if (_moveArray[enumAttackFunction.result] == 0)
+									{
+										// put no effect here
+									}
+									else
+									{
+										funct_diceVisual(_moveArray[enumAttackFunction.baseDice], 
+											room_width / 2, room_height / 2,
+											_moveArray[enumAttackFunction.diceModifier], 
+											_moveArray[enumAttackFunction.diceOrSave]);
+										// Put Damage Dice Code here
+										var _damage = string(_moveArray[enumAttackFunction.result]);
+										var _effectiveness = string(_moveArray[enumAttackFunction.effectiveness]);
+										show_message(_damage);
+										show_message(_effectiveness);
+										obj_opponentPokemon.pokemonParty[0][enumPokemonArray.currentHP] -= _damage;
+									}
 									break;
 								case(enumPlayerAttack.attack2):
 									//type here

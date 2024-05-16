@@ -145,21 +145,70 @@ function funct_moveLoader(_moveID)
 // Plus this will also do the check for Action/Bonus and will cancel out if there isn't a point left.
 // Additionally, it will enable other functions to be made to do damage which will be below.
 
-function funct_attack(_attackMoveArray, _level, _defenderAC, _defenderType, _attackerType) // Fully Develop This (Consider putting the visual code here)
+function funct_attack(_moveArray, _moveID, _level, _defenderAC, _defenderType, _attackerType, _attackerStats) // Fully Develop This (Consider putting the visual code here)
 {
-	// Put the Function here
-	var _type = _attackMoveArray[enumMoveLoader.moveType];
-	var _time = _attackMoveArray[enumMoveLoader.moveTime]; // Not implemented yet
-	var _modifier = _attackMoveArray[enumMoveLoader.moveAttackMod];
-	var _diceOrSave = _attackMoveArray[enumMoveLoader.moveDS];
+	// GET RID OF ALL MAGIC NUMBERS IN FUTURE BUILDS.
+	var _length = array_length(_moveArray) - 1;
 	var _diceRoll = "NOT_SET";
 	var _diceRollFull = "NOT_SET";
 	var _result = 0;
 	
+	var _type = "NOT_SET";
+	var _time = "NOT_SET"; // Not implemented yet
+	var _modifier = "NOT_SET";
+	var _modifierNumber = "NOT_SET";
+	var _diceOrSave = "NOT_SET";
+	var _diceSize = [];
+	var _diceAmount = [];
+	
+	
+	for (var i = _length; i >= 0; i--;)
+	{
+		if (_moveID == _moveArray[i][$ "Move ID"])
+		{
+			_type = _moveArray[i][$ "Type"];
+			_time = _moveArray[i][$ "Time"];
+			_modifier = _moveArray[i][$ "Attack Modifier"];
+			_diceOrSave = _moveArray[i][$ "Dice or Save"];
+			_diceSize[0] = _moveArray[i][$ "LV1 Dice Size"]; // Make an enumeration later to document this
+			_diceSize[1] = _moveArray[i][$ "LV5 Dice Size"];
+			_diceSize[2] = _moveArray[i][$ "LV10 Dice Size"];
+			_diceSize[3] = _moveArray[i][$ "LV17 Dice Size"];
+			_diceAmount[0] = _moveArray[i][$ "LV1 Dice Amount"];
+			_diceAmount[1] = _moveArray[i][$ "LV5 Dice Amount"];
+			_diceAmount[2] = _moveArray[i][$ "LV10 Dice Amount"];
+			_diceAmount[3] = _moveArray[i][$ "LV17 Dice Amount"];
+		}
+	}
+	
+	switch (_modifier) // Code to get the modifier set (IN FUTURE VERSIONS, GET RID OF 0 MAGIC NUMBER)
+	{
+		case("Str"):
+			var _stat = _attackerStats[0][enumPokemonArray.str];
+			_modifierNumber = funct_modifierCheck(_stat);
+			break;
+		case("Dex"):
+			var _stat = _attackerStats[0][enumPokemonArray.dex];
+			_modifierNumber = funct_modifierCheck(_stat);
+			break;
+		case("Con"):
+			var _stat = _attackerStats[0][enumPokemonArray.con];
+			_modifierNumber = funct_modifierCheck(_stat);
+			break;
+		case("Int"):
+			var _stat = _attackerStats[0][enumPokemonArray.int];
+			_modifierNumber = funct_modifierCheck(_stat);
+			break;
+		case("Wis"):
+			var _stat = _attackerStats[0][enumPokemonArray.wis];
+			_modifierNumber = funct_modifierCheck(_stat);
+			break;
+	}
+	
 	if (_diceOrSave != string)
 	{
 		_diceRoll = funct_diceRoll(_diceOrSave);
-		_diceRollFull = _diceRoll + _modifier;
+		_diceRollFull = _diceRoll + _modifierNumber;
 	}
 	// Damage Calculation
 	switch(_level)
@@ -169,26 +218,22 @@ function funct_attack(_attackMoveArray, _level, _defenderAC, _defenderType, _att
 		case(2):
 		case(3):
 		case(4):
-			var _diceSize = _attackMoveArray[enumMoveLoader.moveLV1Dice];
-			var _diceAmount = _attackMoveArray[enumMoveLoader.moveLV1Amount];
-			for(var i = 0; i < _diceAmount; i++;)
+			for(var i = 0; i < _diceAmount[0]; i++;)
 			{
-				_result += funct_diceRoll(_diceSize);
+				_result += funct_diceRoll(_diceSize[0]);
 			}
-			_result += _modifier;
+			_result += _modifierNumber;
 			break;
 		case(5):
 		case(6):
 		case(7):
 		case(8):
 		case(9):
-			var _diceSize = _attackMoveArray[enumMoveLoader.moveLV5Dice];
-			var _diceAmount = _attackMoveArray[enumMoveLoader.moveLV5Amount];
-			for(var i = 0; i < _diceAmount; i++;)
+			for(var i = 0; i < _diceAmount[1]; i++;)
 			{
-				_result += funct_diceRoll(_diceSize);
+				_result += funct_diceRoll(_diceSize[1]);
 			}
-			_result += _modifier;
+			_result += _modifierNumber;
 			break;
 		case(10):
 		case(11):
@@ -197,25 +242,21 @@ function funct_attack(_attackMoveArray, _level, _defenderAC, _defenderType, _att
 		case(14):
 		case(15):
 		case(16):
-			var _diceSize = _attackMoveArray[enumMoveLoader.moveLV10Dice];
-			var _diceAmount = _attackMoveArray[enumMoveLoader.moveLV10Amount];
-			for(var i = 0; i < _diceAmount; i++;)
+			for(var i = 0; i < _diceAmount[2]; i++;)
 			{
-				_result += funct_diceRoll(_diceSize);
+				_result += funct_diceRoll(_diceSize[2]);
 			}
-			_result += _modifier;
+			_result += _modifierNumber;
 			break;
 		case(17):
 		case(18):
 		case(19):
 		case(20):
-			var _diceSize = _attackMoveArray[enumMoveLoader.moveLV17Dice];
-			var _diceAmount = _attackMoveArray[enumMoveLoader.moveLV17Amount];
-			for(var i = 0; i < _diceAmount; i++;)
+			for(var i = 0; i < _diceAmount[3]; i++;)
 			{
-				_result += funct_diceRoll(_diceSize);
+				_result += funct_diceRoll(_diceSize[3]);
 			}
-			_result += _modifier;
+			_result += _modifierNumber;
 			break;
 		#endregion
 	}
@@ -238,19 +279,22 @@ function funct_attack(_attackMoveArray, _level, _defenderAC, _defenderType, _att
 		
 		var _final = [];
 		_final[enumAttackFunction.baseDice] = _diceRoll;
-		_final[enumAttackFunction.diceModifier] = _diceRollFull;
+		_final[enumAttackFunction.diceModifier] = _modifierNumber;
 		_final[enumAttackFunction.effectiveness] = _effectiveness;
 		_final[enumAttackFunction.result] = _result;
-		// type here
+		_final[enumAttackFunction.diceOrSave] = _diceOrSave;
+		return _final;
 	}
 	else if (_diceRollFull < _defenderAC)
 	{
 		_result = "FAIL"; // Change if this doesn't work
 		var _final = [];
 		_final[enumAttackFunction.baseDice] = _diceRoll;
-		_final[enumAttackFunction.diceModifier] = _diceRollFull;
+		_final[enumAttackFunction.diceModifier] = _modifierNumber;
 		_final[enumAttackFunction.effectiveness] = enumEffectiveness.noEffect;
 		_final[enumAttackFunction.result] = _result;
+		_final[enumAttackFunction.diceOrSave] = _diceOrSave;
+		return _final;
 	}
 }
 
