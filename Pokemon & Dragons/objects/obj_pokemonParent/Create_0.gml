@@ -168,16 +168,45 @@ for (var i = 0; i < global.maxPokemon; i++;)
 	}
 }
 
-for (var i = 0; i < global.maxPokemon; i++;) // Works somewhat, adapt once save file is in + update this to work with End Game, have all info imported if possible
+for (var i = 0; i < global.maxPokemon; i++;) // Works somewhat, adapt once save file is in + update this to work with End Game, have all info imported if possible 
 {
 	if (pokemonParty[i][enumPokemonArray.ID] != "NOT_SET")
 	{
 		var _counter = 0;
-		pokemonPartyMoves[i][enumPokemonPartyMoves.pokemonID] = pokemonParty[i][enumPokemonArray.ID];
+		pokemonPartyMoves[i][enumPokemonPartyMoves.pokemonID] = pokemonParty[i][enumPokemonArray.ID]; // Change over to the Move Loader
+		/*pokemonPartyMoves1[i][enumMoveLoader.pokemonID] = pokemonParty[i][enumPokemonArray.ID];
+		pokemonPartyMoves2[i][enumMoveLoader.pokemonID] = pokemonParty[i][enumPokemonArray.ID];
+		pokemonPartyMoves3[i][enumMoveLoader.pokemonID] = pokemonParty[i][enumPokemonArray.ID];
+		pokemonPartyMoves4[i][enumMoveLoader.pokemonID] = pokemonParty[i][enumPokemonArray.ID];*/ // Move Loader isn't working, look into this at home (Consider moving to a Pokemon single system)
+		
 		for (var f = enumPokemonPartyMoves.move1ID; f <= enumPokemonPartyMoves.move4ID; f += 2;)
 		{
-			var _struct = global.pokeDex[pokemonPartyMoves[i][enumPokemonPartyMoves.pokemonID]][$ "LV1 Battle Moves"];
-			pokemonPartyMoves[i][f] = _struct[_counter]; //
+			var _struct = "NOT_SET";
+			if (global.pokemonLevelSet == 1)
+			{
+				_struct = global.pokeDex[pokemonPartyMoves[i][enumPokemonPartyMoves.pokemonID]][$ "LV1 Battle Moves"]; // TEMP SOLUTION FOR PROTOTYPE (Due to no Save System)
+			}
+			else if (global.pokemonLevelSet == 20)
+			{
+				_struct = global.pokeDex[pokemonPartyMoves[i][enumPokemonPartyMoves.pokemonID]][$ "LV20 Battle Moves"]; // TEMP SOLUTION FOR PROTOTYPE (Due to no Save System)
+			}
+			
+			/*switch (f)
+			{
+				case(0):
+					pokemonPartyMoves1[i] = funct_moveLoader(pokemonPartyMoves1[i][enumMoveLoader.pokemonID]);
+					break;
+				case(1):
+					pokemonPartyMoves2[i] = funct_moveLoader(pokemonPartyMoves2[i][enumMoveLoader.pokemonID]);
+					break;
+				case(2):
+					pokemonPartyMoves3[i] = funct_moveLoader(pokemonPartyMoves3[i][enumMoveLoader.pokemonID]);
+					break;
+				case(3):
+					pokemonPartyMoves4[i] = funct_moveLoader(pokemonPartyMoves4[i][enumMoveLoader.pokemonID]);
+					break;
+			}*/
+			pokemonPartyMoves[i][f] = _struct[_counter]; // Temp Solution
 			var _arraySize = array_length(global.pokeMoves) - 1;
 			for (var v = 0; v <= _arraySize; v++)
 			{
@@ -192,10 +221,24 @@ for (var i = 0; i < global.maxPokemon; i++;) // Works somewhat, adapt once save 
 	}
 	else
 	{
-		for (var f = enumPokemonPartyMoves.move1ID; f <= enumPokemonPartyMoves.move4ID; f += 2;)
+		for (var f = enumPokemonPartyMoves.move1ID; f <= enumPokemonPartyMoves.move4ID; f += 2;) // Fully redo this code
 		{
-			pokemonPartyMoves[i][f] = "NOT_SET";
-			pokemonPartyMoves[i][f + 1] = "NOT_SET";
+			
+			/*switch (f)
+			{
+				case(0):
+					pokemonPartyMoves1[i][enumMoveLoader.moveName] = "NOT_SET";
+					break;
+				case(1):
+					pokemonPartyMoves2[i][enumMoveLoader.moveName] = "NOT_SET";
+					break;
+				case(2):
+					pokemonPartyMoves3[i][enumMoveLoader.moveName] = "NOT_SET";
+					break;
+				case(3):
+					pokemonPartyMoves4[i][enumMoveLoader.moveName] = "NOT_SET";
+					break;
+			}*/
 		}
 	}
 }

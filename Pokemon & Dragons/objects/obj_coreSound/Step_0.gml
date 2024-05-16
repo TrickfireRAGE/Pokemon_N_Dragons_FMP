@@ -58,7 +58,7 @@ if (room == rm_battleRoom)
 	switch (global.battleState)
 	{
 		case(enumBattleState.introSequence):
-			var _opponentPokemonCryTimer = 300;
+			var _opponentPokemonCryTimer = 300; // To get around the random cries
 			var _playerPokemonCryTimer = 418;
 			if (soundCountBattle == 2)
 			{

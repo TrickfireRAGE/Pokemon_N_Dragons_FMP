@@ -8,6 +8,9 @@ switch (room)
 		var _gameLogoX = global.gameResolutionWidth / 1.35; // Local Variable for Game Logo X
 		var _gameLogoY = global.gameResolutionHeight / 2.7; // Local Variable for Game Logo Y
 		var _gameLogoScale = (global.gameResolutionWidth / 1920) * 0.8; // Scales the image depending on what resolution the game is running at.
+		var _gameLucarioX = global.gameResolutionWidth / 4;
+		var _gameLucarioY = global.gameResolutionHeight / 1.2;
+		var _gameLucarioScale = (global.gameResolutionWidth / 1920) * 13;
 		// Title Press Start Text
 		var _startTextX = global.gameResolutionWidth / 1.65;
 		var _startTextY = global.gameResolutionHeight / 1.5;
@@ -68,7 +71,13 @@ switch (room)
 						_gameLogoScale, _gameLogoScale,
 						0, c_white,
 						titleScreenAlphaLogo);
+					draw_sprite_ext(spr_megaLucario, 0,
+						_gameLucarioX, _gameLucarioY,
+						_gameLucarioScale, _gameLucarioScale,
+						0, c_white,
+						titleScreenAlphaLucario);
 					titleScreenAlphaLogo += 0.01;
+					titleScreenAlphaLucario += 0.005;
 				}
 				else
 				{
@@ -78,6 +87,11 @@ switch (room)
 						_gameLogoScale, _gameLogoScale,
 						0, c_white,
 						titleScreenAlphaLogo);
+					draw_sprite_ext(spr_megaLucario, 0,
+						_gameLucarioX, _gameLucarioY,
+						_gameLucarioScale, _gameLucarioScale,
+						0, c_white,
+						titleScreenAlphaLucario);
 					
 					if (titleScreenAlphaText <= 1)
 					{
@@ -116,6 +130,11 @@ switch (room)
 					funct_textUI(_startTextX, _startTextY,
 						_startTextString, _menuTextScale,
 						_textColour, titleScreenAlphaText);
+					draw_sprite_ext(spr_megaLucario, 0,
+						_gameLucarioX, _gameLucarioY,
+						_gameLucarioScale, _gameLucarioScale,
+						0, c_white,
+						titleScreenAlphaText / 2);
 					titleScreenAlphaText -= 0.01;
 				}
 				else
@@ -500,9 +519,13 @@ switch (room)
 				#endregion
 				break;
 			case(enumBattleState.introSequence):
-				//type here
+				// type here
+				break;
+			case(enumBattleState.playerAttack):
+				// type here
 				break;
 			case(enumBattleState.player):
+				#region Local Variables
 				var _xPosition = [];
 				var _distanceX = 80 * (global.gameResolutionWidth / 1920);
 				_xPosition[0] = global.gameResolutionWidth / 1.2;
@@ -544,6 +567,8 @@ switch (room)
 				var _xHealthUIOpponent = global.gameResolutionWidth / 3;
 				var _yHealthUIPlayer = global.gameResolutionHeight / 1.25;
 				var _yHealthUIOpponent = global.gameResolutionHeight / 22;
+				
+				#endregion
 				
 				switch (global.playerBattleState)
 				{
@@ -615,7 +640,8 @@ switch (room)
 								}
 							}
 						}
-						for (var i = 0; i < array_length(_maxPP); i++;) // Fixed zero number appearing by deleting it within the array with this check.
+						var _zeroFixer = array_length(_maxPP) - 1;
+						for (var i = _zeroFixer; i >= 0; i--;) // Fixed zero number appearing by deleting it within the array with this check. // Updated to reverse instead.
 						{ // This is a temp solution, when implementing move attacks, consider replacing all of this with functions.
 							if (_maxPP[i] == 0)
 							{

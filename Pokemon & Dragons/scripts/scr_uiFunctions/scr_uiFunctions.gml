@@ -77,6 +77,7 @@ function funct_battleHealthUI(_sprite, _currentHealth, _maxHP, _xPosition, _yPos
 	var _textColour = c_black;
 	var _xPositionText = _xPosition + ((global.gameResolutionWidth / 1920) * 30);
 	var _xPositionLevel = _xPosition + (114 * _scale); // Using Magic number for ease of working (Update in future)
+	var _xPositionHP = _xPositionLevel - (10 * _scale);
 	var _yPositionText = _yPosition + ((global.gameResolutionWidth / 1920) * 50);
 	var _textScale = (global.gameResolutionWidth / 1920) * 2;
 	
@@ -101,7 +102,7 @@ function funct_battleHealthUI(_sprite, _currentHealth, _maxHP, _xPosition, _yPos
 		var _yPositionHP = _yPositionText + ((global.gameResolutionWidth / 1920) * 40);
 		var _stringHP = string(_currentHealth) + "/" + string(_maxHP);
 		
-		funct_textUI(_xPositionLevel, _yPositionHP,
+		funct_textUI(_xPositionHP, _yPositionHP,
 			_stringHP, _scaleHP,
 			_textColour, 1,
 			fa_center);

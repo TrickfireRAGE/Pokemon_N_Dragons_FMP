@@ -2,7 +2,7 @@
 
 #region VERSION NUMBER
 
-versionNumber = "Pre-Alpha - V0.0.0.18";
+versionNumber = "Pre-Alpha - V0.0.0.19";
 
 #endregion
 
@@ -29,6 +29,7 @@ if (room == rm_introVideo)
 
 titleScreenAlphaLogo = 0;
 titleScreenAlphaText = 0;
+titleScreenAlphaLucario = 0;
 
 #endregion
 
@@ -83,7 +84,7 @@ typeColoursArray[enumTypeColRows.stringType][enumType.dark] = "Dark";
 typeColoursArray[enumTypeColRows.colour][enumType.normal] = c_ltgrey;
 typeColoursArray[enumTypeColRows.colour][enumType.fighting] = c_white + c_orange;
 typeColoursArray[enumTypeColRows.colour][enumType.flying] = c_white + c_blue;
-typeColoursArray[enumTypeColRows.colour][enumType.poison] = c_purple;
+typeColoursArray[enumTypeColRows.colour][enumType.poison] = c_fuchsia;
 typeColoursArray[enumTypeColRows.colour][enumType.ground] = c_white + c_maroon;
 typeColoursArray[enumTypeColRows.colour][enumType.rock] = c_maroon;
 typeColoursArray[enumTypeColRows.colour][enumType.bug] = c_green;
@@ -95,6 +96,7 @@ typeColoursArray[enumTypeColRows.colour][enumType.grass] = c_lime;
 typeColoursArray[enumTypeColRows.colour][enumType.electric] = c_yellow;
 typeColoursArray[enumTypeColRows.colour][enumType.psychic] = c_red + c_white;
 typeColoursArray[enumTypeColRows.colour][enumType.ice] = c_navy;
+typeColoursArray[enumTypeColRows.colour][enumType.dragon] = c_purple;
 typeColoursArray[enumTypeColRows.colour][enumType.dark] = c_maroon + c_grey;
 
 #endregion

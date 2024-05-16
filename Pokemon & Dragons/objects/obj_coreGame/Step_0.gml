@@ -496,7 +496,7 @@ switch (room)
 				}
 				break;
 			case(enumBattleState.playerAttack):
-				// type playerAttack Code here
+				// type player Attack Code here
 				break;
 			case(enumBattleState.player):
 				if (global.gamePadConfirm)
@@ -525,7 +525,7 @@ switch (room)
 							switch (global.playerChoiceAttack)
 							{
 								case(enumPlayerAttack.attack1):
-									// put move code here
+									var _moveArray = funct_attack(); // Implement this here once the update to the parent pokemon is done.
 									break;
 								case(enumPlayerAttack.attack2):
 									//type here

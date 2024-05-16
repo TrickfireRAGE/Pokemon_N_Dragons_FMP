@@ -6,7 +6,7 @@ _holdTime = room_speed * 2;
 
 if (loopCounter < _timeLength)
 {
-	image_index = irandom_range(1, 20);
+	image_index = irandom_range(1, topEnd);
 	loopCounter++;
 	counter = 0;
 }

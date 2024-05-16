@@ -20,9 +20,9 @@ switch (room)
 				break;
 		}
 	case(rm_battleRoom):
-		switch (global.gameState)
+		switch (global.battleState)
 		{
-			case(enumGameState.level1Battle):
+			case(enumBattleState.introSequence):
 				if (layer_sequence_is_finished(global.sequenceID) == true)
 				{
 					layer_sequence_destroy(global.sequenceID);
