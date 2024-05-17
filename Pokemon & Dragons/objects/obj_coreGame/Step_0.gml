@@ -496,7 +496,98 @@ switch (room)
 				}
 				break;
 			case(enumBattleState.playerAttack):
-				// type player Attack Code here
+				#region Player Attack Code
+				if (!instance_exists(global.attackIDRoll))
+				{
+					switch (global.moveReturnArray[enumAttackFunction.result])
+					{
+						case("FAIL"):
+							// Put failing code here
+							global.battleState = enumBattleState.player;
+							break;
+						case(0):
+							// Type here (NO Effect)
+							global.battleState = enumBattleState.player;
+							break;
+						default:
+							var _arrayLengthCheck = array_length(global.moveReturnArray);
+							var _amountOfRolls = _arrayLengthCheck - enumAttackFunction.attackDiceRollFirst;
+							var _emptyModifier = 0;
+							
+							var _xDicePosition = [];
+							_xDicePosition[0] = room_width / 2;
+							_xDicePosition[1] = room_width / 4;
+							_xDicePosition[2] = _xDicePosition[1] * 3;
+							_xDicePosition[3] = room_width / 3;
+							_xDicePosition[4] = _xDicePosition[3] * 2;
+							
+							var _yDicePosition = [];
+							_yDicePosition[0] = room_height / 2;
+							_yDicePosition[1] = room_height / 4;
+							_yDicePosition[2] = _yDicePosition[1] * 3;
+							if (global.attackIDDamage == "NOT_SET")
+							{
+								switch (_amountOfRolls)
+								{
+									case(8):
+										funct_diceVisual(global.moveReturnArray[enumAttackFunction.attackDiceRollFirst + 7], // Sort this out soon.
+											_xDicePosition[0], _yDicePosition[1], _emptyModifier,
+											global.moveReturnArray[enumAttackFunction.attackDiceSize]);
+									case(7):
+										funct_diceVisual(global.moveReturnArray[enumAttackFunction.attackDiceRollFirst + 6],
+											_xDicePosition[4], _yDicePosition[2], _emptyModifier,
+											global.moveReturnArray[enumAttackFunction.attackDiceSize]);
+									case(6):
+										funct_diceVisual(global.moveReturnArray[enumAttackFunction.attackDiceRollFirst + 5],
+											_xDicePosition[3], _yDicePosition[2], _emptyModifier,
+											global.moveReturnArray[enumAttackFunction.attackDiceSize]);
+									case(5):
+										funct_diceVisual(global.moveReturnArray[enumAttackFunction.attackDiceRollFirst + 4],
+											_xDicePosition[4], _yDicePosition[1], _emptyModifier,
+											global.moveReturnArray[enumAttackFunction.attackDiceSize]);
+									case(4):
+										funct_diceVisual(global.moveReturnArray[enumAttackFunction.attackDiceRollFirst + 3],
+											_xDicePosition[3], _yDicePosition[1], _emptyModifier,
+											global.moveReturnArray[enumAttackFunction.attackDiceSize]);
+									case(3):
+										funct_diceVisual(global.moveReturnArray[enumAttackFunction.attackDiceRollFirst + 2],
+											_xDicePosition[2], _yDicePosition[0], _emptyModifier,
+											global.moveReturnArray[enumAttackFunction.attackDiceSize]);
+									case(2):
+										funct_diceVisual(global.moveReturnArray[enumAttackFunction.attackDiceRollFirst + 1],
+											_xDicePosition[1], _yDicePosition[0], _emptyModifier,
+											global.moveReturnArray[enumAttackFunction.attackDiceSize]);
+									case(1):
+										global.attackIDDamage = funct_diceVisual(global.moveReturnArray[enumAttackFunction.attackDiceRollFirst],
+											_xDicePosition[0], _yDicePosition[0],
+											global.moveReturnArray[enumAttackFunction.diceModifier],
+											global.moveReturnArray[enumAttackFunction.attackDiceSize]);
+										break;
+								}
+							}
+							else if (!instance_exists(global.attackIDDamage))
+							{
+								if (global.moveIDSequence == "NOT_SET")
+								{
+									var _xPositionSequence = 128; // For Sequence
+									var _yPositionSequence = 72; // For Seqeunce
+		
+									global.moveIDSequence = layer_sequence_create("sequenceLayer", _xPositionSequence, _yPositionSequence, seq_playerAttack);
+								}
+								
+								if (alarm_get(enumCoreGameAlarms.stateSwitch) > 0)
+								{
+									//Code here
+								}
+								else
+								{
+									alarm_set(enumCoreGameAlarms.stateSwitch, 1);
+								}
+							}
+							break;
+					}
+				}
+				#endregion
 				break;
 			case(enumBattleState.player):
 				if (global.gamePadConfirm)
@@ -525,47 +616,36 @@ switch (room)
 							switch (global.playerChoiceAttack)
 							{
 								case(enumPlayerAttack.attack1):
-									var _moveArray = [];
-									_moveArray = funct_attack(global.pokeMoves, // Seems to work on a basic level for now. (Doesn't change HP for opponent)
-										obj_playerPokemon.pokemonPartyMoves[0][enumPokemonPartyMoves.move1ID], 
-										global.pokemonLevelSet, 
-										obj_opponentPokemon.pokemonParty[0][enumPokemonArray.AC],
-										obj_opponentPokemon.pokemonParty[0][enumPokemonArray.type],
-										obj_playerPokemon.pokemonParty[0][enumPokemonArray.type],
-										obj_playerPokemon.pokemonParty); // Implement this here once the update to the parent pokemon is done.
-									if (_moveArray[enumAttackFunction.result] == "FAIL")			// Using Magic Number to ensure working due to only one pokemon.
+									var _actionBonus = obj_playerPokemon.pokemonPartyMoves[0][enumPokemonPartyMoves.move1Point];
+									var _actionBonusResult = funct_actionBonusPoint(_actionBonus, global.playerActionPoint, global.playerBonusPoint);
+									if ((obj_playerPokemon.pokemonPartyMoves[0][enumPokemonPartyMoves.move1PP] != 0) and _actionBonusResult == true)
 									{
-										funct_diceVisual(_moveArray[enumAttackFunction.baseDice], 
-											room_width / 2, room_height / 2,
-											_moveArray[enumAttackFunction.diceModifier], 
-											_moveArray[enumAttackFunction.diceOrSave]);
-									}
-									else if (_moveArray[enumAttackFunction.result] == 0)
-									{
-										// put no effect here
-									}
-									else
-									{
-										funct_diceVisual(_moveArray[enumAttackFunction.baseDice], 
-											room_width / 2, room_height / 2,
-											_moveArray[enumAttackFunction.diceModifier], 
-											_moveArray[enumAttackFunction.diceOrSave]);
-										// Put Damage Dice Code here
-										var _damage = string(_moveArray[enumAttackFunction.result]);
-										var _effectiveness = string(_moveArray[enumAttackFunction.effectiveness]);
-										show_message(_damage);
-										show_message(_effectiveness);
-										obj_opponentPokemon.pokemonParty[0][enumPokemonArray.currentHP] -= _damage;
+										alarm_set(enumCoreGameAlarms.moveAlarm, 1);
 									}
 									break;
 								case(enumPlayerAttack.attack2):
-									//type here
+									var _actionBonus = obj_playerPokemon.pokemonPartyMoves[0][enumPokemonPartyMoves.move2Point];
+									var _actionBonusResult = funct_actionBonusPoint(_actionBonus, global.playerActionPoint, global.playerBonusPoint);
+									if ((obj_playerPokemon.pokemonPartyMoves[0][enumPokemonPartyMoves.move2PP] != 0) and _actionBonusResult == true)
+									{
+										alarm_set(enumCoreGameAlarms.moveAlarm, 1);
+									}
 									break;
 								case(enumPlayerAttack.attack3):
-									//type here
+									var _actionBonus = obj_playerPokemon.pokemonPartyMoves[0][enumPokemonPartyMoves.move3Point];
+									var _actionBonusResult = funct_actionBonusPoint(_actionBonus, global.playerActionPoint, global.playerBonusPoint);
+									if ((obj_playerPokemon.pokemonPartyMoves[0][enumPokemonPartyMoves.move3PP] != 0) and _actionBonusResult == true)
+									{
+										alarm_set(enumCoreGameAlarms.moveAlarm, 1);
+									}
 									break;
 								case(enumPlayerAttack.attack4):
-									// put move code here
+									var _actionBonus = obj_playerPokemon.pokemonPartyMoves[0][enumPokemonPartyMoves.move4Point];
+									var _actionBonusResult = funct_actionBonusPoint(_actionBonus, global.playerActionPoint, global.playerBonusPoint);
+									if ((obj_playerPokemon.pokemonPartyMoves[0][enumPokemonPartyMoves.move4PP] != 0) and _actionBonusResult == true)
+									{
+										alarm_set(enumCoreGameAlarms.moveAlarm, 1);
+									}
 									break;
 							}
 							break;

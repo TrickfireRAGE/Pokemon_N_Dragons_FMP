@@ -4,7 +4,8 @@
 
 enum enumCoreGameAlarms // For all the alarms in obj_coreGame
 {
-	stateSwitch = 0
+	stateSwitch = 0,
+	moveAlarm = 1
 }
 
 enum enumMusicState // For Music in Battles
@@ -220,7 +221,9 @@ enum enumAttackFunction // For the Attack Function
 	diceModifier = 1, 
 	effectiveness = 2,
 	result = 3,
-	diceOrSave = 4
+	diceOrSave = 4,
+	attackDiceSize = 5,
+	attackDiceRollFirst = 6
 }
 
 enum enumDiceSize
@@ -270,11 +273,16 @@ global.playerChoiceBattle = "NOT_SET";
 global.playerChoiceAttack = "NOT_SET";
 global.playerChoicePokemon = "NOT_SET"; // Not Used in Prototype
 global.playerChoiceBag = "NOT_SET"; // Might not be used in Prototype
+global.playerActionPoint = "NOT_SET"; // Using as a global variable to make it easier on implementaiton.
+global.playerBonusPoint = "NOT_SET"; // ^
 
 global.opponentPokemonID = [];
 global.opponentPokemonID[0] = "NOT_SET";
 global.opponentPokemonID[1] = "NOT_SET";
 global.opponentPokemonID[2] = "NOT_SET";
+
+global.moveReturnArray = [];
+
 
 global.opponentStageBattle = "NOT_SET";
 // Put more here
@@ -282,7 +290,10 @@ global.opponentStageBattle = "NOT_SET";
 global.pokemonLevelSet = "NOT_SET";
 
 global.sequenceID = "NOT_SET";
+global.moveIDSequence = "NOT_SET";
 global.initiativeID = "NOT_SET";
+global.attackIDRoll = "NOT_SET";
+global.attackIDDamage = "NOT_SET";
 
 randomise(); // Needed to randomise the seed
 

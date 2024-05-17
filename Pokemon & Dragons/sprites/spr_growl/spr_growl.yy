@@ -40,7 +40,7 @@
     "name": "spr_growl",
     "timeUnits": 1,
     "playback": 1,
-    "playbackSpeed": 3.0,
+    "playbackSpeed": 2.5,
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,

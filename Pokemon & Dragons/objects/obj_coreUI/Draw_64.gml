@@ -545,6 +545,10 @@ switch (room)
 				_xPositionAction[2] = _xPositionAction[1] - _distanceX;
 				_xPositionAction[3] = _xPositionAction[2] - _distanceX;
 				
+				var _xPositionPoint = global.gameResolutionWidth / 20; // For the amount of action and bonus action points left on a turn
+				var _yPositionPointAction = global.gameResolutionHeight / 1.5;
+				var _yPositionPointBonus = global.gameResolutionHeight / 1.2;
+				
 				var _yPosition = [];
 				var _distanceY = 100 * (global.gameResolutionWidth / 1920);
 				_yPosition[0] = global.gameResolutionHeight / 1.6;
@@ -619,14 +623,15 @@ switch (room)
 						_currentPPString[2] = string(obj_playerPokemon.pokemonPartyMoves[0][enumPokemonPartyMoves.move3PP]);
 						_currentPPString[3] = string(obj_playerPokemon.pokemonPartyMoves[0][enumPokemonPartyMoves.move4PP]);
 						var _textPPScale = (global.gameResolutionWidth / 1920) * 1.5;
-						var _scaleActionBonus = (global.gameResolutionHeight / 1080) * 1.5;
+						var _scaleActionBonusMove = (global.gameResolutionHeight / 1080) * 1.5; // For the Symbols on the Move
+						var _scaleActionBonus = (global.gameResolutionWidth / 1920) * 3;
 						var _textStringAttack = [];
 						var _textMoveType = [];
 						var _textMoveTime = [];
 						var _maxPP = [];
 						var _pokemonMoves = obj_playerPokemon.pokemonPartyMoves;
 						var _pokeMovesLength = array_length(global.pokeMoves) - 1;
-						for (var f = enumPokemonPartyMoves.move1ID; f <= enumPokemonPartyMoves.move4ID; f += 2;) // Potentally scrap this and use a move loader to remove the need for this.
+						for (var f = enumPokemonPartyMoves.move1ID; f <= enumPokemonPartyMoves.move4ID; f += 6;) // Potentally scrap this and use a move loader to remove the need for this.
 						{
 							for (var i = 0; i <= _pokeMovesLength; i++;)
 							{
@@ -687,13 +692,13 @@ switch (room)
 								_textPPScale, _textColour, 
 								1, fa_middle);
 						}
-						for (var i = 0; i <= 3; i++;)
+						for (var i = 0; i <= 3; i++;) // Symbols for Action and Bonus Action on Move Side
 						{
 							if (_textMoveTime[i] == "Action")
 							{
 								draw_sprite_ext(spr_actionSymbol, 0, // Action/Bonus UI Code (Temp)
 								_xPositionAction[i], _yPosition[i],
-								_scaleActionBonus, _scaleActionBonus,
+								_scaleActionBonusMove, _scaleActionBonusMove,
 								0, c_white,
 								1);
 							}
@@ -701,11 +706,28 @@ switch (room)
 							{
 								draw_sprite_ext(spr_bonusSymbol, 0, // Action/Bonus UI Code (Temp)
 								_xPositionAction[i], _yPosition[i],
-								_scaleActionBonus, _scaleActionBonus,
+								_scaleActionBonusMove, _scaleActionBonusMove,
 								0, c_white,
 								1);
 							}
 						}
+						// Temp Action/Bonus Action Point UI
+						draw_sprite_ext(spr_actionSymbol, 0, // Temp
+							_xPositionPoint, _yPositionPointAction,
+							_scaleActionBonus, _scaleActionBonus,
+							0, c_white,
+							1);
+						funct_textUI(_xPositionPoint, _yPositionPointAction,
+							global.playerActionPoint, _textScale,
+							c_black, 1, fa_middle);
+						draw_sprite_ext(spr_bonusSymbol, 0, 
+							_xPositionPoint, _yPositionPointBonus,
+							_scaleActionBonus, _scaleActionBonus,
+							0, c_white,
+							1);
+						funct_textUI(_xPositionPoint, _yPositionPointBonus,
+							global.playerBonusPoint, _textScale,
+							c_black, 1, fa_middle);
 						
 						funct_battleHealthUI(spr_healthPlayerUI, obj_playerPokemon.pokemonParty[0][enumPokemonArray.currentHP],
 								obj_playerPokemon.pokemonParty[0][enumPokemonArray.maxHP],

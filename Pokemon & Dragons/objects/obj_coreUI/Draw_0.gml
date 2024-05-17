@@ -56,7 +56,7 @@ switch (room)
 				#endregion
 				break;
 			case(enumTitleScreenState.settingsMenu):
-				#region Settings Meny Draw Stuff
+				#region Settings Menu Draw Stuff
 				switch(global.settingsMenuState)
 				{
 					case(enumSettingsScreenState.controls):

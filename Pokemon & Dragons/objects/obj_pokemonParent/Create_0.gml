@@ -21,20 +21,32 @@ enum enumPokemonPartyMoves
 	pokemonID = 0,
 	move1ID = 1,
 	move1PP = 2,
-	move2ID = 3,
-	move2PP = 4,
-	move3ID = 5,
-	move3PP = 6,
-	move4ID = 7,
-	move4PP = 8
+	move1Point = 3,
+	move1AoN = 4,
+	move1Sprite = 5, 
+	move1Sound = 6,
+	move2ID = 7,
+	move2PP = 8,
+	move2Point = 9,
+	move2AoN = 10,
+	move2Sprite = 11, 
+	move2Sound = 12,
+	move3ID = 13,
+	move3PP = 14,
+	move3Point = 15,
+	move3AoN = 16,
+	move3Sprite = 17,
+	move3Sound = 18,
+	move4ID = 19,
+	move4PP = 20,
+	move4Point = 21,
+	move4AoN = 22,
+	move4Sprite = 23,
+	move4Sound = 24
 }
 
 pokemonParty = []; // Used to store all the stats of the Pokemon's Party
-pokemonPartyMoves1 = []; // Alternative system in mind to replace partymoves to get as much info in without constantly checking JSON file.
-pokemonPartyMoves2 = [];
-pokemonPartyMoves3 = [];
-pokemonPartyMoves4 = [];
-pokemonPartyMoves = []; // Used to store all battle moves for the game + PP (NEED TO IMPLEMENT THIS CORRECTLY)
+pokemonPartyMoves = []; // Used to store all battle moves for the game, PP, Action/Bonus, Attack/Non-Attack (NEED TO IMPLEMENT THIS CORRECTLY)
 
 if (object_index == obj_playerPokemon)
 {
@@ -170,12 +182,21 @@ for (var i = 0; i < global.maxPokemon; i++;) // HP Code (Prototype design) + AC
 			pokemonParty[i][enumPokemonArray.maxHP] = 500;
 			pokemonParty[i][enumPokemonArray.currentHP] = 500;
 		}
+		if (global.pokemonLevelSet == 1) // For level one for now due to very low health and needing of changing the current system
+		{
+			pokemonParty[i][enumPokemonArray.maxHP] = 20;
+			pokemonParty[i][enumPokemonArray.currentHP] = 20;
+		}
 		
 		// AC
 		var _acBase = 10;
 		var _acModifier = funct_modifierCheck(pokemonParty[i][enumPokemonArray.dex]);
 		var _acFull = _acBase + _acModifier;
 		pokemonParty[i][enumPokemonArray.AC] = _acFull;
+		if (pokemonParty[i][enumPokemonArray.ID] == 491) // Darkrai AC Increase, done as a temp measure to make him stronger.
+		{
+			pokemonParty[i][enumPokemonArray.AC] = 17;
+		}
 	}
 	else
 	{
@@ -186,17 +207,13 @@ for (var i = 0; i < global.maxPokemon; i++;) // HP Code (Prototype design) + AC
 }
 
 for (var i = 0; i < global.maxPokemon; i++;) // Half broken move loader (Due to the Zero issue that arises when trying to access data later on.) (NEEDS CLEAN UP!!!!!!!)
-{		// Works somewhat, adapt once save file is in + update this to work with End Game, have all info imported if possible 
+{		// Works with new update to have the time/action point implemented when loading it into the game, magic numbers are still being used. Remove in future builds.
 	if (pokemonParty[i][enumPokemonArray.ID] != "NOT_SET")
 	{
 		var _counter = 0;
-		pokemonPartyMoves[i][enumPokemonPartyMoves.pokemonID] = pokemonParty[i][enumPokemonArray.ID]; // Change over to the Move Loader
-		/*pokemonPartyMoves1[i][enumMoveLoader.pokemonID] = pokemonParty[i][enumPokemonArray.ID];
-		pokemonPartyMoves2[i][enumMoveLoader.pokemonID] = pokemonParty[i][enumPokemonArray.ID];
-		pokemonPartyMoves3[i][enumMoveLoader.pokemonID] = pokemonParty[i][enumPokemonArray.ID];
-		pokemonPartyMoves4[i][enumMoveLoader.pokemonID] = pokemonParty[i][enumPokemonArray.ID];*/ // Move Loader isn't working, look into this at home (Consider moving to a Pokemon single system)
+		pokemonPartyMoves[i][enumPokemonPartyMoves.pokemonID] = pokemonParty[i][enumPokemonArray.ID]; 
 		
-		for (var f = enumPokemonPartyMoves.move1ID; f <= enumPokemonPartyMoves.move4ID; f += 2;)
+		for (var f = enumPokemonPartyMoves.move1ID; f <= enumPokemonPartyMoves.move4ID; f += 6;)
 		{
 			var _struct = "NOT_SET";
 			if (global.pokemonLevelSet == 1)
@@ -207,22 +224,6 @@ for (var i = 0; i < global.maxPokemon; i++;) // Half broken move loader (Due to 
 			{
 				_struct = global.pokeDex[pokemonPartyMoves[i][enumPokemonPartyMoves.pokemonID]][$ "LV20 Battle Moves"]; // TEMP SOLUTION FOR PROTOTYPE (Due to no Save System)
 			}
-			
-			/*switch (f)
-			{
-				case(0):
-					pokemonPartyMoves1[i] = funct_moveLoader(pokemonPartyMoves1[i][enumMoveLoader.pokemonID]);
-					break;
-				case(1):
-					pokemonPartyMoves2[i] = funct_moveLoader(pokemonPartyMoves2[i][enumMoveLoader.pokemonID]);
-					break;
-				case(2):
-					pokemonPartyMoves3[i] = funct_moveLoader(pokemonPartyMoves3[i][enumMoveLoader.pokemonID]);
-					break;
-				case(3):
-					pokemonPartyMoves4[i] = funct_moveLoader(pokemonPartyMoves4[i][enumMoveLoader.pokemonID]);
-					break;
-			}*/
 			pokemonPartyMoves[i][f] = _struct[_counter]; // Temp Solution
 			var _arraySize = array_length(global.pokeMoves) - 1;
 			for (var v = 0; v <= _arraySize; v++)
@@ -230,6 +231,10 @@ for (var i = 0; i < global.maxPokemon; i++;) // Half broken move loader (Due to 
 				if (global.pokeMoves[v][$ "Move ID"] == pokemonPartyMoves[i][f])
 				{
 					pokemonPartyMoves[i][f + 1] = global.pokeMoves[v][$ "PP"];
+					pokemonPartyMoves[i][f + 2] = global.pokeMoves[v][$ "Time"];
+					pokemonPartyMoves[i][f + 3] = global.pokeMoves[v][$ "Attack Type"];
+					pokemonPartyMoves[i][f + 4] = global.pokeMoves[v][$ "Move Sprite"];
+					pokemonPartyMoves[i][f + 5] = global.pokeMoves[v][$ "Move Sound Effect"];
 					v = _arraySize + 1;
 				}
 			}
@@ -238,25 +243,7 @@ for (var i = 0; i < global.maxPokemon; i++;) // Half broken move loader (Due to 
 	}
 	else
 	{
-		for (var f = enumPokemonPartyMoves.move1ID; f <= enumPokemonPartyMoves.move4ID; f += 2;) // Fully redo this code
-		{
-			
-			/*switch (f)
-			{
-				case(0):
-					pokemonPartyMoves1[i][enumMoveLoader.moveName] = "NOT_SET";
-					break;
-				case(1):
-					pokemonPartyMoves2[i][enumMoveLoader.moveName] = "NOT_SET";
-					break;
-				case(2):
-					pokemonPartyMoves3[i][enumMoveLoader.moveName] = "NOT_SET";
-					break;
-				case(3):
-					pokemonPartyMoves4[i][enumMoveLoader.moveName] = "NOT_SET";
-					break;
-			}*/
-		}
+		// Put old Not Set Code here later if needed
 	}
 }
 

@@ -146,7 +146,7 @@ function funct_moveLoader(_moveID)
 // Additionally, it will enable other functions to be made to do damage which will be below.
 
 function funct_attack(_moveArray, _moveID, _level, _defenderAC, _defenderType, _attackerType, _attackerStats) // Fully Develop This (Consider putting the visual code here)
-{
+{																											// Develop the additional modifiers here because of Growl, Work up.
 	// GET RID OF ALL MAGIC NUMBERS IN FUTURE BUILDS.
 	var _length = array_length(_moveArray) - 1;
 	var _diceRoll = "NOT_SET";
@@ -160,6 +160,9 @@ function funct_attack(_moveArray, _moveID, _level, _defenderAC, _defenderType, _
 	var _diceOrSave = "NOT_SET";
 	var _diceSize = [];
 	var _diceAmount = [];
+	var _attackRolls = [];
+	var _chosenSize = "NOT_SET";
+	var _chosenAmount = "NOT_SET";
 	
 	
 	for (var i = _length; i >= 0; i--;)
@@ -207,7 +210,8 @@ function funct_attack(_moveArray, _moveID, _level, _defenderAC, _defenderType, _
 	
 	if (_diceOrSave != string)
 	{
-		_diceRoll = funct_diceRoll(_diceOrSave);
+		// DEBUG IMPLEMENTATION
+		_diceRoll = 20; //funct_diceRoll(_diceOrSave); // Commented out to always make it hit.
 		_diceRollFull = _diceRoll + _modifierNumber;
 	}
 	// Damage Calculation
@@ -220,8 +224,12 @@ function funct_attack(_moveArray, _moveID, _level, _defenderAC, _defenderType, _
 		case(4):
 			for(var i = 0; i < _diceAmount[0]; i++;)
 			{
-				_result += funct_diceRoll(_diceSize[0]);
+				var _roll = funct_diceRoll(_diceSize[0]);
+				_result += _roll;
+				array_push(_attackRolls, _roll);
 			}
+			_chosenAmount = _diceAmount[0];
+			_chosenSize = _diceSize[0];
 			_result += _modifierNumber;
 			break;
 		case(5):
@@ -231,8 +239,12 @@ function funct_attack(_moveArray, _moveID, _level, _defenderAC, _defenderType, _
 		case(9):
 			for(var i = 0; i < _diceAmount[1]; i++;)
 			{
-				_result += funct_diceRoll(_diceSize[1]);
+				var _roll = funct_diceRoll(_diceSize[1]);
+				_result += _roll;
+				array_push(_attackRolls, _roll);
 			}
+			_chosenAmount = _diceAmount[1];
+			_chosenSize = _diceSize[1];
 			_result += _modifierNumber;
 			break;
 		case(10):
@@ -244,8 +256,12 @@ function funct_attack(_moveArray, _moveID, _level, _defenderAC, _defenderType, _
 		case(16):
 			for(var i = 0; i < _diceAmount[2]; i++;)
 			{
-				_result += funct_diceRoll(_diceSize[2]);
+				var _roll = funct_diceRoll(_diceSize[2]);
+				_result += _roll;
+				array_push(_attackRolls, _roll);
 			}
+			_chosenAmount = _diceAmount[2];
+			_chosenSize = _diceSize[2];
 			_result += _modifierNumber;
 			break;
 		case(17):
@@ -254,8 +270,12 @@ function funct_attack(_moveArray, _moveID, _level, _defenderAC, _defenderType, _
 		case(20):
 			for(var i = 0; i < _diceAmount[3]; i++;)
 			{
-				_result += funct_diceRoll(_diceSize[3]);
+				var _roll = funct_diceRoll(_diceSize[3]);
+				_result += _roll;
+				array_push(_attackRolls, _roll);
 			}
+			_chosenAmount = _diceAmount[3];
+			_chosenSize = _diceSize[3];
 			_result += _modifierNumber;
 			break;
 		#endregion
@@ -283,6 +303,11 @@ function funct_attack(_moveArray, _moveID, _level, _defenderAC, _defenderType, _
 		_final[enumAttackFunction.effectiveness] = _effectiveness;
 		_final[enumAttackFunction.result] = _result;
 		_final[enumAttackFunction.diceOrSave] = _diceOrSave;
+		_final[enumAttackFunction.attackDiceSize] = _chosenSize;
+		for (var i = 0; i < _chosenAmount; i++;)
+		{
+			array_push(_final, _attackRolls[i]);
+		}
 		return _final;
 	}
 	else if (_diceRollFull < _defenderAC)
@@ -746,7 +771,35 @@ function funct_typeEffectiveness(_attacker, _defender)
 	
 }
 
+function funct_actionBonusPoint(_time, _actionPoints, _bonusPoints) // Used to check if bonus/action points have been used up
+{
+	switch (_time)
+	{
+		case("Action"):
+			if (_actionPoints == 0)
+			{
+				return false;
+			}
+			else
+			{
+				return true;
+			}
+			break;
+		case("Bonus"):
+			if (_bonusPoints == 0)
+			{
+				return false;
+			}
+			else
+			{
+				return true;
+			}
+			break;
+	}
+}
+
 function funct_nonAttack()
 {
+	
 	// put function here
 }

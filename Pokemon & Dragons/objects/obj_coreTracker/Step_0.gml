@@ -41,6 +41,8 @@ switch (global.battleState)
 					i = global.maxPokemon;
 					global.playerChoiceBattle = enumBattleChoices.attack;
 					global.playerBattleState = enumPlayerTurnState.baseMenu; // Missed this line which caused choices not to work
+					global.playerActionPoint = 1; // Magic Number for the Prototype as there will only be one of each until later versions
+					global.playerBonusPoint = 1; // ^
 					global.battleState = enumBattleState.player;
 				}
 				else if (_current == pokemonOpponent[i][enumTrackerArray.initiative])

@@ -29,6 +29,15 @@ switch (room)
 					global.battleState = enumBattleState.intermission;
 				}
 				break;
+			case(enumBattleState.playerAttack):
+				if (layer_sequence_is_finished(global.moveIDSequence) == true)
+				{
+					layer_sequence_destroy(global.moveIDSequence);
+					global.moveIDSequence = "NOT_SET";
+					global.attackIDDamage = "NOT_SET";
+					global.battleState = enumBattleState.player;
+				}
+				break;
 		}
 		break;
 }
