@@ -2,7 +2,7 @@
 
 #region VERSION NUMBER
 
-versionNumber = "Pre-Alpha - V0.0.0.21 (Day)";
+versionNumber = "Pre-Alpha - V0.0.0.22 (Weekend)"; // Version 0.0.1.0 will be the PlayTest Version Known As - Pre-Alpha - V0.0.1.0 (PlayTest)
 
 #endregion
 
@@ -40,7 +40,6 @@ enum enumCoreUIAlarms
 	backgroundEffect = 0 // put more here when added
 }
 
-
 #endregion
 
 #region Visual Pokemon Variables and Enumerations
@@ -56,6 +55,13 @@ enum enumTypeColRows
 	stringType = 0,
 	colour = 1
 }
+
+#endregion
+
+#region Battle UI Variables
+
+hpDecrease = 0;
+backTextBoxID = "NOT_SET";
 
 #endregion
 
@@ -169,6 +175,6 @@ creditsText[59] = "==Dungeons & Dragons==";
 creditsText[60] = "Wizards of the Coast";
 creditsText[61] = "==GameMaker Studio LTS 2022=="
 creditsText[62] = "YoYo Games"
-creditsArraySize = array_length(creditsText); // Think of a better way to implement this system
+creditsArraySize = array_length(creditsText) - 1; // Think of a better way to implement this system
 
 #endregion

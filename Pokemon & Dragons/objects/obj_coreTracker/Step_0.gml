@@ -37,20 +37,54 @@ switch (global.battleState)
 			{
 				if (_current == pokemonPlayer[i][enumTrackerArray.initiative])
 				{
+					#region Player Initiative Check
 					_charName = pokemonPlayer[i][enumTrackerArray.name];
 					i = global.maxPokemon;
 					global.playerChoiceBattle = enumBattleChoices.attack;
 					global.playerBattleState = enumPlayerTurnState.baseMenu; // Missed this line which caused choices not to work
 					global.playerActionPoint = 1; // Magic Number for the Prototype as there will only be one of each until later versions
 					global.playerBonusPoint = 1; // ^
-					global.battleState = enumBattleState.player;
+					if (global.playerSideEffectArray[enumNonAttackFunction.sideDuration] == "NOT_SET")
+					{
+						global.battleState = enumBattleState.player;
+					}
+					else if (global.playerSideEffectArray[enumNonAttackFunction.sideDuration] >= 0)
+					{
+						global.playerSideEffectArray[enumNonAttackFunction.sideDuration] -= 1;
+						global.battleState = enumBattleState.player;
+					}
+					else if (global.playerSideEffectArray[enumNonAttackFunction.sideDuration] == -1)
+					{
+						global.playerSideEffectArray[enumNonAttackFunction.sideDuration] = "NOT_SET";
+						global.playerSideEffectArray[enumNonAttackFunction.sideAffected] = "NOT_SET";
+						global.playerSideEffectArray[enumNonAttackFunction.sideModifier] = "NOT_SET";
+						global.battleState = enumBattleState.player;
+					}
+					#endregion
 				}
 				else if (_current == pokemonOpponent[i][enumTrackerArray.initiative])
 				{
+					#region Opponenet Initiative Check
 					_charName = pokemonOpponent[i][enumTrackerArray.name];
 					i = global.maxPokemon;
 					global.opponentStageBattle = enumOpponentStages.action;
-					global.battleState = enumBattleState.opponent;
+					if (global.opponentSideEffectArray[enumNonAttackFunction.sideDuration] == "NOT_SET")
+					{
+						global.battleState = enumBattleState.opponent;
+					}
+					else if (global.opponentSideEffectArray[enumNonAttackFunction.sideDuration] >= 0)
+					{
+						global.opponentSideEffectArray[enumNonAttackFunction.sideDuration] -= 1;
+						global.battleState = enumBattleState.opponent;
+					}
+					else if (global.opponentSideEffectArray[enumNonAttackFunction.sideDuration] == -1)
+					{
+						global.opponentSideEffectArray[enumNonAttackFunction.sideDuration] = "NOT_SET";
+						global.opponentSideEffectArray[enumNonAttackFunction.sideModifier] = "NOT_SET";
+						global.opponentSideEffectArray[enumNonAttackFunction.sideAffected] = "NOT_SET";
+						global.battleState = enumBattleState.opponent;
+					}
+					#endregion
 				}
 			}
 		}

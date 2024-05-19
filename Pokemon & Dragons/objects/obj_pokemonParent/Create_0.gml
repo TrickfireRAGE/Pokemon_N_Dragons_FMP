@@ -13,7 +13,9 @@ enum enumPokemonArray
 	maxHP = 8,
 	currentHP = 9,
 	AC = 10,
-	type = 11 // Expand to 2 in future builds
+	type = 11,
+	savingThrow1 = 12,
+	savingThrow2 = 13
 }
 
 enum enumPokemonPartyMoves
@@ -45,6 +47,7 @@ enum enumPokemonPartyMoves
 	move4Sound = 24
 }
 
+
 pokemonParty = []; // Used to store all the stats of the Pokemon's Party
 pokemonPartyMoves = []; // Used to store all battle moves for the game, PP, Action/Bonus, Attack/Non-Attack (NEED TO IMPLEMENT THIS CORRECTLY)
 
@@ -70,6 +73,8 @@ for (var i = 0; i < global.maxPokemon; i++)
 		pokemonParty[i][enumPokemonArray.name] = global.pokeDex[pokemonParty[i][enumPokemonArray.ID]][$ "Pokemon Name"];
 		pokemonParty[i][enumPokemonArray.sound] = global.pokeDex[pokemonParty[i][enumPokemonArray.ID]][$ "Sound Cry"];
 		pokemonParty[i][enumPokemonArray.type] = global.pokeDex[pokemonParty[i][enumPokemonArray.ID]][$ "Type"]; // Expand to 2 in future builds.
+		pokemonParty[i][enumPokemonArray.savingThrow1] = global.pokeDex[pokemonParty[i][enumPokemonArray.ID]][$ "Saving Throw 1"];
+		pokemonParty[i][enumPokemonArray.savingThrow2] = global.pokeDex[pokemonParty[i][enumPokemonArray.ID]][$ "Saving Throw 2"];
 	}
 }
 

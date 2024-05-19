@@ -93,64 +93,14 @@ function funct_diceRoll(_diceSize)
 	return (irandom_range(1, _diceSize));
 }
 
-function funct_moveLoader(_moveID)
-{
-	var _moveArray = [];
-	_moveArray[enumMoveLoader.moveID] = _moveID;
-	var _pokeMovesLength = array_length(global.pokeMoves) - 1;
-	
-	for (var i = 0; i <= _pokeMovesLength; i++;)
-	{
-		if (global.pokeMoves[i][$ "Move ID"] == _moveID) // Update to include sprite/object/sequence
-		{
-			_moveArray[enumMoveLoader.moveName] = global.pokeMoves[i][$ "Move Name"];
-			_moveArray[enumMoveLoader.moveDes] = global.pokeMoves[i][$ "Move Description"];
-			_moveArray[enumMoveLoader.moveType] = global.pokeMoves[i][$ "Type"];
-			_moveArray[enumMoveLoader.moveTime] = global.pokeMoves[i][$ "Time"];
-			_moveArray[enumMoveLoader.movePP] = global.pokeMoves[i][$ "PP"];
-			_moveArray[enumMoveLoader.moveDS] = global.pokeMoves[i][$ "Dice or Save"];
-			_moveArray[enumMoveLoader.moveAttackType] = global.pokeMoves[i][$ "Attack Type"];
-			_moveArray[enumMoveLoader.moveAttackMod] = global.pokeMoves[i][$ "Attack Modifier"];
-			_moveArray[enumMoveLoader.moveLV1Dice] = global.pokeMoves[i][$ "LV1 Dice Size"];
-			_moveArray[enumMoveLoader.moveLV1Amount] = global.pokeMoves[i][$ "LV1 Dice Amount"];
-			_moveArray[enumMoveLoader.moveLV5Dice] = global.pokeMoves[i][$ "LV5 Dice Size"];
-			_moveArray[enumMoveLoader.moveLV5Amount] = global.pokeMoves[i][$ "LV5 Dice Amount"];
-			_moveArray[enumMoveLoader.moveLV10Dice] = global.pokeMoves[i][$ "LV10 Dice Size"];
-			_moveArray[enumMoveLoader.moveLV10Amount] = global.pokeMoves[i][$ "LV10 Dice Amount"];
-			_moveArray[enumMoveLoader.moveLV17Dice] = global.pokeMoves[i][$ "LV17 Dice Size"];
-			_moveArray[enumMoveLoader.moveLV17Amount] = global.pokeMoves[i][$ "LV17 Dice Amount"];
-			_moveArray[enumMoveLoader.moveSideEffect] = global.pokeMoves[i][$ "Side Effect"];
-			_moveArray[enumMoveLoader.moveSideType] = global.pokeMoves[i][$ "Side Effect Type"];
-			_moveArray[enumMoveLoader.moveSideSoO] = global.pokeMoves[i][$ "Self or Opponent"];
-			_moveArray[enumMoveLoader.moveSideAffected] = global.pokeMoves[i][$ "Affected Stats"];
-			_moveArray[enumMoveLoader.moveSideModifier] = global.pokeMoves[i][$ "Side Modifier"];
-			_moveArray[enumMoveLoader.moveSideDuration] = global.pokeMoves[i][$ "Duration"];
-			i = _pokeMovesLength + 1;
-		}
-	}
-	/*for (var i = 0; i < array_length(_maxPP); i++;) // Fixed zero number appearing by deleting it within the array with this check.
-	{ // This is a temp solution, when implementing move attacks, consider replacing all of this with functions.
-		if (_maxPP[i] == 0)
-		{
-			array_delete(_textStringAttack, i, 1);
-			array_delete(_textMoveType, i, 1);
-			array_delete(_textMoveTime, i, 1);
-			array_delete(_maxPP, i, 1);
-		}
-	}*/
-
-	return _moveArray;
-} 
-// Idea for above (Once fully done) will take the moveID and fully load the move's data and checking if it is an attack or Non-Attack.
-// Plus this will also do the check for Action/Bonus and will cancel out if there isn't a point left.
-// Additionally, it will enable other functions to be made to do damage which will be below.
-
-function funct_attack(_moveArray, _moveID, _level, _defenderAC, _defenderType, _attackerType, _attackerStats) // Fully Develop This (Consider putting the visual code here)
+function funct_attack(_moveArray, _moveID, _level, _defenderAC, _defenderType, _attackerType, _attackerStats, _pokemonNumber, _attackerSideEffectArray, _defenderSideEffectArray) // Fully Develop This (Consider putting the visual code here)
 {																											// Develop the additional modifiers here because of Growl, Work up.
 	// GET RID OF ALL MAGIC NUMBERS IN FUTURE BUILDS.
 	var _length = array_length(_moveArray) - 1;
 	var _diceRoll = "NOT_SET";
 	var _diceRollFull = "NOT_SET";
+	var _sideEffectDiceRoll = "NOT_SET";
+	var _defenderACSideEffect = "NOT_SET";
 	var _result = 0;
 	
 	var _type = "NOT_SET";
@@ -163,6 +113,28 @@ function funct_attack(_moveArray, _moveID, _level, _defenderAC, _defenderType, _
 	var _attackRolls = [];
 	var _chosenSize = "NOT_SET";
 	var _chosenAmount = "NOT_SET";
+	
+	switch (_attackerSideEffectArray[enumNonAttackFunction.sideAffected])
+	{
+		case(20):
+			_sideEffectDiceRoll = _attackerSideEffectArray[enumNonAttackFunction.sideModifier];
+			break;
+		case("AC"):
+			// type here
+			break
+		// This is where the damage modifier would go in future builds
+	}
+	switch (_defenderSideEffectArray[enumNonAttackFunction.sideAffected])
+	{
+		case(20):
+			// Type here
+			break;
+		case("AC"):
+			_defenderACSideEffect = _defenderSideEffectArray[enumNonAttackFunction.sideModifier];
+			_defenderAC += _defenderACSideEffect; // Done like this incase this code is going to be changed
+			break
+		// This is where the damage modifier would go in future builds
+	}
 	
 	
 	for (var i = _length; i >= 0; i--;)
@@ -187,23 +159,23 @@ function funct_attack(_moveArray, _moveID, _level, _defenderAC, _defenderType, _
 	switch (_modifier) // Code to get the modifier set (IN FUTURE VERSIONS, GET RID OF 0 MAGIC NUMBER)
 	{
 		case("Str"):
-			var _stat = _attackerStats[0][enumPokemonArray.str];
+			var _stat = _attackerStats[_pokemonNumber][enumPokemonArray.str];
 			_modifierNumber = funct_modifierCheck(_stat);
 			break;
 		case("Dex"):
-			var _stat = _attackerStats[0][enumPokemonArray.dex];
+			var _stat = _attackerStats[_pokemonNumber][enumPokemonArray.dex];
 			_modifierNumber = funct_modifierCheck(_stat);
 			break;
 		case("Con"):
-			var _stat = _attackerStats[0][enumPokemonArray.con];
+			var _stat = _attackerStats[_pokemonNumber][enumPokemonArray.con];
 			_modifierNumber = funct_modifierCheck(_stat);
 			break;
 		case("Int"):
-			var _stat = _attackerStats[0][enumPokemonArray.int];
+			var _stat = _attackerStats[_pokemonNumber][enumPokemonArray.int];
 			_modifierNumber = funct_modifierCheck(_stat);
 			break;
 		case("Wis"):
-			var _stat = _attackerStats[0][enumPokemonArray.wis];
+			var _stat = _attackerStats[_pokemonNumber][enumPokemonArray.wis];
 			_modifierNumber = funct_modifierCheck(_stat);
 			break;
 	}
@@ -213,7 +185,17 @@ function funct_attack(_moveArray, _moveID, _level, _defenderAC, _defenderType, _
 		// DEBUG IMPLEMENTATION
 		_diceRoll = 20; //funct_diceRoll(_diceOrSave); // Commented out to always make it hit.
 		_diceRollFull = _diceRoll + _modifierNumber;
+		if (_sideEffectDiceRoll != "NOT_SET")
+		{
+			_diceRollFull += _sideEffectDiceRoll;
+		}
 	}
+	else if (_diceOrSave == "NOT_SET")
+	{
+		_diceRoll = "ALWAYS_HITS";
+		_diceRollFull = "ALWAYS_HITS";
+	}
+		
 	// Damage Calculation
 	switch(_level)
 	{
@@ -290,12 +272,19 @@ function funct_attack(_moveArray, _moveID, _level, _defenderAC, _defenderType, _
 	{
 		var _effectiveness = funct_typeEffectiveness(_type, _defenderType); // Expand to have multiple types in future.
 		
-		_result *= _effectiveness;
+		if (_diceRoll == 20) // Critical hit Code
+		{
+			_result *= 2
+		}
 		
-		if (_attackerType == _type)
+		if (_attackerType == _type) // Stab Effectiveness
 		{
 			_result *= 1.5;
 		}
+		
+		_result *= _effectiveness; // Type Effectiveness
+		
+		round (_result); // Rounds the number to ensure it is always a whole number
 		
 		var _final = [];
 		_final[enumAttackFunction.baseDice] = _diceRoll;
@@ -771,6 +760,182 @@ function funct_typeEffectiveness(_attacker, _defender)
 	
 }
 
+function funct_savingThrow(_statSave, _attackerStats, _defenderStats, _pokemonNumber)
+{
+	var _spellDC = 8;
+	var _diceRoll = "NOT_SET";
+	
+	switch (_statSave) // Code to get the spellDC of the saving throw
+	{
+		case("Str"):
+			var _stat = _attackerStats[_pokemonNumber][enumPokemonArray.str];
+			var _modifier = funct_modifierCheck(_stat);
+			var _savingThrowP1 = _attackerStats[_pokemonNumber][enumPokemonArray.savingThrow1];
+			var _savingThrowP2 = _attackerStats[_pokemonNumber][enumPokemonArray.savingThrow2];
+			if ((_savingThrowP1 == "Str") || (_savingThrowP2 == "Str"))
+			{
+				_modifier *= 2;
+				_spellDC += _modifier;
+			}
+			else
+			{
+				_spellDC += _modifier;
+			}
+			break;
+		case("Dex"):
+			var _stat = _attackerStats[_pokemonNumber][enumPokemonArray.dex];
+			var _modifier = funct_modifierCheck(_stat);
+			var _savingThrowP1 = _attackerStats[_pokemonNumber][enumPokemonArray.savingThrow1];
+			var _savingThrowP2 = _attackerStats[_pokemonNumber][enumPokemonArray.savingThrow2];
+			if ((_savingThrowP1 == "Dex") || (_savingThrowP2 == "Dex"))
+			{
+				_modifier *= 2;
+				_spellDC += _modifier;
+			}
+			else
+			{
+				_spellDC += _modifier;
+			}
+			break;
+		case("Con"):
+			var _stat = _attackerStats[_pokemonNumber][enumPokemonArray.con];
+			var _modifier = funct_modifierCheck(_stat);
+			var _savingThrowP1 = _attackerStats[_pokemonNumber][enumPokemonArray.savingThrow1];
+			var _savingThrowP2 = _attackerStats[_pokemonNumber][enumPokemonArray.savingThrow2];
+			if ((_savingThrowP1 == "Con") || (_savingThrowP2 == "Con"))
+			{
+				_modifier *= 2;
+				_spellDC += _modifier;
+			}
+			else
+			{
+				_spellDC += _modifier;
+			}
+			break;
+		case("Int"):
+			var _stat = _attackerStats[_pokemonNumber][enumPokemonArray.int];
+			var _modifier = funct_modifierCheck(_stat);
+			var _savingThrowP1 = _attackerStats[_pokemonNumber][enumPokemonArray.savingThrow1];
+			var _savingThrowP2 = _attackerStats[_pokemonNumber][enumPokemonArray.savingThrow2];
+			if ((_savingThrowP1 == "Int") || (_savingThrowP2 == "Int"))
+			{
+				_modifier *= 2;
+				_spellDC += _modifier;
+			}
+			else
+			{
+				_spellDC += _modifier;
+			}
+			break;
+		case("Wis"):
+			var _stat = _attackerStats[_pokemonNumber][enumPokemonArray.wis];
+			var _modifier = funct_modifierCheck(_stat);
+			var _savingThrowP1 = _attackerStats[_pokemonNumber][enumPokemonArray.savingThrow1];
+			var _savingThrowP2 = _attackerStats[_pokemonNumber][enumPokemonArray.savingThrow2];
+			if ((_savingThrowP1 == "Wis") || (_savingThrowP2 == "Wis"))
+			{
+				_modifier *= 2;
+				_spellDC += _modifier;
+			}
+			else
+			{
+				_spellDC += _modifier;
+			}
+			break;
+	}
+	
+	_diceRoll = funct_diceRoll(20); // Needed for the defender section
+	
+	switch (_statSave) // Code for the defenders roll (Seperated for readable code, reuses code from previous switch)
+	{
+		case("Str"):
+			var _stat = _defenderStats[_pokemonNumber][enumPokemonArray.str];
+			var _modifier = funct_modifierCheck(_stat);
+			var _savingThrowP1 = _defenderStats[_pokemonNumber][enumPokemonArray.savingThrow1];
+			var _savingThrowP2 = _defenderStats[_pokemonNumber][enumPokemonArray.savingThrow2];
+			if ((_savingThrowP1 == "Str") || (_savingThrowP2 == "Str"))
+			{
+				_modifier *= 2;
+				_diceRoll += _modifier;
+			}
+			else
+			{
+				_diceRoll += _modifier;
+			}
+			break;
+		case("Dex"):
+			var _stat = _defenderStats[_pokemonNumber][enumPokemonArray.dex];
+			var _modifier = funct_modifierCheck(_stat);
+			var _savingThrowP1 = _defenderStats[_pokemonNumber][enumPokemonArray.savingThrow1];
+			var _savingThrowP2 = _defenderStats[_pokemonNumber][enumPokemonArray.savingThrow2];
+			if ((_savingThrowP1 == "Dex") || (_savingThrowP2 == "Dex"))
+			{
+				_modifier *= 2;
+				_diceRoll += _modifier;
+			}
+			else
+			{
+				_diceRoll += _modifier;
+			}
+			break;
+		case("Con"):
+			var _stat = _defenderStats[_pokemonNumber][enumPokemonArray.con];
+			var _modifier = funct_modifierCheck(_stat);
+			var _savingThrowP1 = _defenderStats[_pokemonNumber][enumPokemonArray.savingThrow1];
+			var _savingThrowP2 = _defenderStats[_pokemonNumber][enumPokemonArray.savingThrow2];
+			if ((_savingThrowP1 == "Con") || (_savingThrowP2 == "Con"))
+			{
+				_modifier *= 2;
+				_diceRoll += _modifier;
+			}
+			else
+			{
+				_diceRoll += _modifier;
+			}
+			break;
+		case("Int"):
+			var _stat = _defenderStats[_pokemonNumber][enumPokemonArray.int];
+			var _modifier = funct_modifierCheck(_stat);
+			var _savingThrowP1 = _defenderStats[_pokemonNumber][enumPokemonArray.savingThrow1];
+			var _savingThrowP2 = _defenderStats[_pokemonNumber][enumPokemonArray.savingThrow2];
+			if ((_savingThrowP1 == "Int") || (_savingThrowP2 == "Int"))
+			{
+				_modifier *= 2;
+				_diceRoll += _modifier;
+			}
+			else
+			{
+				_diceRoll += _modifier;
+			}
+			break;
+		case("Wis"):
+			var _stat = _defenderStats[_pokemonNumber][enumPokemonArray.wis];
+			var _modifier = funct_modifierCheck(_stat);
+			var _savingThrowP1 = _defenderStats[_pokemonNumber][enumPokemonArray.savingThrow1];
+			var _savingThrowP2 = _defenderStats[_pokemonNumber][enumPokemonArray.savingThrow2];
+			if ((_savingThrowP1 == "Wis") || (_savingThrowP2 == "Wis"))
+			{
+				_modifier *= 2;
+				_diceRoll += _modifier;
+			}
+			else
+			{
+				_diceRoll += _modifier;
+			}
+			break;
+	}
+	
+	if (_diceRoll > _spellDC)
+	{
+		return "FAIL";
+	}
+	else if (_diceRoll <= _spellDC)
+	{
+		return "PASS";
+	}
+		
+}
+
 function funct_actionBonusPoint(_time, _actionPoints, _bonusPoints) // Used to check if bonus/action points have been used up
 {
 	switch (_time)
@@ -798,8 +963,159 @@ function funct_actionBonusPoint(_time, _actionPoints, _bonusPoints) // Used to c
 	}
 }
 
-function funct_nonAttack()
+function funct_nonAttack(_moveArray, _moveID, _level, _defenderStats, _attackerStats, _pokemonNumber, _fromAttack) // Non-Attack Move Function
 {
+	// GET RID OF ALL MAGIC NUMBERS IN FUTURE BUILDS.
+	var _length = array_length(_moveArray) - 1;
+	var _savingThrow = "NOT_SET";
+	var _result = 0;
 	
-	// put function here
+	var _time = "NOT_SET"; // Not implemented yet
+	var _effectType = "NOT_SET"; // Modify (In Prototype), Status (Not in ProtoType)
+	var _selfOrOpponent = "NOT_SET";
+	var _diceOrSave = "NOT_SET";
+	var _modifier = "NOT_SET";
+	var _affected = "NOT_SET";
+	var _sideModifier = "NOT_SET";
+	var _duration = "NOT_SET";
+	
+	
+	for (var i = _length; i >= 0; i--;)
+	{
+		if (_moveID == _moveArray[i][$ "Move ID"])
+		{
+			_time = _moveArray[i][$ "Time"];
+			_effectType = _moveArray[i][$ "Side Effect Type"];
+			_diceOrSave = _moveArray[i][$ "Dice or Save"];
+			_selfOrOpponent = _moveArray[i][$ "Self or Opponent"];
+			_modifier = _moveArray[i][$ "Attack Modifier"];
+			_affected = _moveArray[i][$ "Affected Stat"];
+			_sideModifier = _moveArray[i][$ "Side Modifier"];
+			_duration = _moveArray[i][$ "Duration"];
+			
+		}
+	}
+	
+	if (_diceOrSave != "NOT_SET")
+	{
+		_savingThrow = funct_savingThrow(_diceOrSave, _attackerStats, _defenderStats, _pokemonNumber);
+	}
+	
+	// Put code here in future if it is from an attack. For now this is being scrapped for ease of creation
+	
+	if (_savingThrow == "FAIL")
+	{
+		return false;
+	}
+	else if (_savingThrow == "PASS")
+	{
+		switch (_effectType)
+		{
+			case("Modify"):
+				switch (_affected) // Expand with further stats in post prototype phase
+				{
+					case("D20"):
+						#region D20
+						var _result = [];
+						_result[enumNonAttackFunction.sideAffected] = 20;
+						_result[enumNonAttackFunction.sideModifier] = _sideModifier;
+						_result[enumNonAttackFunction.sideDuration] = _duration;
+						switch (_selfOrOpponent)
+						{
+							case("Self"):
+								_result[enumNonAttackFunction.sideWho] = "Self";
+								return _result;
+								break;
+							case ("Opponent"):
+								_result[enumNonAttackFunction.sideWho] = "Opponent";
+								return _result;
+								break;
+						}
+						#endregion
+						break;
+					case("AC"):
+						#region AC
+						var _result = [];
+						_result[enumNonAttackFunction.sideAffected] = "AC";
+						_result[enumNonAttackFunction.sideModifier] = _sideModifier;
+						_result[enumNonAttackFunction.sideDuration] = _duration;
+						switch (_selfOrOpponent)
+						{
+							case("Self"):
+								_result[enumNonAttackFunction.sideWho] = "Self";
+								return _result;
+								break;
+							case ("Opponent"):
+								_result[enumNonAttackFunction.sideWho] = "Opponent";
+								return _result;
+								break;
+						}
+						#endregion
+						break;
+					case("HP"):
+						// Type here (Not Implemented in this build due to lucario having aura sphere instead of healing)
+						break;
+				}
+				break;
+			case("Status"):
+				return false;
+				break;
+		}
+		
+	}
+	else if (_savingThrow == "NOT_SET") // Copy paste due to not getting the or to work as it can't convert "NOT_SET" into bool
+	{									// Additionally, due to time constraints I am just copy pasting it.
+		switch (_effectType)
+		{
+			case("Modify"):
+				switch (_affected) // Expand with further stats in post prototype phase
+				{
+					case("D20"):
+						#region D20
+						var _result = [];
+						_result[enumNonAttackFunction.sideAffected] = 20;
+						_result[enumNonAttackFunction.sideModifier] = _sideModifier;
+						_result[enumNonAttackFunction.sideDuration] = _duration;
+						switch (_selfOrOpponent)
+						{
+							case("Self"):
+								_result[enumNonAttackFunction.sideWho] = "Self";
+								return _result;
+								break;
+							case ("Opponent"):
+								_result[enumNonAttackFunction.sideWho] = "Opponent";
+								return _result;
+								break;
+						}
+						#endregion
+						break;
+					case("AC"):
+						#region AC
+						var _result = [];
+						_result[enumNonAttackFunction.sideAffected] = "AC";
+						_result[enumNonAttackFunction.sideModifier] = _sideModifier;
+						_result[enumNonAttackFunction.sideDuration] = _duration;
+						switch (_selfOrOpponent)
+						{
+							case("Self"):
+								_result[enumNonAttackFunction.sideWho] = "Self";
+								return _result;
+								break;
+							case ("Opponent"):
+								_result[enumNonAttackFunction.sideWho] = "Opponent";
+								return _result;
+								break;
+						}
+						#endregion
+						break;
+					case("HP"):
+						// Type here (Not Implemented in this build due to lucario having aura sphere instead of healing)
+						break;
+				}
+				break;
+			case("Status"):
+				return false;
+				break;
+		}
+	}
 }

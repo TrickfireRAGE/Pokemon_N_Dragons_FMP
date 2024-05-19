@@ -5,7 +5,8 @@
 enum enumCoreGameAlarms // For all the alarms in obj_coreGame
 {
 	stateSwitch = 0,
-	moveAlarm = 1
+	moveAlarm = 1,
+	damageDealt = 2
 }
 
 enum enumMusicState // For Music in Battles
@@ -123,7 +124,8 @@ enum enumBattleState
 	intermission = 2,
 	opponent = 3,
 	initiative = 4,
-	playerAttack = 5
+	playerAttack = 5,
+	playerDamage = 6
 }
 
 enum enumBattleChoices
@@ -226,6 +228,14 @@ enum enumAttackFunction // For the Attack Function
 	attackDiceRollFirst = 6
 }
 
+enum enumNonAttackFunction // For the Non Attack Function
+{
+	sideAffected = 0,
+	sideModifier = 1,
+	sideDuration = 2, 
+	sideWho = 3
+}
+
 enum enumDiceSize
 {
 	d4 = 4,
@@ -276,12 +286,27 @@ global.playerChoiceBag = "NOT_SET"; // Might not be used in Prototype
 global.playerActionPoint = "NOT_SET"; // Using as a global variable to make it easier on implementaiton.
 global.playerBonusPoint = "NOT_SET"; // ^
 
+global.playerSideEffectArray = [];
+global.playerSideEffectArray[enumNonAttackFunction.sideAffected] = "NOT_SET";
+global.playerSideEffectArray[enumNonAttackFunction.sideDuration] = "NOT_SET";
+global.playerSideEffectArray[enumNonAttackFunction.sideModifier] = "NOT_SET";
+
+// Potentially put effected points here
+
 global.opponentPokemonID = [];
 global.opponentPokemonID[0] = "NOT_SET";
 global.opponentPokemonID[1] = "NOT_SET";
 global.opponentPokemonID[2] = "NOT_SET";
 
+global.opponentSideEffectArray = [];
+global.opponentSideEffectArray[enumNonAttackFunction.sideAffected] = "NOT_SET";
+global.opponentSideEffectArray[enumNonAttackFunction.sideDuration] = "NOT_SET";
+global.opponentSideEffectArray[enumNonAttackFunction.sideModifier] = "NOT_SET";
+
+// Potentially put effected points here
+
 global.moveReturnArray = [];
+global.hpDamageReduction = "NOT_SET"; // Used for cross referencing between core and UI for the HP lowering.
 
 
 global.opponentStageBattle = "NOT_SET";

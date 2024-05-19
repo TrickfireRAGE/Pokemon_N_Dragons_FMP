@@ -62,7 +62,25 @@ switch (room)
 					case(enumSettingsScreenState.controls):
 						var _xControls = 0;
 						var _yControls = 0;
+						var _xText = 200;
+						var _yText = [];
+						_yText[0] = 23;
+						_yText[1] = 39;
+						_yText[2] = 55;
+						_yText[3] = 70;
+						_yText[4] = 84;
+						_yText[5] = 97;
+						var _scale = 0.22;
+						
 						draw_sprite(spr_controlSettings, 0, _xControls, _yControls);
+						funct_textUI(_xText, _yText[0], "Confirm", _scale, c_black, 1, fa_middle);
+						funct_textUI(_xText, _yText[1], "Mega (Unavailable)", _scale, c_black, 1, fa_middle);
+						funct_textUI(_xText, _yText[2], "Move Information", _scale, c_black, 1, fa_middle);
+						funct_textUI(_xText, _yText[3], "Back/Return", _scale, c_black, 1, fa_middle);
+						funct_textUI(_xText, _yText[4], "Start", _scale, c_black, 1, fa_middle);
+						funct_textUI(_xText, _yText[5], "Movement + Navigation", _scale, c_black, 1, fa_middle);
+						draw_set_halign(fa_left); // Just for the version number
+						
 						break;
 				}
 				#endregion
@@ -108,6 +126,29 @@ switch (room)
 						_xScale, _yScale, 
 						0, c_white, 
 						initiativeAlpha); // Put into variables after testing
+				}
+				break;
+			case(enumBattleState.playerAttack):
+				var _xPosition = room_width / 2;
+				var _yPosition = room_height / 2;
+				var _xScale = 2.5;
+				var _yScale = 3;
+				if (backTextBoxID == "NOT_SET")
+				{
+					backTextBoxID = layer_sprite_create("spriteLayer", _xPosition, _yPosition, spr_textBox);
+					layer_sprite_xscale(backTextBoxID, _xScale);
+					layer_sprite_yscale(backTextBoxID, _yScale);
+				}
+				else if (!instance_exists(global.attackIDRoll))
+				{
+					if (global.attackIDDamage == "NOT_SET")
+					{
+						//
+					}
+					else if (!instance_exists(global.attackIDDamage))
+					{
+						layer_sprite_destroy(backTextBoxID);
+					}
 				}
 				break;
 		}

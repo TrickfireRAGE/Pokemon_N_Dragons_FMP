@@ -36,11 +36,12 @@ function funct_soundBarUI(_sound, _xPosition, _yPosition, _scale, _colour) // Re
 {
 	_sound *= 100;
 	var _soundText = string_format(_sound, 3, 0);
-	var _scaleTextNumber = _scale * 3;
-	var _scaleTextTitle = _scale * 2;
+	var _scaleTextNumber = _scale * 2;
+	var _scaleTextTitle = _scale * 1.5;
+	var _scaleArrows = _scale * 0.8;
 	draw_set_halign(fa_center);
 	
-	var _yPositionA = _yPosition / 3;
+	var _yPositionA = _yPosition / 2.5;
 
 	funct_textUI(_xPosition, _yPositionA,
 		"Volume", _scaleTextTitle,
@@ -55,24 +56,40 @@ function funct_soundBarUI(_sound, _xPosition, _yPosition, _scale, _colour) // Re
 	
 	draw_sprite_ext(spr_choiceArrow, 0,
 			_xPositionC, _yPosition,
-			_scale, _scale,
+			_scaleArrows, _scaleArrows,
 			0, _colour,
 			1);
 	
 	draw_sprite_ext(spr_choiceArrow, 0,
 			_xPositionB, _yPosition,
-			_scale, _scale,
+			_scaleArrows, _scaleArrows,
 			180, _colour,
 			1);
 	
 	draw_set_halign(fa_left);
 }
 
-function funct_battleHealthUI(_sprite, _currentHealth, _maxHP, _xPosition, _yPosition, _lv, _name)
+function funct_battleHealthUI(_sprite, _currentHealth, _maxHP, _lv, _name)
 {
 	var _scale = (global.gameResolutionWidth / 1920) * 4;
 	var _hpPercentage = _currentHealth / _maxHP;
 	var _hpPercentageImage = (_hpPercentage * 100) - 1;
+	var _xPosition = "NOT_SET";
+	var _yPosition = "NOT_SET";
+	
+	floor(_currentHealth);
+	
+	switch (_sprite) // Updated Health Code to remove need for local variables within coreUI
+	{
+		case(spr_healthPlayerUI):
+			_xPosition = global.gameResolutionWidth / 9;
+			_yPosition = global.gameResolutionHeight / 1.25;
+			break;
+		case(spr_healthOpponentUI):
+			_xPosition = global.gameResolutionWidth / 3;
+			_yPosition = global.gameResolutionHeight / 22;
+			break;
+	}
 	
 	var _textColour = c_black;
 	var _xPositionText = _xPosition + ((global.gameResolutionWidth / 1920) * 30);

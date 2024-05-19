@@ -374,7 +374,7 @@ switch (room)
 						break;
 					case(enumSettingsScreenState.sound):
 						#region Sound Settings UI
-						var _xSound = (global.gameResolutionWidth / 2);
+						var _xSound = (global.gameResolutionWidth / 4);
 						var _ySound = (global.gameResolutionHeight / 2);
 						funct_soundBarUI(global.soundVolume, _xSound,
 							_ySound, _menuTextScale,
@@ -523,6 +523,21 @@ switch (room)
 				break;
 			case(enumBattleState.playerAttack):
 				// type here
+				
+				break;
+			case(enumBattleState.playerDamage): // Get rid of magic numbers in future builds
+				var _endPoint = obj_opponentPokemon.pokemonParty[0][enumPokemonArray.currentHP];
+				var _uiCounter = global.hpDamageReduction * 10;
+				var _uiCounterEnd = _endPoint * 10;
+				
+				funct_battleHealthUI(spr_healthOpponentUI, 
+					global.hpDamageReduction,
+					obj_opponentPokemon.pokemonParty[0][enumPokemonArray.maxHP], 
+					global.pokemonLevelSet,
+					obj_opponentPokemon.pokemonParty[0][enumPokemonArray.name]);
+						
+				global.hpDamageReduction -= 0.1;
+				
 				break;
 			case(enumBattleState.player):
 				#region Local Variables
@@ -567,11 +582,6 @@ switch (room)
 				_textString[2] = "BAG";
 				_textString[3] = "END TURN";
 				
-				var _xHealthUIPlayer = global.gameResolutionWidth / 9;
-				var _xHealthUIOpponent = global.gameResolutionWidth / 3;
-				var _yHealthUIPlayer = global.gameResolutionHeight / 1.25;
-				var _yHealthUIOpponent = global.gameResolutionHeight / 22;
-				
 				#endregion
 				
 				switch (global.playerBattleState)
@@ -599,20 +609,39 @@ switch (room)
 						}
 						for (var i = 0; i <= 3; i++;)
 						{
-							funct_textUI(_xPosition[i], _yPosition[i],
-								_textString[i], _textScale,
-								_textColour, 1,
-								fa_middle);
+							if (i == 1)
+							{
+								funct_textUI(_xPosition[i], _yPosition[i], // Due to functions not being available in the prototype
+									_textString[i], _textScale,
+									c_grey, 0.7,
+									fa_middle);
+							}
+							else if (i == 2)
+							{
+								funct_textUI(_xPosition[i], _yPosition[i], // Due to functions not being available in the prototype
+									_textString[i], _textScale,
+									c_grey, 0.7,
+									fa_middle);
+							}
+							else
+							{
+								funct_textUI(_xPosition[i], _yPosition[i],
+									_textString[i], _textScale,
+									_textColour, 1,
+									fa_middle);
+							}
 						}
 						// Update to allow for dynamic changing of stats depending on which pokemon is in play
-						funct_battleHealthUI(spr_healthPlayerUI, obj_playerPokemon.pokemonParty[0][enumPokemonArray.currentHP],
-								obj_playerPokemon.pokemonParty[0][enumPokemonArray.maxHP],
-								_xHealthUIPlayer, _yHealthUIPlayer, global.pokemonLevelSet,
-								obj_playerPokemon.pokemonParty[0][enumPokemonArray.name]);
-						funct_battleHealthUI(spr_healthOpponentUI, obj_opponentPokemon.pokemonParty[0][enumPokemonArray.currentHP],
-								obj_opponentPokemon.pokemonParty[0][enumPokemonArray.maxHP],
-								_xHealthUIOpponent, _yHealthUIOpponent, global.pokemonLevelSet,
-								obj_opponentPokemon.pokemonParty[0][enumPokemonArray.name]);
+						funct_battleHealthUI(spr_healthPlayerUI, 
+							obj_playerPokemon.pokemonParty[0][enumPokemonArray.currentHP],
+							obj_playerPokemon.pokemonParty[0][enumPokemonArray.maxHP],
+							global.pokemonLevelSet,
+							obj_playerPokemon.pokemonParty[0][enumPokemonArray.name]);
+						funct_battleHealthUI(spr_healthOpponentUI, 
+							obj_opponentPokemon.pokemonParty[0][enumPokemonArray.currentHP],
+							obj_opponentPokemon.pokemonParty[0][enumPokemonArray.maxHP], 
+							global.pokemonLevelSet,
+							obj_opponentPokemon.pokemonParty[0][enumPokemonArray.name]);
 						#endregion
 						break;
 					case(enumPlayerTurnState.attackMenu):
@@ -729,14 +758,16 @@ switch (room)
 							global.playerBonusPoint, _textScale,
 							c_black, 1, fa_middle);
 						
-						funct_battleHealthUI(spr_healthPlayerUI, obj_playerPokemon.pokemonParty[0][enumPokemonArray.currentHP],
-								obj_playerPokemon.pokemonParty[0][enumPokemonArray.maxHP],
-								_xHealthUIPlayer, _yHealthUIPlayer, global.pokemonLevelSet,
-								obj_playerPokemon.pokemonParty[0][enumPokemonArray.name]);
-						funct_battleHealthUI(spr_healthOpponentUI, obj_opponentPokemon.pokemonParty[0][enumPokemonArray.currentHP],
-								obj_opponentPokemon.pokemonParty[0][enumPokemonArray.maxHP],
-								_xHealthUIOpponent, _yHealthUIOpponent, global.pokemonLevelSet,
-								obj_opponentPokemon.pokemonParty[0][enumPokemonArray.name]);
+						funct_battleHealthUI(spr_healthPlayerUI, 
+							obj_playerPokemon.pokemonParty[0][enumPokemonArray.currentHP],
+							obj_playerPokemon.pokemonParty[0][enumPokemonArray.maxHP], 
+							global.pokemonLevelSet,
+							obj_playerPokemon.pokemonParty[0][enumPokemonArray.name]);
+						funct_battleHealthUI(spr_healthOpponentUI, 
+							obj_opponentPokemon.pokemonParty[0][enumPokemonArray.currentHP],
+							obj_opponentPokemon.pokemonParty[0][enumPokemonArray.maxHP], 
+							global.pokemonLevelSet,
+							obj_opponentPokemon.pokemonParty[0][enumPokemonArray.name]);
 						#endregion
 						break;
 					case(enumPlayerTurnState.bagMenu):

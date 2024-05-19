@@ -13,6 +13,15 @@ if (loopCounter < _timeLength)
 else if (loopCounter == _timeLength)
 {
 	image_index = result;
+	if (result == topEnd) // Critical hits (Nat 20)
+	{
+		image_blend = c_lime;
+	}
+	else if (result == 1) // Critical Failures (Nat 1)
+	{
+		image_blend = c_red;
+	}
+	
 	if (counter > _holdTime)
 	{
 		loopCounter++;

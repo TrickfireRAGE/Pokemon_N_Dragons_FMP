@@ -476,6 +476,7 @@ switch (room)
 		switch (global.battleState) // Consider putting this into a basic battle system where it doesn't need to be typed out multiple times.
 		{
 			case(enumBattleState.introSequence):
+				#region Intro Sequence
 				if (alarm_get(enumCoreGameAlarms.stateSwitch) > 0)
 				{
 					//Code here
@@ -484,8 +485,10 @@ switch (room)
 				{
 					alarm_set(enumCoreGameAlarms.stateSwitch, 1);
 				}
+				#endregion
 				break;
 			case(enumBattleState.initiative):
+				#region Initiative
 				if (!instance_exists(global.initiativeID))
 				{
 					var _xPositionSequence = 128; // For Sequence
@@ -494,100 +497,126 @@ switch (room)
 					global.sequenceID = layer_sequence_create("sequenceLayer", _xPositionSequence, _yPositionSequence, seq_startBattleSequence);
 					global.battleState = enumBattleState.introSequence;
 				}
+				#endregion
 				break;
 			case(enumBattleState.playerAttack):
-				#region Player Attack Code
-				if (!instance_exists(global.attackIDRoll))
+				if (attackNonCheck == "Attack")
 				{
-					switch (global.moveReturnArray[enumAttackFunction.result])
+					#region Player Attack Code
+					if (!instance_exists(global.attackIDRoll))
 					{
-						case("FAIL"):
-							// Put failing code here
-							global.battleState = enumBattleState.player;
-							break;
-						case(0):
-							// Type here (NO Effect)
-							global.battleState = enumBattleState.player;
-							break;
-						default:
-							var _arrayLengthCheck = array_length(global.moveReturnArray);
-							var _amountOfRolls = _arrayLengthCheck - enumAttackFunction.attackDiceRollFirst;
-							var _emptyModifier = 0;
-							
-							var _xDicePosition = [];
-							_xDicePosition[0] = room_width / 2;
-							_xDicePosition[1] = room_width / 4;
-							_xDicePosition[2] = _xDicePosition[1] * 3;
-							_xDicePosition[3] = room_width / 3;
-							_xDicePosition[4] = _xDicePosition[3] * 2;
-							
-							var _yDicePosition = [];
-							_yDicePosition[0] = room_height / 2;
-							_yDicePosition[1] = room_height / 4;
-							_yDicePosition[2] = _yDicePosition[1] * 3;
-							if (global.attackIDDamage == "NOT_SET")
-							{
-								switch (_amountOfRolls)
-								{
-									case(8):
-										funct_diceVisual(global.moveReturnArray[enumAttackFunction.attackDiceRollFirst + 7], // Sort this out soon.
-											_xDicePosition[0], _yDicePosition[1], _emptyModifier,
-											global.moveReturnArray[enumAttackFunction.attackDiceSize]);
-									case(7):
-										funct_diceVisual(global.moveReturnArray[enumAttackFunction.attackDiceRollFirst + 6],
-											_xDicePosition[4], _yDicePosition[2], _emptyModifier,
-											global.moveReturnArray[enumAttackFunction.attackDiceSize]);
-									case(6):
-										funct_diceVisual(global.moveReturnArray[enumAttackFunction.attackDiceRollFirst + 5],
-											_xDicePosition[3], _yDicePosition[2], _emptyModifier,
-											global.moveReturnArray[enumAttackFunction.attackDiceSize]);
-									case(5):
-										funct_diceVisual(global.moveReturnArray[enumAttackFunction.attackDiceRollFirst + 4],
-											_xDicePosition[4], _yDicePosition[1], _emptyModifier,
-											global.moveReturnArray[enumAttackFunction.attackDiceSize]);
-									case(4):
-										funct_diceVisual(global.moveReturnArray[enumAttackFunction.attackDiceRollFirst + 3],
-											_xDicePosition[3], _yDicePosition[1], _emptyModifier,
-											global.moveReturnArray[enumAttackFunction.attackDiceSize]);
-									case(3):
-										funct_diceVisual(global.moveReturnArray[enumAttackFunction.attackDiceRollFirst + 2],
-											_xDicePosition[2], _yDicePosition[0], _emptyModifier,
-											global.moveReturnArray[enumAttackFunction.attackDiceSize]);
-									case(2):
-										funct_diceVisual(global.moveReturnArray[enumAttackFunction.attackDiceRollFirst + 1],
-											_xDicePosition[1], _yDicePosition[0], _emptyModifier,
-											global.moveReturnArray[enumAttackFunction.attackDiceSize]);
-									case(1):
-										global.attackIDDamage = funct_diceVisual(global.moveReturnArray[enumAttackFunction.attackDiceRollFirst],
-											_xDicePosition[0], _yDicePosition[0],
-											global.moveReturnArray[enumAttackFunction.diceModifier],
-											global.moveReturnArray[enumAttackFunction.attackDiceSize]);
-										break;
-								}
-							}
-							else if (!instance_exists(global.attackIDDamage))
-							{
-								if (global.moveIDSequence == "NOT_SET")
-								{
-									var _xPositionSequence = 128; // For Sequence
-									var _yPositionSequence = 72; // For Seqeunce
-		
-									global.moveIDSequence = layer_sequence_create("sequenceLayer", _xPositionSequence, _yPositionSequence, seq_playerAttack);
-								}
+						switch (global.moveReturnArray[enumAttackFunction.result])
+						{
+							case("FAIL"):
+								// Put failing code here
+								global.battleState = enumBattleState.player;
+								break;
+							case(0):
+								// Type here (NO Effect)
+								global.battleState = enumBattleState.player;
+								break;
+							default:
+								var _arrayLengthCheck = array_length(global.moveReturnArray);
+								var _amountOfRolls = _arrayLengthCheck - enumAttackFunction.attackDiceRollFirst;
+								var _emptyModifier = 0;
 								
-								if (alarm_get(enumCoreGameAlarms.stateSwitch) > 0)
+								var _xDicePosition = room_width / 20;
+								
+								var _xDiceDistance = 16;
+								
+								var _yDicePosition = room_height / 2;
+								
+								if (global.attackIDDamage == "NOT_SET")
 								{
-									//Code here
+									switch (_amountOfRolls)
+									{
+										case(8):
+											funct_diceVisual(global.moveReturnArray[enumAttackFunction.attackDiceRollFirst + 7], // Sort this out soon.
+												_xDicePosition, _yDicePosition, _emptyModifier,
+												global.moveReturnArray[enumAttackFunction.attackDiceSize]);
+										case(7):
+											funct_diceVisual(global.moveReturnArray[enumAttackFunction.attackDiceRollFirst + 6],
+												_xDicePosition + _xDiceDistance, _yDicePosition, _emptyModifier,
+												global.moveReturnArray[enumAttackFunction.attackDiceSize]);
+										case(6):
+											funct_diceVisual(global.moveReturnArray[enumAttackFunction.attackDiceRollFirst + 5],
+												_xDicePosition + (_xDiceDistance * 2), _yDicePosition, _emptyModifier,
+												global.moveReturnArray[enumAttackFunction.attackDiceSize]);
+										case(5):
+											funct_diceVisual(global.moveReturnArray[enumAttackFunction.attackDiceRollFirst + 4],
+												_xDicePosition + (_xDiceDistance * 3), _yDicePosition, _emptyModifier,
+												global.moveReturnArray[enumAttackFunction.attackDiceSize]);
+										case(4):
+											funct_diceVisual(global.moveReturnArray[enumAttackFunction.attackDiceRollFirst + 3],
+												_xDicePosition + (_xDiceDistance * 4), _yDicePosition, _emptyModifier,
+												global.moveReturnArray[enumAttackFunction.attackDiceSize]);
+										case(3):
+											funct_diceVisual(global.moveReturnArray[enumAttackFunction.attackDiceRollFirst + 2],
+												_xDicePosition + (_xDiceDistance * 5), _yDicePosition, _emptyModifier,
+												global.moveReturnArray[enumAttackFunction.attackDiceSize]);
+										case(2):
+											funct_diceVisual(global.moveReturnArray[enumAttackFunction.attackDiceRollFirst + 1],
+												_xDicePosition + (_xDiceDistance * 6), _yDicePosition, _emptyModifier,
+												global.moveReturnArray[enumAttackFunction.attackDiceSize]);
+										case(1):
+											global.attackIDDamage = funct_diceVisual(global.moveReturnArray[enumAttackFunction.attackDiceRollFirst],
+												_xDicePosition + (_xDiceDistance * 7), _yDicePosition,
+												global.moveReturnArray[enumAttackFunction.diceModifier],
+												global.moveReturnArray[enumAttackFunction.attackDiceSize]);
+											break;
+									}
 								}
-								else
+								else if (!instance_exists(global.attackIDDamage))
 								{
-									alarm_set(enumCoreGameAlarms.stateSwitch, 1);
+									if (global.moveIDSequence == "NOT_SET")
+									{
+										var _xPositionSequence = 128; // For Sequence
+										var _yPositionSequence = 72; // For Seqeunce
+					
+										global.moveIDSequence = layer_sequence_create("sequenceLayer", _xPositionSequence, _yPositionSequence, seq_playerAttack);
+									}
+									else if (alarm_get(enumCoreGameAlarms.damageDealt) > 0)
+									{
+										//Code here
+									}
+									else
+									{
+										alarm_set(enumCoreGameAlarms.damageDealt, 1);
+									}
 								}
-							}
-							break;
+								break;
+						}
 					}
+					#endregion
 				}
-				#endregion
+				else if (attackNonCheck == "Non-Attack")
+				{
+					#region Non-Attack Player Code
+					if (global.moveIDSequence == "NOT_SET")
+					{
+						var _xPositionSequence = 128; // For Sequence
+						var _yPositionSequence = 72; // For Seqeunce
+					
+						global.moveIDSequence = layer_sequence_create("sequenceLayer", _xPositionSequence, _yPositionSequence, seq_playerAttack);
+					}
+					
+					if (alarm_get(enumCoreGameAlarms.stateSwitch) > 0)
+					{
+						//Code here
+					}
+					else
+					{
+						alarm_set(enumCoreGameAlarms.stateSwitch, 1);
+					}
+					#endregion
+				}
+				break;
+			case(enumBattleState.playerDamage):
+				if (global.hpDamageReduction == obj_opponentPokemon.pokemonParty[0][enumPokemonArray.currentHP]) // Get rid of Magic numbers later
+				{
+					global.hpDamageReduction = "NOT_SET";
+					global.battleState = enumBattleState.player;
+				}
 				break;
 			case(enumBattleState.player):
 				if (global.gamePadConfirm)

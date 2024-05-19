@@ -5,7 +5,7 @@
 switch (global.menuState)
 {
 	case(enumTitleScreenState.pressStart):
-		if (global.gamePadStart) // Doesn't work due to changing state before this code excutes. BUG
+		if (global.gamePadStart) 
 		{
 			audio_play_sound(snd_selectionPaper, 0, false);
 		}
@@ -74,6 +74,20 @@ if (room == rm_battleRoom)
 				audio_play_sound(asset_get_index(playerPokemonCrySound), 0, 0);
 			}
 			soundCountBattle++;
+			break;
+		case(enumBattleState.player):
+			if (global.gamePadConfirm || global.gamePadBack)
+			{
+				audio_play_sound(snd_battleUISound, 0, false);
+			}
+			else if (global.gamePadUp || global.gamePadDown)
+			{
+				audio_play_sound(snd_battleUIUpDown, 0, false);
+			}
+			else if ((global.gamePadX) && (global.playerBattleState == enumPlayerTurnState.attackMenu))
+			{
+				audio_play_sound(snd_battleUIInfo, 0, false);
+			}
 			break;
 	}
 }
