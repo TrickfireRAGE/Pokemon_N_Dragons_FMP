@@ -157,7 +157,7 @@ function funct_attack(_moveArray, _moveID, _level, _defenderAC, _defenderType, _
 		}
 	}
 	
-	switch (_modifier) // Code to get the modifier set (IN FUTURE VERSIONS, GET RID OF 0 MAGIC NUMBER)
+	switch (_modifier) // Code to get the modifier set (Updated to Remove Magic Number)
 	{
 		case("Str"):
 			var _stat = _attackerStats[_pokemonNumber][enumPokemonArray.str];
@@ -190,7 +190,7 @@ function funct_attack(_moveArray, _moveID, _level, _defenderAC, _defenderType, _
 	else
 	{
 		// DEBUG IMPLEMENTATION
-		_diceRoll = 20; //funct_diceRoll(_diceOrSave); // Commented out to always make it hit.
+		_diceRoll = funct_diceRoll(_diceOrSave); 
 		_diceRollFull = _diceRoll + _modifierNumber;
 		if (_sideEffectDiceRoll != "NOT_SET")
 		{

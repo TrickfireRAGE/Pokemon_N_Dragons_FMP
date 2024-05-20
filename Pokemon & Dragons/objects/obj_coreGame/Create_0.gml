@@ -125,7 +125,8 @@ enum enumBattleState
 	opponent = 3,
 	initiative = 4,
 	playerAttack = 5,
-	playerDamage = 6
+	playerDamage = 6, // When the player deals damage
+	opponentDamage = 7 // When the Opponent Deals Damage
 }
 
 enum enumBattleChoices
@@ -155,9 +156,10 @@ enum enumPlayerAttack
 
 enum enumOpponentStages // Expand this on future builds
 {
-	action = 0,
-	bonus = 1, 
-	endTurn = 2
+	loading = 0,
+	action = 1, 
+	endTurn = 2,
+	failed = 3
 }
 
 enum enumType // No Fairy Types in This version
@@ -274,6 +276,7 @@ global.newGamePokemonChoice = 0;
 
 #region Battle Logic
 global.maxPokemon = 3;
+attackNonCheck = "NOT_SET"; // Made into Object Variable instead of local due to need of access in step event
 
 global.playerPokemonID = [];
 global.playerPokemonID[0] = "NOT_SET";
@@ -312,6 +315,7 @@ global.hpDamageReduction = "NOT_SET"; // Used for cross referencing between core
 
 
 global.opponentStageBattle = "NOT_SET";
+global.opponentMoveChoice = "NOT_SET";
 // Put more here
 
 global.pokemonLevelSet = "NOT_SET";

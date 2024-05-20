@@ -72,7 +72,7 @@ for (var i = 0; i < global.maxPokemon; i++;) // Player Pokemon Party Initiative
 	if (pokemonPlayer[i][enumTrackerArray.dexStat] != "NOT_SET")
 	{
 		pokemonPlayer[i][enumTrackerArray.dexModifier] = funct_modifierCheck(pokemonPlayer[i][enumTrackerArray.dexStat]); // Using new Function
-		pokemonPlayer[i][enumTrackerArray.initiative] = 23;  // funct_initiativeRoll(pokemonPlayer[i][enumTrackerArray.dexModifier]); UN COMMENT AND REMOVE OTHER CODE FOR MAIN BUILD
+		pokemonPlayer[i][enumTrackerArray.initiative] = funct_initiativeRoll(pokemonPlayer[i][enumTrackerArray.dexModifier]); 
 		pokemonPlayer[i][enumTrackerArray.initiativeDice] = pokemonPlayer[i][enumTrackerArray.initiative] - pokemonPlayer[i][enumTrackerArray.dexModifier]
 		for (var f = 0; f < ds_list_size(pokemonInitiativeData); f++)
 		{

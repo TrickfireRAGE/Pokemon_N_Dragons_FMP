@@ -4,7 +4,6 @@
 var _actionBonus = "NOT_SET";
 var _whichAttackEnumID = "NOT_SET";
 var _whichAttackEnumPP = "NOT_SET";
-attackNonCheck = "NOT_SET"; // Made into Object Variable instead of local due to need of access in step event
 
 global.battleState = enumBattleState.playerAttack;
 

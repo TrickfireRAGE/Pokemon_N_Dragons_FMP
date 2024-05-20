@@ -67,7 +67,7 @@ switch (global.battleState)
 					#region Opponenet Initiative Check
 					_charName = pokemonOpponent[i][enumTrackerArray.name];
 					i = global.maxPokemon;
-					global.opponentStageBattle = enumOpponentStages.action;
+					global.opponentStageBattle = enumOpponentStages.loading;
 					if (global.opponentSideEffectArray[enumNonAttackFunction.sideDuration] == "NOT_SET")
 					{
 						global.battleState = enumBattleState.opponent;

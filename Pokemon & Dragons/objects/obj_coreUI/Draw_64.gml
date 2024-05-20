@@ -738,6 +738,216 @@ switch (room)
 				}
 				
 				break;
+			case(enumBattleState.opponentDamage): // Get rid of magic numbers in future builds (Copied from Player Damage)
+				funct_battleHealthUI(spr_healthPlayerUI, 
+					global.hpDamageReduction,
+					obj_playerPokemon.pokemonParty[0][enumPokemonArray.maxHP], 
+					global.pokemonLevelSet,
+					obj_playerPokemon.pokemonParty[0][enumPokemonArray.name]);
+				
+				switch (global.pokemonLevelSet) // Temp Solution for Slow Health
+				{
+					case (1):
+						global.hpDamageReduction -= 0.1;
+						break;
+					case (20):
+						global.hpDamageReduction -= 0.25;
+						break;
+				}
+				break;
+			case(enumBattleState.opponent):
+				var _xPositionTitle = global.gameResolutionWidth / 2; // Copy Pasted
+				var _yPositionTitle = global.gameResolutionHeight / 7;
+				var _textScale = (global.gameResolutionWidth / 1920) * 3;
+				var _textColour = c_black;
+				var _textPass = c_green;
+				var _textFail = c_red;
+				
+				
+				if (global.attackIDRoll == "NOT_SET")
+				{
+					// To ensure the code doesn't crash
+				}
+				else if (instance_exists(global.attackIDRoll))
+				{
+					var _topString = [];
+					_topString[0] = "Hit or Miss?";
+					_topString[1] = "Hits!";
+					_topString[2] = "Misses!";
+					_topString[3] = "NATURAL 20! CRIT!";
+					_topString[4] = "CRITICAL FAILURE!";
+					
+					if (global.attackIDRoll.loopCounter <= global.attackIDRoll.timeLength + 1)
+					{
+						funct_textUI(_xPositionTitle, _yPositionTitle,
+						_topString[0], _textScale,
+						_textColour, 1,
+						fa_center);
+					}
+					else if (global.attackIDRoll.loopCounter > global.attackIDRoll.timeLength + 1)
+					{
+						switch (global.moveReturnArray[enumAttackFunction.result])
+						{
+							case("FAIL"):
+								if (global.moveReturnArray[enumAttackFunction.baseDice] == 1)
+								{
+									funct_textUI(_xPositionTitle, _yPositionTitle,
+										_topString[4], _textScale, // Get rid of Magic later
+										_textFail, 1,
+										fa_center);
+								}
+								else 
+								{
+									funct_textUI(_xPositionTitle, _yPositionTitle,
+										_topString[2], _textScale, // Get rid of Magic later
+										_textFail, 1,
+										fa_center);
+								}
+								break;
+							default:
+								if (global.moveReturnArray[enumAttackFunction.baseDice] == 20)
+								{
+									funct_textUI(_xPositionTitle, _yPositionTitle,
+										_topString[3], _textScale, // Get rid of Magic later
+										_textPass, 1,
+										fa_center);
+								}
+								else 
+								{
+									funct_textUI(_xPositionTitle, _yPositionTitle,
+										_topString[1], _textScale, // Get rid of Magic later
+										_textPass, 1,
+										fa_center);
+								}
+								break;
+						}
+					}
+				}
+				else if (!instance_exists(global.attackIDRoll))
+				{
+					// Here for Future needs
+				}
+				
+				if (global.attackIDDamage == "NOT_SET")
+				{
+					// To ensure the code doesn't crash
+				}
+				else if (instance_exists(global.attackIDDamage))
+				{
+					var _spriteX = global.gameResolutionWidth / 2;
+					var _spriteY = global.gameResolutionHeight / 2;
+					var _spriteScaleX = (global.gameResolutionWidth / 1920) * 10; // Text Box behind Damage Text After Rolls
+					var _spriteScaleY = (global.gameResolutionWidth / 1920) * 15;
+					
+					var _baseDamage = global.moveReturnArray[enumAttackFunction.baseResult]; 
+					// ^^^ Not perfect due to stab
+					var _topString = [];
+					_topString[0] = "Damage";
+					_topString[1] = "Base Damage";
+					_topString[2] = string(_baseDamage);
+					_topString[3] = "Overall Damage";
+					_topString[4] = string(global.moveReturnArray[enumAttackFunction.result]);
+					_topString[5] = "Not Very Effective...";
+					_topString[6] = "Regular Effectiveness";
+					_topString[7] = "SUPER EFFECTIVE!";
+					_topString[8] = "----------";
+					
+					var _baseY = global.gameResolutionHeight / 4;
+					var _distanceY = (25 * _textScale);
+					var _damageScaleText = _textScale / 2;
+					
+					
+					funct_textUI(_xPositionTitle, _yPositionTitle,
+						_topString[0], _textScale,
+						_textColour, 1,
+						fa_center);
+						
+					if (global.attackIDDamage.loopCounter > (global.attackIDDamage.timeLength + 1))
+					{
+						draw_sprite_ext(spr_textBox, 0,
+							_spriteX, _spriteY,
+							_spriteScaleX, _spriteScaleY,
+							90, c_ltgrey,
+							1);
+							
+						#region Damage Base
+						funct_textUI(_xPositionTitle, _baseY, // Damage Base
+							_topString[1], _damageScaleText, // Get rid of Magic later
+							_textColour, 1,
+							fa_center);
+						
+						funct_textUI(_xPositionTitle, (_baseY + _distanceY),
+							_topString[8], _damageScaleText, // Get rid of Magic later
+							_textColour, 1,
+							fa_center);
+							
+						funct_textUI(_xPositionTitle, (_baseY + (_distanceY * 2)),
+							_topString[2], _damageScaleText, // Get rid of Magic later
+							_textColour, 1,
+							fa_center);
+						#endregion
+						
+						#region Damage Overall
+						funct_textUI(_xPositionTitle, (_baseY + (_distanceY * 3)), 
+							_topString[3], _damageScaleText, // Get rid of Magic later
+							_textColour, 1,
+							fa_center);
+						
+						funct_textUI(_xPositionTitle, (_baseY + (_distanceY * 4)),
+							_topString[8], _damageScaleText, // Get rid of Magic later
+							_textColour, 1,
+							fa_center);
+							
+						funct_textUI(_xPositionTitle, (_baseY + (_distanceY * 5)),
+							_topString[4], _damageScaleText, // Get rid of Magic later
+							_textColour, 1,
+							fa_center);
+						#endregion
+						
+						// Damage Effectiveness
+						
+						switch (global.moveReturnArray[enumAttackFunction.effectiveness])
+						{
+							case(enumEffectiveness.notVeryEffective):
+								funct_textUI(_xPositionTitle, (_baseY + (_distanceY * 7)),
+									_topString[5], _damageScaleText, // Get rid of Magic later
+									_textFail, 1,
+									fa_center);
+								break;
+							case(enumEffectiveness.normalEffective):
+								funct_textUI(_xPositionTitle, (_baseY + (_distanceY * 7)),
+									_topString[6], _damageScaleText, // Get rid of Magic later
+									_textColour, 1,
+									fa_center);
+								break;
+							case(enumEffectiveness.superEffective):
+								funct_textUI(_xPositionTitle, (_baseY + (_distanceY * 7)),
+									_topString[7], _damageScaleText, // Get rid of Magic later
+									_textPass, 1,
+									fa_center);
+								break;
+						}
+					}
+				}
+				else if (!instance_exists(global.attackIDDamage))
+				{
+					// For future needs
+				}
+				
+				if (global.moveIDSequence == "NOT_SET")
+				{
+					// To ensure the code doesn't crash
+				}
+				else if (layer_sequence_exists("sequenceLayer", global.moveIDSequence))
+				{
+					// Empty For Time Constraints
+					// Put Text Box code here
+				}
+				else if (!layer_sequence_exists("sequenceLayer", global.moveIDSequence))
+				{
+					// For future needs
+				}
+				break;
 			case(enumBattleState.player):
 				#region Local Variables
 				var _xPosition = [];
@@ -1026,9 +1236,6 @@ switch (room)
 				break;
 			case(enumBattleState.intermission):
 				//type here
-				break;
-			case(enumBattleState.opponent):
-				draw_text(room_width / 2, room_height / 2, "OPPONENT");
 				break;
 		}
 		break;
