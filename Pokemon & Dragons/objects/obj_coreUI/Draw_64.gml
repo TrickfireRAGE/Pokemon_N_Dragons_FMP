@@ -451,7 +451,7 @@ switch (room)
 				{
 					exit;
 				}
-				else if (global.initiativeID.loopCounter <= global.initiativeID._timeLength)
+				else if (global.initiativeID.loopCounter <= global.initiativeID.timeLength)
 				{
 					funct_textUI(_xPositionPlayer, _yPosition,
 						"Player Initiative", _scale,
@@ -460,13 +460,13 @@ switch (room)
 						"Opponent Initiative", _scale,
 						_colour, 1, fa_middle);
 				}
-				else if (global.initiativeID.loopCounter == global.initiativeID._timeLength + 1)
+				else if (global.initiativeID.loopCounter == global.initiativeID.timeLength + 1)
 				{
 					funct_textUI(_xPositionModifier, _yPosition,
 						"Additional Modifier", _scale,
 						_colour, 1, fa_middle);
 				}
-				else if (global.initiativeID.loopCounter == global.initiativeID._timeLength + 2)
+				else if (global.initiativeID.loopCounter == global.initiativeID.timeLength + 2)
 				{
 					initiativeAlpha = 1;
 					switch (obj_coreTracker.firstTurn)
@@ -483,7 +483,7 @@ switch (room)
 							break;
 					}
 				}
-				else if (global.initiativeID.loopCounter == global.initiativeID._timeLength + 3)
+				else if (global.initiativeID.loopCounter == global.initiativeID.timeLength + 3)
 				{
 					switch (obj_coreTracker.firstTurn)
 					{
@@ -499,7 +499,7 @@ switch (room)
 							break;
 					}
 				}
-				else if (global.initiativeID.loopCounter == global.initiativeID._timeLength + 4)
+				else if (global.initiativeID.loopCounter == global.initiativeID.timeLength + 4)
 				{
 					switch (obj_coreTracker.firstTurn)
 					{
@@ -520,23 +520,222 @@ switch (room)
 				break;
 			case(enumBattleState.introSequence):
 				// type here
+				var _challengerString = "NOT_SET";
+				
+				
+				
 				break;
 			case(enumBattleState.playerAttack):
-				// type here
+				#region Player Attack UI Code
+				var _xPositionTitle = global.gameResolutionWidth / 2;
+				var _yPositionTitle = global.gameResolutionHeight / 7;
+				var _textScale = (global.gameResolutionWidth / 1920) * 3;
+				var _textColour = c_black;
+				var _textPass = c_green;
+				var _textFail = c_red;
 				
+				
+				if (global.attackIDRoll == "NOT_SET")
+				{
+					// To ensure the code doesn't crash
+				}
+				else if (instance_exists(global.attackIDRoll))
+				{
+					var _topString = [];
+					_topString[0] = "Hit or Miss?";
+					_topString[1] = "Hits!";
+					_topString[2] = "Misses!";
+					_topString[3] = "NATURAL 20! CRIT!";
+					_topString[4] = "CRITICAL FAILURE!";
+					
+					if (global.attackIDRoll.loopCounter <= global.attackIDRoll.timeLength + 1)
+					{
+						funct_textUI(_xPositionTitle, _yPositionTitle,
+						_topString[0], _textScale,
+						_textColour, 1,
+						fa_center);
+					}
+					else if (global.attackIDRoll.loopCounter > global.attackIDRoll.timeLength + 1)
+					{
+						switch (global.moveReturnArray[enumAttackFunction.result])
+						{
+							case("FAIL"):
+								if (global.moveReturnArray[enumAttackFunction.baseDice] == 1)
+								{
+									funct_textUI(_xPositionTitle, _yPositionTitle,
+										_topString[4], _textScale, // Get rid of Magic later
+										_textFail, 1,
+										fa_center);
+								}
+								else 
+								{
+									funct_textUI(_xPositionTitle, _yPositionTitle,
+										_topString[2], _textScale, // Get rid of Magic later
+										_textFail, 1,
+										fa_center);
+								}
+								break;
+							default:
+								if (global.moveReturnArray[enumAttackFunction.baseDice] == 20)
+								{
+									funct_textUI(_xPositionTitle, _yPositionTitle,
+										_topString[3], _textScale, // Get rid of Magic later
+										_textPass, 1,
+										fa_center);
+								}
+								else 
+								{
+									funct_textUI(_xPositionTitle, _yPositionTitle,
+										_topString[1], _textScale, // Get rid of Magic later
+										_textPass, 1,
+										fa_center);
+								}
+								break;
+						}
+					}
+				}
+				else if (!instance_exists(global.attackIDRoll))
+				{
+					// Here for Future needs
+				}
+				
+				if (global.attackIDDamage == "NOT_SET")
+				{
+					// To ensure the code doesn't crash
+				}
+				else if (instance_exists(global.attackIDDamage))
+				{
+					var _spriteX = global.gameResolutionWidth / 2;
+					var _spriteY = global.gameResolutionHeight / 2;
+					var _spriteScaleX = (global.gameResolutionWidth / 1920) * 10; // Text Box behind Damage Text After Rolls
+					var _spriteScaleY = (global.gameResolutionWidth / 1920) * 15;
+					
+					var _baseDamage = global.moveReturnArray[enumAttackFunction.baseResult]; 
+					// ^^^ Not perfect due to stab
+					var _topString = [];
+					_topString[0] = "Damage";
+					_topString[1] = "Base Damage";
+					_topString[2] = string(_baseDamage);
+					_topString[3] = "Overall Damage";
+					_topString[4] = string(global.moveReturnArray[enumAttackFunction.result]);
+					_topString[5] = "Not Very Effective...";
+					_topString[6] = "Regular Effectiveness";
+					_topString[7] = "SUPER EFFECTIVE!";
+					_topString[8] = "----------";
+					
+					var _baseY = global.gameResolutionHeight / 4;
+					var _distanceY = (25 * _textScale);
+					var _damageScaleText = _textScale / 2;
+					
+					
+					funct_textUI(_xPositionTitle, _yPositionTitle,
+						_topString[0], _textScale,
+						_textColour, 1,
+						fa_center);
+						
+					if (global.attackIDDamage.loopCounter > (global.attackIDDamage.timeLength + 1))
+					{
+						draw_sprite_ext(spr_textBox, 0,
+							_spriteX, _spriteY,
+							_spriteScaleX, _spriteScaleY,
+							90, c_ltgrey,
+							1);
+							
+						#region Damage Base
+						funct_textUI(_xPositionTitle, _baseY, // Damage Base
+							_topString[1], _damageScaleText, // Get rid of Magic later
+							_textColour, 1,
+							fa_center);
+						
+						funct_textUI(_xPositionTitle, (_baseY + _distanceY),
+							_topString[8], _damageScaleText, // Get rid of Magic later
+							_textColour, 1,
+							fa_center);
+							
+						funct_textUI(_xPositionTitle, (_baseY + (_distanceY * 2)),
+							_topString[2], _damageScaleText, // Get rid of Magic later
+							_textColour, 1,
+							fa_center);
+						#endregion
+						
+						#region Damage Overall
+						funct_textUI(_xPositionTitle, (_baseY + (_distanceY * 3)), 
+							_topString[3], _damageScaleText, // Get rid of Magic later
+							_textColour, 1,
+							fa_center);
+						
+						funct_textUI(_xPositionTitle, (_baseY + (_distanceY * 4)),
+							_topString[8], _damageScaleText, // Get rid of Magic later
+							_textColour, 1,
+							fa_center);
+							
+						funct_textUI(_xPositionTitle, (_baseY + (_distanceY * 5)),
+							_topString[4], _damageScaleText, // Get rid of Magic later
+							_textColour, 1,
+							fa_center);
+						#endregion
+						
+						// Damage Effectiveness
+						
+						switch (global.moveReturnArray[enumAttackFunction.effectiveness])
+						{
+							case(enumEffectiveness.notVeryEffective):
+								funct_textUI(_xPositionTitle, (_baseY + (_distanceY * 7)),
+									_topString[5], _damageScaleText, // Get rid of Magic later
+									_textFail, 1,
+									fa_center);
+								break;
+							case(enumEffectiveness.normalEffective):
+								funct_textUI(_xPositionTitle, (_baseY + (_distanceY * 7)),
+									_topString[6], _damageScaleText, // Get rid of Magic later
+									_textColour, 1,
+									fa_center);
+								break;
+							case(enumEffectiveness.superEffective):
+								funct_textUI(_xPositionTitle, (_baseY + (_distanceY * 7)),
+									_topString[7], _damageScaleText, // Get rid of Magic later
+									_textPass, 1,
+									fa_center);
+								break;
+						}
+					}
+				}
+				else if (!instance_exists(global.attackIDDamage))
+				{
+					// For future needs
+				}
+				
+				if (global.moveIDSequence == "NOT_SET")
+				{
+					// To ensure the code doesn't crash
+				}
+				else if (layer_sequence_exists("sequenceLayer", global.moveIDSequence))
+				{
+					// Empty For Time Constraints
+					// Put Text Box code here
+				}
+				else if (!layer_sequence_exists("sequenceLayer", global.moveIDSequence))
+				{
+					// For future needs
+				}
+				#endregion
 				break;
 			case(enumBattleState.playerDamage): // Get rid of magic numbers in future builds
-				var _endPoint = obj_opponentPokemon.pokemonParty[0][enumPokemonArray.currentHP];
-				var _uiCounter = global.hpDamageReduction * 10;
-				var _uiCounterEnd = _endPoint * 10;
-				
 				funct_battleHealthUI(spr_healthOpponentUI, 
 					global.hpDamageReduction,
 					obj_opponentPokemon.pokemonParty[0][enumPokemonArray.maxHP], 
 					global.pokemonLevelSet,
 					obj_opponentPokemon.pokemonParty[0][enumPokemonArray.name]);
-						
-				global.hpDamageReduction -= 0.1;
+				
+				switch (global.pokemonLevelSet) // Temp Solution for Slow Health
+				{
+					case (1):
+						global.hpDamageReduction -= 0.1;
+						break;
+					case (20):
+						global.hpDamageReduction -= 0.25;
+						break;
+				}
 				
 				break;
 			case(enumBattleState.player):
@@ -646,6 +845,7 @@ switch (room)
 						break;
 					case(enumPlayerTurnState.attackMenu):
 						#region Attack Menu
+						// Variables
 						var _currentPPString = []; // Temp Solution
 						_currentPPString[0] = string(obj_playerPokemon.pokemonPartyMoves[0][enumPokemonPartyMoves.move1PP]);
 						_currentPPString[1] = string(obj_playerPokemon.pokemonPartyMoves[0][enumPokemonPartyMoves.move2PP]);
@@ -658,8 +858,10 @@ switch (room)
 						var _textMoveType = [];
 						var _textMoveTime = [];
 						var _maxPP = [];
+						var _pokemonMovesExplainations = [];
 						var _pokemonMoves = obj_playerPokemon.pokemonPartyMoves;
 						var _pokeMovesLength = array_length(global.pokeMoves) - 1;
+						// UI Code
 						for (var f = enumPokemonPartyMoves.move1ID; f <= enumPokemonPartyMoves.move4ID; f += 6;) // Potentally scrap this and use a move loader to remove the need for this.
 						{
 							for (var i = 0; i <= _pokeMovesLength; i++;)
@@ -670,6 +872,7 @@ switch (room)
 									_textMoveType[i] = global.pokeMoves[i][$ "Type"];
 									_textMoveTime[i] = global.pokeMoves[i][$ "Time"];
 									_maxPP[i] = global.pokeMoves[i][$ "PP"];
+									_pokemonMovesExplainations[i] = global.pokeMoves[i][$ "Move Description"];
 									i = _pokeMovesLength + 1;
 								}
 							}
@@ -683,6 +886,7 @@ switch (room)
 								array_delete(_textMoveType, i, 1);
 								array_delete(_textMoveTime, i, 1);
 								array_delete(_maxPP, i, 1);
+								array_delete(_pokemonMovesExplainations, i, 1);
 							}
 						}
 						for (var i = 0; i <= 3; i++;)
@@ -768,6 +972,48 @@ switch (room)
 							obj_opponentPokemon.pokemonParty[0][enumPokemonArray.maxHP], 
 							global.pokemonLevelSet,
 							obj_opponentPokemon.pokemonParty[0][enumPokemonArray.name]);
+							
+						// Explaination UI Code
+						if (global.playerChoiceAttackExplain == true)
+						{
+							var _explainX = global.gameResolutionWidth / 3;
+							var _explainY = global.gameResolutionHeight / 2;
+							var _explainScale = (global.gameResolutionWidth / 1920) * 10;
+							var _explainTextScale = global.gameResolutionWidth / 1920;
+							var _colourText = c_black;
+							
+							
+							draw_sprite_ext(spr_textBox, 0, _explainX, _explainY, _explainScale, _explainScale, 0, c_white, 1);
+							
+							switch (global.playerChoiceAttack)
+							{
+								case(enumPlayerAttack.attack1):
+									funct_textUI(_explainX, _explainY,
+										string(_pokemonMovesExplainations[enumPlayerAttack.attack1]), 
+										_explainTextScale, 
+										_colourText, 1,);
+									break;
+								case(enumPlayerAttack.attack2):
+									funct_textUI(_explainX, _explainY, 
+										string(_pokemonMovesExplainations[enumPlayerAttack.attack2]), 
+										_explainTextScale, 
+										_colourText, 1,);
+									break;
+								case(enumPlayerAttack.attack3):
+									funct_textUI(_explainX, _explainY, 
+										string(_pokemonMovesExplainations[enumPlayerAttack.attack3]), 
+										_explainTextScale, 
+										_colourText, 1,);
+									break;
+								case(enumPlayerAttack.attack4):
+									funct_textUI(_explainX, _explainY, 
+										string(_pokemonMovesExplainations[enumPlayerAttack.attack4]), 
+										_explainTextScale, 
+										_colourText, 1,);
+									break;
+							}
+						}
+						
 						#endregion
 						break;
 					case(enumPlayerTurnState.bagMenu):

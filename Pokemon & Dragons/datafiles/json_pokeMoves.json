@@ -1,7 +1,7 @@
 [
  {
    "Move Name": "Thunder Shock",
-   "Move Description": "Erupt in static energy to send shocking damage to your opponent!\nThis Action causes Electricity Damage to your Opponent.",
+   "Move Description": "Erupt in static energy to send\n shocking damage to your opponent!\nThis Action causes Electricity\n Damage to your Opponent.",
    "Move ID": 100001,
    "Move Sprite": "spr_thunderShock",
    "Move Sound Effect": "snd_thunderShock",
@@ -28,7 +28,7 @@
  },
  {
    "Move Name": "Growl",
-   "Move Description": "Let out a scary growl to send shivers down your opponent!\nThis Action can reduce your opponents D20 by 1 for 2 turns.",
+   "Move Description": "Let out a scary growl to send\n shivers down your opponent!\nThis Action can reduce your opponents\n D20 by 1 for 2 turns.",
    "Move ID": 100002,
    "Move Sprite": "spr_growl",
    "Move Sound Effect": "snd_growl",
@@ -55,7 +55,7 @@
  },
  {
    "Move Name": "Quick Attack",
-   "Move Description": "Unleash a quick unarmed strike at your opponent!\nThis Bonus Action causes Normal Damage to your Opponent.",
+   "Move Description": "Unleash a quick unarmed strike\n at your opponent!\nThis Bonus Action causes Normal Damage\n to your Opponent.",
    "Move ID": 100003,
    "Move Sprite": "spr_quickAttack",
    "Move Sound Effect": "snd_quickAttack",
@@ -82,7 +82,7 @@
  },
  {
    "Move Name": "Rock Smash",
-   "Move Description": "Strike out with a rock crushing punch to damage your opponent!\nThis Action may reduce the AC of your opponent for 2 turns.",
+   "Move Description": "Strike out with a rock crushing\n punch to damage your opponent!\nThis Action may reduce the AC\n of your opponent for 2 turns.",
    "Move ID": 100004,
    "Move Sprite": "spr_rockSmash",
    "Move Sound Effect": "snd_rockSmash",
@@ -109,7 +109,7 @@
  },
  {
    "Move Name": "Work Up",
-   "Move Description": "Awaken the adrenaline within your Pokemon!\nUse a Bonus Action to get a +2 to your D20 rolls for 2 turns!",
+   "Move Description": "Awaken the adrenaline \nwithin your Pokemon!\nUse a Bonus Action to get a +2\n to your D20 rolls for 2 turns!",
    "Move ID": 100005,
    "Move Sprite": "spr_workUp",
    "Move Sound Effect": "snd_workUp",
@@ -136,7 +136,7 @@
  },
  {
    "Move Name": "Thunderbolt",
-   "Move Description": "Send out a powerful bolt of lightning at a target!\nUse an action to deal devastating damage to your opponent!",
+   "Move Description": "Send out a powerful bolt\n of lightning at a target!\nUse an action to deal devastating\n damage to your opponent!",
    "Move ID": 100006,
    "Move Sprite": "spr_thunderBolt",
    "Move Sound Effect": "snd_thunderBolt",
@@ -163,7 +163,7 @@
  },
  {
    "Move Name": "Psychic",
-   "Move Description": "Tap into the minds of your enermies and damage their will to fight!\nUse an action to deal mindbending damage to your opponent!",
+   "Move Description": "Tap into the minds of your enermies\n and damage their will to fight!\nUse an action to deal \nmindbending damage to your opponent!",
    "Move ID": 100007,
    "Move Sprite": "spr_psychic",
    "Move Sound Effect": "snd_psychic",
@@ -190,7 +190,7 @@
  },
  {
    "Move Name": "Focus Blast",
-   "Move Description": "Heighten your focus and blast it at your enermies!\nUse an action to deal this unyielding power to your opponent!",
+   "Move Description": "Heighten your focus and\n blast it at your enermies!\nUse an action to deal this \nunyielding power to your opponent!",
    "Move ID": 100008,
    "Move Sprite": "spr_focusBlast",
    "Move Sound Effect": "snd_focusBlast",
@@ -217,7 +217,7 @@
  },
  {
    "Move Name": "Close Combat",
-   "Move Description": "Get in close, deal devastating strikes on your opponents!\nFor 1 turn, your defenses will be down, -1 AC for a turn.",
+   "Move Description": "Get in close,\n deal devastating strikes on your opponents!\nFor 1 turn, your defenses will be down,\n -1 AC for a turn.",
    "Move ID": 100009,
    "Move Sprite": "spr_closeCombat",
    "Move Sound Effect": "snd_closeCombat",
@@ -244,7 +244,7 @@
  },
  {
    "Move Name": "Dragon Pulse",
-   "Move Description": "Open up your mouth and send a screaming shockwave at your opponent!\nUse an action to unleash this draconic energy.",
+   "Move Description": "Open up your mouth and \nsend a screaming shockwave at your opponent!\nUse an action to unleash this draconic energy.",
    "Move ID": 100010,
    "Move Sprite": "spr_dragonPulse",
    "Move Sound Effect": "snd_dragonPulse",
@@ -271,7 +271,7 @@
  },
  {
    "Move Name": "Extreme Speed",
-   "Move Description": "Use the rush to get into combat range, don't give them a chance to think.\nUse a bonus action to remind them of your speed.",
+   "Move Description": "Use the rush to get into combat range, \ndon't give them a chance to think.\nUse a bonus action to remind them of your speed.",
    "Move ID": 100011,
    "Move Sprite": "spr_extremeSpeed",
    "Move Sound Effect": "snd_extremeSpeed",
@@ -298,7 +298,7 @@
  },
  {
    "Move Name": "Aura Sphere",
-   "Move Description": "Focus your aura into a concentrated blast that never misses.\nUse an action to get guaranteed damage on your opponent!",
+   "Move Description": "Focus your aura into a concentrated \nblast that never misses.\nUse an action to get guaranteed \ndamage on your opponent!",
    "Move ID": 100012,
    "Move Sprite": "spr_auraSphere",
    "Move Sound Effect": "snd_auraSphere",
@@ -352,7 +352,7 @@
  },
  {
    "Move Name": "Dark Pulse",
-   "Move Description": "Target your enemy with horrible thoughts and dark aura.\nUnleash this dark energy on your action to bring them down.",
+   "Move Description": "Target your enemy with horrible \nthoughts and dark aura.\nUnleash this dark energy on your \naction to bring them down.",
    "Move ID": 100014,
    "Move Sprite": "spr_darkPulse",
    "Move Sound Effect": "snd_darkPulse",
@@ -379,7 +379,7 @@
  },
  {
    "Move Name": "Ice Beam",
-   "Move Description": "Shoot a beam of freezing energy at your opponent!\nBe cold and icy on your action, your opponents won't handle the cold!",
+   "Move Description": "Shoot a beam of freezing \nenergy at your opponent!\nBe cold and icy on your action, \nyour opponents won't handle the cold!",
    "Move ID": 100015,
    "Move Sprite": "spr_iceBeam",
    "Move Sound Effect": "snd_iceBeam",
@@ -406,7 +406,7 @@
  },
  {
    "Move Name": "Aerial Ace",
-   "Move Description": "Dive at your opponents with such speed, they won't be able to dodge you!\nUse this action to remind them your speed can't be matched!",
+   "Move Description": "Dive at your opponents with such speed,\n they won't be able to dodge you!\nUse this action to remind them\n your speed can't be matched!",
    "Move ID": 100016,
    "Move Sprite": "spr_aerialAce",
    "Move Sound Effect": "snd_aerialAce",
@@ -433,7 +433,7 @@
  },
  {
    "Move Name": "Shadow Ball",
-   "Move Description": "Hurl a sphere of magical darkness at your opponent!\nUse this action to give them a shadowy ball of nightmares!",
+   "Move Description": "Hurl a sphere of magical darkness\n at your opponent!\nUse this action to give them\n a shadowy ball of nightmares!",
    "Move ID": 100017,
    "Move Sprite": "spr_shadowBall",
    "Move Sound Effect": "snd_shadowBall",

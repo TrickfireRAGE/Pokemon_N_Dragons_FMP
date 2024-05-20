@@ -1,16 +1,16 @@
 /// @description ???
 
-_timeLength = room_speed * 2.5;
-_holdTime = room_speed * 2;
+timeLength = room_speed * 2.5;
+holdTime = room_speed * 2;
 
 
-if (loopCounter < _timeLength)
+if (loopCounter < timeLength)
 {
 	image_index = irandom_range(1, topEnd);
 	loopCounter++;
 	counter = 0;
 }
-else if (loopCounter == _timeLength)
+else if (loopCounter == timeLength)
 {
 	image_index = result;
 	if (result == topEnd) // Critical hits (Nat 20)
@@ -22,37 +22,37 @@ else if (loopCounter == _timeLength)
 		image_blend = c_red;
 	}
 	
-	if (counter > _holdTime)
+	if (counter > holdTime)
 	{
 		loopCounter++;
 		counter = 0;
 	}
 	counter++;
 }
-else if (loopCounter == _timeLength + 1)
+else if (loopCounter == timeLength + 1)
 {
 	image_index = result + modifier;
-	if (counter > _holdTime)
+	if (counter > holdTime)
 	{
 		loopCounter++;
 		counter = 0;
 	}
 	counter++;
 }
-else if (loopCounter == _timeLength + 2)
+else if (loopCounter == timeLength + 2)
 {
-	if (counter > _holdTime)
+	if (counter > holdTime)
 	{
 		loopCounter++;
 	}
 	counter++;
 }
-else if (loopCounter == _timeLength + 3)
+else if (loopCounter == timeLength + 3)
 {
-	alarm_set(0, _holdTime);
+	alarm_set(0, holdTime);
 	loopCounter++;
 }
-else if (loopCounter == _timeLength + 4)
+else if (loopCounter == timeLength + 4)
 {
 	image_alpha -= 0.01;
 }

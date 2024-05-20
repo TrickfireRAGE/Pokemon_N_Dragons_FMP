@@ -2,7 +2,7 @@
 
 #region VERSION NUMBER
 
-versionNumber = "Pre-Alpha - V0.0.0.22 (Weekend)"; // Version 0.0.1.0 will be the PlayTest Version Known As - Pre-Alpha - V0.0.1.0 (PlayTest)
+versionNumber = "Pre-Alpha - V0.0.0.23 (Day)"; // Version 0.0.1.0 will be the PlayTest Version Known As - Pre-Alpha - V0.0.1.0 (PlayTest)
 
 #endregion
 
@@ -100,7 +100,7 @@ typeColoursArray[enumTypeColRows.colour][enumType.fire] = c_orange;
 typeColoursArray[enumTypeColRows.colour][enumType.water] = c_blue;
 typeColoursArray[enumTypeColRows.colour][enumType.grass] = c_lime;
 typeColoursArray[enumTypeColRows.colour][enumType.electric] = c_yellow;
-typeColoursArray[enumTypeColRows.colour][enumType.psychic] = c_red + c_white;
+typeColoursArray[enumTypeColRows.colour][enumType.psychic] = c_fuchsia;
 typeColoursArray[enumTypeColRows.colour][enumType.ice] = c_navy;
 typeColoursArray[enumTypeColRows.colour][enumType.dragon] = c_purple;
 typeColoursArray[enumTypeColRows.colour][enumType.dark] = c_maroon + c_grey;

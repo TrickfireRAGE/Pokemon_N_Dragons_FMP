@@ -72,12 +72,6 @@ if (attackNonCheck == "Attack")
 			room_width / 2, room_height / 2,
 			global.moveReturnArray[enumAttackFunction.diceModifier], 
 			global.moveReturnArray[enumAttackFunction.diceOrSave]);
-		// Put Damage Dice Code here
-		var _damage = string(global.moveReturnArray[enumAttackFunction.result]);
-		var _effectiveness = string(global.moveReturnArray[enumAttackFunction.effectiveness]);
-		show_message(_damage);
-		show_message(_effectiveness);
-		// Moved Damaging Code to Alarm 2
 	}
 }
 else if (attackNonCheck == "Non-Attack")

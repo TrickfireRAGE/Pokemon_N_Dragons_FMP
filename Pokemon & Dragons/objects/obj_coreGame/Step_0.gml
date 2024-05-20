@@ -503,7 +503,79 @@ switch (room)
 				if (attackNonCheck == "Attack")
 				{
 					#region Player Attack Code
-					if (!instance_exists(global.attackIDRoll))
+					if (global.moveReturnArray[enumAttackFunction.baseDice] == "ALWAYS_HITS")
+					{
+						var _arrayLengthCheck = array_length(global.moveReturnArray);
+						var _amountOfRolls = _arrayLengthCheck - enumAttackFunction.attackDiceRollFirst;
+						var _emptyModifier = 0;
+						
+						var _xDicePosition = room_width / 4.6;
+						
+						var _xDiceDistance = 48;
+						
+						var _yDicePosition = room_height / 3;
+						var _yDicePositionAlt = _yDicePosition * 2;
+						
+						if (global.attackIDDamage == "NOT_SET")
+						{
+							switch (_amountOfRolls)
+							{
+								case(8):
+									funct_diceVisual(global.moveReturnArray[enumAttackFunction.attackDiceRollFirst + 7], // Sort this out soon.
+										_xDicePosition, _yDicePosition, _emptyModifier,
+										global.moveReturnArray[enumAttackFunction.attackDiceSize]);
+								case(7):
+									funct_diceVisual(global.moveReturnArray[enumAttackFunction.attackDiceRollFirst + 6],
+										_xDicePosition + _xDiceDistance, _yDicePosition, _emptyModifier,
+										global.moveReturnArray[enumAttackFunction.attackDiceSize]);
+								case(6):
+									funct_diceVisual(global.moveReturnArray[enumAttackFunction.attackDiceRollFirst + 5],
+										_xDicePosition + (_xDiceDistance * 2), _yDicePosition, _emptyModifier,
+										global.moveReturnArray[enumAttackFunction.attackDiceSize]);
+								case(5):
+									funct_diceVisual(global.moveReturnArray[enumAttackFunction.attackDiceRollFirst + 4],
+										_xDicePosition + (_xDiceDistance * 3), _yDicePosition, _emptyModifier,
+										global.moveReturnArray[enumAttackFunction.attackDiceSize]);
+								case(4):
+									funct_diceVisual(global.moveReturnArray[enumAttackFunction.attackDiceRollFirst + 3],
+										_xDicePosition, _yDicePositionAlt, _emptyModifier,
+										global.moveReturnArray[enumAttackFunction.attackDiceSize]);
+								case(3):
+									funct_diceVisual(global.moveReturnArray[enumAttackFunction.attackDiceRollFirst + 2],
+										_xDicePosition + _xDiceDistance, _yDicePositionAlt, _emptyModifier,
+										global.moveReturnArray[enumAttackFunction.attackDiceSize]);
+								case(2):
+									funct_diceVisual(global.moveReturnArray[enumAttackFunction.attackDiceRollFirst + 1],
+										_xDicePosition + (_xDiceDistance * 2), _yDicePositionAlt, _emptyModifier,
+										global.moveReturnArray[enumAttackFunction.attackDiceSize]);
+								case(1):
+									global.attackIDDamage = funct_diceVisual(global.moveReturnArray[enumAttackFunction.attackDiceRollFirst],
+										_xDicePosition + (_xDiceDistance * 3), _yDicePositionAlt,
+										global.moveReturnArray[enumAttackFunction.diceModifier],
+										global.moveReturnArray[enumAttackFunction.attackDiceSize]);
+									break;
+							}
+						}
+						else if (!instance_exists(global.attackIDDamage))
+						{
+							if (global.moveIDSequence == "NOT_SET")
+							{
+								var _xPositionSequence = 128; // For Sequence
+								var _yPositionSequence = 72; // For Seqeunce
+								
+								global.moveIDSequence = layer_sequence_create("sequenceLayer", _xPositionSequence, _yPositionSequence, seq_playerAttack);
+							}
+							else if (alarm_get(enumCoreGameAlarms.damageDealt) > 0)
+							{
+								//Code here
+							}
+							else
+							{
+								alarm_set(enumCoreGameAlarms.damageDealt, 1);
+							}
+						}
+					}
+					else if (!instance_exists(global.attackIDRoll))
 					{
 						switch (global.moveReturnArray[enumAttackFunction.result])
 						{
@@ -520,11 +592,12 @@ switch (room)
 								var _amountOfRolls = _arrayLengthCheck - enumAttackFunction.attackDiceRollFirst;
 								var _emptyModifier = 0;
 								
-								var _xDicePosition = room_width / 20;
+								var _xDicePosition = room_width / 4.6;
 								
-								var _xDiceDistance = 16;
+								var _xDiceDistance = 48;
 								
-								var _yDicePosition = room_height / 2;
+								var _yDicePosition = room_height / 3;
+								var _yDicePositionAlt = _yDicePosition * 2;
 								
 								if (global.attackIDDamage == "NOT_SET")
 								{
@@ -548,19 +621,19 @@ switch (room)
 												global.moveReturnArray[enumAttackFunction.attackDiceSize]);
 										case(4):
 											funct_diceVisual(global.moveReturnArray[enumAttackFunction.attackDiceRollFirst + 3],
-												_xDicePosition + (_xDiceDistance * 4), _yDicePosition, _emptyModifier,
+												_xDicePosition, _yDicePositionAlt, _emptyModifier,
 												global.moveReturnArray[enumAttackFunction.attackDiceSize]);
 										case(3):
 											funct_diceVisual(global.moveReturnArray[enumAttackFunction.attackDiceRollFirst + 2],
-												_xDicePosition + (_xDiceDistance * 5), _yDicePosition, _emptyModifier,
+												_xDicePosition + _xDiceDistance, _yDicePositionAlt, _emptyModifier,
 												global.moveReturnArray[enumAttackFunction.attackDiceSize]);
 										case(2):
 											funct_diceVisual(global.moveReturnArray[enumAttackFunction.attackDiceRollFirst + 1],
-												_xDicePosition + (_xDiceDistance * 6), _yDicePosition, _emptyModifier,
+												_xDicePosition + (_xDiceDistance * 2), _yDicePositionAlt, _emptyModifier,
 												global.moveReturnArray[enumAttackFunction.attackDiceSize]);
 										case(1):
 											global.attackIDDamage = funct_diceVisual(global.moveReturnArray[enumAttackFunction.attackDiceRollFirst],
-												_xDicePosition + (_xDiceDistance * 7), _yDicePosition,
+												_xDicePosition + (_xDiceDistance * 3), _yDicePositionAlt,
 												global.moveReturnArray[enumAttackFunction.diceModifier],
 												global.moveReturnArray[enumAttackFunction.attackDiceSize]);
 											break;
@@ -614,6 +687,9 @@ switch (room)
 			case(enumBattleState.playerDamage):
 				if (global.hpDamageReduction == obj_opponentPokemon.pokemonParty[0][enumPokemonArray.currentHP]) // Get rid of Magic numbers later
 				{
+					global.moveIDSequence = "NOT_SET"; // Removed Timer due to time
+					global.attackIDDamage = "NOT_SET";
+					global.attackIDRoll = "NOT_SET";
 					global.hpDamageReduction = "NOT_SET";
 					global.battleState = enumBattleState.player;
 				}
@@ -694,21 +770,7 @@ switch (room)
 					switch (global.playerBattleState)
 					{
 						case(enumPlayerTurnState.baseMenu):
-							switch (global.playerChoiceBattle)
-							{
-								case(enumBattleChoices.attack):
-									// type here
-									break;
-								case(enumBattleChoices.bag):
-									//type here
-									break;
-								case(enumBattleChoices.pokemon):
-									//type here
-									break;
-								case(enumBattleChoices.endTurn):
-									//type here
-									break;
-							}
+							// Nothing here yet
 							break;
 						case(enumPlayerTurnState.attackMenu):
 							global.playerChoiceAttack = enumPlayerAttack.attack1;
@@ -795,7 +857,21 @@ switch (room)
 				}
 				else if (global.gamePadX) // Extra Information
 				{
-					// Put Code here
+					switch (global.playerBattleState)
+					{
+						case(enumPlayerTurnState.attackMenu):
+							switch (global.playerChoiceAttackExplain)
+							{
+								case(true):
+									global.playerChoiceAttackExplain = false;
+									break;
+								case(false):
+									global.playerChoiceAttackExplain = true;
+									break;
+							}
+							break;
+						// Put rest of the menus here to get more information in future builds
+					}
 				}
 				break;
 			case(enumBattleState.intermission):

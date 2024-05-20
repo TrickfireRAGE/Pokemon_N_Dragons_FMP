@@ -137,3 +137,9 @@ function funct_colourTypeUI(_moveType, _colourArray)
 		}
 	}
 }
+
+function funct_textBoxUI(_string)
+{
+	//
+	
+}

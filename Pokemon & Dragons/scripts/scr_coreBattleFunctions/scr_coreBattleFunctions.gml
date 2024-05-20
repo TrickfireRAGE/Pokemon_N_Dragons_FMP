@@ -113,6 +113,7 @@ function funct_attack(_moveArray, _moveID, _level, _defenderAC, _defenderType, _
 	var _attackRolls = [];
 	var _chosenSize = "NOT_SET";
 	var _chosenAmount = "NOT_SET";
+	var _baseResult = "NOT_SET";
 	
 	switch (_attackerSideEffectArray[enumNonAttackFunction.sideAffected])
 	{
@@ -180,7 +181,13 @@ function funct_attack(_moveArray, _moveID, _level, _defenderAC, _defenderType, _
 			break;
 	}
 	
-	if (_diceOrSave != string)
+
+	if (_diceOrSave == "NOT_SET")
+	{
+		_diceRoll = "ALWAYS_HITS";
+		_diceRollFull = "ALWAYS_HITS";
+	}
+	else
 	{
 		// DEBUG IMPLEMENTATION
 		_diceRoll = 20; //funct_diceRoll(_diceOrSave); // Commented out to always make it hit.
@@ -189,11 +196,6 @@ function funct_attack(_moveArray, _moveID, _level, _defenderAC, _defenderType, _
 		{
 			_diceRollFull += _sideEffectDiceRoll;
 		}
-	}
-	else if (_diceOrSave == "NOT_SET")
-	{
-		_diceRoll = "ALWAYS_HITS";
-		_diceRollFull = "ALWAYS_HITS";
 	}
 		
 	// Damage Calculation
@@ -210,6 +212,7 @@ function funct_attack(_moveArray, _moveID, _level, _defenderAC, _defenderType, _
 				_result += _roll;
 				array_push(_attackRolls, _roll);
 			}
+			_baseResult = _result;
 			_chosenAmount = _diceAmount[0];
 			_chosenSize = _diceSize[0];
 			_result += _modifierNumber;
@@ -225,6 +228,7 @@ function funct_attack(_moveArray, _moveID, _level, _defenderAC, _defenderType, _
 				_result += _roll;
 				array_push(_attackRolls, _roll);
 			}
+			_baseResult = _result;
 			_chosenAmount = _diceAmount[1];
 			_chosenSize = _diceSize[1];
 			_result += _modifierNumber;
@@ -242,6 +246,7 @@ function funct_attack(_moveArray, _moveID, _level, _defenderAC, _defenderType, _
 				_result += _roll;
 				array_push(_attackRolls, _roll);
 			}
+			_baseResult = _result;
 			_chosenAmount = _diceAmount[2];
 			_chosenSize = _diceSize[2];
 			_result += _modifierNumber;
@@ -256,6 +261,7 @@ function funct_attack(_moveArray, _moveID, _level, _defenderAC, _defenderType, _
 				_result += _roll;
 				array_push(_attackRolls, _roll);
 			}
+			_baseResult = _result;
 			_chosenAmount = _diceAmount[3];
 			_chosenSize = _diceSize[3];
 			_result += _modifierNumber;
@@ -268,7 +274,34 @@ function funct_attack(_moveArray, _moveID, _level, _defenderAC, _defenderType, _
 		// Put Saving Code here
 	}*/
 	
-	if (_diceRollFull >= _defenderAC)
+	if (_diceRollFull == "ALWAYS_HITS") // Copy Pasted to ensure 
+	{
+		var _effectiveness = funct_typeEffectiveness(_type, _defenderType); // Expand to have multiple types in future.
+		
+		if (_attackerType == _type) // Stab Effectiveness
+		{
+			_result *= 1.5;
+		}
+		
+		_result *= _effectiveness; // Type Effectiveness
+		
+		round (_result); // Rounds the number to ensure it is always a whole number
+		
+		var _final = [];
+		_final[enumAttackFunction.baseDice] = _diceRoll;
+		_final[enumAttackFunction.diceModifier] = _modifierNumber;
+		_final[enumAttackFunction.effectiveness] = _effectiveness;
+		_final[enumAttackFunction.baseResult] = _baseResult;
+		_final[enumAttackFunction.result] = _result;
+		_final[enumAttackFunction.diceOrSave] = _diceOrSave;
+		_final[enumAttackFunction.attackDiceSize] = _chosenSize;
+		for (var i = 0; i < _chosenAmount; i++;)
+		{
+			array_push(_final, _attackRolls[i]);
+		}
+		return _final;
+	}
+	else if (_diceRollFull >= _defenderAC)
 	{
 		var _effectiveness = funct_typeEffectiveness(_type, _defenderType); // Expand to have multiple types in future.
 		
@@ -290,6 +323,7 @@ function funct_attack(_moveArray, _moveID, _level, _defenderAC, _defenderType, _
 		_final[enumAttackFunction.baseDice] = _diceRoll;
 		_final[enumAttackFunction.diceModifier] = _modifierNumber;
 		_final[enumAttackFunction.effectiveness] = _effectiveness;
+		_final[enumAttackFunction.baseResult] = _baseResult;
 		_final[enumAttackFunction.result] = _result;
 		_final[enumAttackFunction.diceOrSave] = _diceOrSave;
 		_final[enumAttackFunction.attackDiceSize] = _chosenSize;

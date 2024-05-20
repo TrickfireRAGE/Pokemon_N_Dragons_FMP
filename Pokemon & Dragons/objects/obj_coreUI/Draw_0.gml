@@ -111,7 +111,7 @@ switch (room)
 				var _yPosition = room_height / 2;
 				var _xScale = 3;
 				var _yScale = 3.7;
-				if (!(global.initiativeID.loopCounter == global.initiativeID._timeLength + 4))
+				if (!(global.initiativeID.loopCounter == global.initiativeID.timeLength + 4))
 				{
 					draw_sprite_ext(spr_textBox, 0, 
 						_xPosition, _yPosition,
@@ -139,6 +139,21 @@ switch (room)
 					layer_sprite_xscale(backTextBoxID, _xScale);
 					layer_sprite_yscale(backTextBoxID, _yScale);
 				}
+				else if (global.moveReturnArray[enumAttackFunction.baseDice] == "ALWAYS_HITS") // Copied from global.attackIDRoll for easy use
+				{
+					if (global.attackIDDamage == "NOT_SET")
+					{
+						//
+					}
+					else if (!instance_exists(global.attackIDDamage))
+					{
+						layer_sprite_destroy(backTextBoxID);
+						if (layer_sequence_is_finished(global.moveIDSequence))
+						{
+							backTextBoxID = "NOT_SET";
+						}
+					}
+				}
 				else if (!instance_exists(global.attackIDRoll))
 				{
 					if (global.attackIDDamage == "NOT_SET")
@@ -148,6 +163,10 @@ switch (room)
 					else if (!instance_exists(global.attackIDDamage))
 					{
 						layer_sprite_destroy(backTextBoxID);
+						if (layer_sequence_is_finished(global.moveIDSequence))
+						{
+							backTextBoxID = "NOT_SET";
+						}
 					}
 				}
 				break;

@@ -222,10 +222,11 @@ enum enumAttackFunction // For the Attack Function
 	baseDice = 0,
 	diceModifier = 1, 
 	effectiveness = 2,
-	result = 3,
-	diceOrSave = 4,
-	attackDiceSize = 5,
-	attackDiceRollFirst = 6
+	baseResult = 3,
+	result = 4,
+	diceOrSave = 5,
+	attackDiceSize = 6,
+	attackDiceRollFirst = 7
 }
 
 enum enumNonAttackFunction // For the Non Attack Function
@@ -281,6 +282,7 @@ global.playerPokemonID[2] = "NOT_SET";
 
 global.playerChoiceBattle = "NOT_SET";
 global.playerChoiceAttack = "NOT_SET";
+global.playerChoiceAttackExplain = false; // Use true or false for this.
 global.playerChoicePokemon = "NOT_SET"; // Not Used in Prototype
 global.playerChoiceBag = "NOT_SET"; // Might not be used in Prototype
 global.playerActionPoint = "NOT_SET"; // Using as a global variable to make it easier on implementaiton.
