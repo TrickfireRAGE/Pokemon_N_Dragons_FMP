@@ -30,8 +30,20 @@ switch (room)
 				}
 				break;
 			case(enumBattleState.playerAttack): 
-				// Removed due to time
-				
+				if (layer_sequence_is_finished(global.moveIDSequence) == true)
+				{
+					layer_sequence_destroy(global.moveIDSequence);
+					global.moveIDSequence = "NOT_SET";
+					global.battleState = enumBattleState.player;
+				}
+				break;
+			case(enumBattleState.opponent):
+				if (layer_sequence_is_finished(global.moveIDSequence) == true)
+				{
+					layer_sequence_destroy(global.moveIDSequence);
+					global.moveIDSequence = "NOT_SET";
+					global.opponentStageBattle = enumOpponentStages.endTurn;
+				}
 				break;
 		}
 		break;

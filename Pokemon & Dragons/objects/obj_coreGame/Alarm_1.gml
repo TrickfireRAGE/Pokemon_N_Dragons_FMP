@@ -49,7 +49,7 @@ if (attackNonCheck == "Attack")
 		global.opponentSideEffectArray); // Magic number for ease of building
 		
 	obj_playerPokemon.pokemonPartyMoves[0][_whichAttackEnumPP] -= 1;
-	if (global.moveReturnArray[enumAttackFunction.result] == "FAIL")			// Using Magic Number to ensure working due to only one pokemon.
+	if (global.moveReturnArray[enumAttackFunction.result] == global.failureVariable)			// Using Magic Number to ensure working due to only one pokemon.
 	{
 		global.attackIDRoll = funct_diceVisual(global.moveReturnArray[enumAttackFunction.baseDice], 
 			room_width / 2, room_height / 2,

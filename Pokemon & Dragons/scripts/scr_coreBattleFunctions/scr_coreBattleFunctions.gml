@@ -212,10 +212,10 @@ function funct_attack(_moveArray, _moveID, _level, _defenderAC, _defenderType, _
 				_result += _roll;
 				array_push(_attackRolls, _roll);
 			}
-			_baseResult = _result;
 			_chosenAmount = _diceAmount[0];
 			_chosenSize = _diceSize[0];
 			_result += _modifierNumber;
+			_baseResult = _result;
 			break;
 		case(5):
 		case(6):
@@ -228,10 +228,10 @@ function funct_attack(_moveArray, _moveID, _level, _defenderAC, _defenderType, _
 				_result += _roll;
 				array_push(_attackRolls, _roll);
 			}
-			_baseResult = _result;
 			_chosenAmount = _diceAmount[1];
 			_chosenSize = _diceSize[1];
 			_result += _modifierNumber;
+			_baseResult = _result;
 			break;
 		case(10):
 		case(11):
@@ -246,10 +246,10 @@ function funct_attack(_moveArray, _moveID, _level, _defenderAC, _defenderType, _
 				_result += _roll;
 				array_push(_attackRolls, _roll);
 			}
-			_baseResult = _result;
 			_chosenAmount = _diceAmount[2];
 			_chosenSize = _diceSize[2];
 			_result += _modifierNumber;
+			_baseResult = _result;
 			break;
 		case(17):
 		case(18):
@@ -261,10 +261,10 @@ function funct_attack(_moveArray, _moveID, _level, _defenderAC, _defenderType, _
 				_result += _roll;
 				array_push(_attackRolls, _roll);
 			}
-			_baseResult = _result;
 			_chosenAmount = _diceAmount[3];
 			_chosenSize = _diceSize[3];
 			_result += _modifierNumber;
+			_baseResult = _result;
 			break;
 		#endregion
 	}
@@ -278,14 +278,20 @@ function funct_attack(_moveArray, _moveID, _level, _defenderAC, _defenderType, _
 	{
 		var _effectiveness = funct_typeEffectiveness(_type, _defenderType); // Expand to have multiple types in future.
 		
+		if (_effectiveness == enumEffectiveness.notVeryEffective)
+		{
+			_effectiveness = 0.5;
+		}
+		
 		if (_attackerType == _type) // Stab Effectiveness
 		{
 			_result *= 1.5;
 		}
-		
+	
+	
 		_result *= _effectiveness; // Type Effectiveness
 		
-		round (_result); // Rounds the number to ensure it is always a whole number
+		_result = round (_result); // Rounds the number to ensure it is always a whole number
 		
 		var _final = [];
 		_final[enumAttackFunction.baseDice] = _diceRoll;
@@ -305,6 +311,11 @@ function funct_attack(_moveArray, _moveID, _level, _defenderAC, _defenderType, _
 	{
 		var _effectiveness = funct_typeEffectiveness(_type, _defenderType); // Expand to have multiple types in future.
 		
+		if (_effectiveness == enumEffectiveness.notVeryEffective)
+		{
+			_effectiveness = 0.5;
+		}
+		
 		if (_diceRoll == 20) // Critical hit Code
 		{
 			_result *= 2
@@ -317,7 +328,7 @@ function funct_attack(_moveArray, _moveID, _level, _defenderAC, _defenderType, _
 		
 		_result *= _effectiveness; // Type Effectiveness
 		
-		round (_result); // Rounds the number to ensure it is always a whole number
+		_result = round (_result); // Rounds the number to ensure it is always a whole number
 		
 		var _final = [];
 		_final[enumAttackFunction.baseDice] = _diceRoll;
@@ -335,7 +346,7 @@ function funct_attack(_moveArray, _moveID, _level, _defenderAC, _defenderType, _
 	}
 	else if (_diceRollFull < _defenderAC)
 	{
-		_result = "FAIL"; // Change if this doesn't work
+		_result = global.failureVariable; // Change if this doesn't work
 		var _final = [];
 		_final[enumAttackFunction.baseDice] = _diceRoll;
 		_final[enumAttackFunction.diceModifier] = _modifierNumber;
@@ -961,7 +972,7 @@ function funct_savingThrow(_statSave, _attackerStats, _defenderStats, _pokemonNu
 	
 	if (_diceRoll > _spellDC)
 	{
-		return "FAIL";
+		return global.failureVariable;
 	}
 	else if (_diceRoll <= _spellDC)
 	{
@@ -1037,7 +1048,7 @@ function funct_nonAttack(_moveArray, _moveID, _level, _defenderStats, _attackerS
 	
 	// Put code here in future if it is from an attack. For now this is being scrapped for ease of creation
 	
-	if (_savingThrow == "FAIL")
+	if (_savingThrow == global.failureVariable)
 	{
 		return false;
 	}

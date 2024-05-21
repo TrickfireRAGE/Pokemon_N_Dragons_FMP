@@ -133,44 +133,108 @@ switch (room)
 				var _yPosition = room_height / 2;
 				var _xScale = 2.5;
 				var _yScale = 3;
-				if (backTextBoxID == "NOT_SET")
+				if (obj_coreGame.attackNonCheck == "Attack")
 				{
-					backTextBoxID = layer_sprite_create("spriteLayer", _xPosition, _yPosition, spr_textBox);
-					layer_sprite_xscale(backTextBoxID, _xScale);
-					layer_sprite_yscale(backTextBoxID, _yScale);
-				}
-				else if (global.moveReturnArray[enumAttackFunction.baseDice] == "ALWAYS_HITS") // Copied from global.attackIDRoll for easy use
-				{
-					if (global.attackIDDamage == "NOT_SET")
+					if (backTextBoxID == "NOT_SET")
 					{
-						//
+						backTextBoxID = layer_sprite_create("spriteLayer", _xPosition, _yPosition, spr_textBox);
+						layer_sprite_xscale(backTextBoxID, _xScale);
+						layer_sprite_yscale(backTextBoxID, _yScale);
 					}
-					else if (!instance_exists(global.attackIDDamage))
+					else if (global.moveReturnArray[enumAttackFunction.baseDice] == "ALWAYS_HITS") // Copied from global.attackIDRoll for easy use
 					{
-						layer_sprite_destroy(backTextBoxID);
-						if (layer_sequence_is_finished(global.moveIDSequence))
+						if (global.attackIDDamage == "NOT_SET")
 						{
+							//
+						}
+						else if (!instance_exists(global.attackIDDamage))
+						{
+							layer_sprite_destroy(backTextBoxID);
+							if (layer_sequence_is_finished(global.moveIDSequence))
+							{
+								backTextBoxID = "NOT_SET";
+							}
+						}
+					}
+					else if (!instance_exists(global.attackIDRoll))
+					{
+						if (global.moveReturnArray[enumAttackFunction.result] == global.failureVariable)
+						{
+							layer_sprite_destroy(backTextBoxID);
 							backTextBoxID = "NOT_SET";
+						}
+						else if (global.attackIDDamage == "NOT_SET")
+						{
+							//
+						}
+						else if (!instance_exists(global.attackIDDamage))
+						{
+							layer_sprite_destroy(backTextBoxID);
+							if (layer_sequence_is_finished(global.moveIDSequence))
+							{
+								backTextBoxID = "NOT_SET";
+							}
 						}
 					}
 				}
-				else if (!instance_exists(global.attackIDRoll))
+				break;
+			case(enumBattleState.opponent):
+				var _xPosition = room_width / 2;
+				var _yPosition = room_height / 2;
+				var _xScale = 2.5;
+				var _yScale = 3;
+				if (obj_coreGame.attackNonCheck == "Attack")
 				{
-					if (global.attackIDDamage == "NOT_SET")
+					if (backTextBoxID == "NOT_SET")
 					{
-						//
+						backTextBoxID = layer_sprite_create("spriteLayer", _xPosition, _yPosition, spr_textBox);
+						layer_sprite_xscale(backTextBoxID, _xScale);
+						layer_sprite_yscale(backTextBoxID, _yScale);
 					}
-					else if (!instance_exists(global.attackIDDamage))
+					else if (global.moveReturnArray[enumAttackFunction.baseDice] == "ALWAYS_HITS") // Copied from global.attackIDRoll for easy use
 					{
-						layer_sprite_destroy(backTextBoxID);
-						if (layer_sequence_is_finished(global.moveIDSequence))
+						if (global.attackIDDamage == "NOT_SET")
 						{
+							//
+						}
+						else if (!instance_exists(global.attackIDDamage))
+						{
+							layer_sprite_destroy(backTextBoxID);
+							if (layer_sequence_is_finished(global.moveIDSequence))
+							{
+								backTextBoxID = "NOT_SET";
+							}
+						}
+					}
+					else if (!instance_exists(global.attackIDRoll))
+					{
+						if (global.moveReturnArray[enumAttackFunction.result] == global.failureVariable)
+						{
+							layer_sprite_destroy(backTextBoxID);
 							backTextBoxID = "NOT_SET";
+						}
+						else if (global.attackIDDamage == "NOT_SET")
+						{
+							//
+						}
+						else if (!instance_exists(global.attackIDDamage))
+						{
+							layer_sprite_destroy(backTextBoxID);
+							if (layer_sequence_is_finished(global.moveIDSequence))
+							{
+								backTextBoxID = "NOT_SET";
+							}
 						}
 					}
 				}
 				break;
 		}
+		break;
+	case(rm_loss):
+		draw_text(room_width / 2, room_height / 2, "Lost! \n Press A to return to Title Screen!");
+		break;
+	case(rm_victory):
+		draw_text(room_width / 2, room_height / 2, "Victory! \n Press A to return to Title Screen!");
 		break;
 }
 

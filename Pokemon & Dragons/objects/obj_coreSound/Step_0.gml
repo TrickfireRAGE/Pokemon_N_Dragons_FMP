@@ -110,6 +110,7 @@ switch (room)
 			}
 			else
 			{
+				audio_stop_all();
 				audio_play_sound(bgm_titleScreen, 0, true);
 			}
 		}
@@ -160,20 +161,7 @@ switch (room)
 		break;
 	case(rm_battleRoom):
 		#region Battle Room
-		if (battleMusicState == enumMusicState.lowHealthStart) // Not completed but framework is here for when HP is uterlized (Consider putting it in seperate section to avoid doing this multiple times)
-		{
-			if (!audio_is_playing(bgm_lowHealthBattleStart))
-			{
-				audio_stop_all();
-				audio_play_sound(bgm_lowHealthBattleStart);
-				battleMusicState = enumMusicState.lowAbout;
-			}
-		}
-		else if (battleMusicState == enumMusicState.lowAbout and !audio_is_playing(bgm_lowHealthBattleStart))
-		{
-			audio_play_sound(bgm_rivalBattle1Loop, 0, true);
-			battleMusicState = enumMusicState.lowLooping;
-		}
+		var _health = (obj_playerPokemon.pokemonParty[0][enumPokemonArray.currentHP] / obj_playerPokemon.pokemonParty[0][enumPokemonArray.maxHP]) * 100; // Temp Solution for Low Health Music
 		
 		switch (global.gameState)
 		{
@@ -188,11 +176,28 @@ switch (room)
 					audio_play_sound(bgm_rivalBattle1Start, 0, false);
 					battleMusicState = enumMusicState.aboutToLoop;
 				}
+				else if (_health <= 25 && battleMusicState == enumMusicState.lowAbout && !audio_is_playing(bgm_lowHealthBattleStart))
+				{
+					audio_play_sound(bgm_lowHealthBattleLoop, 0, true);
+					battleMusicState = enumMusicState.lowLooping;
+				}
+				else if (_health <= 25 && !(audio_is_playing(bgm_lowHealthBattleStart) or audio_is_playing(bgm_lowHealthBattleLoop))) // Not perfect Low Health System but will do for Playtest
+				{
+					audio_stop_all();
+					audio_play_sound(bgm_lowHealthBattleStart, 0, 0);
+					battleMusicState = enumMusicState.lowAbout;
+				}
+				else if (_health > 25 && audio_is_playing(bgm_lowHealthBattleLoop))
+				{
+					battleMusicState = enumMusicState.aboutToLoop;
+					audio_stop_sound(bgm_lowHealthBattleLoop);
+				}
 				else if (battleMusicState == enumMusicState.aboutToLoop and !audio_is_playing(bgm_rivalBattle1Start))
 				{
 					audio_play_sound(bgm_rivalBattle1Loop, 0, true);
 					battleMusicState = enumMusicState.looping;
 				} 
+				
 				#endregion
 				break;
 			case(enumGameState.endGameBattle):
@@ -203,6 +208,22 @@ switch (room)
 					audio_play_sound(bgm_endGameBattleStart, 0, false);
 					battleMusicState = enumMusicState.aboutToLoop;
 				}
+				else if (_health <= 25 && battleMusicState == enumMusicState.lowAbout && !audio_is_playing(bgm_lowHealthBattleStart))
+				{
+					audio_play_sound(bgm_lowHealthBattleLoop, 0, true);
+					battleMusicState = enumMusicState.lowLooping;
+				}
+				else if (_health <= 25 && !(audio_is_playing(bgm_lowHealthBattleStart) or audio_is_playing(bgm_lowHealthBattleLoop))) // Not perfect Low Health System but will do for Playtest
+				{
+					audio_stop_all();
+					audio_play_sound(bgm_lowHealthBattleStart, 0, 0);
+					battleMusicState = enumMusicState.lowAbout;
+				}
+				else if (_health > 25 && audio_is_playing(bgm_lowHealthBattleLoop))
+				{
+					battleMusicState = enumMusicState.aboutToLoop;
+					audio_stop_sound(bgm_lowHealthBattleLoop);
+				}
 				else if (battleMusicState == enumMusicState.aboutToLoop and !audio_is_playing(bgm_endGameBattleStart))
 				{
 					audio_play_sound(bgm_endGameBattleLoop, 0, true);
@@ -211,6 +232,12 @@ switch (room)
 				#endregion
 		}
 		#endregion
+		break;
+	case(rm_loss): // No Music yet
+		//
+		break;
+	case(rm_victory):
+		//
 		break;
 		
 		

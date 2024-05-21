@@ -559,7 +559,7 @@ switch (room)
 					{
 						switch (global.moveReturnArray[enumAttackFunction.result])
 						{
-							case("FAIL"):
+							case(global.failureVariable):
 								if (global.moveReturnArray[enumAttackFunction.baseDice] == 1)
 								{
 									funct_textUI(_xPositionTitle, _yPositionTitle,
@@ -679,7 +679,7 @@ switch (room)
 						
 						switch (global.moveReturnArray[enumAttackFunction.effectiveness])
 						{
-							case(enumEffectiveness.notVeryEffective):
+							case(0.5): // Due to enumeration changes
 								funct_textUI(_xPositionTitle, (_baseY + (_distanceY * 7)),
 									_topString[5], _damageScaleText, // Get rid of Magic later
 									_textFail, 1,
@@ -788,7 +788,7 @@ switch (room)
 					{
 						switch (global.moveReturnArray[enumAttackFunction.result])
 						{
-							case("FAIL"):
+							case(global.failureVariable):
 								if (global.moveReturnArray[enumAttackFunction.baseDice] == 1)
 								{
 									funct_textUI(_xPositionTitle, _yPositionTitle,
@@ -908,7 +908,7 @@ switch (room)
 						
 						switch (global.moveReturnArray[enumAttackFunction.effectiveness])
 						{
-							case(enumEffectiveness.notVeryEffective):
+							case(0.5): // Due to change in enumeration
 								funct_textUI(_xPositionTitle, (_baseY + (_distanceY * 7)),
 									_topString[5], _damageScaleText, // Get rid of Magic later
 									_textFail, 1,

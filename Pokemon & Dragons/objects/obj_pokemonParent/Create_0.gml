@@ -200,7 +200,7 @@ for (var i = 0; i < global.maxPokemon; i++;) // HP Code (Prototype design) + AC
 		pokemonParty[i][enumPokemonArray.AC] = _acFull;
 		if (pokemonParty[i][enumPokemonArray.ID] == 491) // Darkrai AC Increase, done as a temp measure to make him stronger.
 		{
-			pokemonParty[i][enumPokemonArray.AC] = 17;
+			pokemonParty[i][enumPokemonArray.AC] = 16;
 		}
 	}
 	else

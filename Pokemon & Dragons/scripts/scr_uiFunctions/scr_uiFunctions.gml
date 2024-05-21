@@ -117,6 +117,7 @@ function funct_battleHealthUI(_sprite, _currentHealth, _maxHP, _lv, _name)
 	{
 		var _scaleHP = (global.gameResolutionWidth / 1920);
 		var _yPositionHP = _yPositionText + ((global.gameResolutionWidth / 1920) * 40);
+		_currentHealth = floor(_currentHealth); // Implemented to have whole number on Health Bar
 		var _stringHP = string(_currentHealth) + "/" + string(_maxHP);
 		
 		funct_textUI(_xPositionHP, _yPositionHP,

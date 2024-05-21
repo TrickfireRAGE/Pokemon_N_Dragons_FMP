@@ -48,12 +48,12 @@ switch (global.battleState)
 					{
 						global.battleState = enumBattleState.player;
 					}
-					else if (global.playerSideEffectArray[enumNonAttackFunction.sideDuration] >= 0)
+					else if (global.playerSideEffectArray[enumNonAttackFunction.sideDuration] > 0)
 					{
 						global.playerSideEffectArray[enumNonAttackFunction.sideDuration] -= 1;
 						global.battleState = enumBattleState.player;
 					}
-					else if (global.playerSideEffectArray[enumNonAttackFunction.sideDuration] == -1)
+					else if (global.playerSideEffectArray[enumNonAttackFunction.sideDuration] == 0)
 					{
 						global.playerSideEffectArray[enumNonAttackFunction.sideDuration] = "NOT_SET";
 						global.playerSideEffectArray[enumNonAttackFunction.sideAffected] = "NOT_SET";
@@ -72,12 +72,12 @@ switch (global.battleState)
 					{
 						global.battleState = enumBattleState.opponent;
 					}
-					else if (global.opponentSideEffectArray[enumNonAttackFunction.sideDuration] >= 0)
+					else if (global.opponentSideEffectArray[enumNonAttackFunction.sideDuration] > 0)
 					{
 						global.opponentSideEffectArray[enumNonAttackFunction.sideDuration] -= 1;
 						global.battleState = enumBattleState.opponent;
 					}
-					else if (global.opponentSideEffectArray[enumNonAttackFunction.sideDuration] == -1)
+					else if (global.opponentSideEffectArray[enumNonAttackFunction.sideDuration] == 0)
 					{
 						global.opponentSideEffectArray[enumNonAttackFunction.sideDuration] = "NOT_SET";
 						global.opponentSideEffectArray[enumNonAttackFunction.sideModifier] = "NOT_SET";
@@ -100,5 +100,4 @@ switch (global.battleState)
 			global.battleState = enumBattleState.intermission;
 		}
 		break;
-
 }

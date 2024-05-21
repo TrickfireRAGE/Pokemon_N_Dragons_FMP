@@ -30,6 +30,7 @@
     {"id":{"name":"snd_growl","path":"sounds/snd_growl/snd_growl.yy",},"order":0,},
     {"id":{"name":"snd_battleUISound","path":"sounds/snd_battleUISound/snd_battleUISound.yy",},"order":2,},
     {"id":{"name":"obj_saveSystem","path":"objects/obj_saveSystem/obj_saveSystem.yy",},"order":3,},
+    {"id":{"name":"rm_victory","path":"rooms/rm_victory/rm_victory.yy",},"order":4,},
     {"id":{"name":"spr_battleUI","path":"sprites/spr_battleUI/spr_battleUI.yy",},"order":0,},
     {"id":{"name":"spr_pokeball","path":"sprites/spr_pokeball/spr_pokeball.yy",},"order":3,},
     {"id":{"name":"obj_playerAttack","path":"objects/obj_playerAttack/obj_playerAttack.yy",},"order":5,},
@@ -118,6 +119,7 @@
     {"id":{"name":"spr_dice12","path":"sprites/spr_dice12/spr_dice12.yy",},"order":2,},
     {"id":{"name":"bgm_titleScreen","path":"sounds/bgm_titleScreen/bgm_titleScreen.yy",},"order":0,},
     {"id":{"name":"spr_darkrai","path":"sprites/spr_darkrai/spr_darkrai.yy",},"order":0,},
+    {"id":{"name":"rm_loss","path":"rooms/rm_loss/rm_loss.yy",},"order":5,},
     {"id":{"name":"rm_introVideo","path":"rooms/rm_introVideo/rm_introVideo.yy",},"order":0,},
   ],
   "Options": [
@@ -145,6 +147,8 @@
     {"roomId":{"name":"rm_introVideo","path":"rooms/rm_introVideo/rm_introVideo.yy",},},
     {"roomId":{"name":"rm_titleMenu","path":"rooms/rm_titleMenu/rm_titleMenu.yy",},},
     {"roomId":{"name":"rm_battleRoom","path":"rooms/rm_battleRoom/rm_battleRoom.yy",},},
+    {"roomId":{"name":"rm_victory","path":"rooms/rm_victory/rm_victory.yy",},},
+    {"roomId":{"name":"rm_loss","path":"rooms/rm_loss/rm_loss.yy",},},
   ],
   "Folders": [
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"1 - Objects","folderPath":"folders/1 - Objects.yy","order":7,},

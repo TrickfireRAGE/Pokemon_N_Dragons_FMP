@@ -158,8 +158,7 @@ enum enumOpponentStages // Expand this on future builds
 {
 	loading = 0,
 	action = 1, 
-	endTurn = 2,
-	failed = 3
+	endTurn = 2
 }
 
 enum enumType // No Fairy Types in This version
@@ -186,7 +185,7 @@ enum enumType // No Fairy Types in This version
 enum enumEffectiveness
 {
 	noEffect = 0,
-	notVeryEffective = 0.5,
+	notVeryEffective = -1,
 	normalEffective = 1,
 	superEffective = 2
 }
@@ -277,6 +276,7 @@ global.newGamePokemonChoice = 0;
 #region Battle Logic
 global.maxPokemon = 3;
 attackNonCheck = "NOT_SET"; // Made into Object Variable instead of local due to need of access in step event
+global.failureVariable = -999; // To replace Fail 
 
 global.playerPokemonID = [];
 global.playerPokemonID[0] = "NOT_SET";
