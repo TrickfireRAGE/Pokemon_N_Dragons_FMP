@@ -2,7 +2,7 @@
 
 #region VERSION NUMBER
 
-versionNumber = "Pre-Alpha - V0.0.1.0 (PlayTest)"; // Version 0.0.1.0 will be the PlayTest Version Known As - Pre-Alpha - V0.0.1.0 (PlayTest)
+versionNumber = "Pre-Alpha - V0.0.1.1 (PlayTest)"; // Version 0.0.1.0 will be the PlayTest Version Known As - Pre-Alpha - V0.0.1.0 (PlayTest)
 
 #endregion
 

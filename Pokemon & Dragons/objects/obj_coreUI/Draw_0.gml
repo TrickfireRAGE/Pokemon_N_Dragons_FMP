@@ -183,7 +183,11 @@ switch (room)
 				var _yPosition = room_height / 2;
 				var _xScale = 2.5;
 				var _yScale = 3;
-				if (obj_coreGame.attackNonCheck == "Attack")
+				if (obj_coreGame.attackNonCheck == "Non-Attack")
+				{
+					//
+				}
+				else if (obj_coreGame.attackNonCheck == "Attack")
 				{
 					if (backTextBoxID == "NOT_SET")
 					{
@@ -231,10 +235,12 @@ switch (room)
 		}
 		break;
 	case(rm_loss):
-		draw_text(room_width / 2, room_height / 2, "Lost! \n Press A to return to Title Screen!");
+		var _string = "Lost! \n Press A to return to Title Screen!";
+		funct_textUI(room_width / 2, room_height / 2, _string, 0.3, c_black, 1, fa_middle); // Temp solution due to time constraints
 		break;
 	case(rm_victory):
-		draw_text(room_width / 2, room_height / 2, "Victory! \n Press A to return to Title Screen!");
+		var _string = "Victory! \n Press A to return to Title Screen!";
+		funct_textUI(room_width / 2, room_height / 2, _string, 0.3, c_black, 1, fa_middle);
 		break;
 }
 
