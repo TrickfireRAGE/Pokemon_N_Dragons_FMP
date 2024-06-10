@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\trick\\Desktop\\Github Repository\\Pokemon \u0026 Dragons FMP\\Pokemon_N_Dragons_FMP\\Pokemon \u0026 Dragons\\datafiles\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\trick\\Desktop\\Github Repository\\Pokemon \u0026 Dragons FMP\\Pokemon_N_Dragons_FMP\\Pokemon \u0026 Dragons\\datafiles\\json_pokeMoves.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:json_pokeMoves.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\trick\\Desktop\\Github Repository\\Pokemon \u0026 Dragons FMP\\Pokemon_N_Dragons_FMP\\Pokemon \u0026 Dragons\\datafiles\\json_pokeDex.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:json_pokeDex.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\trick\\AppData\\Local\\Pokemon___Dragons\\Pikachu.Pokemon||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
@@ -18,15 +26,39 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "json_pokeMoves.json",
+              "DocumentMoniker": "C:\\Users\\trick\\Desktop\\Github Repository\\Pokemon \u0026 Dragons FMP\\Pokemon_N_Dragons_FMP\\Pokemon \u0026 Dragons\\datafiles\\json_pokeMoves.json",
+              "RelativeDocumentMoniker": "json_pokeMoves.json",
+              "ToolTip": "C:\\Users\\trick\\Desktop\\Github Repository\\Pokemon \u0026 Dragons FMP\\Pokemon_N_Dragons_FMP\\Pokemon \u0026 Dragons\\datafiles\\json_pokeMoves.json",
+              "RelativeToolTip": "json_pokeMoves.json",
+              "ViewState": "AQIAAKIAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-05-27T13:02:31.899Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "json_pokeDex.json",
+              "DocumentMoniker": "C:\\Users\\trick\\Desktop\\Github Repository\\Pokemon \u0026 Dragons FMP\\Pokemon_N_Dragons_FMP\\Pokemon \u0026 Dragons\\datafiles\\json_pokeDex.json",
+              "RelativeDocumentMoniker": "json_pokeDex.json",
+              "ToolTip": "C:\\Users\\trick\\Desktop\\Github Repository\\Pokemon \u0026 Dragons FMP\\Pokemon_N_Dragons_FMP\\Pokemon \u0026 Dragons\\datafiles\\json_pokeDex.json",
+              "RelativeToolTip": "json_pokeDex.json",
+              "ViewState": "AQIAANcEAAAAAAAAAAAwwMsEAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-05-27T13:01:12.082Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Pikachu.Pokemon",
               "DocumentMoniker": "C:\\Users\\trick\\AppData\\Local\\Pokemon___Dragons\\Pikachu.Pokemon",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\AppData\\Local\\Pokemon___Dragons\\Pikachu.Pokemon",
-              "ToolTip": "C:\\Users\\trick\\AppData\\Local\\Pokemon___Dragons\\Pikachu.Pokemon*",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\AppData\\Local\\Pokemon___Dragons\\Pikachu.Pokemon*",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACIAAAAAAAAA",
+              "ToolTip": "C:\\Users\\trick\\AppData\\Local\\Pokemon___Dragons\\Pikachu.Pokemon",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\AppData\\Local\\Pokemon___Dragons\\Pikachu.Pokemon",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-05-03T10:06:14.899Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-03T10:06:14.899Z"
             }
           ]
         }

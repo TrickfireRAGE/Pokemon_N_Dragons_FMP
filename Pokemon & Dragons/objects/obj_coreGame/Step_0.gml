@@ -711,6 +711,7 @@ switch (room)
 				#endregion
 				break;
 			case(enumBattleState.opponent): // Copy and Pasted + Modified (This is unoptimised, clean this up in post playtest build!)	
+				// Put the code that handles the dice rolls and the other attack stuff before the damage stage happens
 				switch (global.opponentStageBattle)
 				{
 					case(enumOpponentStages.loading):
@@ -835,8 +836,10 @@ switch (room)
 							}
 							
 						}
+						#endregion
 						break;
 					case (enumOpponentStages.action):
+						#region Opponent Attack
 						if (attackNonCheck == "Attack")
 						{
 							if (global.moveReturnArray[enumAttackFunction.baseDice] == "ALWAYS_HITS")
@@ -999,7 +1002,7 @@ switch (room)
 								}
 								#endregion
 							}
-						}
+						} #endregion
 						else if (attackNonCheck == "Non-Attack")
 						{
 							#region Non-Attack Player Code

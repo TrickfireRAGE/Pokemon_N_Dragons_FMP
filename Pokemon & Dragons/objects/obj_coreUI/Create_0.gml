@@ -2,7 +2,7 @@
 
 #region VERSION NUMBER
 
-versionNumber = "Pre-Alpha - V0.0.1.1 (PlayTest)"; // Version 0.0.1.0 will be the PlayTest Version Known As - Pre-Alpha - V0.0.1.0 (PlayTest)
+versionNumber = "Pre-Alpha - V0.0.1.2 (Post Playtest)"; // Version 0.0.1.0 will be the PlayTest Version Known As - Pre-Alpha - V0.0.1.0 (PlayTest)
 
 #endregion
 
@@ -160,7 +160,7 @@ creditsText[44] = "GameFreak";
 creditsText[45] = "==Extra Sound Effects==";
 creditsText[46] = "ZapSplat.com";
 creditsText[47] = "==KyoMadoka Font==";
-creditsText[48] = "PUT USER HERE";
+creditsText[48] = "Maruoka Hakusyu Inpo Co.";
 creditsText[49] = " ";
 creditsText[50] = "***Trademarks***"
 creditsText[51] = "==Trickfire Studios==";
@@ -175,6 +175,6 @@ creditsText[59] = "==Dungeons & Dragons==";
 creditsText[60] = "Wizards of the Coast";
 creditsText[61] = "==GameMaker Studio LTS 2022=="
 creditsText[62] = "YoYo Games"
-creditsArraySize = array_length(creditsText) - 1; // Think of a better way to implement this system
+creditsArraySize = array_length(creditsText); // Think of a better way to implement this system
 
 #endregion

@@ -139,7 +139,7 @@ function funct_colourTypeUI(_moveType, _colourArray)
 	}
 }
 
-function funct_textBoxUI(_string)
+function funct_textBoxUI(_string) // Try and implement in later build
 {
 	//
 	

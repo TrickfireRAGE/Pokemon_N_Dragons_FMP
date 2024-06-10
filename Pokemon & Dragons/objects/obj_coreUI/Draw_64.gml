@@ -520,10 +520,6 @@ switch (room)
 				break;
 			case(enumBattleState.introSequence):
 				// type here
-				var _challengerString = "NOT_SET";
-				
-				
-				
 				break;
 			case(enumBattleState.playerAttack):
 				#region Player Attack UI Code
@@ -727,13 +723,13 @@ switch (room)
 					global.pokemonLevelSet,
 					obj_opponentPokemon.pokemonParty[0][enumPokemonArray.name]);
 				
-				switch (global.pokemonLevelSet) // Temp Solution for Slow Health
+				switch (global.pokemonLevelSet) // Temp Solution for Slow Health (Add more in future)
 				{
 					case (1):
 						global.hpDamageReduction -= 0.1;
 						break;
 					case (20):
-						global.hpDamageReduction -= 0.25;
+						global.hpDamageReduction -= 1;
 						break;
 				}
 				

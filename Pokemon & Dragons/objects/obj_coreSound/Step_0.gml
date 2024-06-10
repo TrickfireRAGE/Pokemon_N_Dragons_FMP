@@ -91,6 +91,10 @@ if (room == rm_battleRoom)
 			break;
 	}
 }
+else if (room == (rm_victory or rm_loss))
+{
+	soundCountBattle = 0;
+}
 
 #endregion
 

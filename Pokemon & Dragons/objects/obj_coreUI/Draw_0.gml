@@ -88,7 +88,7 @@ switch (room)
 			}
 			break;
 	case(rm_battleRoom):
-		switch (global.gameState)
+		switch (global.gameState) // Doesn't work
 		{
 			#region Custom Background Effects Code
 			case(enumGameState.level1Battle):
@@ -185,7 +185,7 @@ switch (room)
 				var _yScale = 3;
 				if (obj_coreGame.attackNonCheck == "Non-Attack")
 				{
-					//
+					exit;
 				}
 				else if (obj_coreGame.attackNonCheck == "Attack")
 				{
