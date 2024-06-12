@@ -543,6 +543,7 @@ switch (room)
 					_topString[2] = "Misses!";
 					_topString[3] = "NATURAL 20! CRIT!";
 					_topString[4] = "CRITICAL FAILURE!";
+					_topString[5] = "NO EFFECT!";
 					
 					if (global.attackIDRoll.loopCounter <= global.attackIDRoll.timeLength + 1)
 					{
@@ -570,6 +571,12 @@ switch (room)
 										_textFail, 1,
 										fa_center);
 								}
+								break;
+							case("NO_EFFECT"):
+								funct_textUI(_xPositionTitle, _yPositionTitle,
+									_topString[5], _textScale, // Get rid of Magic later
+									_textFail, 1,
+									fa_center);
 								break;
 							default:
 								if (global.moveReturnArray[enumAttackFunction.baseDice] == 20)

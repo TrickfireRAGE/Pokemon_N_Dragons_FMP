@@ -122,7 +122,7 @@ function funct_attack(_moveArray, _moveID, _level, _defenderAC, _defenderType, _
 			break;
 		case("AC"):
 			// type here
-			break
+			break;
 		// This is where the damage modifier would go in future builds
 	}
 	switch (_defenderSideEffectArray[enumNonAttackFunction.sideAffected])
@@ -133,7 +133,7 @@ function funct_attack(_moveArray, _moveID, _level, _defenderAC, _defenderType, _
 		case("AC"):
 			_defenderACSideEffect = _defenderSideEffectArray[enumNonAttackFunction.sideModifier];
 			_defenderAC += _defenderACSideEffect; // Done like this incase this code is going to be changed
-			break
+			break;
 		// This is where the damage modifier would go in future builds
 	}
 	
@@ -330,14 +330,29 @@ function funct_attack(_moveArray, _moveID, _level, _defenderAC, _defenderType, _
 		
 		_result = round (_result); // Rounds the number to ensure it is always a whole number
 		
-		var _final = [];
-		_final[enumAttackFunction.baseDice] = _diceRoll;
-		_final[enumAttackFunction.diceModifier] = _modifierNumber;
-		_final[enumAttackFunction.effectiveness] = _effectiveness;
-		_final[enumAttackFunction.baseResult] = _baseResult;
-		_final[enumAttackFunction.result] = _result;
-		_final[enumAttackFunction.diceOrSave] = _diceOrSave;
-		_final[enumAttackFunction.attackDiceSize] = _chosenSize;
+		if (_effectiveness == enumEffectiveness.noEffect)
+		{
+			var _final = [];
+			_final[enumAttackFunction.baseDice] = _diceRoll;
+			_final[enumAttackFunction.diceModifier] = _modifierNumber;
+			_final[enumAttackFunction.effectiveness] = _effectiveness;
+			_final[enumAttackFunction.baseResult] = _baseResult;
+			_final[enumAttackFunction.result] = "NO_EFFECT";
+			_final[enumAttackFunction.diceOrSave] = _diceOrSave;
+			_final[enumAttackFunction.attackDiceSize] = _chosenSize;
+		}
+		else
+		{
+			var _final = [];
+			_final[enumAttackFunction.baseDice] = _diceRoll;
+			_final[enumAttackFunction.diceModifier] = _modifierNumber;
+			_final[enumAttackFunction.effectiveness] = _effectiveness;
+			_final[enumAttackFunction.baseResult] = _baseResult;
+			_final[enumAttackFunction.result] = _result;
+			_final[enumAttackFunction.diceOrSave] = _diceOrSave;
+			_final[enumAttackFunction.attackDiceSize] = _chosenSize;
+		}
+		
 		for (var i = 0; i < _chosenAmount; i++;)
 		{
 			array_push(_final, _attackRolls[i]);

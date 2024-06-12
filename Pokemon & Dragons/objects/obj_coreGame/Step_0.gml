@@ -596,8 +596,9 @@ switch (room)
 								obj_coreUI.backTextBoxID = "NOT_SET";
 								global.battleState = enumBattleState.player;
 								break;
-							case(0):
-								// Type here (NO Effect)
+							case("NO_EFFECT"):
+								layer_sprite_destroy(obj_coreUI.backTextBoxID); // Put some code here to show the attack failing
+								obj_coreUI.backTextBoxID = "NOT_SET";
 								global.battleState = enumBattleState.player;
 								break;
 							default:
@@ -925,8 +926,9 @@ switch (room)
 										obj_coreUI.backTextBoxID = "NOT_SET";
 										global.opponentStageBattle = enumOpponentStages.endTurn; // THIS + battleState = Opponent is NEEDED to progress turn
 										break;
-									case(0):
-										// Type here (NO Effect)
+									case("NO_EFFECT"):
+										layer_sprite_destroy(obj_coreUI.backTextBoxID); // Pasted here to get it work
+										obj_coreUI.backTextBoxID = "NOT_SET";
 										global.opponentStageBattle = enumOpponentStages.endTurn; // THIS + battleState = Opponent is NEEDED to progress turn
 										break;
 									default:

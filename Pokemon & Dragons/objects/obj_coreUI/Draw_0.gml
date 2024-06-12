@@ -130,9 +130,9 @@ switch (room)
 				break;
 			case(enumBattleState.playerAttack):
 				var _xPosition = room_width / 2;
-				var _yPosition = room_height / 2;
-				var _xScale = 2.5;
-				var _yScale = 3;
+				var _yPosition = room_height / 6.5;
+				var _xScale = 1.5;
+				var _yScale = 0.5;
 				if (obj_coreGame.attackNonCheck == "Attack")
 				{
 					if (backTextBoxID == "NOT_SET")
@@ -180,9 +180,9 @@ switch (room)
 				break;
 			case(enumBattleState.opponent):
 				var _xPosition = room_width / 2;
-				var _yPosition = room_height / 2;
-				var _xScale = 2.5;
-				var _yScale = 3;
+				var _yPosition = room_height / 6.5;
+				var _xScale = 1.5;
+				var _yScale = 0.5;
 				if (obj_coreGame.attackNonCheck == "Non-Attack")
 				{
 					exit;
