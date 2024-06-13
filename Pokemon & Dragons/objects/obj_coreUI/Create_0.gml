@@ -2,7 +2,7 @@
 
 #region VERSION NUMBER
 
-versionNumber = "Pre-Alpha - V0.0.1.3 (Pre-Showcase)"; // Version 0.0.1.0 will be the PlayTest Version Known As - Pre-Alpha - V0.0.1.0 (PlayTest)
+versionNumber = "V0.0.1.4 (Pre-Showcase)"; // Version 0.0.2.0 will be the Showcase Build Version Known As - V0.0.2.0 (Showcase)
 
 #endregion
 

@@ -37,7 +37,7 @@ switch (room)
 		_menuY[5] = global.gameResolutionHeight / 1.4;
 		_menuY[6] = global.gameResolutionHeight / 1.2;
 		var _menuXQuote = global.gameResolutionWidth / 9;
-		var _menuYQuote = global.gameResolutionHeight / 1.2;
+		var _menuYQuote = global.gameResolutionHeight / 1.1;
 		
 		// UI Selection Variables
 		var _selectionXMenu = global.gameResolutionWidth / 5.2;
@@ -112,18 +112,26 @@ switch (room)
 			case(enumTitleScreenState.mainMenu):
 				#region Main Menu UI
 				// Array String
-				var _mainMenuArrayLength = 3;
+				var _mainMenuArrayLength = 4;
 				var _titleScreenString = [];
 				_titleScreenString[0] = "New Game";
 				_titleScreenString[1] = "Continue";
 				_titleScreenString[2] = "Settings";
-				_titleScreenString[3] = "Exit Game";
+				_titleScreenString[3] = "Tutorial";
+				_titleScreenString[4] = "Exit Game";
 				// UI
 				draw_sprite_ext(spr_gameLogo, 0,
 					_gameLogoX, _gameLogoY,
 					_gameLogoScale, _gameLogoScale,
 					0, c_white,
 					titleScreenAlphaLogo);
+				// Quotes Array String
+				var _mainMenuQuotes = [];
+				_mainMenuQuotes[0] = "Experience a New Take on Pokemon!";
+				_mainMenuQuotes[1] = "Unavailable in current build."; // Change in future builds when functionality is made.
+				_mainMenuQuotes[2] = "Make P&D fit your needs in\n the settings menu!";
+				_mainMenuQuotes[3] = "Corro The Great! Will help you\n understand the game!";
+				_mainMenuQuotes[4] = "Quit the adventure to return\n in the future!";
 					
 				if (titleScreenAlphaText > 0)
 				{
@@ -154,6 +162,15 @@ switch (room)
 								_textColour, _textAlpha);
 						}
 					}
+					for (var i = 0; i <= _mainMenuArrayLength; i++)
+					{
+						if (i == global.titleScreenOptions)
+						{
+							funct_textUI(_menuXQuote, _menuYQuote,
+								_mainMenuQuotes[i], _quoteScaling,
+								_textColour, _textAlpha);
+						}
+					}	
 					funct_selectionUI(_selectionXMenu, _menuY,
 						global.titleScreenOptions, _selectionSprite,
 						_selectionSubImage, _mainMenuArrayLength,
@@ -183,7 +200,7 @@ switch (room)
 						// UI Code
 						for (var i = 0; i <= _newGameArrayLength; i++;)
 						{
-							if (i == 0)
+							if (i == 0) // Here due to not being in the current build (Story Mode)
 							{
 								funct_textUI(_menuX, _menuY[i],
 									_newGameStringChoices[i], _menuTextScale,
@@ -205,6 +222,37 @@ switch (room)
 									_textColour, _textAlpha);
 							}
 						}	
+						
+						// Sprite UI
+						var _xPositionImage = (global.gameResolutionWidth / 4) * 3;
+						var _yPositionImage = global.gameResolutionHeight / 1.35;
+						var _scaleImage = (global.gameResolutionHeight / 1080) * 12;
+						var _imageAlpha = 0.5;
+						
+						switch (global.newGameOptions)
+						{
+							case(enumNewGameChoice.story):
+								draw_sprite_ext(spr_playerFront, 0,
+									_xPositionImage, _yPositionImage, 
+									_scaleImage, _scaleImage, 
+									0, c_white, _imageAlpha);
+								break;
+							case(enumNewGameChoice.level1):
+								draw_sprite_ext(spr_riolu, enumPokemonPosition.front,
+									_xPositionImage, _yPositionImage,
+									_scaleImage, _scaleImage,
+									0, c_white, _imageAlpha);
+								break;
+							case(enumNewGameChoice.endGame):
+								draw_sprite_ext(spr_lucario, enumPokemonPosition.front,
+									_xPositionImage, _yPositionImage,
+									_scaleImage, _scaleImage,
+									0, c_white, _imageAlpha);
+								break;
+							case(enumNewGameChoice.returnToMainMenu):
+								// 
+								break;
+						}
 						funct_selectionUI(_selectionXMenu, _menuY,
 							global.newGameOptions, _selectionSprite,
 							_selectionSubImage, _newGameArrayLength,
@@ -430,6 +478,22 @@ switch (room)
 						draw_set_halign(fa_left);
 						#endregion
 						break;
+				}
+				#endregion
+				break;
+			case(enumTitleScreenState.tutorial):
+				#region Tutorial Menu UI
+				// type here
+				draw_text(global.gameResolutionWidth / 2, global.gameResolutionHeight / 2, "CORRO THE GREAT! Goes here");
+				switch (global.tutorialDialogue) // Put the variable here
+				{
+					case(0):
+						// type here
+						break;
+					case(1):
+						// Type here
+						break;
+					// put the Visual Code here
 				}
 				#endregion
 				break;
@@ -975,6 +1039,7 @@ switch (room)
 				var _xPositionPoint = global.gameResolutionWidth / 20; // For the amount of action and bonus action points left on a turn
 				var _yPositionPointAction = global.gameResolutionHeight / 1.5;
 				var _yPositionPointBonus = global.gameResolutionHeight / 1.2;
+				var _yPositionAC = global.gameResolutionHeight / 2;
 				
 				var _yPosition = [];
 				var _distanceY = 100 * (global.gameResolutionWidth / 1920);
@@ -1157,6 +1222,7 @@ switch (room)
 								1);
 							}
 						}
+						
 						// Temp Action/Bonus Action Point UI
 						draw_sprite_ext(spr_actionSymbol, 0, // Temp
 							_xPositionPoint, _yPositionPointAction,
@@ -1185,6 +1251,20 @@ switch (room)
 							obj_opponentPokemon.pokemonParty[0][enumPokemonArray.maxHP], 
 							global.pokemonLevelSet,
 							obj_opponentPokemon.pokemonParty[0][enumPokemonArray.name]);
+						
+						// AC Visual UI Code
+						var _acNumberPlayer = obj_playerPokemon.pokemonParty[0][enumPokemonArray.AC];
+						
+						draw_sprite_ext(spr_acShield, 0,
+							_xPositionPoint, _yPositionAC,
+							_scaleActionBonus, _scaleActionBonus,
+							0, c_white, 
+							1);
+							
+						funct_textUI(_xPositionPoint, _yPositionAC,
+							_acNumberPlayer, _scaleActionBonus, c_black,
+							1, fa_center);
+							
 							
 						// Explaination UI Code
 						if (global.playerChoiceAttackExplain == true)

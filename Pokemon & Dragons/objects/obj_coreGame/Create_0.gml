@@ -25,7 +25,8 @@ enum enumTitleScreenState // States within Title Screens
 	mainMenu = 1,
 	settingsMenu = 2,
 	newGame = 3,
-	outOfMenu = 4
+	tutorial = 4,
+	outOfMenu = 5
 }
 
 enum enumNewGameState
@@ -57,7 +58,8 @@ enum enumMainMenuChoice
 	newGame = 0,
 	continueSave = 1,
 	settings = 2,
-	exitSave = 3
+	tutorial = 3,
+	exitSave = 4
 }
 
 enum enumSettingsChoice
@@ -270,6 +272,7 @@ global.titleScreenOptions = 0; // Global due to coreUI accessing it.
 global.settingsScreenOptions = 0; // ^
 global.newGameOptions = 0; // ^
 global.newGamePokemonChoice = 0;
+global.tutorialDialogue = 0; // Used for basic tutorial
 
 #endregion
 

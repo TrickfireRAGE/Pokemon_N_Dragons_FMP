@@ -94,12 +94,17 @@ switch (room)
 							alarm_set(enumCoreGameAlarms.stateSwitch, 1);
 							break;
 						case(enumMainMenuChoice.continueSave):
-							// global.titleScreenOptions = enumMainMenuChoice.newGame;
+							// global.titleScreenOptions = enumMainMenuChoice.continueGame;
 							// Put Alarm here after save system is implemented
 							break;
 						case(enumMainMenuChoice.settings):
 							global.settingsMenuState = enumSettingsScreenState.settingsBase;
 							global.menuState = enumTitleScreenState.settingsMenu;
+							break;
+						case(enumMainMenuChoice.tutorial):
+							global.tutorialDialogue = 0;
+							global.menuState = enumTitleScreenState.tutorial;
+							// type here if other code is needed
 							break;
 						case(enumMainMenuChoice.exitSave):
 							game_end();
@@ -465,6 +470,21 @@ switch (room)
 						ini_close();
 					}
 				}
+				#endregion
+				break;
+			case(enumTitleScreenState.tutorial):
+				#region Tutorial Logic
+				// type here logic
+				if (global.gamePadConfirm)
+				{
+					// Put adding code here
+				}
+				else if (global.gamePadBack)
+				{
+					global.titleScreenOptions = enumMainMenuChoice.newGame;
+					global.menuState = enumTitleScreenState.mainMenu;
+				}
+				
 				#endregion
 				break;
 		}
