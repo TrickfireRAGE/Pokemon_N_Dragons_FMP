@@ -2,7 +2,7 @@
 
 #region VERSION NUMBER
 
-versionNumber = "V0.0.1.4 (Pre-Showcase)"; // Version 0.0.2.0 will be the Showcase Build Version Known As - V0.0.2.0 (Showcase)
+versionNumber = "V0.0.1.5 (Pre-Showcase)"; // Version 0.0.2.0 will be the Showcase Build Version Known As - V0.0.2.0 (Showcase)
 
 #endregion
 

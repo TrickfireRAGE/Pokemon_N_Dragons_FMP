@@ -181,11 +181,22 @@ switch (room)
 			case(enumBattleState.opponent):
 				var _xPosition = room_width / 2;
 				var _yPosition = room_height / 6.5;
+				
+				var _yPositionLow = room_height / 1.1;
+				
 				var _xScale = 1.5;
 				var _yScale = 0.5;
 				if (obj_coreGame.attackNonCheck == "Non-Attack")
 				{
-					exit;
+					if (backTextBoxID == "NOT_SET")
+					{
+						//
+					}
+					else if (layer_sprite_exists("spriteLayer", backTextBoxID))
+					{
+						layer_sprite_destroy(backTextBoxID);
+						backTextBoxID = "NOT_SET";
+					}
 				}
 				else if (obj_coreGame.attackNonCheck == "Attack")
 				{

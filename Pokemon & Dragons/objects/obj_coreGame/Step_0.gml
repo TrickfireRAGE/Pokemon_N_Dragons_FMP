@@ -484,6 +484,22 @@ switch (room)
 					global.titleScreenOptions = enumMainMenuChoice.newGame;
 					global.menuState = enumTitleScreenState.mainMenu;
 				}
+				else if (global.gamePadDown)
+				{
+					global.tutorialDialogue += _choiceChange;
+					if (global.tutorialDialogue > enumTutorialChoice.dnd)
+					{
+						global.tutorialDialogue = enumTutorialChoice.battleGameplay;
+					}
+				}
+				else if (global.gamePadUp)
+				{
+					global.tutorialDialogue -= _choiceChange;
+					if (global.tutorialDialogue > enumTutorialChoice.battleGameplay)
+					{
+						global.tutorialDialogue = enumTutorialChoice.dnd;
+					}
+				}
 				
 				#endregion
 				break;
@@ -825,32 +841,31 @@ switch (room)
 						}
 						else if (attackNonCheck == "Non-Attack") // Copied from Player
 						{
-							var _nonAttack = "NOT_SET";
 							
-							_nonAttack = funct_nonAttack(global.pokeMoves, 
+							global.nonAttackReturnArray = funct_nonAttack(global.pokeMoves, 
 								obj_opponentPokemon.pokemonPartyMoves[0][_whichAttackEnumID],
 								global.pokemonLevelSet, obj_playerPokemon.pokemonParty, 
 								obj_opponentPokemon.pokemonParty, 0, false);
 								
 							obj_opponentPokemon.pokemonPartyMoves[0][_whichAttackEnumPP] -= 1;
-							if (_nonAttack == false)
+							if (global.nonAttackReturnArray[enumNonAttackFunction.sideAffected] == false) // Changed
 							{
 								global.opponentStageBattle = enumOpponentStages.endTurn; // To allow the turn to move forward.
 							}
 							else
 							{
-								switch (_nonAttack[enumNonAttackFunction.sideWho])
+								switch (global.nonAttackReturnArray[enumNonAttackFunction.sideWho])
 								{
 									case ("Self"):
-										global.opponentSideEffectArray[enumNonAttackFunction.sideAffected] = _nonAttack[enumNonAttackFunction.sideAffected];
-										global.opponentSideEffectArray[enumNonAttackFunction.sideModifier] = _nonAttack[enumNonAttackFunction.sideModifier];
-										global.opponentSideEffectArray[enumNonAttackFunction.sideDuration] = _nonAttack[enumNonAttackFunction.sideDuration];
+										global.opponentSideEffectArray[enumNonAttackFunction.sideAffected] = global.nonAttackReturnArray[enumNonAttackFunction.sideAffected];
+										global.opponentSideEffectArray[enumNonAttackFunction.sideModifier] = global.nonAttackReturnArray[enumNonAttackFunction.sideModifier];
+										global.opponentSideEffectArray[enumNonAttackFunction.sideDuration] = global.nonAttackReturnArray[enumNonAttackFunction.sideDuration];
 										global.opponentStageBattle = enumOpponentStages.action;
 										break;
 									case ("Opponent"):
-										global.playerSideEffectArray[enumNonAttackFunction.sideAffected] = _nonAttack[enumNonAttackFunction.sideAffected];
-										global.playerSideEffectArray[enumNonAttackFunction.sideModifier] = _nonAttack[enumNonAttackFunction.sideModifier];
-										global.playerSideEffectArray[enumNonAttackFunction.sideDuration] = _nonAttack[enumNonAttackFunction.sideDuration];
+										global.playerSideEffectArray[enumNonAttackFunction.sideAffected] = global.nonAttackReturnArray[enumNonAttackFunction.sideAffected];
+										global.playerSideEffectArray[enumNonAttackFunction.sideModifier] = global.nonAttackReturnArray[enumNonAttackFunction.sideModifier];
+										global.playerSideEffectArray[enumNonAttackFunction.sideDuration] = global.nonAttackReturnArray[enumNonAttackFunction.sideDuration];
 										global.opponentStageBattle = enumOpponentStages.action;
 										break;
 								}
@@ -1032,8 +1047,9 @@ switch (room)
 							{
 								var _xPositionSequence = 128; // For Sequence
 								var _yPositionSequence = 72; // For Seqeunce
-							
+								
 								global.moveIDSequence = layer_sequence_create("sequenceLayer", _xPositionSequence, _yPositionSequence, seq_opponentAttack);
+								
 							}
 							
 							if (alarm_get(enumCoreGameAlarms.stateSwitch) > 0)

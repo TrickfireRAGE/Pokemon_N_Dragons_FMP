@@ -319,6 +319,47 @@ switch (room)
 							_selectionSubImage, _settingsArrayLength,
 							_selectionScaleXSettings, _selectionScaleY,
 							_selectionAlpha, _selectionColour);
+							
+						// Images on side
+						var _xPositionImage = (global.gameResolutionWidth / 4) * 3;
+						var _yPositionImage = global.gameResolutionHeight / 2;
+						var _scaleImage = (global.gameResolutionHeight / 1080) * 7;
+						var _scaleGekido = (global.gameResolutionHeight / 1080) * 0.75;
+						var _imageAlpha = 0.5;
+						
+						switch(global.settingsScreenOptions)
+						{
+							case(enumSettingsChoice.resolution):
+								draw_sprite_ext(spr_settingResolution, 0,
+									_xPositionImage, _yPositionImage,
+									_scaleImage, _scaleImage,
+									0, c_white, _imageAlpha);
+								break;
+							case(enumSettingsChoice.fullScreen):
+								draw_sprite_ext(spr_settingFullScreen, 0,
+									_xPositionImage, _yPositionImage,
+									_scaleImage, _scaleImage,
+									0, c_white, _imageAlpha);
+								break;
+							case(enumSettingsChoice.sound):
+								draw_sprite_ext(spr_settingSound, 0,
+									_xPositionImage, _yPositionImage,
+									_scaleImage, _scaleImage,
+									0, c_white, _imageAlpha);
+								break;
+							case(enumSettingsChoice.controls):
+								draw_sprite_ext(spr_settingControls, 0,
+									_xPositionImage, _yPositionImage,
+									_scaleImage, _scaleImage,
+									0, c_white, _imageAlpha);
+								break;
+							case(enumSettingsChoice.credits):
+								draw_sprite_ext(spr_settingCredits, 0,
+									_xPositionImage, _yPositionImage,
+									_scaleGekido, _scaleGekido,
+									0, c_white, _imageAlpha);
+								break;
+						}
 						#endregion
 						break;
 					case(enumSettingsScreenState.resolution):
@@ -482,15 +523,48 @@ switch (room)
 				#endregion
 				break;
 			case(enumTitleScreenState.tutorial):
-				#region Tutorial Menu UI
-				// type here
-				draw_text(global.gameResolutionWidth / 2, global.gameResolutionHeight / 2, "CORRO THE GREAT! Goes here");
+				
+				var _tutorialArrayLength = 5;
+				var _tutorialString = [];
+				_tutorialString[0] = "Gameplay";
+				_tutorialString[1] = "Dice";
+				_tutorialString[2] = "Moves";
+				_tutorialString[3] = "DND";
+				_tutorialString[4] = "Return";
+				
+				// Tutorial Text String (Basic and near useless, in future, remove this and put in a interactive tutorial using Corro)
+				var _tutorialExplaination = [];
+				_tutorialExplaination[0] = "Get the opponents health down to 0 HP\n to win the battles in front of you.\n Take turns to use your actions to win!\n";
+				_tutorialExplaination[1] = "All attacks use dice, from D4 which is 1 to 4,\n to D20 which is 1 to 20.\nD20's are the most commonly used dice throughout the game\ndue to their importance in hits and initative rolls.";
+				_tutorialExplaination[2] = "When using moves, there is Actions\n which are the green triangle.\nThere are also Bonus Actions,\nwhich have the orange triangle.\nThese have a limited about per turn. So use them wisely!\n";
+				_tutorialExplaination[3] = "All systems use a modified DND 5E system.\nStrength, Dexterity, Constitution, Intelligence, and Wisdom\nall are used within our game replacing the \nattack and defence from Pokemon";
+				
+				// UI
+				for(var i = 0; i <= _tutorialArrayLength; i++;)
+				{
+					funct_textUI(_menuX, _menuY[i],
+						_tutorialString[i], _menuTextScale,
+						_textColour, _textAlpha);
+				}
+				
+				funct_selectionUI(_selectionXSettings, _menuY,
+					global.tutorialDialogue, _selectionSprite,
+					_selectionSubImage, _settingsArrayLength,
+					_selectionScaleXSettings, _selectionScaleY,
+					_selectionAlpha, _selectionColour);
+				
 				switch (global.tutorialDialogue) // Put the variable here
 				{
-					case(0):
+					case(enumTutorialChoice.battleGameplay):
 						// type here
 						break;
-					case(1):
+					case(enumTutorialChoice.dice):
+						// Type here
+						break;
+					case(enumTutorialChoice.moves):
+						// Type here
+						break;
+					case(enumTutorialChoice.dnd):
 						// Type here
 						break;
 					// put the Visual Code here

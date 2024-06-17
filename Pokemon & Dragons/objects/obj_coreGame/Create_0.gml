@@ -128,7 +128,9 @@ enum enumBattleState
 	initiative = 4,
 	playerAttack = 5,
 	playerDamage = 6, // When the player deals damage
-	opponentDamage = 7 // When the Opponent Deals Damage
+	playerNonAttack = 7,
+	opponentDamage = 8, // When the Opponent Deals Damage
+	opponentNonAttack = 9 // Here to try and fix the effect issue
 }
 
 enum enumBattleChoices
@@ -250,6 +252,14 @@ enum enumDiceSize
 	d20 = 20
 }
 
+enum enumTutorialChoice
+{
+	battleGameplay = 0,
+	dice = 1,
+	moves = 2,
+	dnd = 3
+}
+
 #endregion
 
 #region Gamepad Initalisation
@@ -314,6 +324,7 @@ global.opponentSideEffectArray[enumNonAttackFunction.sideModifier] = "NOT_SET";
 // Potentially put effected points here
 
 global.moveReturnArray = [];
+global.nonAttackReturnArray = [];
 global.hpDamageReduction = "NOT_SET"; // Used for cross referencing between core and UI for the HP lowering.
 
 
