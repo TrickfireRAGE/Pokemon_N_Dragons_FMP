@@ -117,7 +117,7 @@ switch (room)
 				_titleScreenString[0] = "New Game";
 				_titleScreenString[1] = "Continue";
 				_titleScreenString[2] = "Settings";
-				_titleScreenString[3] = "Tutorial";
+				_titleScreenString[3] = "Information"; // The Tutorialish Section until Story Mode is developed.
 				_titleScreenString[4] = "Exit Game";
 				// UI
 				draw_sprite_ext(spr_gameLogo, 0,
@@ -524,7 +524,7 @@ switch (room)
 				break;
 			case(enumTitleScreenState.tutorial):
 				
-				var _tutorialArrayLength = 5;
+				var _tutorialArrayLength = 4;
 				var _tutorialString = [];
 				_tutorialString[0] = "Gameplay";
 				_tutorialString[1] = "Dice";
@@ -534,10 +534,23 @@ switch (room)
 				
 				// Tutorial Text String (Basic and near useless, in future, remove this and put in a interactive tutorial using Corro)
 				var _tutorialExplaination = [];
-				_tutorialExplaination[0] = "Get the opponents health down to 0 HP\n to win the battles in front of you.\n Take turns to use your actions to win!\n";
-				_tutorialExplaination[1] = "All attacks use dice, from D4 which is 1 to 4,\n to D20 which is 1 to 20.\nD20's are the most commonly used dice throughout the game\ndue to their importance in hits and initative rolls.";
-				_tutorialExplaination[2] = "When using moves, there is Actions\n which are the green triangle.\nThere are also Bonus Actions,\nwhich have the orange triangle.\nThese have a limited about per turn. So use them wisely!\n";
-				_tutorialExplaination[3] = "All systems use a modified DND 5E system.\nStrength, Dexterity, Constitution, Intelligence, and Wisdom\nall are used within our game replacing the \nattack and defence from Pokemon";
+				_tutorialExplaination[0] = "Get the opponents health\n down to 0 HP\n to win the battles\n in front of you.\n Take turns to use\n your actions to win!\n";
+				_tutorialExplaination[1] = "All attacks use dice,\n from D4 which is 1 to 4,\n to D20 which is 1 to 20.\nD20's are the most \ncommonly used dice\n throughout the game\ndue to their importance\n in hits\n and initative rolls.";
+				_tutorialExplaination[2] = "When using moves,\n there is Actions\n which are the green triangle.\nThere are also Bonus Actions,\nwhich have the orange triangle.\nThese have a limited \nabout per turn.\n So use them wisely!\n";
+				_tutorialExplaination[3] = "All systems use a modified\n DND 5E system.\nStrength, Dexterity,\n Constitution,\n Intelligence, and Wisdom\nall are used within our\n game replacing the \nattack and defence\n from Pokemon";
+				_tutorialExplaination[4] = "Return to the Main Menu!";
+				
+				// Text Variables
+				var _xTutorialText = (global.gameResolutionWidth / 4) * 3;
+				var _yTutorialText = (global.gameResolutionHeight / 3);
+				var _yTutorialSprite = (global.gameResolutionHeight / 4) * 3;
+				var _scaleTutorialText = (global.gameResolutionHeight / 1080) * 1.5;
+				var _scaleTutorialSprite = (global.gameResolutionHeight / 1080) * 5;
+				var _xTutorialSpriteHealth = (global.gameResolutionWidth / 4) * 2.3;
+				var _yTutorialSpriteHealth = (global.gameResolutionHeight / 4) * 2.5;
+				var _xTutorialSpriteMoves = (global.gameResolutionWidth / 4) * 3.5;
+				
+			
 				
 				// UI
 				for(var i = 0; i <= _tutorialArrayLength; i++;)
@@ -549,20 +562,41 @@ switch (room)
 				
 				funct_selectionUI(_selectionXSettings, _menuY,
 					global.tutorialDialogue, _selectionSprite,
-					_selectionSubImage, _settingsArrayLength,
+					_selectionSubImage, _tutorialArrayLength,
 					_selectionScaleXSettings, _selectionScaleY,
 					_selectionAlpha, _selectionColour);
+					
+				funct_textUI(_xTutorialText, _yTutorialText,
+					_tutorialExplaination[global.tutorialDialogue], _scaleTutorialText,
+					_textColour, _textAlpha, fa_center);
+				
+				draw_set_halign(fa_left);
 				
 				switch (global.tutorialDialogue) // Put the variable here
 				{
 					case(enumTutorialChoice.battleGameplay):
-						// type here
+						draw_sprite_ext(spr_healthOpponentUI, 0,
+							_xTutorialSpriteHealth, _yTutorialSpriteHealth, 
+							_scaleTutorialSprite, _scaleTutorialSprite,
+							0, c_white, 0.5);
+							
 						break;
 					case(enumTutorialChoice.dice):
-						// Type here
+						draw_sprite_ext(spr_dice20, 20,
+							_xTutorialText, _yTutorialSprite, 
+							_scaleTutorialSprite, _scaleTutorialSprite,
+							0, c_white, 0.5);
 						break;
 					case(enumTutorialChoice.moves):
-						// Type here
+						draw_sprite_ext(spr_actionSymbol, 0,
+							_xTutorialText, _yTutorialSprite, 
+							_scaleTutorialSprite, _scaleTutorialSprite,
+							0, c_white, 0.5);
+						draw_sprite_ext(spr_bonusSymbol, 0,
+							_xTutorialSpriteMoves, _yTutorialSprite, 
+							_scaleTutorialSprite, _scaleTutorialSprite,
+							0, c_white, 0.5);
+							
 						break;
 					case(enumTutorialChoice.dnd):
 						// Type here

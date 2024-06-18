@@ -257,7 +257,8 @@ enum enumTutorialChoice
 	battleGameplay = 0,
 	dice = 1,
 	moves = 2,
-	dnd = 3
+	dnd = 3,
+	returnMain = 4
 }
 
 #endregion

@@ -474,20 +474,41 @@ switch (room)
 				break;
 			case(enumTitleScreenState.tutorial):
 				#region Tutorial Logic
+				var _choiceChange = 1;
 				// type here logic
 				if (global.gamePadConfirm)
 				{
-					// Put adding code here
+					switch (global.tutorialDialogue)
+					{
+						case(enumTutorialChoice.battleGameplay): // Left Empty for future expandability when needed
+							//
+							break;
+						case(enumTutorialChoice.dice):
+							//
+							break;
+						case(enumTutorialChoice.moves):
+							//
+							break;
+						case(enumTutorialChoice.dnd):
+							//
+							break;
+						case(enumTutorialChoice.returnMain):
+							global.titleScreenOptions = enumMainMenuChoice.newGame;
+							global.tutorialDialogue = enumTutorialChoice.battleGameplay;
+							global.menuState = enumTitleScreenState.mainMenu;
+							break;
+					}
 				}
 				else if (global.gamePadBack)
 				{
 					global.titleScreenOptions = enumMainMenuChoice.newGame;
+					global.tutorialDialogue = enumTutorialChoice.battleGameplay;
 					global.menuState = enumTitleScreenState.mainMenu;
 				}
 				else if (global.gamePadDown)
 				{
 					global.tutorialDialogue += _choiceChange;
-					if (global.tutorialDialogue > enumTutorialChoice.dnd)
+					if (global.tutorialDialogue > enumTutorialChoice.returnMain)
 					{
 						global.tutorialDialogue = enumTutorialChoice.battleGameplay;
 					}
@@ -495,9 +516,9 @@ switch (room)
 				else if (global.gamePadUp)
 				{
 					global.tutorialDialogue -= _choiceChange;
-					if (global.tutorialDialogue > enumTutorialChoice.battleGameplay)
+					if (global.tutorialDialogue < enumTutorialChoice.battleGameplay)
 					{
-						global.tutorialDialogue = enumTutorialChoice.dnd;
+						global.tutorialDialogue = enumTutorialChoice.returnMain;
 					}
 				}
 				
@@ -715,21 +736,44 @@ switch (room)
 				else if (attackNonCheck == "Non-Attack")
 				{
 					#region Non-Attack Player Code
-					if (global.moveIDSequence == "NOT_SET")
+					if (global.nonAttackReturnArray == undefined)
 					{
-						var _xPositionSequence = 128; // For Sequence
-						var _yPositionSequence = 72; // For Seqeunce
-					
-						global.moveIDSequence = layer_sequence_create("sequenceLayer", _xPositionSequence, _yPositionSequence, seq_playerAttack);
-					}
-					
-					if (alarm_get(enumCoreGameAlarms.stateSwitch) > 0)
-					{
-						//Code here
+						if (global.moveIDSequence == "NOT_SET")
+						{
+							var _xPositionSequence = 128; // For Sequence
+							var _yPositionSequence = 72; // For Seqeunce
+							
+							global.moveIDSequence = layer_sequence_create("sequenceLayer", _xPositionSequence, _yPositionSequence, seq_textBoxFailure);
+							
+						}
+						
+						if (alarm_get(enumCoreGameAlarms.stateSwitch) > 0)
+						{
+							//Code here
+						}
+						else
+						{
+							alarm_set(enumCoreGameAlarms.stateSwitch, 1);
+						}
 					}
 					else
 					{
-						alarm_set(enumCoreGameAlarms.stateSwitch, 1);
+						if (global.moveIDSequence == "NOT_SET")
+						{
+							var _xPositionSequence = 128; // For Sequence
+							var _yPositionSequence = 72; // For Seqeunce
+						
+							global.moveIDSequence = layer_sequence_create("sequenceLayer", _xPositionSequence, _yPositionSequence, seq_playerAttack);
+						}
+						
+						if (alarm_get(enumCoreGameAlarms.stateSwitch) > 0)
+						{
+							//Code here
+						}
+						else
+						{
+							alarm_set(enumCoreGameAlarms.stateSwitch, 1);
+						}
 					}
 					#endregion
 				}
@@ -848,9 +892,9 @@ switch (room)
 								obj_opponentPokemon.pokemonParty, 0, false);
 								
 							obj_opponentPokemon.pokemonPartyMoves[0][_whichAttackEnumPP] -= 1;
-							if (global.nonAttackReturnArray[enumNonAttackFunction.sideAffected] == false) // Changed
+							if (global.nonAttackReturnArray == undefined) // Changed (Undefined for now due to bug that doesn't return the correct value when failing)
 							{
-								global.opponentStageBattle = enumOpponentStages.endTurn; // To allow the turn to move forward.
+								global.opponentStageBattle = enumOpponentStages.action; // To allow the turn to move forward.
 							}
 							else
 							{
@@ -1043,22 +1087,45 @@ switch (room)
 						else if (attackNonCheck == "Non-Attack")
 						{
 							#region Non-Attack Player Code
-							if (global.moveIDSequence == "NOT_SET")
+							if (global.nonAttackReturnArray == undefined)
 							{
-								var _xPositionSequence = 128; // For Sequence
-								var _yPositionSequence = 72; // For Seqeunce
+								if (global.moveIDSequence == "NOT_SET")
+								{
+									var _xPositionSequence = 128; // For Sequence
+									var _yPositionSequence = 72; // For Seqeunce
+									
+									global.moveIDSequence = layer_sequence_create("sequenceLayer", _xPositionSequence, _yPositionSequence, seq_textBoxFailure);
+									
+								}
 								
-								global.moveIDSequence = layer_sequence_create("sequenceLayer", _xPositionSequence, _yPositionSequence, seq_opponentAttack);
-								
-							}
-							
-							if (alarm_get(enumCoreGameAlarms.stateSwitch) > 0)
-							{
-								//Code here
+								if (alarm_get(enumCoreGameAlarms.stateSwitch) > 0)
+								{
+									//Code here
+								}
+								else
+								{
+									alarm_set(enumCoreGameAlarms.stateSwitch, 1);
+								}
 							}
 							else
 							{
-								alarm_set(enumCoreGameAlarms.stateSwitch, 1);
+								if (global.moveIDSequence == "NOT_SET")
+								{
+									var _xPositionSequence = 128; // For Sequence
+									var _yPositionSequence = 72; // For Seqeunce
+									
+									global.moveIDSequence = layer_sequence_create("sequenceLayer", _xPositionSequence, _yPositionSequence, seq_opponentAttack);
+									
+								}
+								
+								if (alarm_get(enumCoreGameAlarms.stateSwitch) > 0)
+								{
+									//Code here
+								}
+								else
+								{
+									alarm_set(enumCoreGameAlarms.stateSwitch, 1);
+								}
 							}
 							#endregion
 						}

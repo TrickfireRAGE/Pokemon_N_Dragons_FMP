@@ -1065,9 +1065,7 @@ function funct_nonAttack(_moveArray, _moveID, _level, _defenderStats, _attackerS
 	
 	if (_savingThrow == global.failureVariable)
 	{
-		_result[enumNonAttackFunction.sideAffected] = false;
-		_result[enumNonAttackFunction.sideModifier] = false;
-		_result[enumNonAttackFunction.sideDuration] = false;
+		_result = false;
 	}
 	else if (_savingThrow == "PASS")
 	{

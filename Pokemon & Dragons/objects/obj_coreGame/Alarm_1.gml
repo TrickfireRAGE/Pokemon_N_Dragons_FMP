@@ -75,29 +75,29 @@ if (attackNonCheck == "Attack")
 }
 else if (attackNonCheck == "Non-Attack")
 {
-	var _nonAttack = "NOT_SET";
-	_nonAttack = funct_nonAttack(global.pokeMoves, 
+	
+	global.nonAttackReturnArray = funct_nonAttack(global.pokeMoves, 
 		obj_playerPokemon.pokemonPartyMoves[0][_whichAttackEnumID],
 		global.pokemonLevelSet, obj_opponentPokemon.pokemonParty, 
 		obj_playerPokemon.pokemonParty, 0, false);
 	obj_playerPokemon.pokemonPartyMoves[0][_whichAttackEnumPP] -= 1;
-	if (_nonAttack == false)
+	if (global.nonAttackReturnArray == undefined)
 	{
-		// Put fail code here
+		// Empty for now
 	}
 	else
 	{
-		switch (_nonAttack[enumNonAttackFunction.sideWho])
+		switch (global.nonAttackReturnArray[enumNonAttackFunction.sideWho])
 		{
 			case ("Self"):
-				global.playerSideEffectArray[enumNonAttackFunction.sideAffected] = _nonAttack[enumNonAttackFunction.sideAffected];
-				global.playerSideEffectArray[enumNonAttackFunction.sideModifier] = _nonAttack[enumNonAttackFunction.sideModifier];
-				global.playerSideEffectArray[enumNonAttackFunction.sideDuration] = _nonAttack[enumNonAttackFunction.sideDuration];
+				global.playerSideEffectArray[enumNonAttackFunction.sideAffected] = global.nonAttackReturnArray[enumNonAttackFunction.sideAffected];
+				global.playerSideEffectArray[enumNonAttackFunction.sideModifier] = global.nonAttackReturnArray[enumNonAttackFunction.sideModifier];
+				global.playerSideEffectArray[enumNonAttackFunction.sideDuration] = global.nonAttackReturnArray[enumNonAttackFunction.sideDuration];
 				break;
 			case ("Opponent"):
-				global.opponentSideEffectArray[enumNonAttackFunction.sideAffected] = _nonAttack[enumNonAttackFunction.sideAffected];
-				global.opponentSideEffectArray[enumNonAttackFunction.sideModifier] = _nonAttack[enumNonAttackFunction.sideModifier];
-				global.opponentSideEffectArray[enumNonAttackFunction.sideDuration] = _nonAttack[enumNonAttackFunction.sideDuration];
+				global.opponentSideEffectArray[enumNonAttackFunction.sideAffected] = global.nonAttackReturnArray[enumNonAttackFunction.sideAffected];
+				global.opponentSideEffectArray[enumNonAttackFunction.sideModifier] = global.nonAttackReturnArray[enumNonAttackFunction.sideModifier];
+				global.opponentSideEffectArray[enumNonAttackFunction.sideDuration] = global.nonAttackReturnArray[enumNonAttackFunction.sideDuration];
 				break;
 		}
 	}
