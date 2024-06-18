@@ -354,10 +354,10 @@ switch (room)
 									0, c_white, _imageAlpha);
 								break;
 							case(enumSettingsChoice.credits):
-								draw_sprite_ext(spr_settingCredits, 0,
-									_xPositionImage, _yPositionImage,
-									_scaleGekido, _scaleGekido,
-									0, c_white, _imageAlpha);
+								//draw_sprite_ext(spr_settingCredits, 0,
+									//_xPositionImage, _yPositionImage,
+									//_scaleGekido, _scaleGekido,
+									//0, c_white, _imageAlpha);
 								break;
 						}
 						#endregion
